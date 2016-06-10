@@ -37,12 +37,49 @@
             body {
                 background: #fcfcfc;
             }
-
             h1 {
                 font-family: "Raleway", sans-serif;
                 font-size: 5em;
                 color: #78909c;
             }
+            svg {
+                width: 180px;
+                height: 100px;
+            }
+            .number > svg {
+                width: auto;
+            }
+
+            /* Small Devices, Tablets */
+            @media only screen and (max-width : 768px) {
+                h1 {
+                    font-size: 4em;
+                }
+                svg {
+                    width: 120px;
+                }
+            }
+
+            /* Extra Small Devices, Phones */
+            @media only screen and (max-width : 480px) {
+                h1 {
+                    font-size: 3em;
+                }
+                svg {
+                    width: 70px;
+                }
+            }
+
+            /* Custom, iPhone Retina */
+            @media only screen and (max-width : 320px) {
+                h1 {
+                    font-size: 2.5em;
+                }
+                svg {
+                    width: 60px;
+                }
+            }
+
             .webkit {
                 background: linear-gradient(270deg, #78909c, #9DBCCC);
                 background-size: 400% 400%;
@@ -63,11 +100,6 @@
                 0%{background-position:0% 50%}
                 50%{background-position:100% 50%}
                 100%{background-position:0% 50%}
-            }
-
-            svg {
-                width: 180px;
-                height: 100px;
             }
 
             .time_block {
@@ -107,13 +139,6 @@
                 display: table-cell;
                 vertical-align: middle;
             }
-            .number {
-                font-size: 7em;
-                font-weight: 400;
-                vertical-align: bottom;
-                color: #78909c;
-                font-family: "Open Sans", sans-serif;
-            }
         </style>
     </head>
     <body>
@@ -143,9 +168,16 @@
         <script src="{{ URL::asset('assets/js/modernizr-custom.js') }}"></script>
 
         <script class="source" type="text/javascript">
+            var vw = 500;
+            if ($(window).width() <= 480) {
+                vw = $(window).width()*0.4;
+            } else if ($(window).width() <= 768){
+                vw = 300;
+            }
+            console.log(vw);
             var countdown1 = new Countdown({
                 holder_id: "countdownHolder1",
-                holder_width: 500,
+                holder_width: vw,
                 end_work: (new Date(2016, 7, 26)).getTime()
             });
 

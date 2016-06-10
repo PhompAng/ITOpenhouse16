@@ -34,6 +34,7 @@ var Countdown = function (settings) {
 	var countdown_width = settings.holder_width,
 		countdown_item_width = Math.floor(countdown_width * 250 / 730),
 		countdown_item_height = Math.floor(countdown_width * 310 / 730),
+		colon_width = countdown_item_width / 4,
 		countdown_margin = Math.floor(countdown_width * 0 / 730),
 		number_scale_x = (countdown_item_width / 250).toFixed(2) * 1,
 		number_scale_y = (countdown_item_height / 310).toFixed(2) * 1;
@@ -46,19 +47,19 @@ var Countdown = function (settings) {
 						'<div id="countdown_days_' + settings.holder_id + '" class="time_block_number"></div>' +
 					'</div>' +
 					'<div class="time_block">' +
-						'<span class="number">:</span>' +
+						'<div id="colon1" class="number time_block_number"></div>' +
 					'</div>' +
 					'<div class="time_block" style="margin-left: ' + countdown_margin + 'px">' +
 						'<div id="countdown_hours_' + settings.holder_id + '" class="time_block_number"></div>' +
 					'</div>' +
 					'<div class="time_block">' +
-					'<span class="number">:</span>' +
+						'<div id="colon2" class="number time_block_number"></div>' +
 					'</div>' +
 					'<div class="time_block" style="margin-left: ' + countdown_margin + 'px">' +
 						'<div id="countdown_minutes_' + settings.holder_id + '" class="time_block_number"></div>' +
 					'</div>' +
 					'<div class="time_block">' +
-					'<span class="number">:</span>' +
+						'<div id="colon3" class="number time_block_number"></div>' +
 					'</div>' +
 					'<div class="time_block" style="margin-left: ' + countdown_margin + 'px">' +
 						'<div id="countdown_seconds_' + settings.holder_id + '" class="time_block_number"></div>' +
@@ -141,6 +142,11 @@ var Countdown = function (settings) {
 		var r3 = Raphael("countdown_minutes_" + settings.holder_id, countdown_item_width, countdown_item_height);
 		var r4 = Raphael("countdown_seconds_" + settings.holder_id, countdown_item_width, countdown_item_height);
 
+		var colon1 = Raphael("colon1", colon_width, countdown_item_height);
+		var colon2 = Raphael("colon2", colon_width, countdown_item_height);
+		var colon3 = Raphael("colon3", colon_width, countdown_item_height);
+
+
 		// set default style for countdown numbers
 		var style_object = {fill: settings.fill, stroke:  "green", "fill-opacity":  settings.fill_opacity, "stroke-width": settings.stroke_width, "stroke-dasharray": "105,16",  "stroke-linecap":"round", translation:"0 0"};
 
@@ -156,6 +162,10 @@ var Countdown = function (settings) {
 		var letter6 = r3.path(helvetica["0"]).attr(style_object).scale(number_scale_x, number_scale_y, countdown_item_width / 2, 0).translate(number2_x, 1);
 		var letter7 = r4.path(helvetica["0"]).attr(style_object).scale(number_scale_x, number_scale_y, 0, 0).translate(number1_x, 1);
 		var letter8 = r4.path(helvetica["0"]).attr(style_object).scale(number_scale_x, number_scale_y, countdown_item_width / 2, 0).translate(number2_x, 1);
+
+		var letterColon1 = colon1.path(helvetica[":"]).attr(style_object).scale(number_scale_x, number_scale_y, 0, 0).translate(number1_x, 1);
+		var letterColon2 = colon2.path(helvetica[":"]).attr(style_object).scale(number_scale_x, number_scale_y, 0, 0).translate(number1_x, 1);
+		var letterColon3 = colon3.path(helvetica[":"]).attr(style_object).scale(number_scale_x, number_scale_y, 0, 0).translate(number1_x, 1);
 
 
 		// start 1-second interval

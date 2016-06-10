@@ -41,7 +41,9 @@
             h1 {
                 font-family: "Raleway", sans-serif;
                 font-size: 5em;
-
+                color: #78909c;
+            }
+            .webkit {
                 background: linear-gradient(270deg, #78909c, #9DBCCC);
                 background-size: 400% 400%;
                 -webkit-background-clip: text;
@@ -117,7 +119,8 @@
     <body>
         <div class="wrapper">
             <div class="wrapper2">
-                <h1>IT Openhouse 2016</h1>
+                <h1>IT Ladkrabang</h1>
+                <h1>Open House 2016</h1>
                 <div id="countdownHolder1">
                     <!-- holder for countdown -->
                 </div>
@@ -137,6 +140,7 @@
         <script src="{{ URL::asset('assets/js/raphael.js') }}"></script>
         <script src="{{ URL::asset('assets/js/helvetica.js') }}"></script>
         <script src="{{ URL::asset('assets/js/countdown.js') }}"></script>
+        <script src="{{ URL::asset('assets/js/modernizr-custom.js') }}"></script>
 
         <script class="source" type="text/javascript">
             var countdown1 = new Countdown({
@@ -144,6 +148,10 @@
                 holder_width: 500,
                 end_work: (new Date(2016, 7, 26)).getTime()
             });
+
+
+
+            if(Modernizr.backgroundcliptext) { $('h1').addClass('webkit'); }
         </script>
     </body>
 </html>

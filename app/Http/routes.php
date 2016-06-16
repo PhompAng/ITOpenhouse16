@@ -14,3 +14,7 @@
 Route::get('/', function () {
     return view('countdown');
 });
+
+Route::get('/form', function () {
+    return view('form');
+});

@@ -123,7 +123,7 @@
                             <input type="checkbox" name="news" value="yes"> ฉันต้องการรับข้อมูลข่าวสารจากทีมงาน IT Ladkrabang Open House
                         </label>
                     </div>
-                    <button type="submit" class="btn btn-primary btn-block">ลงทะเบียน</button>
+                    <button type="submit" class="btn btn-primary btn-block regis-btn">ลงทะเบียน</button>
                 </form>
             </section>
         </div>

@@ -1,0 +1,40 @@
+image: php56
+
+stages:
+    - test
+    - deploy
+
+before_script:
+  - 'which ssh-agent || ( apt-get update -y && apt-get install openssh-client -y )'
+  - eval $(ssh-agent -s)
+  - ssh-add <(echo "$SSH_PRIVATE_KEY")
+  - mkdir -p ~/.ssh
+  - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config'
+
+test:
+    stage: test
+    script:
+        - service mysql start
+        - echo "create database laravel" | mysql -u root
+        - php /composer.phar install -n -q
+        - cp .env.ci .env
+        - php artisan migrate --seed --force
+        - vendor/bin/phpunit tests
+
+deploy to dev:
+    #environment: dev
+    stage: deploy
+    only:
+        - develop
+    script:
+        - chmod +x deploy.sh
+        - ./deploy.sh
+
+deploy to production:
+    #environment: production
+    stage: deploy
+    only:
+        - master
+    script:
+        - chmod +x deploy.sh
+        - ./deploy.sh

@@ -2,111 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c23fa03d-81ec-4911-8e2c-a738c5e5a0a5" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/fonts/glyphicons-halflings-regular.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/fonts/glyphicons-halflings-regular.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/fonts/glyphicons-halflings-regular.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/fonts/glyphicons-halflings-regular.woff2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/classpreloader/classpreloader" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/dnoegel/php-xdg-base-dir" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/doctrine/inflector" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/doctrine/instantiator" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/fzaninotto/faker" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/jakub-onderka/php-console-color" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/jakub-onderka/php-console-highlighter" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/jeremeamia/SuperClosure" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/laravel/framework" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/league/flysystem" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/mockery/mockery" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/monolog/monolog" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/mtdowling/cron-expression" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/nesbot/carbon" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/nikic/php-parser" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/paragonie/random_compat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/phpdocumentor/reflection-common" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/phpdocumentor/type-resolver" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/phpspec/prophecy" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/phpunit/php-file-iterator" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/phpunit/php-text-template" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/phpunit/php-timer" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/phpunit/php-token-stream" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit-mock-objects" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/psr/log" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/psy/psysh" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/sebastian/comparator" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/sebastian/diff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/sebastian/environment" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/sebastian/exporter" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/sebastian/global-state" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/sebastian/recursion-context" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/sebastian/version" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/symfony/console" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/symfony/css-selector" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/symfony/debug" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/symfony/dom-crawler" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/symfony/event-dispatcher" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/symfony/finder" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/symfony/http-kernel" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/symfony/polyfill-php56" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/symfony/polyfill-util" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/symfony/process" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/symfony/routing" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/symfony/translation" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/symfony/yaml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/vlucas/phpdotenv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/webmozart/assert" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Http/Controllers/Guest/RegisterController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Models/Guest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Models/GuestSchool.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Models/GuestStudent.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bootstrap/cache/compiled.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bootstrap/cache/services.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/css/bootstrap-theme.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/css/bootstrap-theme.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/css/bootstrap-theme.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/css/bootstrap-theme.min.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/css/bootstrap.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/css/bootstrap.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/css/bootstrap.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/css/bootstrap.min.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/fonts/glyphicons-halflings-regular.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/js/bootstrap.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/js/bootstrap.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/js/npm.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/register/guest/create.blade.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/register/guest_school/create.blade.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/register/guest_student/create.blade.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/register/regis_page.blade.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/storage/framework/views/0ad8cef29407ce7ebaca9b726df55344efdae567.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/storage/framework/views/6f3b85563d1e3122bd6ca7079aea3f54c48a9d45.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/storage/framework/views/96eddff6233e1763e03a049625985d59ca7181ff.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/storage/framework/views/eab436b799ba5968219ad87742dfbdae794b01e6.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/storage/logs/laravel.log" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/autoload.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/bin/php-parse" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/bin/php-parse.bat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/bin/phpunit" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/bin/phpunit.bat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/bin/psysh" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/bin/psysh.bat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/composer/ClassLoader.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/composer/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/composer/autoload_files.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/composer/autoload_namespaces.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/composer/autoload_real.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/composer/installed.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/css/style.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/form.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/routes.php" afterPath="$PROJECT_DIR$/app/Http/routes.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/app.php" afterPath="$PROJECT_DIR$/config/app.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/countdown.blade.php" afterPath="$PROJECT_DIR$/resources/views/countdown.blade.php" />
     </list>
     <ignored path="ITOpenhouse16.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -128,7 +28,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="RegisterController.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="RegisterController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Guest/RegisterController.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="261">
@@ -180,12 +80,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="routes.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="routes.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="531">
-              <caret line="53" column="0" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="495">
+              <caret line="54" column="24" selection-start-line="54" selection-start-column="24" selection-end-line="54" selection-end-column="24" />
+              <folding>
+                <marker date="1466154554108" expanded="false" signature="9:390" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -211,7 +113,6 @@
         <option value="$PROJECT_DIR$/resources/views/register/guest/regis.html" />
         <option value="$PROJECT_DIR$/resources/views/register/guest/guest_regis.html" />
         <option value="$PROJECT_DIR$/resources/views/register/regis_page.html" />
-        <option value="$PROJECT_DIR$/app/Http/routes.php" />
         <option value="$PROJECT_DIR$/config/app.php" />
         <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/app/Models/GuestStudent.php" />
@@ -224,6 +125,7 @@
         <option value="$PROJECT_DIR$/resources/views/register/guest_school/create.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/register/guest_student/create.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Guest/RegisterController.php" />
+        <option value="$PROJECT_DIR$/app/Http/routes.php" />
       </list>
     </option>
   </component>
@@ -535,12 +437,12 @@
       <workItem from="1465791770024" duration="164000" />
       <workItem from="1465792495454" duration="1262000" />
       <workItem from="1465794567561" duration="58930000" />
-      <workItem from="1466146526130" duration="7251000" />
+      <workItem from="1466146526130" duration="7905000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="71664000" />
+    <option name="totallyTimeSpent" value="72318000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -552,11 +454,11 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="754" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27609682" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27609682" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32850242" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -889,14 +791,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="531">
-          <caret line="53" column="0" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/register/regis_page.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
@@ -943,6 +837,16 @@
           <caret line="169" column="0" selection-start-line="169" selection-start-column="0" selection-end-line="169" selection-end-column="0" />
           <folding>
             <element signature="e#45#81#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="54" column="24" selection-start-line="54" selection-start-column="24" selection-end-line="54" selection-end-column="24" />
+          <folding>
+            <marker date="1466154554108" expanded="false" signature="9:390" placeholder="..." />
           </folding>
         </state>
       </provider>

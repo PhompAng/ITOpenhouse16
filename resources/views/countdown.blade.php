@@ -41,6 +41,7 @@
                 font-family: "Raleway", sans-serif;
                 font-size: 5em;
                 color: #78909c;
+                line-height: 120%;
             }
             svg {
                 width: 180px;

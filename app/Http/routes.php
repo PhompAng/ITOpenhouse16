@@ -51,3 +51,6 @@ Route::post('/register/guest_school',[
     'uses' => 'Guest\RegisterController@storeGuestSchoolRegister'
 ]);
 
+Route::get('/form', function () {
+    return view('form');
+});

@@ -30,6 +30,6 @@
         <env name="DB_USERNAME" value="root"/>
         <env name="DB_PASSWORD" value=""/>
         <env name="DB_DATABASE" value="laravel"/>
-        <env name="APP_KEY" value="jtfsy4GRY5MfQCaEnHTkWPW9JVz0e7qkUm2IAA10v08"/>
+        <env name="APP_KEY" value="base64:K6aq5RqUX4VlG7wfOZKmUOVEFzRDP2cYzn/ez8c+gzI="/>
     </php>
 </phpunit>

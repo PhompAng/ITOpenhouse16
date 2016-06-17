@@ -45,16 +45,6 @@
         ]
     },
     "config": {
-        "preferred-install": "dist",
-        "secure-http": false
-    },
-    "repositories": [
-        {
-            "packagist": false
-        },
-        {
-            "type": "composer",
-            "url": "http://git.iton.in.th:8008"
-        }
-    ]
+        "preferred-install": "dist"
+    }
 }

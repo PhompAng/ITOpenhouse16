@@ -26,5 +26,10 @@
         <env name="CACHE_DRIVER" value="array"/>
         <env name="SESSION_DRIVER" value="array"/>
         <env name="QUEUE_DRIVER" value="sync"/>
+        <env name="DB_HOST" value="localhost"/>
+        <env name="DB_USERNAME" value="root"/>
+        <env name="DB_PASSWORD" value=""/>
+        <env name="DB_DATABASE" value="laravel"/>
+        <env name="APP_KEY" value="base64:K6aq5RqUX4VlG7wfOZKmUOVEFzRDP2cYzn/ez8c+gzI="/>
     </php>
 </phpunit>

@@ -24,6 +24,13 @@ body {
     text-shadow: 0 3px 4px rgba(0,0,0,0.1);
     border-bottom: 1px solid #cdcdcd;
 }
+.regis-error {
+}
+.regis-error > .alert {
+    margin-top: 20px;
+    margin-bottom: 0px;
+    border-radius: 0px;
+}
 .regis-form {
     padding: 2rem 1.5rem;
 }

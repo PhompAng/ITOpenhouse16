@@ -29,7 +29,7 @@
                 <div class="row">
                     <div class="col-md-6 col-xs-12">
                         <div class="row">
-                            <div class="col-xs-4">
+                            <div class="col-xs-5">
                                 <div class="form-group">
                                     <label>คำนำหน้าชื่อ</label>
                                     <select class="form-control" name="prefix" required>
@@ -39,7 +39,7 @@
                                     </select>
                                 </div>
                             </div>
-                            <div class="col-xs-8">
+                            <div class="col-xs-7">
                                 <div class="form-group">
                                     <label>ชื่อ</label>
                                     <input type="text" class="form-control" placeholder="ไอที" name="name" required>
@@ -138,7 +138,7 @@
                     </div>
                 </div>
                 {{--end รับข่าวสาร--}}
-                <button type="submit" class="btn btn-primary btn-block regis-btn" >ลงทะเบียน</button>
+                <button type="submit" class="btn btn-primary btn-block regis-btn">ลงทะเบียน</button>
             </form>
         </section>
     </div>

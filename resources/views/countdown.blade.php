@@ -152,9 +152,9 @@
                 </div>
                 <a class='dropdown-button btn btn-large' href='#' data-activates='dropdown1'>ลงทะเบียนเข้าชมงาน</a>
                 <ul id='dropdown1' class='dropdown-content'>
-                    <li><a href="#!">ลงทะเบียนของบุคคลทั่วไป</a></li>
-                    <li><a href="#!">ลงทะเบียนของนักเรียน/นักศึกษา</a></li>
-                    <li><a href="#!">ลงทะเบียนของโรงเรียน</a></li>
+                    <li><a href="{{URL('/register/guest')}}">ลงทะเบียนของบุคคลทั่วไป</a></li>
+                    <li><a href="{{URL('/register/guest_student')}}">ลงทะเบียนของนักเรียน/นักศึกษา</a></li>
+                    <li><a href="{{URL('/register/guest_school')}}">ลงทะเบียนของโรงเรียน</a></li>
                 </ul>
             </div>
         </div>

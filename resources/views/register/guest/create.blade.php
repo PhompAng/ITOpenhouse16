@@ -103,7 +103,7 @@
                     </div>
                     <div class="col-md-6 col-xs-12">
                         <div class="form-group">
-                            <label>e-mail</label>
+                            <label>อีเมล</label>
                             <input type="text" class="form-control" placeholder="e.g. openhouse@it.kmitl.ac.th" name="email" required>
                         </div>
                     </div>

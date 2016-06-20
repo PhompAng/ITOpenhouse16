@@ -34,7 +34,7 @@ class RegisterController extends  Controller{
             'career'				=> 'required',
             'province'				=> 'required',
             'email'					=> 'required|email',
-            'phone'					=> 'required|regex:/^[0-9]{2,3}-[0-9]{3}-[0-9]{4}$/',
+            'phone'					=> 'required|regex:/^0[0-9]{1,2}[0-9]{7}$/',
         ];
 
         $messages = [
@@ -87,7 +87,7 @@ class RegisterController extends  Controller{
 
             'province'				=> 'required',
             'email'					=> 'required|email',
-            'phone'					=> 'required|regex:/^[0-9]{2,3}-[0-9]{3}-[0-9]{4}$/',
+            'phone'					=> 'required|regex:/^0[0-9]{1,2}[0-9]{7}$/',
         ];
 
         $messages = [
@@ -143,7 +143,7 @@ class RegisterController extends  Controller{
 
             'province'				=> 'required',
             'email'					=> 'required|email',
-            'phone'					=> 'required|regex:/^[0-9]{2,3}-[0-9]{3}-[0-9]{4}$/',
+            'phone'					=> 'required|regex:/^0[0-9]{1,2}[0-9]{7}$/',
         ];
 
         $messages = [

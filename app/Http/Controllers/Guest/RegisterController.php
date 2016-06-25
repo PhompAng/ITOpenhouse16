@@ -58,7 +58,7 @@ class RegisterController extends  Controller{
 
         $validator = Validator::make($inputs, $rules, $messages);
         if($validator->fails()){
-            return view('register.guest.create')->withErrors($validator);
+            return redirect('/register/guest')->withInput()->withErrors($validator);
         }
 
         $guest = new Guest();
@@ -113,7 +113,7 @@ class RegisterController extends  Controller{
 
         $validator = Validator::make($inputs, $rules, $messages);
         if($validator->fails()){
-            return view('register.guest_student.create')->withErrors($validator);
+            return redirect('/register/guest_student')->withInput()->withErrors($validator);
         }
 
         $guestStudent = new GuestStudent();
@@ -170,7 +170,7 @@ class RegisterController extends  Controller{
 
         $validator = Validator::make($inputs, $rules, $messages);
         if($validator->fails()){
-            return view('register.guest_school.create')->withErrors($validator);
+            return redirect('/register/guest_school')->withInput()->withErrors($validator);
         }
 
         $guestSchool = new GuestSchool();

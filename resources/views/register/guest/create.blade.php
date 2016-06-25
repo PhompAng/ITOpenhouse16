@@ -33,16 +33,16 @@
                                 <div class="form-group">
                                     <label>คำนำหน้าชื่อ</label>
                                     <select class="form-control" name="prefix" required>
-                                        <option value="นาย">นาย</option>
-                                        <option value="นาง">นาง</option>
-                                        <option value="นางสาว">นางสาว</option>
+                                        <option value="นาย" {{  (old('prefix') == "นาย" ? "selected":"") }}>นาย</option>
+                                        <option value="นาง" {{ (old('prefix') == "นาง" ? "selected":"") }}>นาง</option>
+                                        <option value="นางสาว" {{ (old('prefix') == "นางสาว" ? "selected":"") }}>นางสาว</option>
                                     </select>
                                 </div>
                             </div>
                             <div class="col-xs-7">
                                 <div class="form-group">
                                     <label>ชื่อ</label>
-                                    <input type="text" class="form-control" placeholder="ไอที" name="name" required>
+                                    <input type="text" class="form-control" placeholder="ไอที" name="name" value="{{ old('name') }}" required>
                                 </div>
                             </div>
                         </div>
@@ -50,7 +50,7 @@
                     <div class="col-md-6 col-xs-12">
                         <div class="form-group">
                             <label>นามสกุล</label>
-                            <input type="text" class="form-control" placeholder="ลาดกระบัง" name="surname" required>
+                            <input type="text" class="form-control" placeholder="ลาดกระบัง" name="surname" value="{{ old('surname') }}" required>
                         </div>
                     </div>
                 </div>
@@ -59,20 +59,20 @@
                         <div class="form-group">
                             <label >เพศ</label><br>
                             <label class="radio-inline">
-                                <input type="radio" name="gender" value="M" required> ชาย
+                                <input type="radio" name="gender" value="M" required {{ old('gender') == 'M' ? "checked":"" }}> ชาย
                             </label>
                             <label class="radio-inline">
-                                <input type="radio" name="gender" value="F" required> หญิง
+                                <input type="radio" name="gender" value="F" required {{ old('gender') == 'F' ? "checked":"" }}> หญิง
                             </label>
                             <label class="radio-inline">
-                                <input type="radio" name="gender" value="U" required> ไม่ระบุ
+                                <input type="radio" name="gender" value="U" required {{ old('gender') == 'U' ? "checked":"" }}> ไม่ระบุ
                             </label>
                         </div>
                     </div>
                     <div class="col-md-6 col-xs-12">
                         <div class="form-group">
                             <label>อายุ</label>
-                            <input type="number" class="form-control" placeholder="100" name="age" required>
+                            <input type="number" class="form-control" placeholder="100" name="age" required value="{{ old('age') }}">
                         </div>
                     </div>
                 </div>
@@ -80,13 +80,13 @@
                     <div class="col-md-6 col-xs-6">
                         <div class="form-group">
                             <label>อาชีพ</label>
-                            <input type="text" class="form-control" placeholder="e.g. เจ้าของStartupชั้นนำของเมืองไทย" name="career" required>
+                            <input type="text" class="form-control" placeholder="e.g. เจ้าของStartupชั้นนำของเมืองไทย" name="career" required value="{{ old('career') }}">
                         </div>
                     </div>
                     <div class="col-md-6 col-xs-6">
                         <div class="form-group">
                             <label>จังหวัด</label>
-                            <input type="text" class="form-control" placeholder="e.g. กรุงเทพฯ" name="province" required>
+                            <input type="text" class="form-control" placeholder="e.g. กรุงเทพฯ" name="province" required value="{{ old('province') }}">
                         </div>
                     </div>
                 </div>
@@ -98,13 +98,13 @@
                     <div class="col-md-6 col-xs-12">
                         <div class="form-group">
                             <label>เบอร์โทรศัพท์</label>
-                            <input type="text" class="form-control" placeholder="e.g. 080-808-xxxx" name="phone" required>
+                            <input type="text" class="form-control" placeholder="e.g. 080808xxxx" name="phone" required value="{{ old('phone') }}">
                         </div>
                     </div>
                     <div class="col-md-6 col-xs-12">
                         <div class="form-group">
                             <label>อีเมล</label>
-                            <input type="text" class="form-control" placeholder="e.g. openhouse@it.kmitl.ac.th" name="email" required>
+                            <input type="text" class="form-control" placeholder="e.g. openhouse@it.kmitl.ac.th" name="email" required value="{{ old('email') }}">
                         </div>
                     </div>
                 </div>
@@ -112,13 +112,13 @@
                     <div class="col-md-6 col-xs-12">
                         <div class="form-group">
                             <label>Facebook</label>
-                            <input type="text" class="form-control" placeholder="e.g. fb.com/ITLadkrabangOpenhouse" name="facebook">
+                            <input type="text" class="form-control" placeholder="e.g. fb.com/ITLadkrabangOpenhouse" name="facebook" value="{{ old('facebook') }}">
                         </div>
                     </div>
                     <div class="col-md-6 col-xs-12">
                         <div class="form-group">
                             <label>Twitter</label>
-                            <input type="text" class="form-control" placeholder="e.g. twitter.com/@ITKMITL" name="twitter">
+                            <input type="text" class="form-control" placeholder="e.g. twitter.com/@ITKMITL" name="twitter" value="{{ old('twitter') }}">
                         </div>
                     </div>
                 </div>
@@ -131,7 +131,7 @@
                         <div class="form-group">
                             <div class="checkbox">
                                 <label>
-                                    <input type="checkbox" name=" news" value="1">ฉันต้องการรับข้อมูลข่าวสารจากทีมงาน IT Ladkrabang Open House
+                                    <input type="checkbox" name="news" value="1" {{ old('news')=="1" ? "checked":"" }}>ฉันต้องการรับข้อมูลข่าวสารจากทีมงาน IT Ladkrabang Open House
                                 </label>
                             </div>
                         </div>

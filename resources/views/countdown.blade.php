@@ -43,6 +43,10 @@
                 color: #78909c;
                 line-height: 120%;
             }
+            .logo {
+                margin: 0 auto;
+                width: 70%;
+            }
             svg {
                 width: 180px;
                 height: 100px;
@@ -108,7 +112,7 @@
             }
 
             path {
-                stroke: #78909c;
+                stroke: #26a69a;
                 fill: none;
                 stroke-dasharray: 0, 0;
                 stroke-width: 4;
@@ -145,8 +149,7 @@
     <body>
         <div class="wrapper">
             <div class="wrapper2">
-                <h1>IT Ladkrabang</h1>
-                <h1>Open House 2016</h1>
+                <img src="{{ URL::asset('assets/image/color.svg') }}" class="logo">
                 <div id="countdownHolder1">
                     <!-- holder for countdown -->
                 </div>

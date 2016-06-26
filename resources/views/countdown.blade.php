@@ -19,8 +19,6 @@
         <![endif]-->
 
         <style type="text/css">
-            @import url(https://fonts.googleapis.com/css?family=Raleway:400,300,200);
-            @import url(https://fonts.googleapis.com/css?family=Open+Sans:300);
             .clearfix:after {
                 content: ".";
                 display: block;
@@ -38,7 +36,7 @@
                 background: #fcfcfc;
             }
             h1 {
-                font-family: "Raleway", sans-serif;
+                /*font-family: "Raleway", sans-serif; */
                 font-size: 5em;
                 color: #78909c;
                 line-height: 120%;
@@ -169,7 +167,6 @@
         <script src="{{ URL::asset('assets/js/raphael.js') }}"></script>
         <script src="{{ URL::asset('assets/js/helvetica.js') }}"></script>
         <script src="{{ URL::asset('assets/js/countdown.js') }}"></script>
-        <script src="{{ URL::asset('assets/js/modernizr-custom.js') }}"></script>
 
         <script class="source" type="text/javascript">
             var vw = 500;
@@ -178,16 +175,11 @@
             } else if ($(window).width() <= 768){
                 vw = 300;
             }
-            console.log(vw);
             var countdown1 = new Countdown({
                 holder_id: "countdownHolder1",
                 holder_width: vw,
                 end_work: (new Date(2016, 7, 26)).getTime()
             });
-
-
-
-            if(Modernizr.backgroundcliptext) { $('h1').addClass('webkit'); }
         </script>
     </body>
 </html>

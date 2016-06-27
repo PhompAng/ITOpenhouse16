@@ -160,16 +160,22 @@
                 {{--อาจารย์--}}
                 <h3>Teacher</h3>
                 <div class="row">
-                    <div class="col-md-6 col-xs-12">
+                    <div class="col-md-2 col-xs-4">
                         <div class="form-group">
-                            <label for="teacherName">ชื่อ</label>
-                            <input type="text" class="form-control" placeholder="teacherName" required>
+                            <label>คำนำหน้าชื่อ</label>
+                            <input type="text" class="form-control" placeholder="prefix" name="teacherPrefix" required>
                         </div>
                     </div>
-                    <div class="col-md-6 col-xs-12">
+                    <div class="col-md-5 col-xs-8">
+                        <div class="form-group">
+                            <label for="teacherName">ชื่อ</label>
+                            <input type="text" class="form-control" placeholder="teacherName" name="teacherName" required>
+                        </div>
+                    </div>
+                    <div class="col-md-5 col-xs-12">
                         <div class="form-group">
                             <label for="teacherSurname">นามสกุล</label>
-                            <input type="text" class="form-control" placeholder="teacherSurname" name="teacherName" required>
+                            <input type="text" class="form-control" placeholder="teacherSurname" name="teacherSurname" required>
                         </div>
                     </div>
                 </div>

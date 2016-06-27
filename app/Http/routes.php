@@ -11,6 +11,8 @@
 |
 */
 
+use Illuminate\Support\Facades\Route;
+
 Route::get('/', function () {
     return view('countdown');
 });
@@ -51,9 +53,11 @@ Route::post('/register/guest_school',[
     'uses' => 'Guest\RegisterController@storeGuestSchoolRegister'
 ]);
 
-Route::get('/register/competition/itquiz', function (){
-    return view('register.competition.quiz.create');
-});
+//Route::get('/register/competition/itquiz', function (){
+//    return view('register.competition.quiz.create');
+//});
+
+Route::resource('/register/competition/itquiz', 'Competition\ITQuizController');
 Route::get('/register/competition/network', function (){
     return view('register.competition.network.create');
 });

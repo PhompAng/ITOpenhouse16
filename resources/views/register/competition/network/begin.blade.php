@@ -33,7 +33,7 @@
                     ต่อไปนี้</strong></li>
                     <ul>
                         <li>ทางโทรสารหมายเลข 0-2723-4946</li>
-                        <li>ทางอีเมล ที่ <a hraf="openhouse@it.kmitl.ac.th">openhouse@it.kmitl.ac.th</a></li>
+                        <li>ทางอีเมล ที่ <a href="mailto:openhouse@it.kmitl.ac.th">openhouse@it.kmitl.ac.th</a></li>
                     </ul>
                 <li><strong>รับสมัครตั้งแต่วันจันทร์ที่ 11 กรกฏาคม 2559 ถึงวันจันทร์ที่ 8 สิงหาคม 2559 โดย
                     ยึดตามวันที่ใบสมัคร</strong></li>

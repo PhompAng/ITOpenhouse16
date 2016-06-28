@@ -26,7 +26,7 @@
                 </li>
                 <ul>
                     <li>1. ทางโทรสารหมายเลข 0-2723-4946</li>
-                    <li>2. ทางอีเมล ที่ <a href="http://openhouse@it.kmitl.ac.th">openhouse@it.kmitl.ac.th</a></li>
+                    <li>2. ทางอีเมล ที่ <a href="mailto:http://openhouse@it.kmitl.ac.th">openhouse@it.kmitl.ac.th</a></li>
                 </ul>
                 <li>รับสมัครตั้งแต่วันจันทร์ที่ 11 กรกฎาคม 2559 ถึงวันจันทร์ที่ 8 สิงหาคม 2559 โดยยึดตามวันที่ส่งใบรับสมัคร</li>
                 <li>คณะกรรมการจะประกาศรายชื่อทีมที่มีสิทธิ์เข้าแข่งขันในวันเสาร์ที่ 13 สิงหาคม 2559 ทางเว็บไซต์ openhouse.it.kmitl.ac.th</li>

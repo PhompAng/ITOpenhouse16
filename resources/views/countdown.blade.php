@@ -162,11 +162,11 @@
                 </ul>
                 <a class='dropdown-button btn btn-large' href='#' data-activates='dropdown2'>ลงทะเบียนแข่งขัน</a>
                 <ul id='dropdown2' class='dropdown-content'>
-                    <li><a href="{{URL('/register/competition/esport')}}">esport</a></li>
-                    <li><a href="{{URL('/register/competition/network')}}">network</a></li>
-                    <li><a href="{{URL('/register/competition/php')}}">php</a></li>
-                    <li><a href="{{URL('/register/competition/pitching')}}">pitching</a></li>
-                    <li><a href="{{URL('/register/competition/itquiz')}}">itquiz</a></li>
+                    <li><a href="{{URL('/register/competition/esport')}}">การแข่งขันกีฬาอิเล็กทรอนิกส์</a></li>
+                    <li><a href="{{URL('/register/competition/network')}}">การแข่งขันความปลอดภัยของระบบคอมพิวเตอร์</a></li>
+                    <li><a href="{{URL('/register/competition/php')}}">การแข่งขันพัฒนาเว็บไซต์</a></li>
+                    <li><a href="{{URL('/register/competition/pitching')}}">การแข่งขันการนำเสนอแผนธุรกิจ</a></li>
+                    <li><a href="{{URL('/register/competition/itquiz')}}">การแข่งขันตอบคำถามด้านเทคโนโลยีสารสนเทศ</a></li>
                 </ul>
             </div>
         </div>

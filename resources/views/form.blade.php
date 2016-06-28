@@ -24,7 +24,7 @@
         <div class="container regis">
         	<section class="regis-header">
                 <h1 class="text-center">ลงทะเบียนเข้าชมงานของบุคคลทั่วไป</h1>
-                <h2 class="text-center"><small>วันศุกร์ที่ 7 พฤศจิกายน 2557</small></h2>
+                <h2 class="text-center"><small>วันที่ 26 สิงหาคม 2559</small></h2>
             </section>
             <section class="regis-form">
                 <form method="POST" action="https://openhouse.it.kmitl.ac.th/register/guest/common" accept-charset="UTF-8"><input name="_token" type="hidden" value="QRmRyV6b04Elnyf4LsX2kC6MTxaW6cxOP6GZjIhz">

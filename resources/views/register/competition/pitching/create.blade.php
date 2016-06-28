@@ -3,7 +3,7 @@
     <div class="container regis">
         <section class="regis-header">
             <h1 class="text-center">ลงทะเบียนการแข่งขัน Pitching</h1>
-            <h2 class="text-center"><small>วันศุกร์ที่ 7 พฤศจิกายน 2557</small></h2>
+            <h2 class="text-center"><small>วันที่ 26 สิงหาคม 2559</small></h2>
         </section>
         <section class="regis-error">
             @if (count($errors) > 0)

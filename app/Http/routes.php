@@ -19,7 +19,7 @@ Route::get('/', function () {
 
 /*---Test---*/
 Route::get('/test', function (){
-    return view('register.competition.quiz.create');
+    return view('register.competition.esport.begin');
 });
 
 //Register
@@ -57,19 +57,25 @@ Route::post('/register/guest_school',[
 //    return view('register.competition.quiz.create');
 //});
 
+//Route Resource Competition
 Route::resource('/register/competition/itquiz', 'Competition\ITQuizController');
-Route::get('/register/competition/network', function (){
-    return view('register.competition.network.create');
-});
-Route::get('/register/competition/php', function (){
-    return view('register.competition.php.create');
-});
-Route::get('/register/competition/pitching', function (){
-    return view('register.competition.pitching.create');
-});
-Route::get('/register/competition/esport', function (){
-    return view('register.competition.esport.create');
-});
+Route::resource('/register/competition/esport', 'Competition\ESportController');
+Route::resource('/register/competition/pitching', 'Competition\ITPitchingController');
+Route::resource('/register/competition/network', 'Competition\NetworkController');
+Route::resource('/register/competition/php', 'Competition\PhpJavaScriptController');
+
+//Route::get('/register/competition/network', function (){
+//    return view('register.competition.network.create');
+//});
+//Route::get('/register/competition/php', function (){
+//    return view('register.competition.php.create');
+//});
+//Route::get('/register/competition/pitching', function (){
+//    return view('register.competition.pitching.create');
+//});
+//Route::get('/register/competition/esport', function (){
+//    return view('register.competition.esport.create');
+//});
 
 Route::get('/form', function () {
     return view('form');

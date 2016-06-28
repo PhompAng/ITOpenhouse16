@@ -52,3 +52,7 @@ body {
     background-color: #4685BA;
     box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.18), 0 4px 10px 0 rgba(0, 0, 0, 0.15);
 }
+li {
+    font-size: 15px;
+    line-height: 1.8;
+}

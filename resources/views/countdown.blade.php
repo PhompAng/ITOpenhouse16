@@ -45,6 +45,9 @@
                 margin: 0 auto;
                 width: 70%;
             }
+            .dropdown-button {
+                margin: 0 20px;
+            }
             svg {
                 width: 180px;
                 height: 100px;
@@ -156,6 +159,14 @@
                     <li><a href="{{URL('/register/guest')}}">ลงทะเบียนของบุคคลทั่วไป</a></li>
                     <li><a href="{{URL('/register/guest_student')}}">ลงทะเบียนของนักเรียน/นักศึกษา</a></li>
                     <li><a href="{{URL('/register/guest_school')}}">ลงทะเบียนของโรงเรียน</a></li>
+                </ul>
+                <a class='dropdown-button btn btn-large' href='#' data-activates='dropdown2'>ลงทะเบียนแข่งขัน</a>
+                <ul id='dropdown2' class='dropdown-content'>
+                    <li><a href="{{URL('/register/competition/esport')}}">esport</a></li>
+                    <li><a href="{{URL('/register/competition/network')}}">network</a></li>
+                    <li><a href="{{URL('/register/competition/php')}}">php</a></li>
+                    <li><a href="{{URL('/register/competition/pitching')}}">pitching</a></li>
+                    <li><a href="{{URL('/register/competition/itquiz')}}">itquiz</a></li>
                 </ul>
             </div>
         </div>

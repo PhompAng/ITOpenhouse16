@@ -29,7 +29,7 @@
                 <div class="row">
                     <div class="col-md-6 col-xs-12">
                         <label for="teamName">ชื่อทีม</label>
-                        <input type="text" class="form-control" placeholder="teamName" name="teamName" required>
+                        <input type="text" class="form-control" placeholder="ITKMTIL" name="teamName" required>
                     </div>
                 </div>
                 {{--สมาชิก--}}
@@ -41,7 +41,7 @@
                             <div class="col-xs-5">
                                 <div class="form-group">
                                     <label>คำนำหน้าชื่อ</label>
-                                    <select class="form-control" name="prefix" required>
+                                    <select class="form-control" name="prefix[]" required>
                                         <option value="นาย" {{  (old('prefix') == "นาย" ? "selected":"") }}>นาย</option>
                                         <option value="นาง" {{ (old('prefix') == "นาง" ? "selected":"") }}>นาง</option>
                                         <option value="นางสาว" {{ (old('prefix') == "นางสาว" ? "selected":"") }}>นางสาว</option>
@@ -51,7 +51,7 @@
                             <div class="col-xs-7">
                                 <div class="form-group">
                                     <label>ชื่อ</label>
-                                    <input type="text" class="form-control" placeholder="ไอที" name="name" required value="{{ old('name') }}">
+                                    <input type="text" class="form-control" placeholder="ไอที" name="name[]" required value="{{ old('name') }}">
                                 </div>
                             </div>
                         </div>
@@ -59,7 +59,7 @@
                     <div class="col-md-6 col-xs-12">
                         <div class="form-group">
                             <label>นามสกุล</label>
-                            <input type="text" class="form-control" placeholder="ลาดกระบัง" name="surname" required value="{{ old('surname') }}">
+                            <input type="text" class="form-control" placeholder="ลาดกระบัง" name="surname[]" required value="{{ old('surname') }}">
                         </div>
                     </div>
                 </div>
@@ -67,7 +67,7 @@
                     <div class="col-md-4 col-xs-6">
                         <div class="form-group">
                             <label>ระดับการศึกษา</label>
-                            <select class="form-control" name="class" required>
+                            <select class="form-control" name="class[]" required>
                                 <option value="4">ม. 4</option>
                                 <option value="5">ม. 5</option>
                                 <option value="6" selected="selected">ม. 6</option>
@@ -83,7 +83,7 @@
                             <div class="col-xs-5">
                                 <div class="form-group">
                                     <label>คำนำหน้าชื่อ</label>
-                                    <select class="form-control" name="prefix" required>
+                                    <select class="form-control" name="prefix[]" required>
                                         <option value="นาย" {{  (old('prefix') == "นาย" ? "selected":"") }}>นาย</option>
                                         <option value="นาง" {{ (old('prefix') == "นาง" ? "selected":"") }}>นาง</option>
                                         <option value="นางสาว" {{ (old('prefix') == "นางสาว" ? "selected":"") }}>นางสาว</option>
@@ -93,7 +93,7 @@
                             <div class="col-xs-7">
                                 <div class="form-group">
                                     <label>ชื่อ</label>
-                                    <input type="text" class="form-control" placeholder="ไอที" name="name" required value="{{ old('name') }}">
+                                    <input type="text" class="form-control" placeholder="ไอที" name="name[]" required value="{{ old('name') }}">
                                 </div>
                             </div>
                         </div>
@@ -101,7 +101,7 @@
                     <div class="col-md-6 col-xs-12">
                         <div class="form-group">
                             <label>นามสกุล</label>
-                            <input type="text" class="form-control" placeholder="ลาดกระบัง" name="surname" required value="{{ old('surname') }}">
+                            <input type="text" class="form-control" placeholder="ลาดกระบัง" name="surname[]" required value="{{ old('surname') }}">
                         </div>
                     </div>
                 </div>
@@ -109,7 +109,7 @@
                     <div class="col-md-4 col-xs-6">
                         <div class="form-group">
                             <label>ระดับการศึกษา</label>
-                            <select class="form-control" name="class" required>
+                            <select class="form-control" name="class[]" required>
                                 <option value="4">ม. 4</option>
                                 <option value="5">ม. 5</option>
                                 <option value="6" selected="selected">ม. 6</option>
@@ -125,7 +125,7 @@
                             <div class="col-xs-5">
                                 <div class="form-group">
                                     <label>คำนำหน้าชื่อ</label>
-                                    <select class="form-control" name="prefix" required>
+                                    <select class="form-control" name="prefix[]" required>
                                         <option value="นาย" {{  (old('prefix') == "นาย" ? "selected":"") }}>นาย</option>
                                         <option value="นาง" {{ (old('prefix') == "นาง" ? "selected":"") }}>นาง</option>
                                         <option value="นางสาว" {{ (old('prefix') == "นางสาว" ? "selected":"") }}>นางสาว</option>
@@ -135,7 +135,7 @@
                             <div class="col-xs-7">
                                 <div class="form-group">
                                     <label>ชื่อ</label>
-                                    <input type="text" class="form-control" placeholder="ไอที" name="name" required value="{{ old('name') }}">
+                                    <input type="text" class="form-control" placeholder="ไอที" name="name[]" required value="{{ old('name') }}">
                                 </div>
                             </div>
                         </div>
@@ -143,7 +143,7 @@
                     <div class="col-md-6 col-xs-12">
                         <div class="form-group">
                             <label>นามสกุล</label>
-                            <input type="text" class="form-control" placeholder="ลาดกระบัง" name="surname" required value="{{ old('surname') }}">
+                            <input type="text" class="form-control" placeholder="ลาดกระบัง" name="surname[]" required value="{{ old('surname') }}">
                         </div>
                     </div>
                 </div>
@@ -151,7 +151,7 @@
                     <div class="col-md-4 col-xs-6">
                         <div class="form-group">
                             <label>ระดับการศึกษา</label>
-                            <select class="form-control" name="class" required>
+                            <select class="form-control" name="class[]" required>
                                 <option value="4">ม. 4</option>
                                 <option value="5">ม. 5</option>
                                 <option value="6" selected="selected">ม. 6</option>
@@ -168,7 +168,7 @@
                     <div class="col-md-6 col-xs-6">
                         <div class="form-group">
                             <label for="school">โรงเรียน</label>
-                            <input type="text" class="form-control" placeholder="School" name="school" required>
+                            <input type="text" class="form-control" placeholder="ชื่อโรงเรียน" name="school" required>
                         </div>
                     </div>
                 </div>
@@ -179,19 +179,19 @@
                     <div class="col-md-2 col-xs-4">
                         <div class="form-group">
                             <label>คำนำหน้าชื่อ</label>
-                            <input type="text" class="form-control" placeholder="prefix" name="teacherPrefix" required>
+                            <input type="text" class="form-control" placeholder="นาย" name="teacherPrefix" required>
                         </div>
                     </div>
                     <div class="col-md-5 col-xs-8">
                         <div class="form-group">
                             <label for="teacherName">ชื่อ</label>
-                            <input type="text" class="form-control" placeholder="teacherName" name="teacherName" required>
+                            <input type="text" class="form-control" placeholder="ไอที" name="teacherName" required>
                         </div>
                     </div>
                     <div class="col-md-5 col-xs-12">
                         <div class="form-group">
                             <label for="teacherSurname">นามสกุล</label>
-                            <input type="text" class="form-control" placeholder="teacherSurname" name="teacherSurname" required>
+                            <input type="text" class="form-control" placeholder="ลาดกระบัง" name="teacherSurname" required>
                         </div>
                     </div>
                 </div>
@@ -199,7 +199,7 @@
                     <div class="col-md-6 col-xs-12">
                         <div class="form-group">
                             <label for="teacherPhone">เบอร์โทร</label>
-                            <input type="text" class="form-control" placeholder="teacherPhone" name="teacherPhone" required>
+                            <input type="text" class="form-control" placeholder="e.g. 080808xxxx" name="teacherPhone" required>
                         </div>
                     </div>
                 </div>
@@ -210,7 +210,7 @@
                     <div class="col-md-6 col-xs-12">
                         <div class="form-group">
                             <label for="concept">ชื่อแนวคิด</label>
-                            <input type="text" class="form-control" placeholder="concept" name="concept" required>
+                            <input type="text" class="form-control" placeholder="ชื่อแนวคิด" name="concept" required>
                         </div>
                     </div>
                 </div>
@@ -218,7 +218,7 @@
                     <div class="col-md-6 col-xs-12">
                         <div class="form-group">
                             <label for="conceptDesc">รายละเอียดแนวคิด</label>
-                            <textarea name="conceptDesc" id="conceptDesc" class="form-control" cols="30" rows="10"></textarea>
+                            <textarea name="conceptDesc" id="conceptDesc" class="form-control" cols="30" rows="10" required></textarea>
                         </div>
                     </div>
                 </div>
@@ -226,15 +226,13 @@
                     <div class="col-md-6 col-xs-12">
                         <div class="form-group">
                             <label for="businessConcept">Business Concept</label>
-                            <input type="file" id="businessConcept">
-                            <p class="help-block">Example block-level help text here.</p>
+                            <input type="file" id="businessConcept" name="conceptFile" required>
                         </div>
                     </div>
                     <div class="col-md-6 col-xs-12">
                         <div class="form-group">
                             <label for="storyboard">Storyboard</label>
-                            <input type="file" id="storyboard">
-                            <p class="help-block">Example block-level help text here.</p>
+                            <input type="file" id="storyboard" name="storyboardFile" required>
                         </div>
                     </div>
                 </div>

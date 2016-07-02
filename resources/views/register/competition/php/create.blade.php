@@ -29,7 +29,7 @@
                 <div class="row">
                     <div class="col-md-6 col-xs-12">
                         <label for="teamName">ชื่อทีม</label>
-                        <input type="text" class="form-control" placeholder="teamName" name="teamName" required>
+                        <input type="text" class="form-control" placeholder="ITKMITL" name="teamName" required>
                     </div>
                 </div>
                 {{--สมาชิก--}}
@@ -41,7 +41,7 @@
                             <div class="col-xs-5">
                                 <div class="form-group">
                                     <label>คำนำหน้าชื่อ</label>
-                                    <select class="form-control" name="prefix" required>
+                                    <select class="form-control" name="prefix[]" required>
                                         <option value="นาย" {{  (old('prefix') == "นาย" ? "selected":"") }}>นาย</option>
                                         <option value="นาง" {{ (old('prefix') == "นาง" ? "selected":"") }}>นาง</option>
                                         <option value="นางสาว" {{ (old('prefix') == "นางสาว" ? "selected":"") }}>นางสาว</option>
@@ -51,7 +51,7 @@
                             <div class="col-xs-7">
                                 <div class="form-group">
                                     <label>ชื่อ</label>
-                                    <input type="text" class="form-control" placeholder="ไอที" name="name" required value="{{ old('name') }}">
+                                    <input type="text" class="form-control" placeholder="ไอที" name="name[]" required value="{{ old('name') }}">
                                 </div>
                             </div>
                         </div>
@@ -59,7 +59,7 @@
                     <div class="col-md-6 col-xs-12">
                         <div class="form-group">
                             <label>นามสกุล</label>
-                            <input type="text" class="form-control" placeholder="ลาดกระบัง" name="surname" required value="{{ old('surname') }}">
+                            <input type="text" class="form-control" placeholder="ลาดกระบัง" name="surname[]" required value="{{ old('surname') }}">
                         </div>
                     </div>
                 </div>
@@ -67,7 +67,7 @@
                     <div class="col-md-4 col-xs-6">
                         <div class="form-group">
                             <label>ระดับการศึกษา</label>
-                            <select class="form-control" name="class" required>
+                            <select class="form-control" name="class[]" required>
                                 <option value="4">ม. 4</option>
                                 <option value="5">ม. 5</option>
                                 <option value="6" selected="selected">ม. 6</option>
@@ -78,7 +78,7 @@
                     <div class="col-md-8 col-xs-6">
                         <div class="form-group">
                             <label>อีเมล</label>
-                            <input type="text" class="form-control" placeholder="e.g. openhouse@it.kmitl.ac.th" name="email" required value="{{ old('email') }}">
+                            <input type="text" class="form-control" placeholder="e.g. openhouse@it.kmitl.ac.th" name="email[]" required value="{{ old('email') }}">
                         </div>
                     </div>
                 </div>
@@ -89,7 +89,7 @@
                             <div class="col-xs-5">
                                 <div class="form-group">
                                     <label>คำนำหน้าชื่อ</label>
-                                    <select class="form-control" name="prefix" required>
+                                    <select class="form-control" name="prefix[]" required>
                                         <option value="นาย" {{  (old('prefix') == "นาย" ? "selected":"") }}>นาย</option>
                                         <option value="นาง" {{ (old('prefix') == "นาง" ? "selected":"") }}>นาง</option>
                                         <option value="นางสาว" {{ (old('prefix') == "นางสาว" ? "selected":"") }}>นางสาว</option>
@@ -99,7 +99,7 @@
                             <div class="col-xs-7">
                                 <div class="form-group">
                                     <label>ชื่อ</label>
-                                    <input type="text" class="form-control" placeholder="ไอที" name="name" required value="{{ old('name') }}">
+                                    <input type="text" class="form-control" placeholder="ไอที" name="name[]" required value="{{ old('name') }}">
                                 </div>
                             </div>
                         </div>
@@ -107,7 +107,7 @@
                     <div class="col-md-6 col-xs-12">
                         <div class="form-group">
                             <label>นามสกุล</label>
-                            <input type="text" class="form-control" placeholder="ลาดกระบัง" name="surname" required value="{{ old('surname') }}">
+                            <input type="text" class="form-control" placeholder="ลาดกระบัง" name="surname[]" required value="{{ old('surname') }}">
                         </div>
                     </div>
                 </div>
@@ -115,7 +115,7 @@
                     <div class="col-md-4 col-xs-6">
                         <div class="form-group">
                             <label>ระดับการศึกษา</label>
-                            <select class="form-control" name="class" required>
+                            <select class="form-control" name="class[]" required>
                                 <option value="4">ม. 4</option>
                                 <option value="5">ม. 5</option>
                                 <option value="6" selected="selected">ม. 6</option>
@@ -126,7 +126,7 @@
                     <div class="col-md-8 col-xs-6">
                         <div class="form-group">
                             <label>อีเมล</label>
-                            <input type="text" class="form-control" placeholder="e.g. openhouse@it.kmitl.ac.th" name="email" required value="{{ old('email') }}">
+                            <input type="text" class="form-control" placeholder="e.g. openhouse@it.kmitl.ac.th" name="email[]" required value="{{ old('email') }}">
                         </div>
                     </div>
                 </div>
@@ -138,7 +138,7 @@
                     <div class="col-md-6 col-xs-6">
                         <div class="form-group">
                             <label for="school">โรงเรียน</label>
-                            <input type="text" class="form-control" placeholder="School" name="school" required>
+                            <input type="text" class="form-control" placeholder="ชื่อโรงเรียน" name="school" required>
                         </div>
                     </div>
                 </div>
@@ -146,13 +146,13 @@
                     <div class="col-md-6 col-xs-12">
                         <div class="form-group">
                             <label for="schoolAddr">ที่อยู่</label>
-                            <input type="text" class="form-control" placeholder="schoolAddr">
+                            <input type="text" class="form-control" placeholder="ที่อยู่โรงเรียน" required>
                         </div>
                     </div>
                     <div class="col-md-6 col-xs-12">
                         <div class="form-group">
                             <label for="schoolProvince">จังหวัด</label>
-                            <input type="text" class="form-control" placeholder="schoolProvince" name="schoolProvince" required>
+                            <input type="text" class="form-control" placeholder="e.g. กรุงเทพ" name="schoolProvince" required>
                         </div>
                     </div>
                 </div>
@@ -163,19 +163,19 @@
                     <div class="col-md-2 col-xs-4">
                         <div class="form-group">
                             <label>คำนำหน้าชื่อ</label>
-                            <input type="text" class="form-control" placeholder="prefix" name="teacherPrefix" required>
+                            <input type="text" class="form-control" placeholder="นาย" name="teacherPrefix" required>
                         </div>
                     </div>
                     <div class="col-md-5 col-xs-8">
                         <div class="form-group">
                             <label for="teacherName">ชื่อ</label>
-                            <input type="text" class="form-control" placeholder="teacherName" name="teacherName" required>
+                            <input type="text" class="form-control" placeholder="ไิอที" name="teacherName" required>
                         </div>
                     </div>
                     <div class="col-md-5 col-xs-12">
                         <div class="form-group">
                             <label for="teacherSurname">นามสกุล</label>
-                            <input type="text" class="form-control" placeholder="teacherSurname" name="teacherSurname" required>
+                            <input type="text" class="form-control" placeholder="ลาดกระบัง" name="teacherSurname" required>
                         </div>
                     </div>
                 </div>
@@ -183,13 +183,13 @@
                     <div class="col-md-6 col-xs-12">
                         <div class="form-group">
                             <label for="teacherEmail">อีเมล</label>
-                            <input type="text" class="form-control" placeholder="teacherEmail" name="teacherSurname" required>
+                            <input type="text" class="form-control" placeholder="e.g. openhouse@it.kmitl.ac.th" name="teacherSurname" required>
                         </div>
                     </div>
                     <div class="col-md-6 col-xs-12">
                         <div class="form-group">
                             <label for="teacherPhone">เบอร์โทร</label>
-                            <input type="text" class="form-control" placeholder="teacherPhone" name="teacherPhone" required>
+                            <input type="text" class="form-control" placeholder="e.g. 080808xxxx" name="teacherPhone" required>
                         </div>
                     </div>
                 </div>

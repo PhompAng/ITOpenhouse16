@@ -22,7 +22,7 @@
             @endif
         </section>
         <section class="regis-form">
-            <form action="{{url('/register/guest_student')}}" method="post">
+            <form action="{{url('/register/competition/network')}}" method="post">
                 {!! csrf_field() !!}
                 {{--ทีม--}}
                 <h3>ชื่อทีม</h3>

@@ -2,9 +2,11 @@
 
 namespace App\Http\Controllers\Competition;
 
+use App\Models\ESport;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Http\Requests;
+use Illuminate\Support\Facades\Validator;
 
 class ESportController extends Controller
 {
@@ -36,7 +38,60 @@ class ESportController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $inputs = $request->all();
+
+        $rules = [
+
+            'team_name'             => 'required',
+            'team_fb'			    => 'required',
+            //'member[]'				=> 'required',
+            'school'				=> 'required',
+            'school_addr'			=> 'required',
+            'school_province'		=> 'required',
+            'teacher_name'		    => 'required',
+            'teacher_surname'		=> 'required',
+            'teacher_phone'			=> 'required|regex:/^0[0-9]{1,2}[0-9]{7}$/'
+        ];
+
+        $messages = [
+
+            'team_name.required'             =>  'กรุณากรอก  ชื่อทีม',
+            'team_fb.required'               =>  'กรุณากรอก facebookที่สามารถติดต่อทีม',
+            //member?
+            'school.required'                =>  'กรุณากรอก  ชื่อโรงเรียน',
+            'school_addr.required'           =>  'กรุณากรอก  ที่อยู่โรงเรียน',
+            'school_province.required'       =>  'กรุณากรอก  จังหวัด',
+            'teacher_name.required'          =>  'กรุณากรอก  ชื่ออาจารย์ผู้ควบคุมทีม',
+            'teacher_surname.required'       =>  'กรุณากรอก   นามสกุลอาจารย์ผู้ควบคุมทีม',
+            'teacher_phone.required'         =>  'กรุณากรอก  เบอร์โทรศัพท์อาจารย์ผู้ควบคุมทีม',
+            'teacher_phone.regex'            =>  'รูปแบบ เบอร์โทรศัพท์อาจารย์ผู้ควบคุมทีม ไม่ถูกต้อง'
+
+        ];
+
+        $validator = Validator::make($inputs, $rules, $messages);
+        if($validator->fails()){
+            return redirect('/register/competition/esport/create')->withInput()->withErrors($validator);
+        }
+
+        $esport = new ESport();
+        $esport->fill($request->all());
+
+        $members = [];
+        for ($i = 0; $i < 7; $i++){
+            $membername = 'member'.($i+1);
+            $member['name'] = $inputs['name'][$i];
+            $member['surname'] = $inputs['surname'][$i];
+            $member['steam'] = $inputs['steam'][$i];
+            $member['facebook'] = $inputs['facebook'][$i];
+            $member['phone'] = $inputs['phone'][$i];
+            $members[$membername] = $member;
+        }
+
+        $json = json_encode($members);
+        $esport->member = $json;
+        $esport->save();
+
+        return view('register.competition.esport.create', ['success' => 1]);
     }
 
     /**

@@ -22,7 +22,7 @@ Route::get('/test', function (){
     return view('register.competition.esport.begin');
 });
 
-//Register
+//Guest Register
 Route::get('/register/guest',[
     'as' => 'createRegisterGuest',
     'uses' => 'Guest\RegisterController@createGuestRegister'
@@ -52,6 +52,13 @@ Route::post('/register/guest_school',[
     'as' => 'storeGuestSchoolRegister',
     'uses' => 'Guest\RegisterController@storeGuestSchoolRegister'
 ]);
+
+//Competitive Register
+Route::post('/register/competition/esport/create', 'Competition\EsportController@store');
+Route::post('/register/competition/pitching/create', 'Competition\ITPitchingController@store');
+Route::post('/register/competition/itquiz/create', 'Competition\ITQuizController@store');
+Route::post('/register/competition/network/create', 'Competition\NetworkController@store');
+Route::post('/register/competition/php/create', 'Competition\PhpJavaScriptController@store');
 
 //Route::get('/register/competition/itquiz', function (){
 //    return view('register.competition.quiz.create');

@@ -20,6 +20,7 @@ class CreateEsportTable extends Migration
             $table->text('school');
             $table->text('school_addr');
             $table->text('school_province');
+            $table->text('teacher_prefix');
             $table->text('teacher_name');
             $table->text('teacher_surname');
             $table->text('teacher_phone');

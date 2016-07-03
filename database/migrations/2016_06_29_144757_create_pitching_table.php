@@ -17,6 +17,7 @@ class CreatePitchingTable extends Migration
             $table->text('team_name');
             $table->text('member'); //json here
             $table->text('school');
+            $table->text('teacher_prefix');
             $table->text('teacher_name');
             $table->text('teacher_surname');
             $table->text('teacher_phone');

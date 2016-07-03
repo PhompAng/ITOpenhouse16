@@ -23,7 +23,7 @@
         </section>
         <section class="regis-form">
 
-            <form action="{{url('/register/competition/esport/create')}}" method="post">
+            <form action="{{url('/register/competition/esport')}}" method="post">
 
                 {!! csrf_field() !!}
                 {{--ทีม--}}

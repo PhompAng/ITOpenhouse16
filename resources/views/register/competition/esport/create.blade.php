@@ -303,17 +303,17 @@
                             <div class="col-xs-5">
                                 <div class="form-group">
                                     <label>คำนำหน้าชื่อ</label>
-                                    <select class="form-control" name="prefix[]">
-                                        <option value="นาย" {{  (old('prefix')[5] == "นาย" ? "selected":"") }}>นาย</option>
-                                        <option value="นาง" {{ (old('prefix')[5] == "นาง" ? "selected":"") }}>นาง</option>
-                                        <option value="นางสาว" {{ (old('prefix')[5] == "นางสาว" ? "selected":"") }}>นางสาว</option>
+                                    <select class="form-control" name="subPrefix[]">
+                                        <option value="นาย" {{  (old('subPrefix')[0] == "นาย" ? "selected":"") }}>นาย</option>
+                                        <option value="นาง" {{ (old('subPrefix')[0] == "นาง" ? "selected":"") }}>นาง</option>
+                                        <option value="นางสาว" {{ (old('subPrefix')[0] == "นางสาว" ? "selected":"") }}>นางสาว</option>
                                     </select>
                                 </div>
                             </div>
                             <div class="col-xs-7">
                                 <div class="form-group">
                                     <label>ชื่อ</label>
-                                    <input type="text" class="form-control" placeholder="ไอที" name="name[]" value="{{ old('name')[5] }}">
+                                    <input type="text" class="form-control" placeholder="ไอที" name="subName[]" value="{{ old('subName')[0] }}">
                                 </div>
                             </div>
                         </div>
@@ -321,7 +321,7 @@
                     <div class="col-md-6 col-xs-12">
                         <div class="form-group">
                             <label>นามสกุล</label>
-                            <input type="text" class="form-control" placeholder="ลาดกระบัง" name="surname[]" value="{{ old('surname')[5] }}">
+                            <input type="text" class="form-control" placeholder="ลาดกระบัง" name="subSurname[]" value="{{ old('subSurname')[0] }}">
                         </div>
                     </div>
                 </div>
@@ -329,13 +329,13 @@
                     <div class="col-md-6 col-xs-12">
                         <div class="form-group">
                             <label>Steam</label>
-                            <input type="text" class="form-control" placeholder="e.g. https://steamcommunity.com/id/itkmitl" name="steam[]" value="{{ old('steam')[5] }}">
+                            <input type="text" class="form-control" placeholder="e.g. https://steamcommunity.com/id/itkmitl" name="subSteam[]" value="{{ old('subSteam')[0] }}">
                         </div>
                     </div>
                     <div class="col-md-6 col-xs-12">
                         <div class="form-group">
                             <label>facebook</label>
-                            <input type="text" class="form-control" placeholder="e.g. fb.com/ITLadkrabangOpenhouse" name="facebook[]" value="{{ old('facebook')[5] }}">
+                            <input type="text" class="form-control" placeholder="e.g. fb.com/ITLadkrabangOpenhouse" name="subFacebook[]" value="{{ old('subFacebook')[0] }}">
                         </div>
                     </div>
                 </div>
@@ -343,7 +343,7 @@
                     <div class="col-md-6 col-xs-12">
                         <div class="form-group">
                             <label for="phone">เบอร์โทรศัพท์</label>
-                            <input type="text" class="form-control" placeholder="e.g. 080808xxxx" name="phone[]" value="{{old('phone')[5]}}">
+                            <input type="text" class="form-control" placeholder="e.g. 080808xxxx" name="subPhone[]" value="{{old('subPhone')[0]}}">
                         </div>
                     </div>
                 </div>
@@ -354,17 +354,17 @@
                             <div class="col-xs-5">
                                 <div class="form-group">
                                     <label>คำนำหน้าชื่อ</label>
-                                    <select class="form-control" name="prefix[]">
-                                        <option value="นาย" {{  (old('prefix')[6] == "นาย" ? "selected":"") }}>นาย</option>
-                                        <option value="นาง" {{ (old('prefix')[6] == "นาง" ? "selected":"") }}>นาง</option>
-                                        <option value="นางสาว" {{ (old('prefix')[6] == "นางสาว" ? "selected":"") }}>นางสาว</option>
+                                    <select class="form-control" name="subPrefix[]">
+                                        <option value="นาย" {{  (old('subPrefix')[1] == "นาย" ? "selected":"") }}>นาย</option>
+                                        <option value="นาง" {{ (old('subPrefix')[1] == "นาง" ? "selected":"") }}>นาง</option>
+                                        <option value="นางสาว" {{ (old('subPrefix')[1] == "นางสาว" ? "selected":"") }}>นางสาว</option>
                                     </select>
                                 </div>
                             </div>
                             <div class="col-xs-7">
                                 <div class="form-group">
                                     <label>ชื่อ</label>
-                                    <input type="text" class="form-control" placeholder="ไอที" name="name[]" value="{{ old('name')[6] }}">
+                                    <input type="text" class="form-control" placeholder="ไอที" name="subName[]" value="{{ old('subName')[1] }}">
                                 </div>
                             </div>
                         </div>
@@ -372,7 +372,7 @@
                     <div class="col-md-6 col-xs-12">
                         <div class="form-group">
                             <label>นามสกุล</label>
-                            <input type="text" class="form-control" placeholder="ลาดกระบัง" name="surname[]" value="{{ old('surname')[6] }}">
+                            <input type="text" class="form-control" placeholder="ลาดกระบัง" name="subSurname[]" value="{{ old('subSurname')[1] }}">
                         </div>
                     </div>
                 </div>
@@ -380,13 +380,13 @@
                     <div class="col-md-6 col-xs-12">
                         <div class="form-group">
                             <label>Steam</label>
-                            <input type="text" class="form-control" placeholder="e.g. https://steamcommunity.com/id/itkmitl" name="steam[]" value="{{ old('steam')[6] }}">
+                            <input type="text" class="form-control" placeholder="e.g. https://steamcommunity.com/id/itkmitl" name="subSteam[]" value="{{ old('subSteam')[1] }}">
                         </div>
                     </div>
                     <div class="col-md-6 col-xs-12">
                         <div class="form-group">
                             <label>facebook</label>
-                            <input type="text" class="form-control" placeholder="e.g. fb.com/ITLadkrabangOpenhouse" name="facebook[]" value="{{ old('facebook')[6] }}">
+                            <input type="text" class="form-control" placeholder="e.g. fb.com/ITLadkrabangOpenhouse" name="subFacebook[]" value="{{ old('subFacebook')[1] }}">
                         </div>
                     </div>
                 </div>
@@ -394,7 +394,7 @@
                     <div class="col-md-6 col-xs-12">
                         <div class="form-group">
                             <label for="phone">เบอร์โทรศัพท์</label>
-                            <input type="text" class="form-control" placeholder="e.g. 080808xxxx" name="phone[]" value ="{{old('phone')[6]}}">
+                            <input type="text" class="form-control" placeholder="e.g. 080808xxxx" name="subPhone[]" value ="{{old('subPhone')[1]}}">
                         </div>
                     </div>
                 </div>

@@ -46,16 +46,16 @@
                                 <div class="form-group">
                                     <label>คำนำหน้าชื่อ</label>
                                     <select class="form-control" name="prefix[]" required>
-                                        <option value="นาย" {{  (old('prefix') == "นาย" ? "selected":"") }}>นาย</option>
-                                        <option value="นาง" {{ (old('prefix') == "นาง" ? "selected":"") }}>นาง</option>
-                                        <option value="นางสาว" {{ (old('prefix') == "นางสาว" ? "selected":"") }}>นางสาว</option>
+                                        <option value="นาย" {{  (old('prefix')[0] == "นาย" ? "selected":"") }}>นาย</option>
+                                        <option value="นาง" {{ (old('prefix')[0] == "นาง" ? "selected":"") }}>นาง</option>
+                                        <option value="นางสาว" {{ (old('prefix')[0] == "นางสาว" ? "selected":"") }}>นางสาว</option>
                                     </select>
                                 </div>
                             </div>
                             <div class="col-xs-7">
                                 <div class="form-group">
                                     <label>ชื่อ</label>
-                                    <input type="text" class="form-control" placeholder="ไอที" name="name[]" required value="{{ old('name') }}">
+                                    <input type="text" class="form-control" placeholder="ไอที" name="name[]" required value="{{ old('name')[0] }}">
                                 </div>
                             </div>
                         </div>
@@ -63,7 +63,7 @@
                     <div class="col-md-6 col-xs-12">
                         <div class="form-group">
                             <label>นามสกุล</label>
-                            <input type="text" class="form-control" placeholder="ลาดกระบัง" name="surname[]" required value="{{ old('surname') }}">
+                            <input type="text" class="form-control" placeholder="ลาดกระบัง" name="surname[]" required value="{{ old('surname')[0] }}">
                         </div>
                     </div>
                 </div>
@@ -71,13 +71,13 @@
                     <div class="col-md-6 col-xs-12">
                         <div class="form-group">
                             <label>Steam</label>
-                            <input type="text" class="form-control" placeholder="steam" name="steam[]" required value="{{ old('steam') }}">
+                            <input type="text" class="form-control" placeholder="steam" name="steam[]" required value="{{ old('steam')[0] }}">
                         </div>
                     </div>
                     <div class="col-md-6 col-xs-12">
                         <div class="form-group">
                             <label>facebook</label>
-                            <input type="text" class="form-control" placeholder="e.g. fb.com/ITLadkrabangOpenhouse" name="facebook[]" required value="{{ old('facebook') }}">
+                            <input type="text" class="form-control" placeholder="e.g. fb.com/ITLadkrabangOpenhouse" name="facebook[]" value="{{ old('facebook')[0] }}" required>
                         </div>
                     </div>
                 </div>
@@ -85,7 +85,7 @@
                     <div class="col-md-6 col-xs-12">
                         <div class="form-group">
                             <label for="phone">เบอร์โทรศัพท์</label>
-                            <input type="text" class="form-control" placeholder="phone" name="phone[]" required>
+                            <input type="text" class="form-control" placeholder="phone" name="phone[]" required value="{{old('phone')[0]}}">
                         </div>
                     </div>
                 </div>
@@ -97,16 +97,16 @@
                                 <div class="form-group">
                                     <label>คำนำหน้าชื่อ</label>
                                     <select class="form-control" name="prefix[]" required>
-                                        <option value="นาย" {{  (old('prefix') == "นาย" ? "selected":"") }}>นาย</option>
-                                        <option value="นาง" {{ (old('prefix') == "นาง" ? "selected":"") }}>นาง</option>
-                                        <option value="นางสาว" {{ (old('prefix') == "นางสาว" ? "selected":"") }}>นางสาว</option>
+                                        <option value="นาย" {{  (old('prefix')[1] == "นาย" ? "selected":"") }}>นาย</option>
+                                        <option value="นาง" {{ (old('prefix')[1] == "นาง" ? "selected":"") }}>นาง</option>
+                                        <option value="นางสาว" {{ (old('prefix')[1] == "นางสาว" ? "selected":"") }}>นางสาว</option>
                                     </select>
                                 </div>
                             </div>
                             <div class="col-xs-7">
                                 <div class="form-group">
                                     <label>ชื่อ</label>
-                                    <input type="text" class="form-control" placeholder="ไอที" name="name[]" required value="{{ old('name') }}">
+                                    <input type="text" class="form-control" placeholder="ไอที" name="name[]" required value="{{ old('name')[1] }}">
                                 </div>
                             </div>
                         </div>
@@ -114,7 +114,7 @@
                     <div class="col-md-6 col-xs-12">
                         <div class="form-group">
                             <label>นามสกุล</label>
-                            <input type="text" class="form-control" placeholder="ลาดกระบัง" name="surname[]" required value="{{ old('surname') }}">
+                            <input type="text" class="form-control" placeholder="ลาดกระบัง" name="surname[]" required value="{{ old('surname')[1] }}">
                         </div>
                     </div>
                 </div>
@@ -122,13 +122,13 @@
                     <div class="col-md-6 col-xs-12">
                         <div class="form-group">
                             <label>Steam</label>
-                            <input type="text" class="form-control" placeholder="steam" name="steam[]" required value="{{ old('steam') }}">
+                            <input type="text" class="form-control" placeholder="steam" name="steam[]" required value="{{ old('steam')[1] }}">
                         </div>
                     </div>
                     <div class="col-md-6 col-xs-12">
                         <div class="form-group">
                             <label>facebook</label>
-                            <input type="text" class="form-control" placeholder="e.g. fb.com/ITLadkrabangOpenhouse" name="facebook[]" required value="{{ old('facebook') }}">
+                            <input type="text" class="form-control" placeholder="e.g. fb.com/ITLadkrabangOpenhouse" name="facebook[]"  value="{{ old('facebook')[1] }}" required>
                         </div>
                     </div>
                 </div>
@@ -136,7 +136,7 @@
                     <div class="col-md-6 col-xs-12">
                         <div class="form-group">
                             <label for="phone">เบอร์โทรศัพท์</label>
-                            <input type="text" class="form-control" placeholder="phone" name="phone[]" required>
+                            <input type="text" class="form-control" placeholder="phone" name="phone[]" value="{{old('phone')[1]}}" required>
                         </div>
                     </div>
                 </div>
@@ -148,16 +148,16 @@
                                 <div class="form-group">
                                     <label>คำนำหน้าชื่อ</label>
                                     <select class="form-control" name="prefix[]" required>
-                                        <option value="นาย" {{  (old('prefix') == "นาย" ? "selected":"") }}>นาย</option>
-                                        <option value="นาง" {{ (old('prefix') == "นาง" ? "selected":"") }}>นาง</option>
-                                        <option value="นางสาว" {{ (old('prefix') == "นางสาว" ? "selected":"") }}>นางสาว</option>
+                                        <option value="นาย" {{  (old('prefix')[2] == "นาย" ? "selected":"") }}>นาย</option>
+                                        <option value="นาง" {{ (old('prefix')[2] == "นาง" ? "selected":"") }}>นาง</option>
+                                        <option value="นางสาว" {{ (old('prefix')[2] == "นางสาว" ? "selected":"") }}>นางสาว</option>
                                     </select>
                                 </div>
                             </div>
                             <div class="col-xs-7">
                                 <div class="form-group">
                                     <label>ชื่อ</label>
-                                    <input type="text" class="form-control" placeholder="ไอที" name="name[]" required value="{{ old('name') }}">
+                                    <input type="text" class="form-control" placeholder="ไอที" name="name[]" required value="{{ old('name')[2] }}">
                                 </div>
                             </div>
                         </div>
@@ -165,7 +165,7 @@
                     <div class="col-md-6 col-xs-12">
                         <div class="form-group">
                             <label>นามสกุล</label>
-                            <input type="text" class="form-control" placeholder="ลาดกระบัง" name="surname[]" required value="{{ old('surname') }}">
+                            <input type="text" class="form-control" placeholder="ลาดกระบัง" name="surname[]" required value="{{ old('surname')[2] }}">
                         </div>
                     </div>
                 </div>
@@ -173,13 +173,13 @@
                     <div class="col-md-6 col-xs-12">
                         <div class="form-group">
                             <label>Steam</label>
-                            <input type="text" class="form-control" placeholder="steam" name="steam[]" required value="{{ old('steam') }}">
+                            <input type="text" class="form-control" placeholder="steam" name="steam[]" required value="{{ old('steam')[2] }}">
                         </div>
                     </div>
                     <div class="col-md-6 col-xs-12">
                         <div class="form-group">
                             <label>facebook</label>
-                            <input type="text" class="form-control" placeholder="e.g. fb.com/ITLadkrabangOpenhouse" name="facebook[]" required value="{{ old('facebook') }}">
+                            <input type="text" class="form-control" placeholder="e.g. fb.com/ITLadkrabangOpenhouse" name="facebook[]" value="{{old('facebook')[2]}}" required>
                         </div>
                     </div>
                 </div>
@@ -187,7 +187,7 @@
                     <div class="col-md-6 col-xs-12">
                         <div class="form-group">
                             <label for="phone">เบอร์โทรศัพท์</label>
-                            <input type="text" class="form-control" placeholder="phone" name="phone[]" required>
+                            <input type="text" class="form-control" placeholder="phone" name="phone[]" value="{{old('phone')[2]}}" required>
                         </div>
                     </div>
                 </div>
@@ -199,16 +199,16 @@
                                 <div class="form-group">
                                     <label>คำนำหน้าชื่อ</label>
                                     <select class="form-control" name="prefix[]" required>
-                                        <option value="นาย" {{  (old('prefix') == "นาย" ? "selected":"") }}>นาย</option>
-                                        <option value="นาง" {{ (old('prefix') == "นาง" ? "selected":"") }}>นาง</option>
-                                        <option value="นางสาว" {{ (old('prefix') == "นางสาว" ? "selected":"") }}>นางสาว</option>
+                                        <option value="นาย" {{  (old('prefix')[3] == "นาย" ? "selected":"") }}>นาย</option>
+                                        <option value="นาง" {{ (old('prefix')[3] == "นาง" ? "selected":"") }}>นาง</option>
+                                        <option value="นางสาว" {{ (old('prefix')[3] == "นางสาว" ? "selected":"") }}>นางสาว</option>
                                     </select>
                                 </div>
                             </div>
                             <div class="col-xs-7">
                                 <div class="form-group">
                                     <label>ชื่อ</label>
-                                    <input type="text" class="form-control" placeholder="ไอที" name="name[]" required value="{{ old('name') }}">
+                                    <input type="text" class="form-control" placeholder="ไอที" name="name[]" required value="{{ old('name')[3] }}">
                                 </div>
                             </div>
                         </div>
@@ -216,7 +216,7 @@
                     <div class="col-md-6 col-xs-12">
                         <div class="form-group">
                             <label>นามสกุล</label>
-                            <input type="text" class="form-control" placeholder="ลาดกระบัง" name="surname[]" required value="{{ old('surname') }}">
+                            <input type="text" class="form-control" placeholder="ลาดกระบัง" name="surname[]" required value="{{ old('surname')[3] }}">
                         </div>
                     </div>
                 </div>
@@ -224,13 +224,13 @@
                     <div class="col-md-6 col-xs-12">
                         <div class="form-group">
                             <label>Steam</label>
-                            <input type="text" class="form-control" placeholder="steam" name="steam[]" required value="{{ old('steam') }}">
+                            <input type="text" class="form-control" placeholder="steam" name="steam[]" required value="{{ old('steam')[3] }}">
                         </div>
                     </div>
                     <div class="col-md-6 col-xs-12">
                         <div class="form-group">
                             <label>facebook</label>
-                            <input type="text" class="form-control" placeholder="e.g. fb.com/ITLadkrabangOpenhouse" name="facebook[]" required value="{{ old('facebook') }}">
+                            <input type="text" class="form-control" placeholder="e.g. fb.com/ITLadkrabangOpenhouse" name="facebook[]" value="{{ old('facebook')[3] }}" required>
                         </div>
                     </div>
                 </div>
@@ -238,7 +238,7 @@
                     <div class="col-md-6 col-xs-12">
                         <div class="form-group">
                             <label for="phone">เบอร์โทรศัพท์</label>
-                            <input type="text" class="form-control" placeholder="phone" name="phone[]" required>
+                            <input type="text" class="form-control" placeholder="phone" name="phone[]" value="{{old('phone')[3]}}" required>
                         </div>
                     </div>
                 </div>
@@ -250,16 +250,16 @@
                                 <div class="form-group">
                                     <label>คำนำหน้าชื่อ</label>
                                     <select class="form-control" name="prefix[]" required>
-                                        <option value="นาย" {{  (old('prefix') == "นาย" ? "selected":"") }}>นาย</option>
-                                        <option value="นาง" {{ (old('prefix') == "นาง" ? "selected":"") }}>นาง</option>
-                                        <option value="นางสาว" {{ (old('prefix') == "นางสาว" ? "selected":"") }}>นางสาว</option>
+                                        <option value="นาย" {{  (old('prefix')[4] == "นาย" ? "selected":"") }}>นาย</option>
+                                        <option value="นาง" {{ (old('prefix')[4] == "นาง" ? "selected":"") }}>นาง</option>
+                                        <option value="นางสาว" {{ (old('prefix')[4] == "นางสาว" ? "selected":"") }}>นางสาว</option>
                                     </select>
                                 </div>
                             </div>
                             <div class="col-xs-7">
                                 <div class="form-group">
                                     <label>ชื่อ</label>
-                                    <input type="text" class="form-control" placeholder="ไอที" name="name[]" required value="{{ old('name') }}">
+                                    <input type="text" class="form-control" placeholder="ไอที" name="name[]" required value="{{ old('name')[4] }}">
                                 </div>
                             </div>
                         </div>
@@ -267,7 +267,7 @@
                     <div class="col-md-6 col-xs-12">
                         <div class="form-group">
                             <label>นามสกุล</label>
-                            <input type="text" class="form-control" placeholder="ลาดกระบัง" name="surname[]" required value="{{ old('surname') }}">
+                            <input type="text" class="form-control" placeholder="ลาดกระบัง" name="surname[]" required value="{{ old('surname')[4] }}">
                         </div>
                     </div>
                 </div>
@@ -275,13 +275,13 @@
                     <div class="col-md-6 col-xs-12">
                         <div class="form-group">
                             <label>Steam</label>
-                            <input type="text" class="form-control" placeholder="steam" name="steam[]" required value="{{ old('steam') }}">
+                            <input type="text" class="form-control" placeholder="steam" name="steam[]" required value="{{ old('steam')[4] }}">
                         </div>
                     </div>
                     <div class="col-md-6 col-xs-12">
                         <div class="form-group">
                             <label>facebook</label>
-                            <input type="text" class="form-control" placeholder="e.g. fb.com/ITLadkrabangOpenhouse" name="facebook[]" required value="{{ old('facebook') }}">
+                            <input type="text" class="form-control" placeholder="e.g. fb.com/ITLadkrabangOpenhouse" name="facebook[]" value="{{ old('facebook')[4] }}" required>
                         </div>
                     </div>
                 </div>
@@ -289,7 +289,7 @@
                     <div class="col-md-6 col-xs-12">
                         <div class="form-group">
                             <label for="phone">เบอร์โทรศัพท์</label>
-                            <input type="text" class="form-control" placeholder="phone" name="phone[]" required>
+                            <input type="text" class="form-control" placeholder="phone" name="phone[]" value="{{old('phone')[4]}}" required>
                         </div>
                     </div>
                 </div>
@@ -301,16 +301,16 @@
                                 <div class="form-group">
                                     <label>คำนำหน้าชื่อ</label>
                                     <select class="form-control" name="prefix[]" required>
-                                        <option value="นาย" {{  (old('prefix') == "นาย" ? "selected":"") }}>นาย</option>
-                                        <option value="นาง" {{ (old('prefix') == "นาง" ? "selected":"") }}>นาง</option>
-                                        <option value="นางสาว" {{ (old('prefix') == "นางสาว" ? "selected":"") }}>นางสาว</option>
+                                        <option value="นาย" {{  (old('prefix')[5] == "นาย" ? "selected":"") }}>นาย</option>
+                                        <option value="นาง" {{ (old('prefix')[5] == "นาง" ? "selected":"") }}>นาง</option>
+                                        <option value="นางสาว" {{ (old('prefix')[5] == "นางสาว" ? "selected":"") }}>นางสาว</option>
                                     </select>
                                 </div>
                             </div>
                             <div class="col-xs-7">
                                 <div class="form-group">
                                     <label>ชื่อ</label>
-                                    <input type="text" class="form-control" placeholder="ไอที" name="name[]" required value="{{ old('name') }}">
+                                    <input type="text" class="form-control" placeholder="ไอที" name="name[]" required value="{{ old('name')[5] }}">
                                 </div>
                             </div>
                         </div>
@@ -318,7 +318,7 @@
                     <div class="col-md-6 col-xs-12">
                         <div class="form-group">
                             <label>นามสกุล</label>
-                            <input type="text" class="form-control" placeholder="ลาดกระบัง" name="surname[]" required value="{{ old('surname') }}">
+                            <input type="text" class="form-control" placeholder="ลาดกระบัง" name="surname[]" required value="{{ old('surname')[5] }}">
                         </div>
                     </div>
                 </div>
@@ -326,13 +326,13 @@
                     <div class="col-md-6 col-xs-12">
                         <div class="form-group">
                             <label>Steam</label>
-                            <input type="text" class="form-control" placeholder="steam" name="steam[]" required value="{{ old('steam') }}">
+                            <input type="text" class="form-control" placeholder="steam" name="steam[]" required value="{{ old('steam')[5] }}">
                         </div>
                     </div>
                     <div class="col-md-6 col-xs-12">
                         <div class="form-group">
                             <label>facebook</label>
-                            <input type="text" class="form-control" placeholder="e.g. fb.com/ITLadkrabangOpenhouse" name="facebook[]" required value="{{ old('facebook') }}">
+                            <input type="text" class="form-control" placeholder="e.g. fb.com/ITLadkrabangOpenhouse" name="facebook[]" value="{{ old('facebook')[5] }}" required>
                         </div>
                     </div>
                 </div>
@@ -340,7 +340,7 @@
                     <div class="col-md-6 col-xs-12">
                         <div class="form-group">
                             <label for="phone">เบอร์โทรศัพท์</label>
-                            <input type="text" class="form-control" placeholder="phone" name="phone[]" required>
+                            <input type="text" class="form-control" placeholder="phone" name="phone[]" value="{{old('phone')[5]}}" required>
                         </div>
                     </div>
                 </div>
@@ -352,16 +352,16 @@
                                 <div class="form-group">
                                     <label>คำนำหน้าชื่อ</label>
                                     <select class="form-control" name="prefix[]" required>
-                                        <option value="นาย" {{  (old('prefix') == "นาย" ? "selected":"") }}>นาย</option>
-                                        <option value="นาง" {{ (old('prefix') == "นาง" ? "selected":"") }}>นาง</option>
-                                        <option value="นางสาว" {{ (old('prefix') == "นางสาว" ? "selected":"") }}>นางสาว</option>
+                                        <option value="นาย" {{  (old('prefix')[6] == "นาย" ? "selected":"") }}>นาย</option>
+                                        <option value="นาง" {{ (old('prefix')[6] == "นาง" ? "selected":"") }}>นาง</option>
+                                        <option value="นางสาว" {{ (old('prefix')[6] == "นางสาว" ? "selected":"") }}>นางสาว</option>
                                     </select>
                                 </div>
                             </div>
                             <div class="col-xs-7">
                                 <div class="form-group">
                                     <label>ชื่อ</label>
-                                    <input type="text" class="form-control" placeholder="ไอที" name="name[]" required value="{{ old('name') }}">
+                                    <input type="text" class="form-control" placeholder="ไอที" name="name[]" required value="{{ old('name')[6] }}">
                                 </div>
                             </div>
                         </div>
@@ -369,7 +369,7 @@
                     <div class="col-md-6 col-xs-12">
                         <div class="form-group">
                             <label>นามสกุล</label>
-                            <input type="text" class="form-control" placeholder="ลาดกระบัง" name="surname[]" required value="{{ old('surname') }}">
+                            <input type="text" class="form-control" placeholder="ลาดกระบัง" name="surname[]" required value="{{ old('surname')[6] }}">
                         </div>
                     </div>
                 </div>
@@ -377,13 +377,13 @@
                     <div class="col-md-6 col-xs-12">
                         <div class="form-group">
                             <label>Steam</label>
-                            <input type="text" class="form-control" placeholder="steam" name="steam[]" required value="{{ old('steam') }}">
+                            <input type="text" class="form-control" placeholder="steam" name="steam[]" required value="{{ old('steam')[6] }}">
                         </div>
                     </div>
                     <div class="col-md-6 col-xs-12">
                         <div class="form-group">
                             <label>facebook</label>
-                            <input type="text" class="form-control" placeholder="e.g. fb.com/ITLadkrabangOpenhouse" name="facebook[]" required value="{{ old('facebook') }}">
+                            <input type="text" class="form-control" placeholder="e.g. fb.com/ITLadkrabangOpenhouse" name="facebook[]" value="{{ old('facebook')[6] }}" required>
                         </div>
                     </div>
                 </div>
@@ -391,7 +391,7 @@
                     <div class="col-md-6 col-xs-12">
                         <div class="form-group">
                             <label for="phone">เบอร์โทรศัพท์</label>
-                            <input type="text" class="form-control" placeholder="phone" name="phone[]" value ="{{old('phone')}}" required>
+                            <input type="text" class="form-control" placeholder="phone" name="phone[]" value ="{{old('phone')[6]}}" required>
                         </div>
                     </div>
                 </div>

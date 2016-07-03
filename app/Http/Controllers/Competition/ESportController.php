@@ -109,9 +109,8 @@ class ESportController extends Controller
                 $members[] = $member;
             }
         }
-
-        $json = json_encode($members, JSON_UNESCAPED_UNICODE);
-        $esport->member = $json;
+        
+        $esport->member = json_encode($members, JSON_UNESCAPED_UNICODE);
         $esport->save();
 
         return view('register.competition.esport.create', ['success' => 1]);

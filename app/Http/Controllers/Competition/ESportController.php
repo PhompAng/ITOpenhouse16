@@ -87,17 +87,30 @@ class ESportController extends Controller
         $esport->fill($request->all());
 
         $members = [];
-        for ($i = 0; $i < 7; $i++){
-            $membername = 'member'.($i+1);
+        for ($i = 0; $i < 5; $i++){
+            $member['prefix'] = $inputs['prefix'][$i];
             $member['name'] = $inputs['name'][$i];
             $member['surname'] = $inputs['surname'][$i];
             $member['steam'] = $inputs['steam'][$i];
             $member['facebook'] = $inputs['facebook'][$i];
             $member['phone'] = $inputs['phone'][$i];
-            $members[$membername] = $member;
+            $members[] = $member;
         }
 
-        $json = json_encode($members);
+        if ($inputs['subName'][0] != "" || $inputs['subName'][1] != "") {
+            for ($i = 0; $i < 2; $i++){
+                if ($inputs['subName'][$i] == "") continue;
+                $member['prefix'] = $inputs['subPrefix'][$i];
+                $member['name'] = $inputs['subName'][$i];
+                $member['surname'] = $inputs['subSurname'][$i];
+                $member['steam'] = $inputs['subSteam'][$i];
+                $member['facebook'] = $inputs['subFacebook'][$i];
+                $member['phone'] = $inputs['subPhone'][$i];
+                $members[] = $member;
+            }
+        }
+
+        $json = json_encode($members, JSON_UNESCAPED_UNICODE);
         $esport->member = $json;
         $esport->save();
 

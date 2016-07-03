@@ -41,31 +41,41 @@ class ESportController extends Controller
         $inputs = $request->all();
 
         $rules = [
-
             'team_name'             => 'required',
             'team_fb'			    => 'required',
-            //'member[]'				=> 'required',
+            'name.*'				=> 'required',
+            'surname.*'             => 'required',
+            'steam.*'               => 'required',
+            'facebook.*'            => 'required',
+            'phone.*'               => 'required|regex:/^0[0-9]{1,2}[0-9]{7}$/',
+            'subPhone.*'            => 'regex:/^0[0-9]{1,2}[0-9]{7}$/',
             'school'				=> 'required',
             'school_addr'			=> 'required',
             'school_province'		=> 'required',
+            'teacher_prefix'        => 'required',
             'teacher_name'		    => 'required',
             'teacher_surname'		=> 'required',
             'teacher_phone'			=> 'required|regex:/^0[0-9]{1,2}[0-9]{7}$/'
         ];
 
         $messages = [
-
             'team_name.required'             =>  'กรุณากรอก  ชื่อทีม',
-            'team_fb.required'               =>  'กรุณากรอก facebookที่สามารถติดต่อทีม',
-            //member?
+            'team_fb.required'               =>  'กรุณากรอก  facebook ที่สามารถติดต่อทีม',
+            'name.*.required'                =>  'กรุณากรอก  ชื่อสมาชิก',
+            'surname.*.required'             =>  'กรุณากรอก  นามสกุลของสมาชิก',
+            'steam.*.required'               =>  'กรุณากรอก  steam ของสมาชิก',
+            'facebook.*.required'            =>  'กรุณากรอก  facebook ของสมาชิก',
+            'phone.*.required'               =>  'กรุณากรอก  เบอร์โทรศัพท์ของสมาชิก',
             'school.required'                =>  'กรุณากรอก  ชื่อโรงเรียน',
             'school_addr.required'           =>  'กรุณากรอก  ที่อยู่โรงเรียน',
             'school_province.required'       =>  'กรุณากรอก  จังหวัด',
+            'teacher_prefix.required'        =>  'กรุณากรอก  คำนำหน้าชื่ออาจารย์ผู้ควบคุมทีม',
             'teacher_name.required'          =>  'กรุณากรอก  ชื่ออาจารย์ผู้ควบคุมทีม',
-            'teacher_surname.required'       =>  'กรุณากรอก   นามสกุลอาจารย์ผู้ควบคุมทีม',
+            'teacher_surname.required'       =>  'กรุณากรอก  นามสกุลอาจารย์ผู้ควบคุมทีม',
             'teacher_phone.required'         =>  'กรุณากรอก  เบอร์โทรศัพท์อาจารย์ผู้ควบคุมทีม',
-            'teacher_phone.regex'            =>  'รูปแบบ เบอร์โทรศัพท์อาจารย์ผู้ควบคุมทีม ไม่ถูกต้อง'
-
+            'phone.*.regex'                  =>  'รูปแบบ  เบอร์โทรศัพท์สมาชิก ไม่ถูกต้อง',
+            'subPhone.*.regex'               =>  'รูปแบบ  เบอร์โทรศัพท์ตัวสำรอง ไม่ถูกต้อง',
+            'teacher_phone.regex'            =>  'รูปแบบ  เบอร์โทรศัพท์อาจารย์ผู้ควบคุมทีม ไม่ถูกต้อง'
         ];
 
         $validator = Validator::make($inputs, $rules, $messages);

@@ -22,7 +22,7 @@
             @endif
         </section>
         <section class="regis-form">
-            <form action="{{url('/register/competition/pitching')}}" method="post">
+            <form action="{{url('/register/competition/pitching')}}" method="post" enctype="multipart/form-data">
                 {!! csrf_field() !!}
                 {{--ทีม--}}
                 <h3>ชื่อทีม</h3>
@@ -226,13 +226,15 @@
                     <div class="col-md-6 col-xs-12">
                         <div class="form-group">
                             <label for="bizcanvas">Business Concept</label>
-                            <input type="file" id="bizcanvas" name="bizcanvas"  required>
+                            <input type="file" id="bizcanvas" name="bizcanvas" accept="application/pdf"  required>
+                            <p>ไฟล์ประเภท PDF เท่านั้น ขนาดไม่เกิน 10MB</p>
                         </div>
                     </div>
                     <div class="col-md-6 col-xs-12">
                         <div class="form-group">
                             <label for="storyboard">Storyboard</label>
-                            <input type="file" id="storyboard" name="storyboard" required>
+                            <input type="file" id="storyboard" name="storyboard" accept="application/pdf" required>
+                            <p>ไฟล์ประเภท PDF เท่านั้น ขนาดไม่เกิน 10MB</p>
                         </div>
                     </div>
                 </div>

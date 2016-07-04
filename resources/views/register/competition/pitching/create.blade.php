@@ -218,7 +218,7 @@
                     <div class="col-md-6 col-xs-12">
                         <div class="form-group">
                             <label for="idea_desc">รายละเอียดแนวคิด</label>
-                            <textarea name="idea_desc" id="idea_desc" class="form-control" cols="30" rows="10" required></textarea>
+                            <textarea name="idea_desc" id="idea_desc" class="form-control" cols="30" rows="10" required>{{ old('idea_desc') }}</textarea>
                         </div>
                     </div>
                 </div>

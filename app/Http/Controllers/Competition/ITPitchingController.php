@@ -40,8 +40,6 @@ class ITPitchingController extends Controller
     {
         $inputs = $request->all();
 
-        dd($request->files);
-
         $rules = [
             'team_name'             => 'required',
             'name.*'				=> 'required',
@@ -53,8 +51,8 @@ class ITPitchingController extends Controller
             'teacher_phone'			=> 'required|regex:/^0[0-9]{1,2}[0-9]{7}$/',
             'idea'			        => 'required',
             'idea_desc'			    => 'required',
-            'bizcanvas'			    => 'required|size:10000|mimes:pdf',
-            'storyboard'			=> 'required|size:10000|mimes:pdf'
+            'bizcanvas'			    => 'required|size:10000000|mimes:pdf',
+            'storyboard'			=> 'required|size:10000000|mimes:pdf'
         ];
 
         $messages = [

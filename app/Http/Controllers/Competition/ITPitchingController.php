@@ -40,7 +40,7 @@ class ITPitchingController extends Controller
     {
         $inputs = $request->all();
 
-        //TODO FileInput
+        dd($request->files);
 
         $rules = [
             'team_name'             => 'required',
@@ -53,9 +53,8 @@ class ITPitchingController extends Controller
             'teacher_phone'			=> 'required|regex:/^0[0-9]{1,2}[0-9]{7}$/',
             'idea'			        => 'required',
             'idea_desc'			    => 'required',
-            'bizcanvas'			    => 'required',
-            'storyboard'			=> 'required'
-
+            'bizcanvas'			    => 'required|size:10000|mimes:pdf',
+            'storyboard'			=> 'required|size:10000|mimes:pdf'
         ];
 
         $messages = [
@@ -67,7 +66,15 @@ class ITPitchingController extends Controller
             'teacher_name.required'          =>  'กรุณากรอก  ชื่ออาจารย์ผู้ควบคุมทีม',
             'teacher_surname.required'       =>  'กรุณากรอก  นามสกุลอาจารย์ผู้ควบคุมทีม',
             'teacher_phone.required'         =>  'กรุณากรอก  เบอร์โทรศัพท์อาจารย์ผู้ควบคุมทีม',
-            'teacher_phone.regex'            =>  'รูปแบบ  เบอร์โทรศัพท์อาจารย์ผู้ควบคุมทีม ไม่ถูกต้อง'
+            'idea.required'                  =>  'กรุณากรอก  ชื่อแนวคิด',
+            'idea_desc.required'             =>  'กรุณากรอก  รายละเอียดแนวคิด',
+            'bizcanvas.required'             =>  'กรุณาอัปโหลด  Business Concept',
+            'storyboard.required'            =>  'กรุณาอัปโหลด  Storyboard',
+            'teacher_phone.regex'            =>  'รูปแบบ  เบอร์โทรศัพท์อาจารย์ผู้ควบคุมทีม ไม่ถูกต้อง',
+            'bizcanvas.size'                  =>  'ขนาดไฟล์ Business Concept ต้องไม่เกิน 10 MB',
+            'storyboard.size'                  =>  'ขนาดไฟล์ Storyboard ต้องไม่เกิน 10 MB',
+            'bizcanvas.mimes'               => 'ไฟล์ Business Concept ต้องเป็น PDF เท่านั้น',
+            'storyboard.mimes'               => 'ไฟล์ Storyboard ต้องเป็น PDF เท่านั้น'
         ];
 
         $validator = Validator::make($inputs, $rules, $messages);

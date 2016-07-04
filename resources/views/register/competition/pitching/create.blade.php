@@ -28,8 +28,8 @@
                 <h3>ชื่อทีม</h3>
                 <div class="row">
                     <div class="col-md-6 col-xs-12">
-                        <label for="teamName">ชื่อทีม</label>
-                        <input type="text" class="form-control" placeholder="ITKMTIL" name="teamName" required>
+                        <label for="team_name">ชื่อทีม</label>
+                        <input type="text" class="form-control" placeholder="ITKMTIL" name="team_name" value="{{old('team_name')}}" required>
                     </div>
                 </div>
                 {{--สมาชิก--}}
@@ -42,16 +42,16 @@
                                 <div class="form-group">
                                     <label>คำนำหน้าชื่อ</label>
                                     <select class="form-control" name="prefix[]" required>
-                                        <option value="นาย" {{  (old('prefix') == "นาย" ? "selected":"") }}>นาย</option>
-                                        <option value="นาง" {{ (old('prefix') == "นาง" ? "selected":"") }}>นาง</option>
-                                        <option value="นางสาว" {{ (old('prefix') == "นางสาว" ? "selected":"") }}>นางสาว</option>
+                                        <option value="นาย" {{  (old('prefix')[0] == "นาย" ? "selected":"") }}>นาย</option>
+                                        <option value="นาง" {{ (old('prefix')[0] == "นาง" ? "selected":"") }}>นาง</option>
+                                        <option value="นางสาว" {{ (old('prefix')[0] == "นางสาว" ? "selected":"") }}>นางสาว</option>
                                     </select>
                                 </div>
                             </div>
                             <div class="col-xs-7">
                                 <div class="form-group">
                                     <label>ชื่อ</label>
-                                    <input type="text" class="form-control" placeholder="ไอที" name="name[]" required value="{{ old('name') }}">
+                                    <input type="text" class="form-control" placeholder="ไอที" name="name[]" required value="{{ old('name')[0] }}">
                                 </div>
                             </div>
                         </div>
@@ -59,7 +59,7 @@
                     <div class="col-md-6 col-xs-12">
                         <div class="form-group">
                             <label>นามสกุล</label>
-                            <input type="text" class="form-control" placeholder="ลาดกระบัง" name="surname[]" required value="{{ old('surname') }}">
+                            <input type="text" class="form-control" placeholder="ลาดกระบัง" name="surname[]" required value="{{ old('surname')[0] }}">
                         </div>
                     </div>
                 </div>
@@ -68,10 +68,10 @@
                         <div class="form-group">
                             <label>ระดับการศึกษา</label>
                             <select class="form-control" name="class[]" required>
-                                <option value="4">ม. 4</option>
-                                <option value="5">ม. 5</option>
-                                <option value="6" selected="selected">ม. 6</option>
-                                <option value="0">ปวช.</option>
+                                <option value="4" {{  (old('class')[0] == "4" ? "selected":"") }}>ม. 4</option>
+                                <option value="5" {{  (old('class')[0] == "5" ? "selected":"") }}>ม. 5</option>
+                                <option value="6" selected="selected" {{  (old('class')[0] == "6" ? "selected":"") }}>ม. 6</option>
+                                <option value="0" {{  (old('class')[0] == "0" ? "selected":"") }}>ปวช.</option>
                             </select>
                         </div>
                     </div>
@@ -84,16 +84,16 @@
                                 <div class="form-group">
                                     <label>คำนำหน้าชื่อ</label>
                                     <select class="form-control" name="prefix[]" required>
-                                        <option value="นาย" {{  (old('prefix') == "นาย" ? "selected":"") }}>นาย</option>
-                                        <option value="นาง" {{ (old('prefix') == "นาง" ? "selected":"") }}>นาง</option>
-                                        <option value="นางสาว" {{ (old('prefix') == "นางสาว" ? "selected":"") }}>นางสาว</option>
+                                        <option value="นาย" {{  (old('prefix')[1] == "นาย" ? "selected":"") }}>นาย</option>
+                                        <option value="นาง" {{ (old('prefix')[1] == "นาง" ? "selected":"") }}>นาง</option>
+                                        <option value="นางสาว" {{ (old('prefix')[1] == "นางสาว" ? "selected":"") }}>นางสาว</option>
                                     </select>
                                 </div>
                             </div>
                             <div class="col-xs-7">
                                 <div class="form-group">
                                     <label>ชื่อ</label>
-                                    <input type="text" class="form-control" placeholder="ไอที" name="name[]" required value="{{ old('name') }}">
+                                    <input type="text" class="form-control" placeholder="ไอที" name="name[]" required value="{{ old('name')[1] }}">
                                 </div>
                             </div>
                         </div>
@@ -101,7 +101,7 @@
                     <div class="col-md-6 col-xs-12">
                         <div class="form-group">
                             <label>นามสกุล</label>
-                            <input type="text" class="form-control" placeholder="ลาดกระบัง" name="surname[]" required value="{{ old('surname') }}">
+                            <input type="text" class="form-control" placeholder="ลาดกระบัง" name="surname[]" required value="{{ old('surname')[1] }}">
                         </div>
                     </div>
                 </div>
@@ -110,10 +110,10 @@
                         <div class="form-group">
                             <label>ระดับการศึกษา</label>
                             <select class="form-control" name="class[]" required>
-                                <option value="4">ม. 4</option>
-                                <option value="5">ม. 5</option>
-                                <option value="6" selected="selected">ม. 6</option>
-                                <option value="0">ปวช.</option>
+                                <option value="4" {{  (old('class')[1] == "4" ? "selected":"") }}>ม. 4</option>
+                                <option value="5" {{  (old('class')[1] == "5" ? "selected":"") }}>ม. 5</option>
+                                <option value="6" selected="selected" {{  (old('class')[1] == "6" ? "selected":"") }}>ม. 6</option>
+                                <option value="0" {{  (old('class')[1] == "0" ? "selected":"") }}>ปวช.</option>
                             </select>
                         </div>
                     </div>
@@ -126,16 +126,16 @@
                                 <div class="form-group">
                                     <label>คำนำหน้าชื่อ</label>
                                     <select class="form-control" name="prefix[]" required>
-                                        <option value="นาย" {{  (old('prefix') == "นาย" ? "selected":"") }}>นาย</option>
-                                        <option value="นาง" {{ (old('prefix') == "นาง" ? "selected":"") }}>นาง</option>
-                                        <option value="นางสาว" {{ (old('prefix') == "นางสาว" ? "selected":"") }}>นางสาว</option>
+                                        <option value="นาย" {{  (old('prefix')[2] == "นาย" ? "selected":"") }}>นาย</option>
+                                        <option value="นาง" {{ (old('prefix')[2] == "นาง" ? "selected":"") }}>นาง</option>
+                                        <option value="นางสาว" {{ (old('prefix')[2] == "นางสาว" ? "selected":"") }}>นางสาว</option>
                                     </select>
                                 </div>
                             </div>
                             <div class="col-xs-7">
                                 <div class="form-group">
                                     <label>ชื่อ</label>
-                                    <input type="text" class="form-control" placeholder="ไอที" name="name[]" required value="{{ old('name') }}">
+                                    <input type="text" class="form-control" placeholder="ไอที" name="name[]" required value="{{ old('name')[2] }}">
                                 </div>
                             </div>
                         </div>
@@ -143,7 +143,7 @@
                     <div class="col-md-6 col-xs-12">
                         <div class="form-group">
                             <label>นามสกุล</label>
-                            <input type="text" class="form-control" placeholder="ลาดกระบัง" name="surname[]" required value="{{ old('surname') }}">
+                            <input type="text" class="form-control" placeholder="ลาดกระบัง" name="surname[]" required value="{{ old('surname')[2] }}">
                         </div>
                     </div>
                 </div>
@@ -152,10 +152,10 @@
                         <div class="form-group">
                             <label>ระดับการศึกษา</label>
                             <select class="form-control" name="class[]" required>
-                                <option value="4">ม. 4</option>
-                                <option value="5">ม. 5</option>
-                                <option value="6" selected="selected">ม. 6</option>
-                                <option value="0">ปวช.</option>
+                                <option value="4" {{  (old('class')[2] == "4" ? "selected":"") }}>ม. 4</option>
+                                <option value="5" {{  (old('class')[2] == "5" ? "selected":"") }}>ม. 5</option>
+                                <option value="6" selected="selected" {{  (old('class')[2] == "6" ? "selected":"") }}>ม. 6</option>
+                                <option value="0" {{  (old('class')[2] == "0" ? "selected":"") }}>ปวช.</option>
                             </select>
                         </div>
                     </div>
@@ -168,7 +168,7 @@
                     <div class="col-md-6 col-xs-6">
                         <div class="form-group">
                             <label for="school">โรงเรียน</label>
-                            <input type="text" class="form-control" placeholder="ชื่อโรงเรียน" name="school" required>
+                            <input type="text" class="form-control" placeholder="ชื่อโรงเรียน" name="school" value="{{old('school')}}" required>
                         </div>
                     </div>
                 </div>
@@ -179,19 +179,19 @@
                     <div class="col-md-2 col-xs-4">
                         <div class="form-group">
                             <label>คำนำหน้าชื่อ</label>
-                            <input type="text" class="form-control" placeholder="นาย" name="teacherPrefix" required>
+                            <input type="text" class="form-control" placeholder="นาย" name="teacher_prefix" value="{{old('teacher_prefix')}}" required>
                         </div>
                     </div>
                     <div class="col-md-5 col-xs-8">
                         <div class="form-group">
-                            <label for="teacherName">ชื่อ</label>
-                            <input type="text" class="form-control" placeholder="ไอที" name="teacherName" required>
+                            <label for="teacher_name">ชื่อ</label>
+                            <input type="text" class="form-control" placeholder="ไอที" name="teacher_name" value="{{old('teacher_name')}}" required>
                         </div>
                     </div>
                     <div class="col-md-5 col-xs-12">
                         <div class="form-group">
-                            <label for="teacherSurname">นามสกุล</label>
-                            <input type="text" class="form-control" placeholder="ลาดกระบัง" name="teacherSurname" required>
+                            <label for="teacher_surname">นามสกุล</label>
+                            <input type="text" class="form-control" placeholder="ลาดกระบัง" name="teacher_surname" value="{{old('teacher_surname')}}" required>
                         </div>
                     </div>
                 </div>
@@ -199,7 +199,7 @@
                     <div class="col-md-6 col-xs-12">
                         <div class="form-group">
                             <label for="teacherPhone">เบอร์โทร</label>
-                            <input type="text" class="form-control" placeholder="e.g. 080808xxxx" name="teacherPhone" required>
+                            <input type="text" class="form-control" placeholder="e.g. 080808xxxx" name="teacher_phone" value="{{old('teacher_phone')}}" required>
                         </div>
                     </div>
                 </div>
@@ -210,29 +210,29 @@
                     <div class="col-md-6 col-xs-12">
                         <div class="form-group">
                             <label for="concept">ชื่อแนวคิด</label>
-                            <input type="text" class="form-control" placeholder="ชื่อแนวคิด" name="concept" required>
+                            <input type="text" class="form-control" placeholder="ชื่อแนวคิด" name="idea" value="{{old('idea')}}" required>
                         </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-6 col-xs-12">
                         <div class="form-group">
-                            <label for="conceptDesc">รายละเอียดแนวคิด</label>
-                            <textarea name="conceptDesc" id="conceptDesc" class="form-control" cols="30" rows="10" required></textarea>
+                            <label for="idea_desc">รายละเอียดแนวคิด</label>
+                            <textarea name="idea_desc" id="idea_desc" class="form-control" cols="30" rows="10" required></textarea>
                         </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-6 col-xs-12">
                         <div class="form-group">
-                            <label for="businessConcept">Business Concept</label>
-                            <input type="file" id="businessConcept" name="conceptFile" required>
+                            <label for="bizcanvas">Business Concept</label>
+                            <input type="file" id="bizcanvas" name="bizcanvas"  required>
                         </div>
                     </div>
                     <div class="col-md-6 col-xs-12">
                         <div class="form-group">
                             <label for="storyboard">Storyboard</label>
-                            <input type="file" id="storyboard" name="storyboardFile" required>
+                            <input type="file" id="storyboard" name="storyboard" required>
                         </div>
                     </div>
                 </div>

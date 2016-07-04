@@ -2,9 +2,11 @@
 
 namespace App\Http\Controllers\Competition;
 
+use App\Models\Pitching;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Http\Requests;
+use Illuminate\Support\Facades\Validator;
 
 class ITPitchingController extends Controller
 {
@@ -36,7 +38,59 @@ class ITPitchingController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $inputs = $request->all();
+
+        //TODO FileInput
+
+        $rules = [
+            'team_name'             => 'required',
+            'name.*'				=> 'required',
+            'surname.*'             => 'required',
+            'school'				=> 'required',
+            'teacher_prefix'        => 'required',
+            'teacher_name'		    => 'required',
+            'teacher_surname'		=> 'required',
+            'teacher_phone'			=> 'required|regex:/^0[0-9]{1,2}[0-9]{7}$/',
+            'idea'			        => 'required',
+            'idea_desc'			    => 'required',
+            'bizcanvas'			    => 'required',
+            'storyboard'			=> 'required'
+
+        ];
+
+        $messages = [
+            'team_name.required'             =>  'กรุณากรอก  ชื่อทีม',
+            'name.*.required'                =>  'กรุณากรอก  ชื่อสมาชิก',
+            'surname.*.required'             =>  'กรุณากรอก  นามสกุลของสมาชิก',
+            'school.required'                =>  'กรุณากรอก  ชื่อโรงเรียน',
+            'teacher_prefix.required'        =>  'กรุณากรอก  คำนำหน้าชื่ออาจารย์ผู้ควบคุมทีม',
+            'teacher_name.required'          =>  'กรุณากรอก  ชื่ออาจารย์ผู้ควบคุมทีม',
+            'teacher_surname.required'       =>  'กรุณากรอก  นามสกุลอาจารย์ผู้ควบคุมทีม',
+            'teacher_phone.required'         =>  'กรุณากรอก  เบอร์โทรศัพท์อาจารย์ผู้ควบคุมทีม',
+            'teacher_phone.regex'            =>  'รูปแบบ  เบอร์โทรศัพท์อาจารย์ผู้ควบคุมทีม ไม่ถูกต้อง'
+        ];
+
+        $validator = Validator::make($inputs, $rules, $messages);
+        if($validator->fails()){
+            return redirect('/register/competition/pitching/create')->withInput()->withErrors($validator);
+        }
+
+        $pitching = new Pitching();
+        $pitching->fill($request->all());
+
+        $members = [];
+        for ($i = 0; $i < 3; $i++){
+            $member['prefix'] = $inputs['prefix'][$i];
+            $member['name'] = $inputs['name'][$i];
+            $member['surname'] = $inputs['surname'][$i];
+            $member['class'] = $inputs['class'][$i];
+            $members[] = $member;
+        }
+
+        $pitching->member = json_encode($members, JSON_UNESCAPED_UNICODE);
+        $pitching->save();
+
+        return view('register.competition.pitching.create', ['success' => 1]);
     }
 
     /**

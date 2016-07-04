@@ -407,7 +407,7 @@
                     <div class="col-md-6 col-xs-6">
                         <div class="form-group">
                             <label for="school">โรงเรียน</label>
-                            <input type="text" class="form-control" placeholder="School" name="school" value ="{{old('school')}}" required>
+                            <input type="text" class="form-control" placeholder="ชื่อโรงเรียน" name="school" value ="{{old('school')}}" required>
                         </div>
                     </div>
                 </div>

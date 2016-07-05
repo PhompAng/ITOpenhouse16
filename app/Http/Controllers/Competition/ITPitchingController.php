@@ -7,6 +7,8 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Http\Requests;
 use Illuminate\Support\Facades\Validator;
+use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Facades\File;
 
 class ITPitchingController extends Controller
 {
@@ -51,8 +53,8 @@ class ITPitchingController extends Controller
             'teacher_phone'			=> 'required|regex:/^0[0-9]{1,2}[0-9]{7}$/',
             'idea'			        => 'required',
             'idea_desc'			    => 'required',
-            'bizcanvas'			    => 'required|size:10000000|mimes:pdf',
-            'storyboard'			=> 'required|size:10000000|mimes:pdf'
+            'bizcanvas'			    => 'required|max:10000000|mimes:pdf',
+            'storyboard'			=> 'required|max:10000000|mimes:pdf'
         ];
 
         $messages = [
@@ -69,8 +71,8 @@ class ITPitchingController extends Controller
             'bizcanvas.required'             =>  'กรุณาอัปโหลด  Business Concept',
             'storyboard.required'            =>  'กรุณาอัปโหลด  Storyboard',
             'teacher_phone.regex'            =>  'รูปแบบ  เบอร์โทรศัพท์อาจารย์ผู้ควบคุมทีม ไม่ถูกต้อง',
-            'bizcanvas.size'                  =>  'ขนาดไฟล์ Business Concept ต้องไม่เกิน 10 MB',
-            'storyboard.size'                  =>  'ขนาดไฟล์ Storyboard ต้องไม่เกิน 10 MB',
+            'bizcanvas.max'                  =>  'ขนาดไฟล์ Business Concept ต้องไม่เกิน 10 MB',
+            'storyboard.max'                  =>  'ขนาดไฟล์ Storyboard ต้องไม่เกิน 10 MB',
             'bizcanvas.mimes'               => 'ไฟล์ Business Concept ต้องเป็น PDF เท่านั้น',
             'storyboard.mimes'               => 'ไฟล์ Storyboard ต้องเป็น PDF เท่านั้น'
         ];
@@ -91,8 +93,16 @@ class ITPitchingController extends Controller
             $member['class'] = $inputs['class'][$i];
             $members[] = $member;
         }
-
         $pitching->member = json_encode($members, JSON_UNESCAPED_UNICODE);
+
+        $bizcanvas = $request->file('bizcanvas');
+        $filename = $inputs["team_name"] . "_bizcanvas_" . str_random(10);
+        Storage::disk('local')->put($filename.'.pdf',  File::get($bizcanvas));
+        $pitching->bizcanvas = $filename;
+        $storyboard = $request->file('storyboard');
+        $filename = $inputs["team_name"] . "_storyboard_" . str_random(10);
+        Storage::disk('local')->put($filename.'.pdf', File::get($storyboard));
+        $pitching->storyboard = $filename;
         $pitching->save();
 
         return view('register.competition.pitching.create', ['success' => 1]);

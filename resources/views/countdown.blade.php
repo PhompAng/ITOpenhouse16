@@ -154,13 +154,13 @@
                 <div id="countdownHolder1">
                     <!-- holder for countdown -->
                 </div>
-                <a class='dropdown-button btn btn-large' href='#' data-activates='dropdown1'>ลงทะเบียนเข้าชมงาน</a>
+                <a class='dropdown-button btn btn-large' href='#' data-activates='dropdown1' data-constrainwidth="false" data-hover="true">ลงทะเบียนเข้าชมงาน</a>
                 <ul id='dropdown1' class='dropdown-content'>
                     <li><a href="{{URL('/register/guest')}}">ลงทะเบียนของบุคคลทั่วไป</a></li>
                     <li><a href="{{URL('/register/guest_student')}}">ลงทะเบียนของนักเรียน/นักศึกษา</a></li>
                     <li><a href="{{URL('/register/guest_school')}}">ลงทะเบียนของโรงเรียน</a></li>
                 </ul>
-                <a class='dropdown-button btn btn-large' href='#' data-activates='dropdown2'>ลงทะเบียนแข่งขัน</a>
+                <a class='dropdown-button btn btn-large' href='#' data-activates='dropdown2' data-constrainwidth="false" data-hover="true">ลงทะเบียนแข่งขัน</a>
                 <ul id='dropdown2' class='dropdown-content'>
                     <li><a href="{{URL('/register/competition/esport')}}">การแข่งขันกีฬาอิเล็กทรอนิกส์</a></li>
                     <li><a href="{{URL('/register/competition/network')}}">การแข่งขันความปลอดภัยของระบบคอมพิวเตอร์</a></li>

@@ -12,6 +12,7 @@
     background-image: url("../image/poster_hor.jpg");
     background-size: cover;
     background-position: center bottom;
+    background-attachment: fixed;
 }
 
 .navbar {
@@ -80,7 +81,8 @@
     height: 100%;
     background-image: url("../image/poster_hor.jpg");
     background-size: cover;
-    background-position: center bottom;
+    background-position: center top;
+    background-attachment: fixed;
 }
 /*#header > .container > .header-logo {
     position: absolute;

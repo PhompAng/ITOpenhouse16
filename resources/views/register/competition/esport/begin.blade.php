@@ -2,10 +2,10 @@
 @section('regisForm')
     <div class="container regis">
         <section class="regis-header">
-            <h1 class="text-center">กิจกรรมการแข่งขันทางวิชาการ IT LADKRABANG OPENHOUSE 2016</h1>
+            <h1 class="text-center">การแข่งขันกีฬาอิเล็กทรอนิกส์ (E-Sports)</h1>
+            <h1 class="text-center">IT LADKRABANG OPENHOUSE 2016</h1>
             <h2 class="text-center"><small>คณะเทคโนโลยีสารสนเทศ สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง</small></h2>
             <h2 class="text-center"><small>วันที่ 26 สิงหาคม 2559</small></h2>
-            <h2 class="text-center"><small><u>รายละเอียดการแข่งขันกีฬาอิเล็กทรอนิกส์(E-Sports)</u></small></h2>
         </section>
         <section class="regis-form">
             <h3>วัตถุประสงค์</h3>

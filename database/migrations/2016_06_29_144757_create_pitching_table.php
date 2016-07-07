@@ -21,6 +21,7 @@ class CreatePitchingTable extends Migration
             $table->text('teacher_name');
             $table->text('teacher_surname');
             $table->text('teacher_phone');
+            $table->text('teacher_email');
             $table->text('idea');
             $table->text('idea_desc');
             $table->text('bizcanvas');

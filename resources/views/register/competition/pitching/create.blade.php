@@ -198,8 +198,14 @@
                 <div class="row">
                     <div class="col-md-6 col-xs-12">
                         <div class="form-group">
-                            <label for="teacherPhone">เบอร์โทร</label>
+                            <label for="teacher_phone">เบอร์โทร</label>
                             <input type="text" class="form-control" placeholder="e.g. 080808xxxx" name="teacher_phone" value="{{old('teacher_phone')}}" required>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xs-12">
+                        <div class="form-group">
+                            <label for="teacher_email">อีเมล</label>
+                            <input type="text" class="form-control" placeholder="e.g. openhouse@it.kmitl.ac.th" name="teacher_email" value="{{old('teacher_email')}}" required>
                         </div>
                     </div>
                 </div>

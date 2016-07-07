@@ -55,7 +55,8 @@ class ESportController extends Controller
             'teacher_prefix'        => 'required',
             'teacher_name'		    => 'required',
             'teacher_surname'		=> 'required',
-            'teacher_phone'			=> 'required|regex:/^0[0-9]{1,2}[0-9]{7}$/'
+            'teacher_phone'			=> 'required|regex:/^0[0-9]{1,2}[0-9]{7}$/',
+            'teacher_email'         => 'required|email'
         ];
 
         $messages = [
@@ -73,6 +74,7 @@ class ESportController extends Controller
             'teacher_name.required'          =>  'กรุณากรอก  ชื่ออาจารย์ผู้ควบคุมทีม',
             'teacher_surname.required'       =>  'กรุณากรอก  นามสกุลอาจารย์ผู้ควบคุมทีม',
             'teacher_phone.required'         =>  'กรุณากรอก  เบอร์โทรศัพท์อาจารย์ผู้ควบคุมทีม',
+            'teacher_email.required'            =>  'กรุณากรอก  อีเมลอาจารย์ผู้ควบคุมทีม',
             'phone.*.regex'                  =>  'รูปแบบ  เบอร์โทรศัพท์สมาชิก ไม่ถูกต้อง',
             'subPhone.*.regex'               =>  'รูปแบบ  เบอร์โทรศัพท์ตัวสำรอง ไม่ถูกต้อง',
             'teacher_phone.regex'            =>  'รูปแบบ  เบอร์โทรศัพท์อาจารย์ผู้ควบคุมทีม ไม่ถูกต้อง'
@@ -112,6 +114,8 @@ class ESportController extends Controller
         
         $esport->member = json_encode($members, JSON_UNESCAPED_UNICODE);
         $esport->save();
+        
+        
 
         return view('register.competition.esport.create', ['success' => 1]);
     }

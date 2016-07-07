@@ -24,6 +24,7 @@ class CreateEsportTable extends Migration
             $table->text('teacher_name');
             $table->text('teacher_surname');
             $table->text('teacher_phone');
+            $table->text('teacher_email');
             $table->tinyInteger('confirm');
             $table->timestamps();
         });

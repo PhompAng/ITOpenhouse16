@@ -26,6 +26,7 @@ class CreatePitchingTable extends Migration
             $table->text('idea_desc');
             $table->text('bizcanvas');
             $table->text('storyboard');
+            $table->text('remember');
             $table->tinyInteger('confirm');
             $table->timestamps();
         });

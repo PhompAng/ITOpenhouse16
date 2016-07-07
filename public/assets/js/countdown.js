@@ -18,7 +18,7 @@ var Countdown = function (settings) {
 		hours_day = 20,
 		MAIN_SECTION_MARGIN_BOTTOM = 35,
 		MAIN_SECTION2_PADDING = 20,
-		COUNTDOWN_PADDING = 40;
+		COUNTDOWN_PADDING = 10;
 
 
 

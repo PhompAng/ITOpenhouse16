@@ -19,6 +19,16 @@
         <![endif]-->
 
         <style type="text/css">
+            @font-face {
+                font-family: 'Cloud';
+                font-weight: normal;
+                src: url({{ URL::asset('assets/fonts/Cloud-Light.otf') }});
+            }
+            @font-face {
+                font-family: 'Cloud';
+                font-weight: bold;
+                src: url({{ URL::asset('assets/fonts/Cloud-Bold.otf') }});
+            }
             .clearfix:after {
                 content: ".";
                 display: block;
@@ -34,6 +44,7 @@
 
             body {
                 background: #fcfcfc;
+                margin-top: 10%;
             }
             h1 {
                 /*font-family: "Raleway", sans-serif; */
@@ -45,8 +56,14 @@
                 margin: 0 auto;
                 width: 70%;
             }
+            .date {
+                font-family: 'Cloud', sans-serif;
+                font-size: 3em;
+                margin: 0.5em;
+            }
             .dropdown-button {
                 margin: 0 20px;
+                margin-bottom: 20px;
             }
             svg {
                 width: 180px;
@@ -63,6 +80,10 @@
                 }
                 svg {
                     width: 120px;
+                    height: 60px;
+                }
+                .logo {
+                    width: 50%;
                 }
             }
 
@@ -73,6 +94,13 @@
                 }
                 svg {
                     width: 70px;
+                    height: 40px;
+                }
+                .dropdown-content li>a, .dropdown-content li>span {
+                    font-size: 11px;
+                }
+                .date {
+                    font-size: 2em;
                 }
             }
 
@@ -83,6 +111,13 @@
                 }
                 svg {
                     width: 60px;
+                    height: 25px;
+                }
+                .dropdown-content li>a, .dropdown-content li>span {
+                    font-size: 10px;
+                }
+                .date {
+                    font-size: 20px;
                 }
             }
 
@@ -131,19 +166,13 @@
             }
 
             .wrapper {
-                position: fixed;
-                display: table;
-                table-layout: fixed;
                 width: 100%;
-                min-height: 100%;
-                display: table;
                 text-align: center;
             }
 
             .wrapper2 {
-                position: relative;
-                display: table-cell;
-                vertical-align: middle;
+                margin-left:auto;
+                margin-right:auto;
             }
         </style>
     </head>
@@ -151,16 +180,17 @@
         <div class="wrapper">
             <div class="wrapper2">
                 <img src="{{ URL::asset('assets/image/color.svg') }}" class="logo">
+                <p class="date center">26 สิงหาคม 2559</p>
                 <div id="countdownHolder1">
                     <!-- holder for countdown -->
                 </div>
-                <a class='dropdown-button btn btn-large' href='#' data-activates='dropdown1' data-constrainwidth="false" data-hover="true">ลงทะเบียนเข้าชมงาน</a>
+                <a class='dropdown-button btn btn-large' href='#' data-activates='dropdown1' data-constrainwidth="false" >ลงทะเบียนเข้าชมงาน</a>
                 <ul id='dropdown1' class='dropdown-content'>
                     <li><a href="{{URL('/register/guest')}}">ลงทะเบียนของบุคคลทั่วไป</a></li>
                     <li><a href="{{URL('/register/guest_student')}}">ลงทะเบียนของนักเรียน/นักศึกษา</a></li>
                     <li><a href="{{URL('/register/guest_school')}}">ลงทะเบียนของโรงเรียน</a></li>
                 </ul>
-                <a class='dropdown-button btn btn-large' href='#' data-activates='dropdown2' data-constrainwidth="false" data-hover="true">ลงทะเบียนแข่งขัน</a>
+                <a class='dropdown-button btn btn-large' href='#' data-activates='dropdown2' data-constrainwidth="false">ลงทะเบียนแข่งขัน</a>
                 <ul id='dropdown2' class='dropdown-content'>
                     <li><a href="{{URL('/register/competition/esport')}}">การแข่งขันกีฬาอิเล็กทรอนิกส์</a></li>
                     <li><a href="{{URL('/register/competition/network')}}">การแข่งขันความปลอดภัยของระบบคอมพิวเตอร์</a></li>

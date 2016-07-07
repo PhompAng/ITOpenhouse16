@@ -60,3 +60,8 @@ Route::resource('/register/competition/php', 'Competition\PhpJavaScriptControlle
 Route::get('/form', function () {
     return view('form');
 });
+
+
+Route::get('/main', function () {
+    return view('main.main');
+});

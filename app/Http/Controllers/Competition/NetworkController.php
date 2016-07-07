@@ -102,6 +102,17 @@ class NetworkController extends Controller
         $network->member = json_encode($members, JSON_UNESCAPED_UNICODE);
         $network->save();
 
+        $competition = 'ความปลอดภัยของระบบคอมพิวเตอร์';
+        $team = $request->input('team_name');
+
+        $accounts = $members;
+        //add teacher to accounts for send mail
+        $account['name'] = $request->input('teacher_name');
+        $account['email'] = $request->input('teacher_email');
+        $accounts[] = $account;
+
+        MailController::sendCompetitionMail($competition, $team, $accounts);
+
         return view('register.competition.network.create', ['success' => 1]);
     }
 

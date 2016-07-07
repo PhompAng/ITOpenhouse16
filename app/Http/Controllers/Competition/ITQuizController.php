@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Http\Requests;
 use Illuminate\Support\Facades\Validator;
+use Illuminate\Support\Facades\Mail;
 
 class ITQuizController extends Controller
 {
@@ -77,7 +78,7 @@ class ITQuizController extends Controller
         if($validator->fails()){
             return redirect('/register/competition/itquiz/create')->withInput()->withErrors($validator);
         }
-
+        
         $quiz = new ITQuiz();
         $quiz->fill($request->all());
 
@@ -93,6 +94,17 @@ class ITQuizController extends Controller
 
         $quiz->member = json_encode($members, JSON_UNESCAPED_UNICODE);
         $quiz->save();
+        
+        $competition = 'ตอบคำถามด้านเทคโนโลยีสารสนเทศ';
+        $team = $request->input('team_name');
+
+        $accounts = $members;
+        //add teacher to accounts for send mail
+        $account['name'] = $request->input('teacher_name');
+        $account['email'] = $request->input('teacher_email');
+        $accounts[] = $account;
+
+        MailController::sendCompetitionMail($competition, $team, $accounts);
 
         return view('register.competition.quiz.create', ['success' => 1]);
     }

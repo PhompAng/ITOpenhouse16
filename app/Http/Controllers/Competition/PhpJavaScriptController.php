@@ -94,6 +94,17 @@ class PhpJavaScriptController extends Controller
         $php->member = json_encode($members, JSON_UNESCAPED_UNICODE);
         $php->save();
 
+        $competition = 'พัฒนาเว็บไซต์ด้วย PHP และ JavaScript';
+        $team = $request->input('team_name');
+
+        $accounts = $members;
+        //add teacher to accounts for send mail
+        $account['name'] = $request->input('teacher_name');
+        $account['email'] = $request->input('teacher_email');
+        $accounts[] = $account;
+
+        MailController::sendCompetitionMail($competition, $team, $accounts);
+
         return view('register.competition.php.create', ['success' => 1]);
     }
 

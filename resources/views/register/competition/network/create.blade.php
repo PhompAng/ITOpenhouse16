@@ -153,7 +153,7 @@
                 {{--end ข้อมูลส่วนตัว--}}
 
                 {{--สถานศึกษา--}}
-                <h3>โรงเรียน</h3>
+                <h3>สถานศึกษา</h3>
                 <div class="row">
                     <div class="col-md-6 col-xs-6">
                         <div class="form-group">

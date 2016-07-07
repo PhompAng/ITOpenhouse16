@@ -34,8 +34,8 @@
                         <input type="text" class="form-control" placeholder="ITKMITL" name="team_name" value="{{ old('team_name') }}" required>
                     </div>
                     <div class="col-md-6 col-xs-12">
-                        <label for="teamFb">teamFb</label>
-                        <input type="text" class="form-control" placeholder="teamFb" name="team_fb" value="{{ old('team_fb') }}" required>
+                        <label for="teamFb">เฟซบุ๊คที่สะดวกในการติดต่อทีม</label>
+                        <input type="text" class="form-control" placeholder="e.g. fb.com/ITLadkrabangOpenhouse" name="team_fb" value="{{ old('team_fb') }}" required>
                     </div>
                 </div>
                 {{--สมาชิก--}}

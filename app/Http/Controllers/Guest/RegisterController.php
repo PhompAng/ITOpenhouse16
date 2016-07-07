@@ -51,7 +51,7 @@ class RegisterController extends  Controller{
 
             'province.required'		=> 'กรุณากรอก จังหวัด',
             'email.required'		=> 'กรุณากรอก อีเมลล์',
-            'email.email'			=> 'รูปแบบอีเมลล์ไม่ถูกต้อง',
+            'email.email'			=> 'รูปแบบอีเมลไม่ถูกต้อง',
             'phone.required'		=> 'กรุณากรอกเบอร์โทรศัพท์',
             'phone.regex'			=> 'รูปแบบเบอร์โทรศัพท์ไม่ถูกต้อง'
         ];
@@ -106,7 +106,7 @@ class RegisterController extends  Controller{
 
             'province.required'		=> 'กรุณากรอก จังหวัด',
             'email.required'		=> 'กรุณากรอก อีเมลล์',
-            'email.email'			=> 'รูปแบบอีเมลล์ไม่ถูกต้อง',
+            'email.email'			=> 'รูปแบบอีเมลไม่ถูกต้อง',
             'phone.required'		=> 'กรุณา กรอกเบอร์โทรศัพท์',
             'phone.regex'			=> 'รูปแบบเบอร์โทรศัพท์ไม่ถูกต้อง',
         ];
@@ -163,7 +163,7 @@ class RegisterController extends  Controller{
 
             'province.required'		=> 'กรุณากรอก จังหวัด',
             'email.required'		=> 'กรุณากรอก อีเมลล์',
-            'email.email'			=> 'รูปแบบอีเมลล์ไม่ถูกต้อง',
+            'email.email'			=> 'รูปแบบอีเมลไม่ถูกต้อง',
             'phone.required'		=> 'กรุณากรอก เบอร์โทรศัพท์',
             'phone.regex'			=> 'รูปแบบเบอร์โทรศัพท์ไม่ถูกต้อง',
         ];

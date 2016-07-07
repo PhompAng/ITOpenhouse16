@@ -114,8 +114,15 @@ class ESportController extends Controller
         
         $esport->member = json_encode($members, JSON_UNESCAPED_UNICODE);
         $esport->save();
-        
-        
+
+        $competition = 'กีฬาอิเล็กทรอนิกส์(E-Sports)';
+        $team = $request->input('team_name');
+
+        $account['name'] = $request->input('teacher_name');
+        $account['email'] = $request->input('teacher_email');
+        $accounts[] = $account;
+
+        MailController::sendCompetitionMail($competition, $team, $accounts);
 
         return view('register.competition.esport.create', ['success' => 1]);
     }

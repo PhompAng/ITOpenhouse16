@@ -107,6 +107,15 @@ class ITPitchingController extends Controller
         $pitching->storyboard = $filename;
         $pitching->save();
 
+        $competition = 'การนำเสนอแผนธุรกิจ (IT Pitching)';
+        $team = $request->input('team_name');
+
+        $account['name'] = $request->input('teacher_name');
+        $account['email'] = $request->input('teacher_email');
+        $accounts[] = $account;
+
+        MailController::sendCompetitionMail($competition, $team, $accounts);
+
         return view('register.competition.pitching.create', ['success' => 1]);
     }
 

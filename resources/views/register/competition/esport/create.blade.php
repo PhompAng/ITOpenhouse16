@@ -402,7 +402,7 @@
                 {{--end ข้อมูลส่วนตัว--}}
 
                 {{--สถานศึกษา--}}
-                <h3>School</h3>
+                <h3>โรงเรียน</h3>
                 <div class="row">
                     <div class="col-md-6 col-xs-6">
                         <div class="form-group">
@@ -427,7 +427,7 @@
                 </div>
 
                 {{--อาจารย์--}}
-                <h3>Teacher</h3>
+                <h3>อาจารย์ผู้ควบคุมทีม</h3>
                 <div class="row">
                     <div class="col-md-2 col-xs-4">
                         <div class="form-group">

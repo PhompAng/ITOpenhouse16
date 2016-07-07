@@ -24,8 +24,8 @@ class MailController
                         $m->from('testopenhouse@gmail.com', 'IT Ladkrabang Open House 2016');
                         $m->to($account['email'], $account['name'])->subject('การลงทะเบียน'.$competition.' | IT Ladkrabang Open House 2016'  );
                     });
-                    return 1;
                 }
+                return 1;
             } catch (Swift_TransportException $e) {
                 $time++;
             }

@@ -21,7 +21,7 @@ class MailController
             try {
                 foreach ($accounts as $account) {
                     Mail::send('register.competition.mail', ['competition' => $competition, 'team' => $team, 'account' => $account], function ($m) use ($account, $competition) {
-                        $m->from('testopenhouse@gmail.com', 'IT Ladkrabang Open House 2016');
+                        $m->from('openhouse@it.kmitl.ac.th', 'IT Ladkrabang Open House 2016');
                         $m->to($account['email'], $account['name'])->subject('การลงทะเบียน'.$competition.' | IT Ladkrabang Open House 2016'  );
                     });
                 }

@@ -17,7 +17,7 @@ class PhpJavaScriptController extends Controller
      */
     public function index()
     {
-        return view('register.competition.php.begin');
+        return view('register.competition.php.begin', ["title" => "การแข่งขันพัฒนาเว็บไซต์ | IT Ladkrabang Open House 2016"]);
     }
 
     /**
@@ -27,7 +27,7 @@ class PhpJavaScriptController extends Controller
      */
     public function create()
     {
-        return view('register.competition.php.create');
+        return view('register.competition.php.create', ["title" => "การแข่งขันพัฒนาเว็บไซต์ | IT Ladkrabang Open House 2016"]);
     }
 
     /**
@@ -75,7 +75,7 @@ class PhpJavaScriptController extends Controller
 
         $validator = Validator::make($inputs, $rules, $messages);
         if($validator->fails()){
-            return redirect('/register/competition/php/create')->withInput()->withErrors($validator);
+            return redirect('/register/competition/php/create')->with(["title" => "การแข่งขันพัฒนาเว็บไซต์ | IT Ladkrabang Open House 2016"])->withInput()->withErrors($validator);
         }
 
         $php = new Php();
@@ -105,7 +105,7 @@ class PhpJavaScriptController extends Controller
 
         MailController::sendCompetitionMail($competition, $team, $accounts);
 
-        return view('register.competition.php.create', ['success' => 1]);
+        return view('register.competition.php.create', ['success' => 1, "title" => "การแข่งขันพัฒนาเว็บไซต์ | IT Ladkrabang Open House 2016"]);
     }
 
     /**

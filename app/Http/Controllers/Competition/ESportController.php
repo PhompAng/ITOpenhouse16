@@ -17,7 +17,7 @@ class ESportController extends Controller
      */
     public function index()
     {
-        return view('register.competition.esport.begin');
+        return view('register.competition.esport.begin', ["title" => "การแข่งขันกีฬาอิเล็กทรอนิกส์ | IT Ladkrabang Open House 2016"]);
     }
 
     /**
@@ -27,7 +27,7 @@ class ESportController extends Controller
      */
     public function create()
     {
-        return view('register.competition.esport.create');
+        return view('register.competition.esport.create', ["title" => "การแข่งขันกีฬาอิเล็กทรอนิกส์ | IT Ladkrabang Open House 2016"]);
     }
 
     /**
@@ -82,7 +82,7 @@ class ESportController extends Controller
 
         $validator = Validator::make($inputs, $rules, $messages);
         if($validator->fails()){
-            return redirect('/register/competition/esport/create')->withInput()->withErrors($validator);
+            return redirect('/register/competition/esport/create')->with(["title" => "การแข่งขันกีฬาอิเล็กทรอนิกส์ | IT Ladkrabang Open House 2016"])->withInput()->withErrors($validator);
         }
 
         $esport = new ESport();
@@ -111,7 +111,7 @@ class ESportController extends Controller
                 $members[] = $member;
             }
         }
-        
+
         $esport->member = json_encode($members, JSON_UNESCAPED_UNICODE);
         $esport->save();
 
@@ -124,7 +124,7 @@ class ESportController extends Controller
 
         MailController::sendCompetitionMail($competition, $team, $accounts);
 
-        return view('register.competition.esport.create', ['success' => 1]);
+        return view('register.competition.esport.create', ['success' => 1, "title" => "การแข่งขันกีฬาอิเล็กทรอนิกส์ | IT Ladkrabang Open House 2016"]);
     }
 
     /**

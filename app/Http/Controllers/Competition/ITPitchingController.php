@@ -19,7 +19,7 @@ class ITPitchingController extends Controller
      */
     public function index()
     {
-        return view('register.competition.pitching.begin');
+        return view('register.competition.pitching.begin', ["title" => "การแข่งขันการนำเสนอแผนธุรกิจ | IT Ladkrabang Open House 2016"]);
     }
 
     /**
@@ -29,7 +29,7 @@ class ITPitchingController extends Controller
      */
     public function create()
     {
-        return view('register.competition.pitching.create');
+        return view('register.competition.pitching.create', ["title" => "การแข่งขันการนำเสนอแผนธุรกิจ | IT Ladkrabang Open House 2016"]);
     }
 
     /**
@@ -81,7 +81,7 @@ class ITPitchingController extends Controller
 
         $validator = Validator::make($inputs, $rules, $messages);
         if($validator->fails()){
-            return redirect('/register/competition/pitching/create')->withInput()->withErrors($validator);
+            return redirect('/register/competition/pitching/create')->with(["title" => "การแข่งขันการนำเสนอแผนธุรกิจ | IT Ladkrabang Open House 2016"])->withInput()->withErrors($validator);
         }
 
         $pitching = new Pitching();
@@ -116,7 +116,7 @@ class ITPitchingController extends Controller
 
         MailController::sendCompetitionMail($competition, $team, $accounts);
 
-        return view('register.competition.pitching.create', ['success' => 1]);
+        return view('register.competition.pitching.create', ['success' => 1, "title" => "การแข่งขันการนำเสนอแผนธุรกิจ | IT Ladkrabang Open House 2016"]);
     }
 
     /**

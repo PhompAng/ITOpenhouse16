@@ -18,7 +18,7 @@ class ITQuizController extends Controller
      */
     public function index()
     {
-        return view('register.competition.quiz.begin');
+        return view('register.competition.quiz.begin', ["title" => "การแข่งขันตอบคำถามด้านเทคโนโลยีสารสนเทศ | IT Ladkrabang Open House 2016"]);
     }
 
     /**
@@ -28,7 +28,7 @@ class ITQuizController extends Controller
      */
     public function create()
     {
-        return view('register.competition.quiz.create');
+        return view('register.competition.quiz.create', ["title" => "การแข่งขันตอบคำถามด้านเทคโนโลยีสารสนเทศ | IT Ladkrabang Open House 2016"]);
     }
 
     /**
@@ -76,9 +76,9 @@ class ITQuizController extends Controller
 
         $validator = Validator::make($inputs, $rules, $messages);
         if($validator->fails()){
-            return redirect('/register/competition/itquiz/create')->withInput()->withErrors($validator);
+            return redirect('/register/competition/itquiz/create')->with(["title" => "การแข่งขันตอบคำถามด้านเทคโนโลยีสารสนเทศ | IT Ladkrabang Open House 2016"])->withInput()->withErrors($validator);
         }
-        
+
         $quiz = new ITQuiz();
         $quiz->fill($request->all());
 
@@ -94,7 +94,7 @@ class ITQuizController extends Controller
 
         $quiz->member = json_encode($members, JSON_UNESCAPED_UNICODE);
         $quiz->save();
-        
+
         $competition = 'ตอบคำถามด้านเทคโนโลยีสารสนเทศ';
         $team = $request->input('team_name');
 
@@ -106,7 +106,7 @@ class ITQuizController extends Controller
 
         MailController::sendCompetitionMail($competition, $team, $accounts);
 
-        return view('register.competition.quiz.create', ['success' => 1]);
+        return view('register.competition.quiz.create', ['success' => 1, "title" => "การแข่งขันตอบคำถามด้านเทคโนโลยีสารสนเทศ | IT Ladkrabang Open House 2016"]);
     }
 
     /**

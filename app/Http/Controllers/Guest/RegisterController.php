@@ -9,15 +9,15 @@ use Illuminate\Support\Facades\Validator;
 class RegisterController extends  Controller{
 
     public function createGuestRegister(){
-        return view('register.guest.create');
+        return view('register.guest.create', ["title" => "ลงทะเบียนเข้าชมงาน | IT Ladkrabang Open House 2016"]);
     }
 
     public function createGuestStudentRegister(){
-        return view('register.guest_student.create');
+        return view('register.guest_student.create', ["title" => "ลงทะเบียนเข้าชมงาน | IT Ladkrabang Open House 2016"]);
     }
 
     public function createGuestSchoolRegister(){
-        return view('register.guest_school.create');
+        return view('register.guest_school.create', ["title" => "ลงทะเบียนเข้าชมงาน | IT Ladkrabang Open House 2016"]);
     }
 
     public function storeGuestRegister(Request $request){
@@ -58,7 +58,7 @@ class RegisterController extends  Controller{
 
         $validator = Validator::make($inputs, $rules, $messages);
         if($validator->fails()){
-            return redirect('/register/guest')->withInput()->withErrors($validator);
+            return redirect('/register/guest')->with(["title" => "ลงทะเบียนเข้าชมงาน | IT Ladkrabang Open House 2016"])->withInput()->withErrors($validator);
         }
 
         $guest = new Guest();
@@ -67,7 +67,7 @@ class RegisterController extends  Controller{
         $guest->twitter = empty($request->twitter)? null:$request->twitter;
         $guest->save();
 
-        return view('register.guest.create', ['success' => 1]);
+        return view('register.guest.create', ['success' => 1, "title" => "ลงทะเบียนเข้าชมงาน | IT Ladkrabang Open House 2016"]);
     }
 
     public function storeGuestStudentRegister(Request $request)
@@ -113,7 +113,7 @@ class RegisterController extends  Controller{
 
         $validator = Validator::make($inputs, $rules, $messages);
         if($validator->fails()){
-            return redirect('/register/guest_student')->withInput()->withErrors($validator);
+            return redirect('/register/guest_student')->with(["title" => "ลงทะเบียนเข้าชมงาน | IT Ladkrabang Open House 2016"])->withInput()->withErrors($validator);
         }
 
         $guestStudent = new GuestStudent();
@@ -122,7 +122,7 @@ class RegisterController extends  Controller{
         $guestStudent->twitter = empty($request->twitter)? null:$request->twitter;
         $guestStudent->save();
 
-        return view('register.guest_student.create', ['success' => 1]);
+        return view('register.guest_student.create', ['success' => 1, "title" => "ลงทะเบียนเข้าชมงาน | IT Ladkrabang Open House 2016"]);
     }
 
 
@@ -170,7 +170,7 @@ class RegisterController extends  Controller{
 
         $validator = Validator::make($inputs, $rules, $messages);
         if($validator->fails()){
-            return redirect('/register/guest_school')->withInput()->withErrors($validator);
+            return redirect('/register/guest_school')->with(["title" => "ลงทะเบียนเข้าชมงาน | IT Ladkrabang Open House 2016"])->withInput()->withErrors($validator);
         }
 
         $guestSchool = new GuestSchool();
@@ -179,7 +179,7 @@ class RegisterController extends  Controller{
         $guestSchool->twitter = empty($request->twitter)? null:$request->twitter;
         $guestSchool->save();
 
-        return view('register.guest_school.create', ['success' => 1]);
+        return view('register.guest_school.create', ['success' => 1, "title" => "ลงทะเบียนเข้าชมงาน | IT Ladkrabang Open House 2016"]);
 
     }
 }

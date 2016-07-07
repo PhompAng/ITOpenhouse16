@@ -17,7 +17,7 @@ class NetworkController extends Controller
      */
     public function index()
     {
-        return view('register.competition.network.begin');
+        return view('register.competition.network.begin', ["title" => "การแข่งขันความปลอดภัยของระบบคอมพิวเตอร์ | IT Ladkrabang Open House 2016"]);
     }
 
     /**
@@ -27,7 +27,7 @@ class NetworkController extends Controller
      */
     public function create()
     {
-        return view('register.competition.network.create');
+        return view('register.competition.network.create', ["title" => "การแข่งขันความปลอดภัยของระบบคอมพิวเตอร์ | IT Ladkrabang Open House 2016"]);
     }
 
     /**
@@ -82,7 +82,7 @@ class NetworkController extends Controller
 
         $validator = Validator::make($inputs, $rules, $messages);
         if($validator->fails()){
-            return redirect('/register/competition/network/create')->withInput()->withErrors($validator);
+            return redirect('/register/competition/network/create')->with(["title" => "การแข่งขันความปลอดภัยของระบบคอมพิวเตอร์ | IT Ladkrabang Open House 2016"])->withInput()->withErrors($validator);
         }
 
         $network = new Network();
@@ -113,7 +113,7 @@ class NetworkController extends Controller
 
         MailController::sendCompetitionMail($competition, $team, $accounts);
 
-        return view('register.competition.network.create', ['success' => 1]);
+        return view('register.competition.network.create', ['success' => 1, "title" => "การแข่งขันความปลอดภัยของระบบคอมพิวเตอร์ | IT Ladkrabang Open House 2016"]);
     }
 
     /**

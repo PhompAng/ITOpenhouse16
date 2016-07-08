@@ -66,6 +66,4 @@ Route::get('/main', function () {
     return view('main.main');
 });
 
-Route::get('/register/check', function() {
-    return view('register.competition.check');
-});
+Route::get('/register/check/{type}/{remember?}', 'Competition\CheckController@getCheck');

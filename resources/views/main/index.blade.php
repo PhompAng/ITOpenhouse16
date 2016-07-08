@@ -8,7 +8,7 @@
     <!--Bootstrap-->
     <link href="{{URL::asset('assets/css/bootstrap.min.css')}}" rel="stylesheet">
     <link rel="stylesheet" href="{{ URL::asset('assets/css/main.css') }}">
-
+    <link rel="stylesheet" href="{{ URL::asset('assets/css/font-awesome.min.css') }}">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -16,7 +16,7 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
-<body>
+<body class="regis-body">
 <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
     <div class="container shadow">
         <div class="navbar-header">
@@ -101,7 +101,22 @@
         </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
 </nav>
+
 @yield('main')
+
+<footer>
+    <div class="container footer shadow --invert">
+        <div class="credit-container">
+            <span>Faculty of Information Technology at KMITL © 2016</span>
+            <span class="pull-right">
+                Open House 2011 | 2012 | 2013 | 2014 | 2016 Developers
+                <a href="#" class="back-to-top">
+                    <i class="fa fa-chevron-up"></i>
+                </a>
+            </span>
+        </div>
+    </div>
+</footer>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="{{URL::asset('assets/js/bootstrap.min.js')}}"></script>

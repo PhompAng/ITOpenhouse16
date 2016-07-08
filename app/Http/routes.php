@@ -65,3 +65,7 @@ Route::get('/form', function () {
 Route::get('/main', function () {
     return view('main.main');
 });
+
+Route::get('/register/check', function() {
+    return view('register.competition.check');
+});

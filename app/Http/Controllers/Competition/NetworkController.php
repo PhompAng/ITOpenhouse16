@@ -100,6 +100,9 @@ class NetworkController extends Controller
         }
 
         $network->member = json_encode($members, JSON_UNESCAPED_UNICODE);
+
+        $remember = md5(time() . str_random(100));
+        $network->remember = $remember;
         $network->save();
 
         $competition = 'ความปลอดภัยของระบบคอมพิวเตอร์';

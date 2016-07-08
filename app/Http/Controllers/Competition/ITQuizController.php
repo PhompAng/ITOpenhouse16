@@ -93,6 +93,9 @@ class ITQuizController extends Controller
         }
 
         $quiz->member = json_encode($members, JSON_UNESCAPED_UNICODE);
+
+        $remember = md5(time() . str_random(100));
+        $quiz->remember = $remember;
         $quiz->save();
 
         $competition = 'ตอบคำถามด้านเทคโนโลยีสารสนเทศ';

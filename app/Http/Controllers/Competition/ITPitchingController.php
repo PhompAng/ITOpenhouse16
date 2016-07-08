@@ -105,6 +105,9 @@ class ITPitchingController extends Controller
         $filename = $inputs["team_name"] . "_storyboard_" . str_random(10);
         Storage::disk('local')->put($filename.'.pdf', File::get($storyboard));
         $pitching->storyboard = $filename;
+
+        $remember = md5(time() . str_random(100));
+        $pitching->remember = $remember;
         $pitching->save();
 
         $competition = 'การนำเสนอแผนธุรกิจ (IT Pitching)';

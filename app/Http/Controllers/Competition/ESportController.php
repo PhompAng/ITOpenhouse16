@@ -113,6 +113,9 @@ class ESportController extends Controller
         }
 
         $esport->member = json_encode($members, JSON_UNESCAPED_UNICODE);
+
+        $remember = md5(time() . str_random(100));
+        $esport->remember = $remember;
         $esport->save();
 
         $competition = 'กีฬาอิเล็กทรอนิกส์(E-Sports)';

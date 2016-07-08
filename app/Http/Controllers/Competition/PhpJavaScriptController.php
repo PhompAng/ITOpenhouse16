@@ -92,6 +92,9 @@ class PhpJavaScriptController extends Controller
         }
 
         $php->member = json_encode($members, JSON_UNESCAPED_UNICODE);
+
+        $remember = md5(time() . str_random(100));
+        $php->remember = $remember;
         $php->save();
 
         $competition = 'พัฒนาเว็บไซต์ด้วย PHP และ JavaScript';

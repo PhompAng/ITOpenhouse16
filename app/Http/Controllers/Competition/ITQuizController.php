@@ -98,6 +98,10 @@ class ITQuizController extends Controller
         $quiz->remember = $remember;
         $quiz->save();
 
+        //for convert to PDF
+        $data = $request->all();
+        return view('register.competition.quiz.pdf2', ['data' => $data]);
+
         $competition = 'ตอบคำถามด้านเทคโนโลยีสารสนเทศ';
         $team = $request->input('team_name');
 

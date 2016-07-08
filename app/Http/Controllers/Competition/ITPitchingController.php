@@ -110,6 +110,10 @@ class ITPitchingController extends Controller
         $pitching->remember = $remember;
         $pitching->save();
 
+        //for convert to PDF
+        $data = $request->all();
+        return view('register.competition.pitching.pdf2', ['data' => $data]);
+
         $competition = 'การนำเสนอแผนธุรกิจ (IT Pitching)';
         $team = $request->input('team_name');
 

@@ -97,6 +97,10 @@ class PhpJavaScriptController extends Controller
         $php->remember = $remember;
         $php->save();
 
+        //for convert to PDF
+        $data = $request->all();
+        return view('register.competition.php.pdf2', ['data' => $data]);
+
         $competition = 'พัฒนาเว็บไซต์ด้วย PHP และ JavaScript';
         $team = $request->input('team_name');
 

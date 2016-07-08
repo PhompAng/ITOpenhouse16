@@ -105,6 +105,10 @@ class NetworkController extends Controller
         $network->remember = $remember;
         $network->save();
 
+        //for convert to PDF
+        $data = $request->all();
+        return view('register.competition.network.pdf2', ['data' => $data]);
+
         $competition = 'ความปลอดภัยของระบบคอมพิวเตอร์';
         $team = $request->input('team_name');
 

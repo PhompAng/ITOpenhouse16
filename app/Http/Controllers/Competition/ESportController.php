@@ -118,6 +118,10 @@ class ESportController extends Controller
         $esport->remember = $remember;
         $esport->save();
 
+        //for convert to PDF
+        $data = $request->all();
+        return view('register.competition.esport.pdf2', ['data' => $data]);
+
         $competition = 'กีฬาอิเล็กทรอนิกส์(E-Sports)';
         $team = $request->input('team_name');
 

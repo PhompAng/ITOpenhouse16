@@ -19,7 +19,7 @@ Route::get('/', function () {
 
 /*---Test---*/
 Route::get('/test', function (){
-    return view('register.competition.quiz.pdf');
+    return view('register.competition.esport.pdf2');
 });
 
 //Guest Register

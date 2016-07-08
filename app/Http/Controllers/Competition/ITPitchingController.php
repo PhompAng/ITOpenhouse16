@@ -117,7 +117,7 @@ class ITPitchingController extends Controller
         $account['email'] = $request->input('teacher_email');
         $accounts[] = $account;
 
-        MailController::sendCompetitionMail($competition, $team, $accounts);
+        MailController::sendCompetitionMail($competition, $team, $accounts, $remember, 5);
 
         return view('register.competition.pitching.create', ['success' => 1, "title" => "การแข่งขันการนำเสนอแผนธุรกิจ | IT Ladkrabang Open House 2016"]);
     }

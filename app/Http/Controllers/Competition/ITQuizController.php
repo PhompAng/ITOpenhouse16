@@ -107,7 +107,7 @@ class ITQuizController extends Controller
         $account['email'] = $request->input('teacher_email');
         $accounts[] = $account;
 
-        MailController::sendCompetitionMail($competition, $team, $accounts);
+        MailController::sendCompetitionMail($competition, $team, $accounts, $remember, 2);
 
         return view('register.competition.quiz.create', ['success' => 1, "title" => "การแข่งขันตอบคำถามด้านเทคโนโลยีสารสนเทศ | IT Ladkrabang Open House 2016"]);
     }

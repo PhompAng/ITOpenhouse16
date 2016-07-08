@@ -10,6 +10,8 @@
     <strong>สวัสดี คุณ{{$account['name']}}</strong>
     <p>
         เราได้รับข้อมูลการลงทะเบียนเข้าแข่งขัน <strong>{{$competition}}</strong> ของทีม <strong>{{$team}}</strong> เรียบร้อยแล้ว<br>
+        {{-- คุณสามารถดาวน์โหลดใบสมัครการแข่งขันได้ที่ <a href="{{ route('download', $filename) }}">{{ route('download', $filename) }}</a> --}}
+        และติดตามสถานะของการสมัครได้ที่ <a href="{{ URL::to("/register/check/") . "/" . $type . "/" . $remember}}">{{ URL::to("/register/check/") . "/" . $type . "/" . $remember}}</a>
         สามารถติดตามการแข่งขันได้ที่ <a href="https://openhouse.it.kmitl.ac.th/">https://openhouse.it.kmitl.ac.th/</a>
     </p>
     <p>

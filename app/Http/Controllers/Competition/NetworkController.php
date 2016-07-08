@@ -114,7 +114,7 @@ class NetworkController extends Controller
         $account['email'] = $request->input('teacher_email');
         $accounts[] = $account;
 
-        MailController::sendCompetitionMail($competition, $team, $accounts);
+        MailController::sendCompetitionMail($competition, $team, $accounts, $remember, 3);
 
         return view('register.competition.network.create', ['success' => 1, "title" => "การแข่งขันความปลอดภัยของระบบคอมพิวเตอร์ | IT Ladkrabang Open House 2016"]);
     }

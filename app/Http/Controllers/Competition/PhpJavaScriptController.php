@@ -106,7 +106,7 @@ class PhpJavaScriptController extends Controller
         $account['email'] = $request->input('teacher_email');
         $accounts[] = $account;
 
-        MailController::sendCompetitionMail($competition, $team, $accounts);
+        MailController::sendCompetitionMail($competition, $team, $accounts, $remember, 4);
 
         return view('register.competition.php.create', ['success' => 1, "title" => "การแข่งขันพัฒนาเว็บไซต์ | IT Ladkrabang Open House 2016"]);
     }

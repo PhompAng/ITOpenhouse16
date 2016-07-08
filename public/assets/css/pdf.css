@@ -1,0 +1,42 @@
+@font-face {
+    font-family: 'TH SarabunPSK';
+    src: url('../fonts/THSarabunPSK.eot');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'TH SarabunPSK-Bold';
+    src: url('../fonts/THSarabunPSK-Bold.eot');
+    font-weight: bold;
+    font-style: normal;
+}
+
+body {
+    font-family: 'TH SarabunPSK';
+    font-size: 24px;
+    line-height: 0.9;
+}
+
+th, td{
+    border-collapse: collapse;
+    border-right: 2px solid #8c8c8c;
+    border-bottom: 2px solid #8c8c8c;
+
+}
+
+table{
+    border: 2.22px solid #8c8c8c;
+    width: 100%;
+}
+
+.logo{
+    text-align: center;
+}
+.sign{
+    text-align: center;
+    line-height: 150%;
+}
+h2{
+    font-size: 30px;
+    font-weight:bold;
+}

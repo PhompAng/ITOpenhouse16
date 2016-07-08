@@ -22,7 +22,7 @@
                     <div class="col-xs-12 col-md-6 text-center">
                         <i class="fa fa-file" aria-hidden="true" style="font-size:  72px; margin-bottom: 30px;"></i>
                         <p>ใบสมัครการแข่งขัน</p>
-                        <h4><span class="label label-{{ $team->confirm >= 1 ? "success":"danger" }}">{{ $team->confirm == 2 ? "Success":"Unsuccess" }}</span></h4>
+                        <h4><span class="label label-{{ $team->confirm == 2 ? "success":"danger" }}">{{ $team->confirm == 2 ? "Success":"Unsuccess" }}</span></h4>
                     </div>
                 </div>
             </section>

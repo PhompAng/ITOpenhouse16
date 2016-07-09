@@ -6,6 +6,7 @@ use App\Models\Network;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Http\Requests;
+use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\Validator;
 
 class NetworkController extends Controller
@@ -105,11 +106,12 @@ class NetworkController extends Controller
         $network->remember = $remember;
         $network->save();
 
+
         //for convert to PDF
         $data = $request->all();
         //return view('register.competition.network.pdf', ['data' => $data]);
 
-        $storePath = storage_path() . "/app/public/" . $remember .".pdf";
+        $storePath = public_path() . "/pdf/" . $remember .".pdf";
         $pdf = \PDF::loadView('register.competition.network.pdf', ["data" => $data]);
         $pdf->save($storePath);
 

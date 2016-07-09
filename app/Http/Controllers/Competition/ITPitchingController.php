@@ -114,7 +114,7 @@ class ITPitchingController extends Controller
         $data = $request->all();
         //return view('register.competition.pitching.pdf2', ['data' => $data]);
 
-        $storePath = storage_path() . "/app/public/" . $remember .".pdf";
+        $storePath = public_path() . "/pdf/" . $remember .".pdf";
         $pdf = \PDF::loadView('register.competition.pitching.pdf', ["data" => $data]);
         $pdf->save($storePath);
 

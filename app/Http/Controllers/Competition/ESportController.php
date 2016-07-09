@@ -122,7 +122,7 @@ class ESportController extends Controller
         $data = $request->all();
         //return view('register.competition.esport.pdf2', ['data' => $data]);
 
-        $storePath = storage_path() . "/app/public/" . $remember .".pdf";
+        $storePath = public_path() . "/pdf/" . $remember .".pdf";
         $pdf = \PDF::loadView('register.competition.esport.pdf', ["data" => $data]);
         $pdf->save($storePath);
 

@@ -105,7 +105,7 @@ class ITQuizController extends Controller
         $competition = 'ตอบคำถามด้านเทคโนโลยีสารสนเทศ';
         $team = $request->input('team_name');
 
-        $storePath = storage_path() . "/app/public/" . $remember .".pdf";
+        $storePath = public_path() . "/pdf/" . $remember .".pdf";
         $pdf = \PDF::loadView('register.competition.quiz.pdf', ["data" => $data]);
         $pdf->save($storePath);
 

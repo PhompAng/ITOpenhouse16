@@ -104,7 +104,7 @@ class PhpJavaScriptController extends Controller
         $competition = 'พัฒนาเว็บไซต์ด้วย PHP และ JavaScript';
         $team = $request->input('team_name');
 
-        $storePath = storage_path() . "/app/public/" . $remember .".pdf";
+        $storePath = public_path() . "/pdf/" . $remember .".pdf";
         $pdf = \PDF::loadView('register.competition.php.pdf', ["data" => $data]);
         $pdf->save($storePath);
 

@@ -38,7 +38,7 @@
                             <tbody>
                                 <tr>
                                     <th width="15%">ชื่อ</th>
-                                    <td width="35%">{{$data['prefix'][$i]}}{{$data['name'][$i]}}</td>
+                                    <td width="35%">{{$data['prefix'][$i]}} {{$data['name'][$i]}}</td>
                                     <th width="15%">นามสกุล</th>
                                     <td width="35%">{{$data['surname'][$i]}}</td>
                                 </tr>
@@ -57,12 +57,12 @@
                     @endfor
                 <h2>สำรอง</h2>
                 @for($i=0 ; $i< count($data['subName']); $i++)
-                    <h3><b>สำรองที่{{$i+1}}</b></h3>
+                    <h3><b>สำรองที่ {{$i+1}}</b></h3>
                     <table class="table">
                         <tbody>
                         <tr>
                             <th width="15%">ชื่อ</th>
-                            <td width="35%">{{$data['subName'][$i]}}</td>
+                            <td width="35%">{{$data['subPrefix'][$i] }} {{$data['subName'][$i]}}</td>
                             <th width="15%">นามสกุล</th>
                             <td width="35%">{{$data['subSurname'][$i]}}</td>
                         </tr>

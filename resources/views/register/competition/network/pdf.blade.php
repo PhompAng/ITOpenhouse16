@@ -30,18 +30,23 @@
             <div class="row">
                 <h2>สมาชิก</h2>
                 @for($i=0 ; $i< count($data['name']); $i++)
-                        <h3><b>สมาชิกที่ ?</b></h3>
+                        <h3><b>สมาชิกที่ {{$i+1}}</b></h3>
                         <table class="table">
                             <tbody>
                                 <tr>
                                     <th width="15%">ชื่อ</th>
-                                    <td width="35%">{{$data['prefix'][$i]}}{{$data['name'][$i]}}</td>
+                                    <td width="35%">{{$data['prefix'][$i]}} {{$data['name'][$i]}}</td>
                                     <th width="15%">นามสกุล</th>
                                     <td width="35%">{{$data['surname'][$i]}}</td>
                                 </tr>
                                 <tr>
                                     <th>ระดับการศึกษา</th>
-                                    <td colspan="3">{{$data['class'][$i]}}</td>
+                                    <td colspan="3">
+                                        @if($data['class'][$i] == 0)
+                                            ปวช.
+                                        @else
+                                            ม. {{$data['class'][$i]}}
+                                        @endif</td>
                                 </tr>
                                 <tr>
                                     <th>อีเมล</th>
@@ -77,7 +82,7 @@
                     <tbody>
                     <tr>
                         <th width="15%">ชื่อ</th>
-                        <td width="35%">{{$data['teacher_prefix']}}{{$data['teacher_name']}}</td>
+                        <td width="35%">{{$data['teacher_prefix']}} {{$data['teacher_name']}}</td>
                         <th width="15%">นามสกุล</th>
                         <td width="35%">{{$data['teacher_surname']}}</td>
                     </tr>

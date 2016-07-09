@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title>ใบสมัคร IT Ladkrabang Open House 2016</title>
+
+    <!--Bootstrap-->
+    <link href="{{URL::asset('assets/css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{URL::asset('assets/css/pdf.css')}}" rel="stylesheet">
 </head>
 <body>
     <div class="logo">
         <img src="{{ URL::asset('assets/image/color.png') }}">
-        <h1><b>ใบสมัครการแข่งขันตอบคำถามด้านเทคโนโลยีสารสนเทศ</b></h1>
+        <h1>ใบสมัครการแข่งขันตอบคำถามด้านเทคโนโลยีสารสนเทศ</h1>
     </div>
     <div class="section">
         <div class="col-md-8 col-md-offset-2">
@@ -16,46 +21,50 @@
                     <tbody>
                         <tr>
                             <th width="15%">ชื่อทีม</th>
-                            <td width="85%">team_name</td>
+                            <td width="85%">{{$data['team_name']}}</td>
                         </tr>
                     </tbody>
                 </table>
             </div>
             <div class="row">
                 <h2>สมาชิก</h2>
-                    {{--Loop--}}
-                        <h3><b>สมาชิกที่ ?</b></h3>
+                @for($i=0;$i<count($data['name']);$i++)
+                        <h3><b>สมาชิกที่ {{$i+1}}</b></h3>
                         <table class="table">
                             <tbody>
                                 <tr>
                                     <th width="15%">ชื่อ</th>
-                                    <td width="35%">prefix+name</td>
+                                    <td width="35%">{{$data['prefix'][$i]}} {{$data['name'][$i]}}</td>
                                     <th width="15%">นามสกุล</th>
-                                    <td width="35%">surname</td>
+                                    <td width="35%">{{$data['surname'][$i]}}</td>
                                 </tr>
                                 <tr>
                                     <th>ระดับการศึกษา</th>
-                                    <td>class</td>
+                                    <td>@if($data['class'][$i] == 0)
+                                            ปวช.
+                                        @else
+                                            ม. {{$data['class'][$i]}}
+                                        @endif</td>
                                     <th>อีเมล</th>
-                                    <td>email</td>
+                                    <td>{{$data['email'][$i]}}</td>
                                 </tr>
                             </tbody>
                         </table>
-                    {{--Loop--}}
+                    @endfor
             </div>
             <div class="row">
-                <h2>โรงเรียน</h2>
+                <h2>สถานศึกษา</h2>
                 <table class="table">
                     <tbody>
                     <tr>
                         <th>โรงเรียน</th>
-                        <td colspan="3">school</td>
+                        <td colspan="3">{{$data['school']}}</td>
                     </tr>
                     <tr>
                         <th width="15%">ที่อยู่</th>
-                        <td width="35%">school_addr</td>
+                        <td width="35%">{{$data['school_addr']}}</td>
                         <th width="15%">จังหวัด</th>
-                        <td width="35%">school_province</td>
+                        <td width="35%">{{$data['school_province']}}</td>
                     </tr>
                     </tbody>
                 </table>
@@ -66,15 +75,15 @@
                     <tbody>
                     <tr>
                         <th width="15%">ชื่อ</th>
-                        <td width="35%">teacher_name</td>
+                        <td width="35%">{{$data['teacher_prefix']}} {{$data['teacher_name']}}</td>
                         <th width="15%">นามสกุล</th>
-                        <td width="35%">teacher_surname</td>
+                        <td width="35%">{{$data['teacher_surname']}}</td>
                     </tr>
                     <tr>
                         <th>อีเมล</th>
-                        <td>teacher_email</td>
+                        <td>{{$data['teacher_email']}}</td>
                         <th>เบอร์โทรศัพท์</th>
-                        <td>085xxxxxxx</td>
+                        <td>{{$data['teacher_phone']}}</td>
                     </tr>
                     </tbody>
                 </table>

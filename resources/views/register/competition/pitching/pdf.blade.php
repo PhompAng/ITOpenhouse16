@@ -57,12 +57,6 @@
                         <th>สถานศึกษา</th>
                         <td colspan="3">{{ $data['school'] }}</td>
                     </tr>
-                    <tr>
-                        <th width="15%">ที่อยู่</th>
-                        <td width="35%">{{ $data['school_addr'] }}</td>
-                        <th width="15%">จังหวัด</th>
-                        <td width="35%">{{ $data['school_province'] }}</td>
-                    </tr>
                     </tbody>
                 </table>
             </div>

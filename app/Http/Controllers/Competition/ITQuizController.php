@@ -105,7 +105,7 @@ class ITQuizController extends Controller
         $competition = 'ตอบคำถามด้านเทคโนโลยีสารสนเทศ';
         $team = $request->input('team_name');
 
-        $storePath = storage_path() . "/app/public/test.pdf";
+        $storePath = storage_path() . "/app/public/" . $remember .".pdf";
         $pdf = \PDF::loadView('register.competition.quiz.pdf', ["data" => $data]);
         $pdf->save($storePath);
 
@@ -115,7 +115,7 @@ class ITQuizController extends Controller
         $account['email'] = $request->input('teacher_email');
         $accounts[] = $account;
 
-        //MailController::sendCompetitionMail($competition, $team, $accounts, $remember, 2);
+        MailController::sendCompetitionMail($competition, $team, $accounts, $remember, 2);
 
         return view('register.competition.quiz.create', ['success' => 1, "title" => "การแข่งขันตอบคำถามด้านเทคโนโลยีสารสนเทศ | IT Ladkrabang Open House 2016"]);
     }

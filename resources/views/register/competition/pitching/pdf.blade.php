@@ -47,14 +47,14 @@
                                 </tr>
                             </tbody>
                         </table>
-                    {{--Loop--}}
+                @endfor
             </div>
             <div class="row">
                 <h2>สถานศึกษา</h2>
                 <table class="table">
                     <tbody>
                     <tr>
-                        <th>โรงเรียน</th>
+                        <th>สถานศึกษา</th>
                         <td colspan="3">{{ $data['school'] }}</td>
                     </tr>
                     <tr>

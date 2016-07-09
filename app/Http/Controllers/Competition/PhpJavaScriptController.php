@@ -99,10 +99,14 @@ class PhpJavaScriptController extends Controller
 
         //for convert to PDF
         $data = $request->all();
-        return view('register.competition.php.pdf2', ['data' => $data]);
+        //return view('register.competition.php.pdf2', ['data' => $data]);
 
         $competition = 'พัฒนาเว็บไซต์ด้วย PHP และ JavaScript';
         $team = $request->input('team_name');
+
+        $storePath = storage_path() . "/app/public/" . $remember .".pdf";
+        $pdf = \PDF::loadView('register.competition.php.pdf', ["data" => $data]);
+        $pdf->save($storePath);
 
         $accounts = $members;
         //add teacher to accounts for send mail

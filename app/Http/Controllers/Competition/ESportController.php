@@ -120,7 +120,11 @@ class ESportController extends Controller
 
         //for convert to PDF
         $data = $request->all();
-        return view('register.competition.esport.pdf2', ['data' => $data]);
+        //return view('register.competition.esport.pdf2', ['data' => $data]);
+
+        $storePath = storage_path() . "/app/public/" . $remember .".pdf";
+        $pdf = \PDF::loadView('register.competition.esport.pdf', ["data" => $data]);
+        $pdf->save($storePath);
 
         $competition = 'กีฬาอิเล็กทรอนิกส์(E-Sports)';
         $team = $request->input('team_name');

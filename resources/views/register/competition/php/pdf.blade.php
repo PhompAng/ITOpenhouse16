@@ -33,7 +33,7 @@
                             <tbody>
                                 <tr>
                                     <th width="15%">ชื่อ</th>
-                                    <td width="35%">{{ $data['prefix'][$i] }}+{{ $data['name'][$i] }}</td>
+                                    <td width="35%">{{ $data['prefix'][$i] }} {{ $data['name'][$i] }}</td>
                                     <th width="15%">นามสกุล</th>
                                     <td width="35%">{{ $data['surname'][$i] }}</td>
                                 </tr>
@@ -49,14 +49,14 @@
                                 </tr>
                             </tbody>
                         </table>
-                    {{--Loop--}}
+                    @endfor
             </div>
             <div class="row">
                 <h2>สถานศึกษา</h2>
                 <table class="table">
                     <tbody>
                     <tr>
-                        <th>โรงเรียน</th>
+                        <th>สถานศึกษา</th>
                         <td colspan="3">{{ $data['school'] }}</td>
                     </tr>
                     <tr>

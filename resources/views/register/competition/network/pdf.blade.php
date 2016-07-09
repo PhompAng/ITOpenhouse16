@@ -29,42 +29,38 @@
             </div>
             <div class="row">
                 <h2>สมาชิก</h2>
-                @for($i=0 ; $i< count($data['name']); $i++)
-                        <h3><b>สมาชิกที่ {{$i+1}}</b></h3>
-                        <table class="table">
-                            <tbody>
-                                <tr>
-                                    <th width="15%">ชื่อ</th>
-                                    <td width="35%">{{$data['prefix'][$i]}} {{$data['name'][$i]}}</td>
-                                    <th width="15%">นามสกุล</th>
-                                    <td width="35%">{{$data['surname'][$i]}}</td>
-                                </tr>
-                                <tr>
-                                    <th>ระดับการศึกษา</th>
-                                    <td colspan="3">
-                                        @if($data['class'][$i] == 0)
-                                            ปวช.
-                                        @else
-                                            ม. {{$data['class'][$i]}}
-                                        @endif</td>
-                                </tr>
-                                <tr>
-                                    <th>อีเมล</th>
-                                    <td>{{$data['email'][$i]}}</td>
-                                    <th>เบอร์โทรศัพท์</th>
-                                    <td>{{$data['phone'][$i]}}</td>
-                                </tr>
-
-                            </tbody>
-                        </table>
-                    @endfor
+                @for($i=0;$i<count($data['name']);$i++)
+                    <h3><b>สมาชิกที่ {{$i+1}}</b></h3>
+                    <table class="table">
+                        <tbody>
+                        <tr>
+                            <th width="15%">ชื่อ</th>
+                            <td width="35%">{{$data['prefix'][$i]}} {{$data['name'][$i]}}</td>
+                            <th width="15%">นามสกุล</th>
+                            <td width="35%">{{$data['surname'][$i]}}</td>
+                        </tr>
+                        <tr>
+                            <th>ระดับการศึกษา</th>
+                            <td>@if($data['class'][$i] == 0)
+                                    ปวช.
+                                @else
+                                    ม. {{$data['class'][$i]}}
+                                @endif</td>
+                            <th>เบอร์โทรศัพท์</th>
+                            <td>{{$data['phone'][$i]}}</td>
+                            {{--<th>อีเมล</th>--}}
+                            {{--<td>{{$data['email'][$i]}}</td>--}}
+                        </tr>
+                        </tbody>
+                    </table>
+                @endfor
             </div>
             <div class="row">
-                <h2>โรงเรียน</h2>
+                <h2>สถานศึกษา</h2>
                 <table class="table">
                     <tbody>
                     <tr>
-                        <th>โรงเรียน</th>
+                        <th>สถานศึกษา</th>
                         <td colspan="3">{{$data['school']}}</td>
                     </tr>
                     <tr>

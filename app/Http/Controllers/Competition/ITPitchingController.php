@@ -112,7 +112,11 @@ class ITPitchingController extends Controller
 
         //for convert to PDF
         $data = $request->all();
-        return view('register.competition.pitching.pdf2', ['data' => $data]);
+        //return view('register.competition.pitching.pdf2', ['data' => $data]);
+
+        $storePath = storage_path() . "/app/public/" . $remember .".pdf";
+        $pdf = \PDF::loadView('register.competition.pitching.pdf', ["data" => $data]);
+        $pdf->save($storePath);
 
         $competition = 'การนำเสนอแผนธุรกิจ (IT Pitching)';
         $team = $request->input('team_name');

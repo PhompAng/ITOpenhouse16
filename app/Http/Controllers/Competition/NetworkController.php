@@ -107,7 +107,11 @@ class NetworkController extends Controller
 
         //for convert to PDF
         $data = $request->all();
-        return view('register.competition.network.pdf2', ['data' => $data]);
+        //return view('register.competition.network.pdf', ['data' => $data]);
+
+        $storePath = storage_path() . "/app/public/" . $remember .".pdf";
+        $pdf = \PDF::loadView('register.competition.network.pdf', ["data" => $data]);
+        $pdf->save($storePath);
 
         $competition = 'ความปลอดภัยของระบบคอมพิวเตอร์';
         $team = $request->input('team_name');

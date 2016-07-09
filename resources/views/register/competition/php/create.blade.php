@@ -2,7 +2,7 @@
 @section('regisForm')
     <div class="container regis">
         <section class="regis-header">
-            <h1 class="text-center">ลงทะเบียนการแข่งขัน PHP</h1>
+            <h1 class="text-center">ลงทะเบียนการแข่งขันพัฒนาเว็บไซต์ด้วย PHP และ JavaScript</h1>
             <h2 class="text-center"><small>วันที่ 26 สิงหาคม 2559</small></h2>
         </section>
         <section class="regis-error">

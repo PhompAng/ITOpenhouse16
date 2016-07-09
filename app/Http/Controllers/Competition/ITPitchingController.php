@@ -73,6 +73,7 @@ class ITPitchingController extends Controller
             'bizcanvas.required'             =>  'กรุณาอัปโหลด  Business Concept',
             'storyboard.required'            =>  'กรุณาอัปโหลด  Storyboard',
             'teacher_phone.regex'            =>  'รูปแบบ  เบอร์โทรศัพท์อาจารย์ผู้ควบคุมทีม ไม่ถูกต้อง',
+            'teacher_email.email'            =>  'รูปแบบ  อีเมลอาจารย์ผู้ควบคุมทีม ไม่ถูกต้อง',
             'bizcanvas.max'                  =>  'ขนาดไฟล์ Business Concept ต้องไม่เกิน 10 MB',
             'storyboard.max'                  =>  'ขนาดไฟล์ Storyboard ต้องไม่เกิน 10 MB',
             'bizcanvas.mimes'               => 'ไฟล์ Business Concept ต้องเป็น PDF เท่านั้น',

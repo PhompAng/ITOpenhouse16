@@ -70,7 +70,7 @@
                             <select class="form-control" name="class[]" required>
                                 <option value="4" {{ old('class')[0] == 4 ? "selected":"" }}>ม. 4</option>
                                 <option value="5" {{ old('class')[0] == 5 ? "selected":"" }}>ม. 5</option>
-                                <option value="6" {{ old('class')[0] == 6 ? "selected":"" }}>ม. 6</option>
+                                <option value="6" selected="selected" {{ old('class')[0] == 6 ? "selected":"" }}>ม. 6</option>
                                 <option value="0" {{ old('class')[0] == 0 ? "selected":"" }}>ปวช.</option>
                             </select>
                         </div>
@@ -118,7 +118,7 @@
                             <select class="form-control" name="class[]" required>
                                 <option value="4" {{ old('class')[1] == 4 ? "selected":"" }}>ม. 4</option>
                                 <option value="5" {{ old('class')[1] == 5 ? "selected":"" }}>ม. 5</option>
-                                <option value="6" {{ old('class')[1] == 6 ? "selected":"" }}>ม. 6</option>
+                                <option value="6" selected="selected" {{ old('class')[1] == 6 ? "selected":"" }}>ม. 6</option>
                                 <option value="0" {{ old('class')[1] == 0 ? "selected":"" }}>ปวช.</option>
                             </select>
                         </div>

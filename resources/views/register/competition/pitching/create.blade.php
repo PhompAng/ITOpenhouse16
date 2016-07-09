@@ -205,7 +205,7 @@
                     <div class="col-md-6 col-xs-12">
                         <div class="form-group">
                             <label for="teacher_email">อีเมล</label>
-                            <input type="text" class="form-control" placeholder="e.g. openhouse@it.kmitl.ac.th" name="teacher_email" value="{{old('teacher_email')}}" required>
+                            <input type="email" class="form-control" placeholder="e.g. openhouse@it.kmitl.ac.th" name="teacher_email" value="{{old('teacher_email')}}" required>
                         </div>
                     </div>
                 </div>

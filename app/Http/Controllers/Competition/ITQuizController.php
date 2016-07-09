@@ -100,10 +100,14 @@ class ITQuizController extends Controller
 
         //for convert to PDF
         $data = $request->all();
-        return view('register.competition.quiz.pdf2', ['data' => $data]);
+//        return view('register.competition.quiz.pdf2', ['data' => $data]);
 
         $competition = 'ตอบคำถามด้านเทคโนโลยีสารสนเทศ';
         $team = $request->input('team_name');
+
+        $storePath = storage_path() . "/app/public/test.pdf";
+        $pdf = \PDF::loadView('register.competition.quiz.pdf', ["data" => $data]);
+        $pdf->save($storePath);
 
         $accounts = $members;
         //add teacher to accounts for send mail

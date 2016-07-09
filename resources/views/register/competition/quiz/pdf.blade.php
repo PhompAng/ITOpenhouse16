@@ -2,10 +2,6 @@
 <html lang="en">
 <head>
     <title>ใบสมัคร IT Ladkrabang Open House 2016</title>
-
-    <!--Bootstrap-->
-    <link href="{{URL::asset('assets/css/bootstrap.min.css') }}" rel="stylesheet">
-    <link href="{{URL::asset('assets/css/pdf.css')}}" rel="stylesheet">
 </head>
 <body>
     <div class="logo">

@@ -67,3 +67,7 @@ Route::get('/main', function () {
 });
 
 Route::get('/register/check/{type}/{remember?}', 'Competition\CheckController@getCheck');
+
+Route::get('/schedule', function () {
+    return view('main.schedule');
+});

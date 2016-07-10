@@ -38,6 +38,6 @@ class CheckController extends Controller
             default:
                 return redirect('/');
         }
-        return view('register.competition.check', ["team" => $team]);
+        return view('register.competition.check', ["title" => "สถานะลงทะเบียนการแข่งขัน | ","team" => $team]);
     }
 }

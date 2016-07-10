@@ -46,31 +46,31 @@
                     <ul class="dropdown-menu" role="menu">
                         <li>
                             <a href="{{URL('/register/competition/esport')}}">
-                                <i class="fa fa-chevron-right"></i>
+
                                 การแข่งขันกีฬาอิเล็กทรอนิกส์
                             </a>
                         </li>
                         <li>
                             <a href="{{URL('/register/competition/itquiz')}}">
-                                <i class="fa fa-chevron-right"></i>
+
                                 การแข่งขันตอบปัญหา
                             </a>
                         </li>
                         <li>
                             <a href="{{URL('/register/competition/php')}}">
-                                <i class="fa fa-chevron-right"></i>
+
                                 การแข่งขันพัฒนาเว็บไซต์
                             </a>
                         </li>
                         <li>
                             <a href="{{URL('/register/competition/network')}}">
-                                <i class="fa fa-chevron-right"></i>
+
                                 การแข่งขันความปลอดภัยของระบบคอมพิวเตอร์
                             </a>
                         </li>
                         <li>
                             <a href="{{URL('/register/competition/pitching')}}">
-                                <i class="fa fa-chevron-right"></i>
+
                                 การแข่งขันการนำเสนอแผนธุรกิจ
                             </a>
                         </li>
@@ -83,19 +83,19 @@
                     <ul class="dropdown-menu" role="menu">
                         <li>
                             <a href="{{URL('/route/car')}}">
-                                <i class="fa fa-chevron-right"></i>
+
                                 การเดินทางโดยรถยนต์
                             </a>
                         </li>
                         <li>
                             <a href="{{URL('/route/bus')}}">
-                                <i class="fa fa-chevron-right"></i>
+
                                 การเดินทางโดยรถประจำทาง
                             </a>
                         </li>
                         <li>
                             <a href="{{URL('/route/train')}}">
-                                <i class="fa fa-chevron-right"></i>
+
                                 การเดินทางโดยรถไฟ/รถไฟฟ้า
                             </a>
                         </li>

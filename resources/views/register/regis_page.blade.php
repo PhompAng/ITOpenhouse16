@@ -9,6 +9,7 @@
     <link href="{{URL::asset('assets/css/bootstrap.min.css')}}" rel="stylesheet">
     <link rel="stylesheet" href="{{ URL::asset('assets/css/style.css') }}">
     <link rel="stylesheet" href="{{ URL::asset('assets/css/main.css') }}">
+    <link rel="stylesheet" href="{{ URL::asset('assets/css/font-awesome.min.css') }}">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -33,10 +34,10 @@
         <div class="collapse navbar-collapse" id="main-nav">
             <ul class="nav navbar-nav">
                 <li>
-                    <a href="https://openhouse.it.kmitl.ac.th">หน้าแรก</a>
+                    <a href="{{URL('/')}}">หน้าแรก</a>
                 </li>
                 <li>
-                    <a href="https://openhouse.it.kmitl.ac.th/schedule">กำหนดการและกิจกรรม</a>
+                    <a href="{{URL('/schedule')}}">กำหนดการและกิจกรรม</a>
                 </li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
@@ -44,27 +45,33 @@
                     </a>
                     <ul class="dropdown-menu" role="menu">
                         <li>
-                            <a href="https://openhouse.it.kmitl.ac.th/competition/quiz">
+                            <a href="{{URL('/register/competition/esport')}}">
+                                <i class="fa fa-chevron-right"></i>
+                                การแข่งขันกีฬาอิเล็กทรอนิกส์
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{{URL('/register/competition/itquiz')}}">
                                 <i class="fa fa-chevron-right"></i>
                                 การแข่งขันตอบปัญหา
                             </a>
                         </li>
                         <li>
-                            <a href="https://openhouse.it.kmitl.ac.th/competition/php">
+                            <a href="{{URL('/register/competition/php')}}">
                                 <i class="fa fa-chevron-right"></i>
                                 การแข่งขันพัฒนาเว็บไซต์
                             </a>
                         </li>
                         <li>
-                            <a href="https://openhouse.it.kmitl.ac.th/competition/network">
+                            <a href="{{URL('/register/competition/network')}}">
                                 <i class="fa fa-chevron-right"></i>
-                                การแข่งขันความปลอดภัยในระบบเครือข่าย
+                                การแข่งขันความปลอดภัยของระบบคอมพิวเตอร์
                             </a>
                         </li>
                         <li>
-                            <a href="https://openhouse.it.kmitl.ac.th/competition/debate">
+                            <a href="{{URL('/register/competition/pitching')}}">
                                 <i class="fa fa-chevron-right"></i>
-                                การแข่งขันโต้วาที
+                                การแข่งขันการนำเสนอแผนธุรกิจ
                             </a>
                         </li>
                     </ul>
@@ -75,19 +82,19 @@
                     </a>
                     <ul class="dropdown-menu" role="menu">
                         <li>
-                            <a href="https://openhouse.it.kmitl.ac.th/route/car">
+                            <a href="{{URL('/route/car')}}">
                                 <i class="fa fa-chevron-right"></i>
                                 การเดินทางโดยรถยนต์
                             </a>
                         </li>
                         <li>
-                            <a href="https://openhouse.it.kmitl.ac.th/route/bus">
+                            <a href="{{URL('/route/bus')}}">
                                 <i class="fa fa-chevron-right"></i>
                                 การเดินทางโดยรถประจำทาง
                             </a>
                         </li>
                         <li>
-                            <a href="https://openhouse.it.kmitl.ac.th/route/train">
+                            <a href="{{URL('/route/train')}}">
                                 <i class="fa fa-chevron-right"></i>
                                 การเดินทางโดยรถไฟ/รถไฟฟ้า
                             </a>

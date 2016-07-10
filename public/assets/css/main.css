@@ -47,7 +47,7 @@
     }
     .navbar-nav > li .dropdown-menu {
         font-size: 18px;
-        width: 320px;
+        width: 350px;
         left: 50%;
         margin-top: 4px;
         margin-left: -160px;
@@ -58,6 +58,11 @@
         border-radius: 0;
         background-color: rgba(255, 255, 255, 0.95);
     }
+    .navbar-nav > li .dropdown-menu > li > a {
+        line-height: 50px;
+    }
+}
+@media(min-width: 768px) {
     .navbar-nav > li .dropdown-menu > li > a {
         line-height: 50px;
     }

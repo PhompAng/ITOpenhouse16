@@ -63,11 +63,11 @@ Route::get('/form', function () {
 
 
 Route::get('/main', function () {
-    return view('main.main');
+    return view('main.main', ["title" => ""]);
 });
 
 Route::get('/register/check/{type}/{remember?}', 'Competition\CheckController@getCheck');
 
 Route::get('/schedule', function () {
-    return view('main.schedule');
+    return view('main.schedule', ["title" => "กำหนดการและกิจกรรม | "]);
 });

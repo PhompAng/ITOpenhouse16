@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>register-ITOpenHouse2016</title>
+    <title>{{ $title }}IT Ladkrabang Open House 2016</title>
 
     <!--Bootstrap-->
     <link href="{{URL::asset('assets/css/bootstrap.min.css')}}" rel="stylesheet">

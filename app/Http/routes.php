@@ -71,3 +71,13 @@ Route::get('/register/check/{type}/{remember?}', 'Competition\CheckController@ge
 Route::get('/schedule', function () {
     return view('main.schedule', ["title" => "กำหนดการและกิจกรรม | "]);
 });
+
+Route::get('/route/car', function () {
+    return view('main.route.car', ["title" => "การเดินทางโดยรถยนต์ | "]);
+});
+Route::get('/route/bus', function () {
+    return view('main.route.bus', ["title" => "การเดินทางโดยรถประจำทาง | "]);
+});
+Route::get('/route/train', function () {
+    return view('main.route.train', ["title" => "การเดินทางโดยรถไฟ/รถไฟฟ้า | "]);
+});

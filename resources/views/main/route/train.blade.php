@@ -23,4 +23,9 @@
             </dl>
         </div>
     </div>
+
+    <script>
+        document.body.style.backgroundImage = "none";
+        document.body.style.backgroundColor = "#91A8d0";
+    </script>
 @endsection

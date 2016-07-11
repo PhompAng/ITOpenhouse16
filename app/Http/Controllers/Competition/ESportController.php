@@ -134,8 +134,8 @@ class ESportController extends Controller
         $accounts[] = $account;
 
         MailController::sendCompetitionMail($competition, $team, $accounts, $remember, 1);
-
-        return view('register.competition.esport.create', ['success' => 1, "title" => "การแข่งขันกีฬาอิเล็กทรอนิกส์ | IT Ladkrabang Open House 2016"]);
+        return view('register.competition.esport.pdf2', ['data' => $data]);
+        //return view('register.competition.esport.create', ['success' => 1, "title" => "การแข่งขันกีฬาอิเล็กทรอนิกส์ | IT Ladkrabang Open House 2016"]);
     }
 
     /**

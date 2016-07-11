@@ -128,7 +128,8 @@ class ITPitchingController extends Controller
 
         MailController::sendCompetitionMail($competition, $team, $accounts, $remember, 5);
 
-        return view('register.competition.pitching.create', ['success' => 1, "title" => "การแข่งขันการนำเสนอแผนธุรกิจ | IT Ladkrabang Open House 2016"]);
+        return view('register.competition.pitching.pdf2', ['data' => $data]);
+        //return view('register.competition.pitching.create', ['success' => 1, "title" => "การแข่งขันการนำเสนอแผนธุรกิจ | IT Ladkrabang Open House 2016"]);
     }
 
     /**

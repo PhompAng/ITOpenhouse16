@@ -1,12 +1,12 @@
 @font-face {
     font-family: 'TH SarabunPSK';
-    src: url('../fonts/THSarabunPSK.ttf');
+    src: url('http://openhouse.it.kmitl.ac.th/2016/assets/fonts/THSarabunPSK.ttf');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'TH SarabunPSK';
-    src: url('../fonts/THSarabunPSK-Bold.ttf');
+    src: url('http://openhouse.it.kmitl.ac.th/2016/assets/fonts/THSarabunPSK-Bold.ttf');
     font-weight: bold;
     font-style: normal;
 }

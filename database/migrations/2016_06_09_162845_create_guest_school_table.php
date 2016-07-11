@@ -25,7 +25,7 @@ class CreateGuestSchoolTable extends Migration
             $table->text('phone')->nullable();
             $table->text('email');
             $table->text('facebook')->nullable();
-            $table->text('twittter')->nullable();
+            $table->text('twitter')->nullable();
             $table->tinyInteger('news')->default(0);
             $table->timestamp('confirm')->nullable();
             $table->timestamps();

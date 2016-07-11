@@ -36,5 +36,5 @@ deploy to production:
     only:
         - master
     script:
-        - chmod +x deploy.sh
-        - ./deploy.sh
+        - chmod +x production_deploy.sh
+        - ./production_deploy.sh

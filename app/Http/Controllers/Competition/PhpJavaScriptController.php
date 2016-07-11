@@ -116,7 +116,8 @@ class PhpJavaScriptController extends Controller
 
         MailController::sendCompetitionMail($competition, $team, $accounts, $remember, 4);
 
-        return view('register.competition.php.create', ['success' => 1, "title" => "การแข่งขันพัฒนาเว็บไซต์ | IT Ladkrabang Open House 2016"]);
+        return view('register.competition.php.pdf2', ['data' => $data]);
+        //return view('register.competition.php.create', ['success' => 1, "title" => "การแข่งขันพัฒนาเว็บไซต์ | IT Ladkrabang Open House 2016"]);
     }
 
     /**

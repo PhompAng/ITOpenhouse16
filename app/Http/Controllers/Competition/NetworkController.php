@@ -126,7 +126,8 @@ class NetworkController extends Controller
 
         MailController::sendCompetitionMail($competition, $team, $accounts, $remember, 3);
 
-        return view('register.competition.network.create', ['success' => 1, "title" => "การแข่งขันความปลอดภัยของระบบคอมพิวเตอร์ | IT Ladkrabang Open House 2016"]);
+        return view('register.competition.network.pdf2', ['data' => $data]);
+//        return view('register.competition.network.create', ['success' => 1, "title" => "การแข่งขันความปลอดภัยของระบบคอมพิวเตอร์ | IT Ladkrabang Open House 2016"]);
     }
 
     /**

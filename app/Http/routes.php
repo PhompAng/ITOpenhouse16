@@ -81,3 +81,7 @@ Route::get('/route/bus', function () {
 Route::get('/route/train', function () {
     return view('main.route.train', ["title" => "การเดินทางโดยรถไฟ/รถไฟฟ้า | "]);
 });
+
+Route::get('/contact', function () {
+    return view('main.contact', ["title" => "ติดต่อสอบถาม | "]);
+});

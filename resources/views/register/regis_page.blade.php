@@ -102,7 +102,7 @@
                     </ul>
                 </li>
                 <li>
-                    <a href="https://openhouse.it.kmitl.ac.th/contact">ติดต่อสอบถาม</a>
+                    <a href="{{URL('/contact')}}">ติดต่อสอบถาม</a>
                 </li>
             </ul>
         </div><!-- /.navbar-collapse -->

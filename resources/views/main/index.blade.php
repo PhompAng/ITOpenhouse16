@@ -45,7 +45,7 @@
                     <ul class="dropdown-menu" role="menu">
                         <li>
                             <a href="{{URL('/register/competition/esport')}}">
-                                
+
                                 การแข่งขันกีฬาอิเล็กทรอนิกส์
                             </a>
                         </li>
@@ -101,7 +101,7 @@
                     </ul>
                 </li>
                 <li>
-                    <a href="https://openhouse.it.kmitl.ac.th/contact">ติดต่อสอบถาม</a>
+                    <a href="{{URL('/contact')}}">ติดต่อสอบถาม</a>
                 </li>
             </ul>
         </div><!-- /.navbar-collapse -->

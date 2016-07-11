@@ -4,12 +4,12 @@
     <title>ใบสมัคร IT Ladkrabang Open House 2016</title>
 
     <!--Bootstrap-->
-    <link href="{{URL::asset('assets/css/bootstrap.min.css') }}" rel="stylesheet">
-    <link href="{{URL::asset('assets/css/pdf.css')}}" rel="stylesheet">
+    <link href="http://openhouse.it.kmitl.ac.th/2016/assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="http://openhouse.it.kmitl.ac.th/2016/assets/css/pdf.css" rel="stylesheet">
 </head>
 <body>
     <div class="logo">
-        <img src="{{ URL::asset('assets/image/color.png') }}">
+        <img src="http://openhouse.it.kmitl.ac.th/2016/assets/image/color.png">
         <h1><b>ใบสมัครการแข่งขันการนำเสนอแผนธุรกิจ (IT Pitching)</b></h1>
     </div>
     <div class="section">

@@ -22,7 +22,7 @@ test:
         - vendor/bin/phpunit tests
 
 deploy to dev:
-    #environment: dev
+    environment: dev
     stage: deploy
     only:
         - develop
@@ -31,7 +31,7 @@ deploy to dev:
         - ./deploy.sh
 
 deploy to production:
-    #environment: production
+    environment: production
     stage: deploy
     only:
         - master

@@ -5,8 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-        <meta name="description" content="Page Description">
-        <meta name="author" content="Pichai Sivawat">
+        <meta name="description" content="เปิดบ้านไอทีลาดกระบัง เลือกเรียนเปลี่ยนอนาคต">
         <title>IT Ladkrabang Open House 2016</title>
 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">

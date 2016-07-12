@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta property="og:image" content="{{ URL::asset('assets/image/ogimage.jpg') }}" />
+    <meta name="description" content="เปิดบ้านไอทีลาดกระบัง เลือกเรียนเปลี่ยนอนาคต">
     <title>{{ $title }}</title>
 
     <!--Bootstrap-->

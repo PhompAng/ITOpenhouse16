@@ -72,6 +72,15 @@
             .number > svg {
                 width: auto;
             }
+            .sponsor-logo {
+                text-align: center;
+                margin-bottom: 20px;
+            }
+            .sponsor-logo > img {
+                display: inline-block;
+                margin: 20px 20px;
+                width: 120px;
+            }
 
             /* Small Devices, Tablets */
             @media only screen and (max-width : 768px) {
@@ -198,6 +207,21 @@
                     <li><a href="{{URL('/register/competition/pitching')}}">การแข่งขันการนำเสนอแผนธุรกิจ</a></li>
                     <li><a href="{{URL('/register/competition/itquiz')}}">การแข่งขันตอบคำถามด้านเทคโนโลยีสารสนเทศ</a></li>
                 </ul>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="sponsor-logo clearfix">
+                <img class="img-responsive" src="{{URL::asset('assets/image/sponsors/bks.svg')}}" alt="">
+                <img class="img-responsive" src="{{URL::asset('assets/image/sponsors/camphub.svg')}}" alt="">
+                <img class="img-responsive" src="{{URL::asset('assets/image/sponsors/dekd.svg')}}" alt="">
+                <img class="img-responsive" src="{{URL::asset('assets/image/sponsors/dtac.svg')}}" alt="">
+                <img class="img-responsive" src="{{URL::asset('assets/image/sponsors/greensyn.svg')}}" alt="">
+                <img class="img-responsive" src="{{URL::asset('assets/image/sponsors/lactasoy.svg')}}" alt="">
+                <img class="img-responsive" src="{{URL::asset('assets/image/sponsors/osot.svg')}}" alt="">
+                <img class="img-responsive" src="{{URL::asset('assets/image/sponsors/panda.svg')}}" alt="">
+                <img class="img-responsive" src="{{URL::asset('assets/image/sponsors/samart.svg')}}" alt="">
+                <img class="img-responsive" src="{{URL::asset('assets/image/sponsors/vmware.svg')}}" alt="">
             </div>
         </div>
 

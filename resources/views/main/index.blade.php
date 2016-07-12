@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ $title }}IT Ladkrabang Open House 2016</title>
-    <meta property="og:image" content="please add" />
+    <meta property="og:image" content="{{ URL::asset('assets/image/ogimage.jpg') }}" />
 
     <!--Bootstrap-->
     <link href="{{URL::asset('assets/css/bootstrap.min.css')}}" rel="stylesheet">

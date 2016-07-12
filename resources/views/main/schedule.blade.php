@@ -8,7 +8,7 @@
             <div class="col-xs-12 col-md-10 col-md-offset-1">
                 <div class="content">
                     <h2 class="text-center">กำหนดการ IT Ladkrabang Open House 2016</h2>
-                    <h3 class="text-center" style="margin-bottom: 40px">
+                    <h3 class="text-center">
                         <small>วันศุกร์ที่ 26 สิงหาคม พ.ศ. 2559</small>
                     </h3>
 

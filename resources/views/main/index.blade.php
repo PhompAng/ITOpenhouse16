@@ -110,6 +110,8 @@
 
 @yield('main')
 
+@include('sponsor')
+
 <footer>
     <div class="container footer shadow --invert">
         <div class="credit-container">

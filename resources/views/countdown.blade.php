@@ -111,6 +111,11 @@
                 .date {
                     font-size: 2em;
                 }
+                .sponsor-logo > img {
+                    display: inline-block;
+                    margin: 20px 20px;
+                    width: 80px;
+                }
             }
 
             /* Custom, iPhone Retina */
@@ -127,6 +132,11 @@
                 }
                 .date {
                     font-size: 20px;
+                }
+                .sponsor-logo > img {
+                    display: inline-block;
+                    margin: 10px 10px;
+                    width: 60px;
                 }
             }
 

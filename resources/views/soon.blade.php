@@ -110,34 +110,24 @@
 </nav>
 
 <div id="fuckios">
-    <img src="{{URL::asset('assets/image/soon.jpg')}}" alt="">
+    <img src="{{URL::asset('assets/image/soon.jpg')}}" alt="" id="fuckimg">
 </div>
-
-<div class="main" style="margin-bottom: 0">
-</div>
-
-<footer>
-    <div class="container footer shadow --invert">
-        <div class="credit-container">
-            <span>Faculty of Information Technology at KMITL © 2016</span>
-            <span class="pull-right">
-                Open House 2011 | 2012 | 2013 | 2014 | 2016 Developers
-                <a href="#" class="back-to-top">
-                    <i class="fa fa-chevron-up"></i>
-                </a>
-            </span>
-        </div>
-    </div>
-</footer>
-
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="{{URL::asset('assets/js/bootstrap.min.js')}}"></script>
 
 <script>
+    $(document).ready(function () {
+        if ($(window).height() > $(window).width()) {
+            $("#fuckimg").attr("src", "{{URL::asset('assets/image/soon.jpg')}}");
+        } else {
+            $("#fuckimg").attr("src", "{{URL::asset('assets/image/soon1.jpg')}}");
+        }
+    });
     $(window).on('resize', function() {
         if ($(window).height() > $(window).width()) {
-            $("#fuckios").attr('style', 'display: -webkit-flex; display: flex');
-            document.body.style.backgroundImage = "none";
+            $("#fuckimg").attr("src", "{{URL::asset('assets/image/soon.jpg')}}");
+        } else {
+            $("#fuckimg").attr("src", "{{URL::asset('assets/image/soon1.jpg')}}");
         }
     });
 </script>

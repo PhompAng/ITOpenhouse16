@@ -43,7 +43,7 @@
 
             body {
                 background: #fcfcfc;
-                margin-top: 10%;
+                margin-top: 65px;
             }
             h1 {
                 /*font-family: "Raleway", sans-serif; */

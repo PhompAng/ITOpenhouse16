@@ -109,7 +109,11 @@
     </div><!-- /.container-fluid -->
 </nav>
 
-<div class="main">
+<div id="fuckios">
+    <img src="{{URL::asset('assets/image/soon.jpg')}}" alt="">
+</div>
+
+<div class="main" style="margin-bottom: 0">
 </div>
 
 <footer>
@@ -128,5 +132,14 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="{{URL::asset('assets/js/bootstrap.min.js')}}"></script>
+
+<script>
+    $(window).on('resize', function() {
+        if ($(window).height() > $(window).width()) {
+            $("#fuckios").attr('style', 'display: -webkit-flex; display: flex');
+            document.body.style.backgroundImage = "none";
+        }
+    });
+</script>
 </body>
 </html>

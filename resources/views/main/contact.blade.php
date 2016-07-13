@@ -10,7 +10,7 @@
                     <h2>สอบถามข้อมูลทั่วไป</h2>
                     <dl>
                         <dt>โทรศัพท์</dt>
-                        <dd>0-2723-4936 ต่อ 45</dd>
+                        <dd>0-2723-4936</dd>
 
                         <dt>Email</dt>
                         <dd><a href="mailto:openhouse@it.kmitl.ac.th">openhouse@it.kmitl.ac.th</a></dd>

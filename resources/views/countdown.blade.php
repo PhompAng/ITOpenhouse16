@@ -222,7 +222,7 @@
 
         <div class="container">
             <div class="aaa-logo clearfix">
-                <img class="img-responsive" src="{{URL::asset('assets/image/sponsors/bks.svg')}}" alt="">
+                <img class="img-responsive" src="{{URL::asset('assets/image/aaa/bks.svg')}}" alt="">
                 <img class="img-responsive" src="{{URL::asset('assets/image/aaa/vmware.svg')}}" alt="">
                 <img class="img-responsive" src="{{URL::asset('assets/image/aaa/camphub.svg')}}" alt="">
                 <img class="img-responsive" src="{{URL::asset('assets/image/aaa/dekd.svg')}}" alt="">

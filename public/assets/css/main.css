@@ -168,6 +168,23 @@
     margin: 20px 20px;
     width: 120px;
 }
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+    .aaa-logo > img {
+        display: inline-block;
+        margin: 20px 20px;
+        width: 80px;
+    }
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+    .aaa-logo > img {
+        display: inline-block;
+        margin: 10px 10px;
+        width: 60px;
+    }
+}
 
 .content {
     background-color: #fff;

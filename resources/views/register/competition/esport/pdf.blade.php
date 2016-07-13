@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <title>ใบสมัคร IT Ladkrabang Open House 2016</title>
-
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <!--Bootstrap-->
     <link href="http://openhouse.it.kmitl.ac.th/2016/assets/css/bootstrap.min.css" rel="stylesheet">
     <link href="http://openhouse.it.kmitl.ac.th/2016/assets/css/pdf.css" rel="stylesheet">
@@ -45,12 +45,18 @@
                                 <tr>
                                     <th>Steam</th>
                                     <td>{{$data['steam'][$i]}}</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table class="table">
+                            <tbody>
+                                <tr>
                                     <th>Facebook</th>
                                     <td>{{$data['facebook'][$i]}}</td>
                                 </tr>
                                 <tr>
                                     <th>เบอร์โทรศัพท์</th>
-                                    <td colspan="3">{{$data['phone'][$i]}}</td>
+                                    <td>{{$data['phone'][$i]}}</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -69,12 +75,18 @@
                         <tr>
                             <th>Steam</th>
                             <td>{{$data['subSteam'][$i]}}</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <table class="table">
+                        <tbody>
+                        <tr>
                             <th>Facebook</th>
                             <td>{{$data['subFacebook'][$i]}}</td>
                         </tr>
                         <tr>
                             <th>เบอร์โทรศัพท์</th>
-                            <td colspan="3">{{$data['subPhone'][$i]}}</td>
+                            <td>{{$data['subPhone'][$i]}}</td>
                         </tr>
                         </tbody>
                     </table>

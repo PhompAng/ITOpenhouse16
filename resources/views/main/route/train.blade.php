@@ -7,7 +7,7 @@
         <div class="content">
             <h2>แผนที่คณะเทคโนโลยีสารสนเทศ</h2>
             <div class="embed-responsive embed-responsive-16by9">
-                <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://www.openstreetmap.org/export/embed.html?bbox=100.78014135360718%2C13.72955708320629%2C100.78256607055663%2C13.732087077791387&amp;layer=mapnik" style="border: 1px solid black"></iframe><br/><small><a href="http://www.openstreetmap.org/#map=19/13.73082/100.78135">View Larger Map</a></small>
+                <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=100.78014135360718%2C13.72955708320629%2C100.78256607055663%2C13.732087077791387&amp;layer=mapnik" style="border: 1px solid black"></iframe><br/><small><a href="http://www.openstreetmap.org/#map=19/13.73082/100.78135">View Larger Map</a></small>
             </div>
             <br>
             <dl>

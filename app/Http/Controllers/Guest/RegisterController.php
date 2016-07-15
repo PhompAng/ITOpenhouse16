@@ -67,7 +67,7 @@ class RegisterController extends  Controller{
         $guest->twitter = empty($request->twitter)? null:$request->twitter;
         $guest->save();
 
-        return view('register.guest_school.success', ['success' => 1, "title" => "ลงทะเบียนเข้าชมงาน | IT Ladkrabang Open House 2016", 'data' => $request->all()]);
+        return view('register.guest.success', ['success' => 1, "title" => "ลงทะเบียนเข้าชมงาน | IT Ladkrabang Open House 2016", 'data' => $request->all()]);
     }
 
     public function storeGuestStudentRegister(Request $request)
@@ -122,7 +122,7 @@ class RegisterController extends  Controller{
         $guestStudent->twitter = empty($request->twitter)? null:$request->twitter;
         $guestStudent->save();
 
-        return view('register.guest_school.success', ['success' => 1, "title" => "ลงทะเบียนเข้าชมงาน | IT Ladkrabang Open House 2016", 'data' => $request->all()]);
+        return view('register.guest_student.success', ['success' => 1, "title" => "ลงทะเบียนเข้าชมงาน | IT Ladkrabang Open House 2016", 'data' => $request->all()]);
     }
 
 

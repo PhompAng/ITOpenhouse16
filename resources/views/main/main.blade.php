@@ -4,6 +4,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 logo">
+                	<h1>Bell Kung</h1>
                     <img class="header-logo" src="{{ URL::asset('assets/image/OpenHouse-FinalLogo-01.png') }}" alt="">
                 </div>
             </div>

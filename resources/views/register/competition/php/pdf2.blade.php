@@ -135,5 +135,7 @@
                 </div>
             </div>
         </div>
+        <a href="{{URL('/')}}" class="btn btn-success btn-block  btn-lg">กลับหน้าหลัก</a>
+
     </div>
 </div>

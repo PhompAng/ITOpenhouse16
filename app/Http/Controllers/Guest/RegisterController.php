@@ -67,6 +67,12 @@ class RegisterController extends  Controller{
         $guest->twitter = empty($request->twitter)? null:$request->twitter;
         $guest->save();
 
+        $sms = new SMSController();
+        $result = $sms->sendSMS("0000", $guest->phone, $guest->id);
+        if ($result[0] == FALSE) {
+            dd($result);
+        }
+
         return view('register.guest.success', ['success' => 1, "title" => "ลงทะเบียนเข้าชมงาน | IT Ladkrabang Open House 2016", 'data' => $request->all()]);
     }
 
@@ -121,6 +127,12 @@ class RegisterController extends  Controller{
         $guestStudent->facebook = empty($request->facebook)? null:$request->facebook;
         $guestStudent->twitter = empty($request->twitter)? null:$request->twitter;
         $guestStudent->save();
+
+        $sms = new SMSController();
+        $result = $sms->sendSMS("0000", $guestStudent->phone, $guestStudent->id);
+        if ($result[0] == FALSE) {
+            dd($result);
+        }
 
         return view('register.guest_student.success', ['success' => 1, "title" => "ลงทะเบียนเข้าชมงาน | IT Ladkrabang Open House 2016", 'data' => $request->all()]);
     }
@@ -178,6 +190,12 @@ class RegisterController extends  Controller{
         $guestSchool->facebook = empty($request->facebook)? null:$request->facebook;
         $guestSchool->twitter = empty($request->twitter)? null:$request->twitter;
         $guestSchool->save();
+
+        $sms = new SMSController();
+        $result = $sms->sendSMS("0000", $guestSchool->phone, $guestSchool->id);
+        if ($result[0] == FALSE) {
+            dd($result);
+        }
 
         return view('register.guest_school.success', ['success' => 1, "title" => "ลงทะเบียนเข้าชมงาน | IT Ladkrabang Open House 2016", 'data' => $request->all()]);
 

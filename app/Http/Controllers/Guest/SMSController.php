@@ -23,9 +23,9 @@ class SMSController
         $params['from'] = $from;
         $params['to']   = $to;
 
-        $message = "ลงทะเบียนเสร็จสิ้น
-รหัสลงทะเบียน " . str_pad($code,4,"0",STR_PAD_LEFT) . "
-กรุณาแจ้งรหัสนี้ที่โต๊ะลงทะเบียนในวันงาน แล้วพบกันวันศุกร์ 26 สิงหาคม 2559";
+
+
+        $message = "ลงทะเบียนสำเร็จ แจ้งรหัส " . str_pad($code,4,"0",STR_PAD_LEFT) . " ที่จุดลงทะเบียน IT Openhouse 26 ส.ค. 59";
 
         $params['message'] = $message;
 

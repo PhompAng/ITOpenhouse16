@@ -89,3 +89,29 @@ Route::get('/route/train', function () {
 Route::get('/contact', function () {
     return view('main.contact', ["title" => "ติดต่อสอบถาม | "]);
 });
+
+// Authentication Routes...
+Route::get('/backend/login', 'Backend\AuthController@showLoginForm');
+Route::post('/backend/login', 'Backend\AuthController@login');
+Route::get('/backend/logout', 'Backend\AuthController@logout');
+//
+//// Registration Routes...
+//Route::get('/backend/register', 'Backend\AuthController@showRegistrationForm');
+//Route::post('/backend/register', 'Backend\AuthController@register');
+//
+//// Password Reset Routes...
+//Route::get('/backend/password/reset/{token?}', 'Backend\PasswordController@showResetForm');
+//Route::post('/backend/password/email', 'Backend\PasswordController@sendResetLinkEmail');
+//Route::post('/backend/password/reset', 'Backend\PasswordController@reset');
+
+Route::group(['middleware' => 'uac'], function () {
+    Route::get('/backend', function () {
+        return view('backend.main');
+    });
+    Route::get('/backend/register', function () {
+        return "register";
+    });
+    Route::get('/backend/check/esport', function () {
+        return "check";
+    });
+});

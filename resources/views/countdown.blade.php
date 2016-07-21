@@ -111,7 +111,7 @@
                 .date {
                     font-size: 2em;
                 }
-                .sponsor-logo > img {
+                .aaa-logo > img {
                     display: inline-block;
                     margin: 20px 20px;
                     width: 80px;
@@ -133,7 +133,7 @@
                 .date {
                     font-size: 20px;
                 }
-                .sponsor-logo > img {
+                .aaa-logo > img {
                     display: inline-block;
                     margin: 10px 10px;
                     width: 60px;
@@ -232,6 +232,7 @@
                 <img class="img-responsive" src="{{URL::asset('assets/image/aaa/osot.svg')}}" alt="">
                 <img class="img-responsive" src="{{URL::asset('assets/image/aaa/panda.svg')}}" alt="">
                 <img class="img-responsive" src="{{URL::asset('assets/image/aaa/samart.svg')}}" alt="">
+                <img class="img-responsive" src="{{URL::asset('assets/image/aaa/vision.svg')}}" alt="">
 
             </div>
         </div>

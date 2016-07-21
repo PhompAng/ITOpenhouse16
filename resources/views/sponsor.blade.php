@@ -13,5 +13,6 @@
         <img class="img-responsive" src="{{URL::asset('assets/image/aaa/osot.svg')}}" alt="">
         <img class="img-responsive" src="{{URL::asset('assets/image/aaa/panda.svg')}}" alt="">
         <img class="img-responsive" src="{{URL::asset('assets/image/aaa/samart.svg')}}" alt="">
+        <img class="img-responsive" src="{{URL::asset('assets/image/aaa/vision.svg')}}" alt="">
     </div>
 </div>

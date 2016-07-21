@@ -34,11 +34,20 @@ class User extends Authenticatable
     }
 
     private function getPageNo($request) {
-        switch ($request->path()) {
-            case 'backend/register':
+        $path = $request->path();
+        switch (true) {
+            case stripos($path, 'backend/register') !== false:
                 return 1;
-            case 'backend/check/esport':
+            case stripos($path, 'backend/competition/esport') !== false:
                 return 2;
+            case stripos($path, 'backend/competition/pitching') !== false:
+                return 3;
+            case stripos($path, 'backend/competition/quiz') !== false:
+                return 4;
+            case stripos($path, 'backend/competition/network') !== false:
+                return 5;
+            case stripos($path, 'backend/competition/php') !== false:
+                return 6;
             default:
                 return -1;
         }

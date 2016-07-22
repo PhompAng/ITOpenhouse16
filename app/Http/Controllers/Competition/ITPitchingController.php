@@ -176,4 +176,14 @@ class ITPitchingController extends Controller
     {
         //
     }
+
+    public function getBizcanvas($id) {
+        $bizcanvas = Pitching::find($id)->bizcanvas . ".pdf";
+        return response(Storage::disk('local')->get($bizcanvas), 200, ['Content-Type' => 'application/pdf']);
+    }
+
+    public function getStoryboard($id) {
+        $storyboard = Pitching::find($id)->storyboard . ".pdf";
+        return response(Storage::disk('local')->get($storyboard), 200, ['Content-Type' => 'application/pdf']);
+    }
 }

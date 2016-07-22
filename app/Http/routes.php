@@ -70,7 +70,9 @@ Route::get('/main', function () {
     return view('main.main', ["title" => ""]);
 });
 
-Route::get('/register/check/{type}/{remember?}', 'Competition\CheckController@getCheck');
+Route::get('/register/check/{type}/{remember?}', [
+    'as' => 'registerCheck',
+    'uses' => 'Competition\CheckController@getCheck']);
 
 Route::get('/schedule', function () {
     return view('main.schedule', ["title" => "กำหนดการและกิจกรรม | "]);
@@ -88,4 +90,43 @@ Route::get('/route/train', function () {
 
 Route::get('/contact', function () {
     return view('main.contact', ["title" => "ติดต่อสอบถาม | "]);
+});
+
+// Authentication Routes...
+Route::get('/backend/login', 'Backend\AuthController@showLoginForm');
+Route::post('/backend/login', 'Backend\AuthController@login');
+Route::get('/backend/logout', 'Backend\AuthController@logout');
+//
+//// Registration Routes...
+//Route::get('/backend/register', 'Backend\AuthController@showRegistrationForm');
+//Route::post('/backend/register', 'Backend\AuthController@register');
+//
+//// Password Reset Routes...
+//Route::get('/backend/password/reset/{token?}', 'Backend\PasswordController@showResetForm');
+//Route::post('/backend/password/email', 'Backend\PasswordController@sendResetLinkEmail');
+//Route::post('/backend/password/reset', 'Backend\PasswordController@reset');
+
+Route::group(['middleware' => 'uac'], function () {
+    Route::get('/backend', function () {
+        return view('backend.main');
+    });
+    Route::get('/backend/register', function () {
+        return "register";
+    });
+    Route::resource('/backend/competition/esport', 'Backend\EsportController');
+    Route::resource('/backend/competition/pitching', 'Backend\ITPitchingController');
+    Route::resource('/backend/competition/network', 'Backend\NetworkController');
+    Route::resource('/backend/competition/php', 'Backend\PhpController');
+    Route::resource('/backend/competition/quiz', 'Backend\ITQuizController');
+    Route::post('/backend/competition/{type}/{id}/change', [
+    'as' => 'competitionConfirmChange',
+    'uses' => 'Competition\CheckController@change']);
+    Route::get('/backend/competition/pitching/{id}/bizcanvas', [
+        'as' => 'getBizcanvas',
+        'uses' => 'Competition\ITPitchingController@getBizcanvas'
+    ]);
+    Route::get('/backend/competition/pitching/{id}/storyboard', [
+        'as' => 'getStoryboard',
+        'uses' => 'Competition\ITPitchingController@getStoryboard'
+    ]);
 });

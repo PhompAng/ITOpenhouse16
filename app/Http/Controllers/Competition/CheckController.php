@@ -40,4 +40,32 @@ class CheckController extends Controller
         }
         return view('register.competition.check', ["title" => "สถานะลงทะเบียนการแข่งขัน | ","team" => $team]);
     }
+
+    public function change(Request $request, $type, $id) {
+        switch ($type) {
+            case 'esport':
+                $team = ESport::find($id);
+                break;
+            case 'pitching':
+                $team = Pitching::find($id);
+                break;
+            case 'network':
+                $team = Network::find($id);
+                break;
+            case 'php':
+                $team = Php::find($id);
+                break;
+            case 'quiz':
+                $team = ITQuiz::find($id);
+                break;
+            default:
+                dd("fuck you");
+                break;
+        }
+        if (!isset($team)) {
+            return response()->json("fuck", 404);
+        }
+        $team->confirm = $request->confirm;
+        $team->save();
+    }
 }

@@ -213,10 +213,19 @@
 
     <h2>Confirm</h2>
     @if($data->confirm == 0)
+        <span class="text-danger">
+            <i class="fa fa-circle"></i>
+        </span>
         ยังไม่ได้ส่ง
     @elseif($data->confirm == 1)
+        <span class="text-success">
+            <i class="fa fa-circle"></i>
+        </span>
         เรียบร้อย
     @else
+        <span class="text-primary">
+            <i class="fa fa-circle"></i>
+        </span>
         ลงทะเบียนซ้ำ
     @endif
 

@@ -113,7 +113,7 @@ class ITQuizController extends Controller
 
         $validator = Validator::make($inputs, $rules, $messages);
         if($validator->fails()){
-            return redirect('/register/competition/itquiz/create')->with(["title" => "การแข่งขันตอบคำถามด้านเทคโนโลยีสารสนเทศ | IT Ladkrabang Open House 2016"])->withInput()->withErrors($validator);
+            return redirect('/register/competition/itquiz/'.$id.'edit')->with(['data' => $inputs])->withErrors($validator);
         }
 
         $quiz->fill($request->all());

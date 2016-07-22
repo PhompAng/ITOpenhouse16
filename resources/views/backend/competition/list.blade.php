@@ -1,11 +1,15 @@
 @extends('backend.index')
 @section('content')
     <div id="teams">
-        <div class="input-group">
-            <input class="search form-control" placeholder="Search" />
-            <div class="input-group-addon"><i class="fa fa-search" aria-hidden="true"></i></div>
+        <div class="row">
+            <div class="col-xs-12 col-md-6">
+                <div class="input-group">
+                    <input class="search form-control" placeholder="Search" />
+                    <div class="input-group-addon"><i class="fa fa-search" aria-hidden="true"></i></div>
+                </div>
+            </div>
         </div>
-        <table class="table table-hover">
+        <table class="table table-hover table-nowrap table-responsive">
             <thead>
                 <th class="sort" data-sort="id">id <i class="fa fa-sort" aria-hidden="true"></i></th>
                 <th class="sort" data-sort="team_name">team_name <i class="fa fa-sort" aria-hidden="true"></i></th>
@@ -28,13 +32,36 @@
                     </td>
                     <td class="school">{{$data->school}}</td>
                     <td class="confirm">
-                        <form action="{{URL::route('competitionConfirmChange', [$typeText, $data->id])}}" method="post">
+                        <form action="{{URL::route('competitionConfirmChange', [$typeText, $data->id])}}" method="post" class="form-inline">
                             {!! csrf_field() !!}
-                            <select name="confirm" class="confirmOption">
-                                <option value="0" {{$data->confirm == 0 ? "selected":""}}>ยังไม่ได้ส่ง</option>
-                                <option value="1" {{$data->confirm == 1 ? "selected":""}}>เรียบร้อย</option>
-                                <option value="-1" {{$data->confirm == -1 ? "selected":""}}>ลงทะเบียนซ้ำ</option>
-                            </select>
+                            <div class="form-group">
+                                <div class="input-group">
+                                    @if($data->confirm == 0)
+                                        <div class="input-group-addon">
+                                            <span class="text-danger">
+                                                <i class="fa fa-circle"></i>
+                                            </span>
+                                        </div>
+                                    @elseif($data->confirm == 1)
+                                        <div class="input-group-addon">
+                                            <span class="text-success">
+                                                <i class="fa fa-circle"></i>
+                                            </span>
+                                        </div>
+                                    @else
+                                        <div class="input-group-addon">
+                                            <span class="text-primary">
+                                                <i class="fa fa-circle"></i>
+                                            </span>
+                                        </div>
+                                    @endif
+                                    <select name="confirm" class="confirmOption form-control">
+                                        <option value="0" {{$data->confirm == 0 ? "selected":""}}>ยังไม่ได้ส่ง</option>
+                                        <option value="1" {{$data->confirm == 1 ? "selected":""}}>เรียบร้อย</option>
+                                        <option value="-1" {{$data->confirm == -1 ? "selected":""}}>ลงทะเบียนซ้ำ</option>
+                                    </select>
+                                </div>
+                            </div>
                         </form>
                     </td>
                     <td class="created_at">{{$data->created_at}}</td>

@@ -55,7 +55,14 @@ class NetworkController extends Controller
      */
     public function edit($id)
     {
-        //
+        $network = Network::find($id);
+        $network->prefix = array_column($network->member, 'prefix');
+        $network->name = array_column($network->member, 'name');
+        $network->surname = array_column($network->member, 'surname');
+        $network->class = array_column($network->member, 'class');
+        $network->email = array_column($network->member, 'email');
+        $network->phone = array_column($network->member, 'phone');
+        return view('backend.competition.network_edit', ['data' => $network]);
     }
 
     /**

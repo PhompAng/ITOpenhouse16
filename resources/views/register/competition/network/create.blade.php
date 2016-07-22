@@ -33,7 +33,7 @@
                     </div>
                     <div class="col-md-6 col-xs-12">
                         <label for="rank">อันดับทีม</label>
-                        <input type="number" min="1" max="100" class="form-control" placeholder="1" name="rank" value="{{ old('team_rank') }}" required>
+                        <input type="number" min="1" max="100" class="form-control" placeholder="1" name="rank" value="{{ old('rank') }}" required>
                     </div>
                 </div>
                 {{--สมาชิก--}}

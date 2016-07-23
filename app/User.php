@@ -48,6 +48,8 @@ class User extends Authenticatable
                 return 5;
             case stripos($path, 'backend/competition/php') !== false:
                 return 6;
+            case stripos($path, 'backend/user') !== false:
+                return 7;
             default:
                 return -1;
         }

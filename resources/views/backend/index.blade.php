@@ -43,6 +43,9 @@
                     <a href="{{URL('/backend/competition/php')}}"><li>PHP</li></a>
                 </ul>
             </li>
+            <li>
+                <a href="{{URL('/backend/user')}}">Users</a>
+            </li>
         </ul>
     </div>
     <!-- /#sidebar-wrapper -->

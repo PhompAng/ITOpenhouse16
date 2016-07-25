@@ -98,9 +98,10 @@
             </div>
         </div>
     </div>
-    {{--<div class="itcamp">--}}
-        {{--<h1 class="text-center">สำหรับ IT Camp</h1>--}}
-    {{--</div>--}}
+    <div class="itcamp">
+        <h1 class="text-center">IT Camp</h1>
+        <h3 class="text-center">Coming soon</h3>
+    </div>
     <!-- Clubs -->
     <div class="clubsec">
         <div class="container">

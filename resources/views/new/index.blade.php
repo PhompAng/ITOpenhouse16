@@ -22,8 +22,29 @@
         .rownominus {margin-left: 0;margin-right: 0;}
         .aaa-logo > img {
             display: inline-block;
-            width: 80px;
+            width: 100px;
             margin: 20px 20px;
+        }
+        @media only screen and (max-width : 768px) {
+            .aaa-logo > img {
+                display: inline-block;
+                margin: 20px 10px;
+                width: 90px;
+            }
+        }
+        @media only screen and (max-width : 480px) {
+            .aaa-logo > img {
+                display: inline-block;
+                margin: 20px 10px;
+                width: 80px;
+            }
+        }
+        @media only screen and (max-width : 320px) {
+            .aaa-logo > img {
+                display: inline-block;
+                margin: 10px 10px;
+                width: 80px;
+            }
         }
     </style>
 </head>

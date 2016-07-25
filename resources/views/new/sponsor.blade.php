@@ -1,5 +1,5 @@
 <div class="logo-aaa">
-    <div class="container">
+    <div class="container-fluid">
         <div class="row text-center aaa-logo">
             <img src="{{URL::asset('assets/new/img/aaa/bks.svg')}}" class="img-responsive" />
             <img src="{{URL::asset('assets/new/img/aaa/vmware.svg')}}" class="img-responsive" />

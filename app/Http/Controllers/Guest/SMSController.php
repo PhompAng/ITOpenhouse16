@@ -15,7 +15,7 @@ class SMSController
     var $username  = "ITOPH";
     var $password  = "316517";
 
-    public function sendSMS($from, $to, $code) {
+    public function sendSMS($from, $to, $code, $type) {
         $params['method']   = 'send';
         $params['username'] = $this->username;
         $params['password'] = $this->password;
@@ -25,7 +25,7 @@ class SMSController
 
 
 
-        $message = "ลงทะเบียนสำเร็จ แจ้งรหัส " . str_pad($code,4,"0",STR_PAD_LEFT) . " ที่จุดลงทะเบียน IT Openhouse 26 ส.ค. 59";
+        $message = "ลงทะเบียนสำเร็จ แจ้งรหัส " . $type . str_pad($code,4,"0",STR_PAD_LEFT) . " ที่จุดลงทะเบียน IT Openhouse 26 ส.ค. 59";
 
         $params['message'] = $message;
 

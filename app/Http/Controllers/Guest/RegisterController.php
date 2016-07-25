@@ -68,7 +68,7 @@ class RegisterController extends  Controller{
         $guest->save();
 
         $sms = new SMSController();
-        $result = $sms->sendSMS("0000", $guest->phone, $guest->id);
+        $result = $sms->sendSMS("0000", $guest->phone, $guest->id, 1);
         if ($result[0] == FALSE) {
             dd($result);
         }
@@ -129,7 +129,7 @@ class RegisterController extends  Controller{
         $guestStudent->save();
 
         $sms = new SMSController();
-        $result = $sms->sendSMS("0000", $guestStudent->phone, $guestStudent->id);
+        $result = $sms->sendSMS("0000", $guestStudent->phone, $guestStudent->id, 2);
         if ($result[0] == FALSE) {
             dd($result);
         }
@@ -192,7 +192,7 @@ class RegisterController extends  Controller{
         $guestSchool->save();
 
         $sms = new SMSController();
-        $result = $sms->sendSMS("0000", $guestSchool->phone, $guestSchool->id);
+        $result = $sms->sendSMS("0000", $guestSchool->phone, $guestSchool->id, 3);
         if ($result[0] == FALSE) {
             dd($result);
         }

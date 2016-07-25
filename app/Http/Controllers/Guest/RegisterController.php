@@ -9,15 +9,15 @@ use Illuminate\Support\Facades\Validator;
 class RegisterController extends  Controller{
 
     public function createGuestRegister(){
-        return view('register.guest.create', ["title" => "ลงทะเบียนเข้าชมงาน | IT Ladkrabang Open House 2016"]);
+        return view('new.guest.create', ["title" => "ลงทะเบียนเข้าชมงาน | IT Ladkrabang Open House 2016"]);
     }
 
     public function createGuestStudentRegister(){
-        return view('register.guest_student.create', ["title" => "ลงทะเบียนเข้าชมงาน | IT Ladkrabang Open House 2016"]);
+        return view('new.guest_student.create', ["title" => "ลงทะเบียนเข้าชมงาน | IT Ladkrabang Open House 2016"]);
     }
 
     public function createGuestSchoolRegister(){
-        return view('register.guest_school.create', ["title" => "ลงทะเบียนเข้าชมงาน | IT Ladkrabang Open House 2016"]);
+        return view('new.guest_school.create', ["title" => "ลงทะเบียนเข้าชมงาน | IT Ladkrabang Open House 2016"]);
     }
 
     public function storeGuestRegister(Request $request){

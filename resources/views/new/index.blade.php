@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <!-- The above 3 meta tags *must* come first in the head -->
-    <meta property="og:image" content="http://oh.zartre.com/img/ogimage.jpg">
+    <meta property="og:image" content="{{ URL::asset('assets/image/ogimage.jpg') }}" />
     <meta name="theme-color" content="#0bace1">
     <title>{{ $title }}IT Ladkrabang Open House 2016</title>
     <link rel="stylesheet" href="{{URL::asset('assets/new/css/owl.carousel.css')}}" media="none" onload="if(media!='all')media='all'">

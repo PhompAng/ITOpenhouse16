@@ -9,15 +9,15 @@ use Illuminate\Support\Facades\Validator;
 class RegisterController extends  Controller{
 
     public function createGuestRegister(){
-        return view('register.guest.create', ["title" => "ลงทะเบียนเข้าชมงาน | IT Ladkrabang Open House 2016"]);
+        return view('new.guest.create', ["title" => "ลงทะเบียนเข้าชมงาน | IT Ladkrabang Open House 2016"]);
     }
 
     public function createGuestStudentRegister(){
-        return view('register.guest_student.create', ["title" => "ลงทะเบียนเข้าชมงาน | IT Ladkrabang Open House 2016"]);
+        return view('new.guest_student.create', ["title" => "ลงทะเบียนเข้าชมงาน | IT Ladkrabang Open House 2016"]);
     }
 
     public function createGuestSchoolRegister(){
-        return view('register.guest_school.create', ["title" => "ลงทะเบียนเข้าชมงาน | IT Ladkrabang Open House 2016"]);
+        return view('new.guest_school.create', ["title" => "ลงทะเบียนเข้าชมงาน | IT Ladkrabang Open House 2016"]);
     }
 
     public function storeGuestRegister(Request $request){
@@ -68,7 +68,7 @@ class RegisterController extends  Controller{
         $guest->save();
 
         $sms = new SMSController();
-        $result = $sms->sendSMS("0000", $guest->phone, $guest->id);
+        $result = $sms->sendSMS("0000", $guest->phone, $guest->id, 1);
         if ($result[0] == FALSE) {
             dd($result);
         }
@@ -129,7 +129,7 @@ class RegisterController extends  Controller{
         $guestStudent->save();
 
         $sms = new SMSController();
-        $result = $sms->sendSMS("0000", $guestStudent->phone, $guestStudent->id);
+        $result = $sms->sendSMS("0000", $guestStudent->phone, $guestStudent->id, 2);
         if ($result[0] == FALSE) {
             dd($result);
         }
@@ -192,7 +192,7 @@ class RegisterController extends  Controller{
         $guestSchool->save();
 
         $sms = new SMSController();
-        $result = $sms->sendSMS("0000", $guestSchool->phone, $guestSchool->id);
+        $result = $sms->sendSMS("0000", $guestSchool->phone, $guestSchool->id, 3);
         if ($result[0] == FALSE) {
             dd($result);
         }

@@ -17,7 +17,7 @@ class ESportController extends Controller
      */
     public function index()
     {
-        return view('register.competition.esport.begin', ["title" => "การแข่งขันกีฬาอิเล็กทรอนิกส์ | IT Ladkrabang Open House 2016"]);
+        return view('new.competition.esport.begin', ["title" => "การแข่งขันกีฬาอิเล็กทรอนิกส์ | IT Ladkrabang Open House 2016"]);
     }
 
     /**
@@ -27,7 +27,7 @@ class ESportController extends Controller
      */
     public function create()
     {
-        return view('register.competition.esport.create', ["title" => "การแข่งขันกีฬาอิเล็กทรอนิกส์ | IT Ladkrabang Open House 2016"]);
+        return view('new.competition.esport.create', ["title" => "การแข่งขันกีฬาอิเล็กทรอนิกส์ | IT Ladkrabang Open House 2016"]);
     }
 
     /**

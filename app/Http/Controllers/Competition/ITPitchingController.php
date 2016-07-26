@@ -19,7 +19,7 @@ class ITPitchingController extends Controller
      */
     public function index()
     {
-        return view('register.competition.pitching.begin', ["title" => "การแข่งขันการนำเสนอแผนธุรกิจ | IT Ladkrabang Open House 2016"]);
+        return view('new.competition.pitching.begin', ["title" => "การแข่งขันการนำเสนอแผนธุรกิจ | IT Ladkrabang Open House 2016"]);
     }
 
     /**
@@ -29,7 +29,7 @@ class ITPitchingController extends Controller
      */
     public function create()
     {
-        return view('register.competition.pitching.create', ["title" => "การแข่งขันการนำเสนอแผนธุรกิจ | IT Ladkrabang Open House 2016"]);
+        return view('new.competition.pitching.create', ["title" => "การแข่งขันการนำเสนอแผนธุรกิจ | IT Ladkrabang Open House 2016"]);
     }
 
     /**

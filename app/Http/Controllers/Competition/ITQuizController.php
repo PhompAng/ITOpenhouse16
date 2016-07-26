@@ -18,7 +18,7 @@ class ITQuizController extends Controller
      */
     public function index()
     {
-        return view('register.competition.quiz.begin', ["title" => "การแข่งขันตอบคำถามด้านเทคโนโลยีสารสนเทศ | IT Ladkrabang Open House 2016"]);
+        return view('new.competition.quiz.begin', ["title" => "การแข่งขันตอบคำถามด้านเทคโนโลยีสารสนเทศ | IT Ladkrabang Open House 2016"]);
     }
 
     /**
@@ -28,7 +28,7 @@ class ITQuizController extends Controller
      */
     public function create()
     {
-        return view('register.competition.quiz.create', ["title" => "การแข่งขันตอบคำถามด้านเทคโนโลยีสารสนเทศ | IT Ladkrabang Open House 2016"]);
+        return view('new.competition.quiz.create', ["title" => "การแข่งขันตอบคำถามด้านเทคโนโลยีสารสนเทศ | IT Ladkrabang Open House 2016"]);
     }
 
     /**

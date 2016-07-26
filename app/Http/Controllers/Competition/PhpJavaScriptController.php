@@ -17,7 +17,7 @@ class PhpJavaScriptController extends Controller
      */
     public function index()
     {
-        return view('register.competition.php.begin', ["title" => "การแข่งขันพัฒนาเว็บไซต์ | IT Ladkrabang Open House 2016"]);
+        return view('new.competition.php.begin', ["title" => "การแข่งขันพัฒนาเว็บไซต์ | IT Ladkrabang Open House 2016"]);
     }
 
     /**
@@ -27,7 +27,7 @@ class PhpJavaScriptController extends Controller
      */
     public function create()
     {
-        return view('register.competition.php.create', ["title" => "การแข่งขันพัฒนาเว็บไซต์ | IT Ladkrabang Open House 2016"]);
+        return view('new.competition.php.create', ["title" => "การแข่งขันพัฒนาเว็บไซต์ | IT Ladkrabang Open House 2016"]);
     }
 
     /**

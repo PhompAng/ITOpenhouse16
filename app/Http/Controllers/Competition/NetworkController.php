@@ -18,7 +18,7 @@ class NetworkController extends Controller
      */
     public function index()
     {
-        return view('register.competition.network.begin', ["title" => "การแข่งขันความปลอดภัยของระบบคอมพิวเตอร์ | IT Ladkrabang Open House 2016"]);
+        return view('new.competition.network.begin', ["title" => "การแข่งขันความปลอดภัยของระบบคอมพิวเตอร์ | IT Ladkrabang Open House 2016"]);
     }
 
     /**
@@ -28,7 +28,7 @@ class NetworkController extends Controller
      */
     public function create()
     {
-        return view('register.competition.network.create', ["title" => "การแข่งขันความปลอดภัยของระบบคอมพิวเตอร์ | IT Ladkrabang Open House 2016"]);
+        return view('new.competition.network.create', ["title" => "การแข่งขันความปลอดภัยของระบบคอมพิวเตอร์ | IT Ladkrabang Open House 2016"]);
     }
 
     /**

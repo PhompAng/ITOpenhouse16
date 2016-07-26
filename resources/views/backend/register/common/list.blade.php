@@ -31,7 +31,7 @@
                     <td class="confirm">{{$data->confirm}}</td>
                     <td class="created_at">{{$data->created_at}}</td>
                     <td>
-                        <a href="#" class="btn btn-default btn-xs" data-toggle="tooltip"  title="View"><i class="fa fa-eye" aria-hidden="true"></i></a>
+                        <a href="{{URL::route('backend.register.common.show', $data->id)}}" class="btn btn-default btn-xs" data-toggle="tooltip"  title="View"><i class="fa fa-eye" aria-hidden="true"></i></a>
                         <a href="#" class="btn btn-default btn-xs" data-toggle="tooltip"  title="Edit"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
                     </td>
                 </tr>

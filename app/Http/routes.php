@@ -114,9 +114,9 @@ Route::group(['middleware' => 'uac'], function () {
     Route::get('/backend', function () {
         return view('backend.main');
     });
-    Route::get('/backend/register', function () {
-        return "register";
-    });
+    Route::resource('/backend/register/common', 'Backend\RegisterCommonController');
+    Route::resource('/backend/register/school', 'Backend\RegisterSchoolController');
+    Route::resource('/backend/register/student', 'Backend\RegisterStudentController');
     Route::resource('/backend/user', 'Backend\UserController');
     Route::resource('/backend/competition/esport', 'Backend\EsportController');
     Route::resource('/backend/competition/pitching', 'Backend\ITPitchingController');

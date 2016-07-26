@@ -75,6 +75,7 @@
             @endforeach
             </tbody>
         </table>
+        <p class="total"><strong>Total:</strong> {{$datas->count()}}</p>
     </div>
 @endsection
 @section('script')

@@ -32,6 +32,11 @@
             </li>
             <li>
                 <a href="{{URL('/backend/register')}}">Register</a>
+                <ul>
+                    <a href="{{URL('/backend/register/common')}}"><li>Common</li></a>
+                    <a href="{{URL('/backend/register/student')}}"><li>Student</li></a>
+                    <a href="{{URL('/backend/register/school')}}"><li>School</li></a>
+                </ul>
             </li>
             <li>
                 <a href="#">Competition</a>

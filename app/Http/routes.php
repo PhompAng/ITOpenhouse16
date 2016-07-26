@@ -18,9 +18,9 @@ Route::get('/', function () {
 });
 
 /*---Test---*/
-Route::get('/test', function (){
-    return view('soon', ["title" => ""]);
-});
+//Route::get('/test', function (){
+//    return view('soon', ["title" => ""]);
+//});
 
 //Route::any('/register/{any}', function () {
 //    return view('soon', ["title" => ""]);
@@ -60,15 +60,15 @@ Route::resource('/register/competition/esport', 'Competition\ESportController');
 Route::resource('/register/competition/pitching', 'Competition\ITPitchingController');
 Route::resource('/register/competition/network', 'Competition\NetworkController');
 Route::resource('/register/competition/php', 'Competition\PhpJavaScriptController');
-
-Route::get('/form', function () {
-    return view('form');
-});
-
-
-Route::get('/main', function () {
-    return view('main.main', ["title" => ""]);
-});
+//
+//Route::get('/form', function () {
+//    return view('form');
+//});
+//
+//
+//Route::get('/main', function () {
+//    return view('main.main', ["title" => ""]);
+//});
 
 Route::get('/register/check/{type}/{remember?}', [
     'as' => 'registerCheck',

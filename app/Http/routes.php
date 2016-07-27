@@ -114,6 +114,18 @@ Route::group(['middleware' => 'uac'], function () {
     Route::get('/backend', function () {
         return view('backend.main');
     });
+    Route::get('/backend/register/common/excel', [
+        'as' => 'commonExcel',
+        'uses' => 'Backend\RegisterCommonController@excel'
+    ]);
+    Route::get('/backend/register/school/excel', [
+        'as' => 'schoolExcel',
+        'uses' => 'Backend\RegisterSchoolController@excel'
+    ]);
+    Route::get('/backend/register/student/excel', [
+        'as' => 'studentExcel',
+        'uses' => 'Backend\RegisterStudentController@excel'
+    ]);
     Route::resource('/backend/register/common', 'Backend\RegisterCommonController');
     Route::resource('/backend/register/school', 'Backend\RegisterSchoolController');
     Route::resource('/backend/register/student', 'Backend\RegisterStudentController');

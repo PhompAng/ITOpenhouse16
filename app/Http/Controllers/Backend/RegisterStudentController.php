@@ -6,6 +6,7 @@ use App\Models\GuestStudent;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Http\Requests;
+use Maatwebsite\Excel\Facades\Excel;
 
 class RegisterStudentController extends Controller
 {
@@ -84,5 +85,16 @@ class RegisterStudentController extends Controller
     public function destroy($id)
     {
         //
+    }
+
+    public function excel() {
+        return Excel::create('student_guest_export_' . time(), function($excel)
+        {
+            $excel->sheet('Sheet', function($sheet)
+            {
+                $datas = GuestStudent::all();
+                $sheet->loadView('backend.register.student.excel', ['datas' => $datas]);
+            });
+        })->download('xls');
     }
 }

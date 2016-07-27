@@ -6,6 +6,7 @@ use App\Models\GuestSchool;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Http\Requests;
+use Maatwebsite\Excel\Facades\Excel;
 
 class RegisterSchoolController extends Controller
 {
@@ -84,5 +85,16 @@ class RegisterSchoolController extends Controller
     public function destroy($id)
     {
         //
+    }
+
+    public function excel() {
+        return Excel::create('school_guest_export_' . time(), function($excel)
+        {
+            $excel->sheet('Sheet', function($sheet)
+            {
+                $datas = GuestSchool::all();
+                $sheet->loadView('backend.register.school.excel', ['datas' => $datas]);
+            });
+        })->download('xls');
     }
 }

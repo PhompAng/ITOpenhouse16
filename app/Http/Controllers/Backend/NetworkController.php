@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Http\Requests;
 use Illuminate\Support\Facades\Validator;
+use Maatwebsite\Excel\Facades\Excel;
 
 class NetworkController extends Controller
 {
@@ -152,5 +153,16 @@ class NetworkController extends Controller
     public function destroy($id)
     {
         //
+    }
+
+    public function excel() {
+        return Excel::create('network_competition_export_' . time(), function($excel)
+        {
+            $excel->sheet('Sheet', function($sheet)
+            {
+                $datas = Network::all();
+                $sheet->loadView('register.competition.network.excel', ['datas' => $datas]);
+            });
+        })->download('xls');
     }
 }

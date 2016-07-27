@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Http\Requests;
 use Illuminate\Support\Facades\Validator;
+use Maatwebsite\Excel\Facades\Excel;
 
 class ITQuizController extends Controller
 {
@@ -143,5 +144,16 @@ class ITQuizController extends Controller
     public function destroy($id)
     {
         //
+    }
+
+    public function excel() {
+        return Excel::create('quiz_competition_export_' . time(), function($excel)
+        {
+            $excel->sheet('Sheet', function($sheet)
+            {
+                $datas = ITQuiz::all();
+                $sheet->loadView('register.competition.quiz.excel', ['datas' => $datas]);
+            });
+        })->download('xls');
     }
 }

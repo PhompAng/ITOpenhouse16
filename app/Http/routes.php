@@ -118,6 +118,26 @@ Route::group(['middleware' => 'uac'], function () {
     Route::resource('/backend/register/school', 'Backend\RegisterSchoolController');
     Route::resource('/backend/register/student', 'Backend\RegisterStudentController');
     Route::resource('/backend/user', 'Backend\UserController');
+    Route::get('/backend/competition/esport/excel', [
+        'as' => 'esportExcel',
+        'uses' => 'Backend\EsportController@excel'
+    ]);
+    Route::get('/backend/competition/php/excel', [
+        'as' => 'phpExcel',
+        'uses' => 'Backend\PhpController@excel'
+    ]);
+    Route::get('/backend/competition/quiz/excel', [
+        'as' => 'quizExcel',
+        'uses' => 'Backend\ITQuizController@excel'
+    ]);
+    Route::get('/backend/competition/network/excel', [
+        'as' => 'networkExcel',
+        'uses' => 'Backend\NetworkController@excel'
+    ]);
+    Route::get('/backend/competition/pitching/excel', [
+        'as' => 'pitchingExcel',
+        'uses' => 'Backend\ITPitchingController@excel'
+    ]);
     Route::resource('/backend/competition/esport', 'Backend\EsportController');
     Route::resource('/backend/competition/pitching', 'Backend\ITPitchingController');
     Route::resource('/backend/competition/network', 'Backend\NetworkController');

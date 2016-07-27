@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Http\Requests;
 use Illuminate\Support\Facades\Validator;
+use Maatwebsite\Excel\Facades\Excel;
 
 class ITPitchingController extends Controller
 {
@@ -137,5 +138,16 @@ class ITPitchingController extends Controller
     public function destroy($id)
     {
         //
+    }
+
+    public function excel() {
+        return Excel::create('pitching_competition_export_' . time(), function($excel)
+        {
+            $excel->sheet('Sheet', function($sheet)
+            {
+                $datas = Pitching::all();
+                $sheet->loadView('register.competition.pitching.excel', ['datas' => $datas]);
+            });
+        })->download('xls');
     }
 }

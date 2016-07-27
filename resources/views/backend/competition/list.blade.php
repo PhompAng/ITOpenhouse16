@@ -75,6 +75,8 @@
             @endforeach
             </tbody>
         </table>
+        <p class="total"><strong>Total:</strong> {{$datas->count()}}</p>
+        <a href="{{URL::route($typeText.'Excel')}}" class="btn btn-primary">Export</a>
     </div>
 @endsection
 @section('script')

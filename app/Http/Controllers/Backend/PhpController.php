@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Http\Requests;
 use Illuminate\Support\Facades\Validator;
+use Maatwebsite\Excel\Facades\Excel;
 
 class PhpController extends Controller
 {
@@ -141,5 +142,16 @@ class PhpController extends Controller
     public function destroy($id)
     {
         //
+    }
+
+    public function excel() {
+        return Excel::create('php_competition_export_' . time(), function($excel)
+        {
+            $excel->sheet('Sheet', function($sheet)
+            {
+                $datas = Php::all();
+                $sheet->loadView('register.competition.php.excel', ['datas' => $datas]);
+            });
+        })->download('xls');
     }
 }

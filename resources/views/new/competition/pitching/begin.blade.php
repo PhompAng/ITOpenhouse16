@@ -46,7 +46,7 @@
                 </tr>
                 <tr>
                     <td>หมดเขตรับสมัคร</td>
-                    <td>1 สิงหาคม 2559</td>
+                    <td>8 สิงหาคม 2559</td>
                 </tr>
                 <tr>
                     <td>ประกาศผลบนเว็บไซต์ <a href="http://openhouse.it.kmitl.ac.th">http://openhouse.it.kmitl.ac.th</a></td>

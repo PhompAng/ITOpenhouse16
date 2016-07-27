@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Http\Requests;
 use Illuminate\Support\Facades\Validator;
+use Maatwebsite\Excel\Facades\Excel;
 
 class EsportController extends Controller
 {
@@ -174,5 +175,16 @@ class EsportController extends Controller
     public function destroy($id)
     {
         //
+    }
+
+    public function excel() {
+        return Excel::create('esport_competition_export_' . time(), function($excel)
+        {
+            $excel->sheet('Sheet', function($sheet)
+            {
+                $datas = ESport::all();
+                $sheet->loadView('register.competition.esport.excel', ['datas' => $datas]);
+            });
+        })->download('xls');
     }
 }

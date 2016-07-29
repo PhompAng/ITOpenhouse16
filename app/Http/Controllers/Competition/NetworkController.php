@@ -18,7 +18,7 @@ class NetworkController extends Controller
      */
     public function index()
     {
-        return view('register.competition.network.begin', ["title" => "การแข่งขันความปลอดภัยของระบบคอมพิวเตอร์ | IT Ladkrabang Open House 2016"]);
+        return view('new.competition.network.begin', ["title" => "การแข่งขันความปลอดภัยของระบบคอมพิวเตอร์ | IT Ladkrabang Open House 2016"]);
     }
 
     /**
@@ -28,7 +28,7 @@ class NetworkController extends Controller
      */
     public function create()
     {
-        return view('register.competition.network.create', ["title" => "การแข่งขันความปลอดภัยของระบบคอมพิวเตอร์ | IT Ladkrabang Open House 2016"]);
+        return view('new.competition.network.create', ["title" => "การแข่งขันความปลอดภัยของระบบคอมพิวเตอร์ | IT Ladkrabang Open House 2016"]);
     }
 
     /**
@@ -60,7 +60,7 @@ class NetworkController extends Controller
 
         $messages = [
             'team_name.required'             =>  'กรุณากรอก  ชื่อทีม',
-            'rank.required'             =>  'กรุณากรอก  อันดับของทีม',
+            'rank.required'                  =>  'กรุณากรอก  อันดับของทีม',
             'name.*.required'                =>  'กรุณากรอก  ชื่อสมาชิก',
             'surname.*.required'             =>  'กรุณากรอก  นามสกุลของสมาชิก',
             'email.*.required'               =>  'กรุณากรอก  อีเมลของสมาชิก',
@@ -73,8 +73,8 @@ class NetworkController extends Controller
             'teacher_surname.required'       =>  'กรุณากรอก  นามสกุลอาจารย์ผู้ควบคุมทีม',
             'teacher_phone.required'         =>  'กรุณากรอก  เบอร์โทรศัพท์อาจารย์ผู้ควบคุมทีม',
             'teacher_email.required'         =>  'กรุณากรอก  อีเมลอาจารย์ผู้ควบคุมทีม',
-            'team_rank.integer'              =>  'รูปแบบ  อันดับทีม ไม่ถูกต้อง',
-            'team_rank.between'              =>  'อันดับทีมต้องอยู่ระหว่าง 1 ถึง 100',
+            'rank.integer'                   =>  'รูปแบบ  อันดับทีม ไม่ถูกต้อง',
+            'rank.between'                   =>  'อันดับทีมต้องอยู่ระหว่าง 1 ถึง 100',
             'email.*.email'                  =>  'รูปแบบ  อีเมลสมาชิก ไม่ถูกต้อง',
             'phone.*.regex'                  =>  'รูปแบบ  เบอร์โทรศัพท์สมาชิก ไม่ถูกต้อง',
             'teacher_email.email'            =>  'รูปแบบ  อีเมลอาจารย์ผู้ควบคุมทีม ไม่ถูกต้อง',

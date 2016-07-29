@@ -19,7 +19,7 @@ class ITPitchingController extends Controller
      */
     public function index()
     {
-        return view('register.competition.pitching.begin', ["title" => "การแข่งขันการนำเสนอแผนธุรกิจ | IT Ladkrabang Open House 2016"]);
+        return view('new.competition.pitching.begin', ["title" => "การแข่งขันการนำเสนอแผนธุรกิจ | IT Ladkrabang Open House 2016"]);
     }
 
     /**
@@ -29,7 +29,7 @@ class ITPitchingController extends Controller
      */
     public function create()
     {
-        return view('register.competition.pitching.create', ["title" => "การแข่งขันการนำเสนอแผนธุรกิจ | IT Ladkrabang Open House 2016"]);
+        return view('new.competition.pitching.create', ["title" => "การแข่งขันการนำเสนอแผนธุรกิจ | IT Ladkrabang Open House 2016"]);
     }
 
     /**
@@ -175,5 +175,15 @@ class ITPitchingController extends Controller
     public function destroy($id)
     {
         //
+    }
+
+    public function getBizcanvas($id) {
+        $bizcanvas = Pitching::find($id)->bizcanvas . ".pdf";
+        return response(Storage::disk('local')->get($bizcanvas), 200, ['Content-Type' => 'application/pdf']);
+    }
+
+    public function getStoryboard($id) {
+        $storyboard = Pitching::find($id)->storyboard . ".pdf";
+        return response(Storage::disk('local')->get($storyboard), 200, ['Content-Type' => 'application/pdf']);
     }
 }

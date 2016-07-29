@@ -109,7 +109,7 @@
             <div id="clubsec" class="owl-carousel owl-theme">
                 <div class="clubbox">
                     <div class="clubbox-in">
-                        <img src="{{URL::asset('assets/new/img/club-thumbs/club-1.jpg')}}" />
+                        <img src="{{URL::asset('assets/new/img/club-thumbs/club-1.png')}}" />
                         <div class="clubbox-text">
                             <h3>ชุมนุม IT Forge</h3>
                             <p>IT นั้นย่อมาจาก Information Technology แปลว่า เทคโนโลยีสารสนเทศ ส่วน Forge...</p>

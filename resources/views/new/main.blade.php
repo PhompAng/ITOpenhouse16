@@ -98,9 +98,8 @@
             </div>
         </div>
     </div>
-    <div class="itcamp">
-        <h1 class="text-center">IT Camp</h1>
-        <h3 class="text-center">Coming soon</h3>
+    <div class="itcamp text-center">
+        <video src="img/itcamp.mp4" autoplay="on" loop="on"></video>
     </div>
     <!-- Clubs -->
     <div class="clubsec">

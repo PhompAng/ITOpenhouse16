@@ -99,7 +99,7 @@
         </div>
     </div>
     <div class="itcamp text-center">
-        <video src="img/itcamp.mp4" autoplay="on" loop="on"></video>
+        <video src="{{URL::asset('assets/new/img/itcamp.mp4')}}" autoplay="on" loop="on"></video>
     </div>
     <!-- Clubs -->
     <div class="clubsec">

@@ -20,7 +20,7 @@
                             <li><a href="{{URL('/register/competition/php')}}">การแข่งพัฒนาเว็บไซต์</a></li>
                             <li><a href="{{URL('/register/competition/itquiz')}}">การแข่งตอบปัญหา</a></li>
                             <li><a href="{{URL('/register/competition/network')}}">การแข่งความปลอดภัยของระบบคอมพิวเตอร์</a></li>
-                            <li><a href="{{URL('/register/competition/pitching')}}">การแข่งขันการนำเสนอแนวคิดโครงงาน IT (IT Project Contest)</a></li>
+                            <li><a href="{{URL('/register/competition/pitching')}}">การแข่งขันการนำเสนอแนวคิดโครงงานไอที</a></li>
                         </ul>
                     </li>
                     <li><a href="{{URL('/route')}}">การเดินทาง</a></li>

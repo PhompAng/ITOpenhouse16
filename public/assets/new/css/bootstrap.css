@@ -6760,6 +6760,7 @@ h6.light {
 }
 .itcamp{
     background: #000;
+    background-image: repeating-linear-gradient(45deg, transparent, transparent 6px, rgba(47, 47, 47, 0.5) 6px, rgba(101, 101, 101, 0.5) 12px);
     color: #fff;
     padding: 60px 0;
     font-weight: 300;
@@ -6767,6 +6768,7 @@ h6.light {
 .itcamp video {
     width: 95%;
     max-width: 500px;
+    box-shadow: 0 0 70px aqua;
 }
 .highlight-reel {
     margin: -50px 0 40px 0;

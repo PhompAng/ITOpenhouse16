@@ -265,7 +265,7 @@
                                 <img src="{{URL::asset('assets/new/img/club-large/club-2-1.jpg')}}" class="img-responsive" />
                             </div>
                             <div class="col-xs-12 col-md-6">
-                                <img src="{{URL::asset('assets/new/img/club-large/club-2-3.jpg')}}" class="img-responsive" />
+                                <img src="{{URL::asset('assets/new/img/club-large/club-2-2.jpg')}}" class="img-responsive" />
                             </div>
                         </div>
                     </div>

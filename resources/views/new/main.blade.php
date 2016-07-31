@@ -212,17 +212,25 @@
         <div class="container">
             <h2 class="text-center">เวิร์กชอป</h2>
             <div class="row">
-                <div class="col-xs-12 col-sm-6 col-md-4">
-                    <img src="{{URL::asset('assets/new/img/ws-business.jpg')}}" class="img-responsive"/>
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                    <div class="imgcontainer">
+                        <img src="{{URL::asset('assets/new/img/ws-business.jpg')}}" class="img-responsive"/>
+                    </div>
                 </div>
-                <div class="col-xs-12 col-sm-6 col-md-4">
-                    <img src="{{URL::asset('assets/new/img/ws-multimedia.jpg')}}" class="img-responsive"/>
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                    <div class="imgcontainer">
+                        <img src="{{URL::asset('assets/new/img/ws-media.jpg')}}" class="img-responsive"/>
+                    </div>
                 </div>
-                <div class="col-xs-12 col-sm-6 col-md-4">
-                    <img src="{{URL::asset('assets/new/img/ws-network.jpg')}}" class="img-responsive"/>
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                    <div class="imgcontainer">
+                        <img src="{{URL::asset('assets/new/img/ws-network.jpg')}}" class="img-responsive"/>
+                    </div>
                 </div>
-                <div class="col-xs-12 col-sm-6 col-md-4">
-                    <img src="{{URL::asset('assets/new/img/ws-software.jpg')}}" class="img-responsive"/>
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                    <div class="imgcontainer">
+                        <img src="{{URL::asset('assets/new/img/ws-software.jpg')}}" class="img-responsive"/>
+                    </div>
                 </div>
             </div>
         </div>

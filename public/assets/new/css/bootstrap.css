@@ -6776,6 +6776,8 @@ h6.light {
 .itcamp{
     background: #000;
     background-image: url('..//img/itcampbg.jpg');
+    background-size: cover;
+    background-position: center;
     color: #fff;
     padding: 60px 0;
     font-weight: 300;

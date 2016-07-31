@@ -6802,7 +6802,7 @@ h6.light {
     margin: 20px;
     min-height: 255px;
     background-size: cover;
-    background-position: right;
+    background-position: right bottom;
 }
 .activity-box h1, .activity-box p {
     margin: 0 0 15px 0;

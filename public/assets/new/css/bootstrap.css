@@ -6801,6 +6801,8 @@ h6.light {
     padding: 25px;
     margin: 20px;
     min-height: 255px;
+    background-size: cover;
+    background-position: right;
 }
 .activity-box h1, .activity-box p {
     margin: 0 0 15px 0;
@@ -6817,6 +6819,21 @@ h6.light {
 }
 .activity-box--transparent {
     color: #ffffff;
+}
+.activity-1 {
+    background-image: url('../img/compet-1.png')
+}
+.activity-2 {
+    background-image: url('../img/compet-2.png')
+}
+.activity-3 {
+    background-image: url('../img/compet-3.png')
+}
+.activity-4 {
+    background-image: url('../img/compet-4.png')
+}
+.activity-5 {
+    background-image: url('../img/compet-5.png')
 }
 .eventcarousel {
     padding: 60px 30px;

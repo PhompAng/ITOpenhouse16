@@ -117,35 +117,35 @@
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-6 col-md-4">
-                    <div class="activity-box activity-box--transparent">
+                    <div class="activity-box activity-box--transparent activity-1">
                         <h1>E-Sports</h1>
                         <p>แข่งขันเกม DOTA2 ในโหมด CAPTAIN เวอร์ชันที่ใช้แข่งคือ Tournament, การแข่งขันเป็นแบบแพ้ตกรอบ</p>
                         <a class="btn btn-activity" href="{{URL('/register/competition/esport')}}" role="button">รายละเอียด</a>
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-6 col-md-4">
-                    <div class="activity-box activity-box--transparent">
+                    <div class="activity-box activity-box--transparent  activity-2">
                         <h1>พัฒนาเว็บไซต์</h1>
                         <p>แข่งขันพัฒนาเว็บไซต์ด้วย PHP, JavaScript, AJAX, Bootstrap และฐานข้อมูล ภายในเวลาสามชั่วโมง</p>
                         <a class="btn btn-activity" href="{{URL('/register/competition/php')}}" role="button">รายละเอียด</a>
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-6 col-md-4">
-                    <div class="activity-box activity-box--transparent">
+                    <div class="activity-box activity-box--transparent  activity-3">
                         <h1>ตอบปัญหา</h1>
                         <p>แข่งขันตอบปัญหาในแวดวงไอที ทั้งบุคคล หน่วยงาน พื้นฐานการพัฒนาโปรแกรม คณิตศาสตร์มัธยมปลาย สมาร์ทโฟนและ IoT</p>
                         <a class="btn btn-activity" href="{{URL('/register/competition/itquiz')}}" role="button">รายละเอียด</a>
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-6 col-md-4">
-                    <div class="activity-box activity-box--transparent">
+                    <div class="activity-box activity-box--transparent  activity-4">
                         <h1>ความปลอดภัยระบบ</h1>
                         <p>แข่งขันหาช่องโหว่ของระบบ เช่น ความปลอดภัยเว็บไซต์ เครือข่าย การเข้ารหัสลับเบื้องต้น</p>
                         <a class="btn btn-activity" href="{{URL('/register/competition/network')}}" role="button">รายละเอียด</a>
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-6 col-md-4">
-                    <div class="activity-box activity-box--transparent">
+                    <div class="activity-box activity-box--transparent  activity-5">
                         <h1>นำเสนอแผนธุรกิจ</h1>
                         <p>แข่งขันสร้างสรรค์และนำเสนอนวัตกรรมใหม่ๆ ที่มีการนำเทคโนโลยีสารสนเทศมาใช้</p>
                         <a class="btn btn-activity" href="{{URL('/register/competition/pitching')}}" role="button">รายละเอียด</a>

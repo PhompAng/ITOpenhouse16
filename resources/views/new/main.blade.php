@@ -31,7 +31,9 @@
                     <p class="text-center">สัมผัสเส้นทางการศึกษาทางด้านไอทีในทุกแง่มุม เปิดตัวหลักสูตรใหม่ ป.ตรี บรรยายพิเศษจากเน็ตไอดอลและกูรูไอทีจากเว็บไซต์เด็กดี ร่วมสนุกและลุ้นไปกับเกมการแข่งขันมากมาย สร้างแรงบันดาลใจไปกับนิทรรศการผลงานสุดเจ๋งของนักศึกษา ทดลองเรียนจริง และอีกมากมาย</p>
                 </div>
             </div>
-            <div class="text-center"><a class="btn btn-highlight btn-lg" href="{{URL('/schedule')}}">กำหนดการ</a></div>
+            <div class="text-center">
+                <a class="btn btn-highlight btn-lg" href="{{URL('/schedule')}}">กำหนดการ</a>
+            </div>
         </div>
     </div>
     <!-- Learn -->
@@ -248,14 +250,18 @@
         <h1 class="light visible-xs">บรรยากาศ<br/><b>ภายในงาน</b></h1>
         <h1 class="light hidden-xs"><b>บรรยากาศ</b>ภายในงาน</h1>
         <div class="container">
-            <div id="lastyear" class="owl-carousel owl-theme">
-                <img src="{{URL::asset('assets/new/img/jumbo-1.jpg')}}" class="img-responsive" alt="pic" />
-                <img src="{{URL::asset('assets/new/img/jumbo-2.jpg')}}" class="img-responsive" alt="pic" />
-                <img src="{{URL::asset('assets/new/img/jumbo-3.jpg')}}" class="img-responsive" alt="pic" />
-                <img src="{{URL::asset('assets/new/img/jumbo-4.jpg')}}" class="img-responsive" alt="pic" />
-                <img src="{{URL::asset('assets/new/img/jumbo-5.jpg')}}" class="img-responsive" alt="pic" />
-                <img src="{{URL::asset('assets/new/img/jumbo-6.jpg')}}" class="img-responsive" alt="pic" />
-                <img src="{{URL::asset('assets/new/img/jumbo-7.jpg')}}" class="img-responsive" alt="pic" />
+            <div class="row">
+                <div class="col-xs-12">
+                    <div id="lastyear" class="owl-carousel owl-theme">
+                        <img src="{{URL::asset('assets/new/img/jumbo-1.jpg')}}" class="img-responsive" alt="pic" />
+                        <img src="{{URL::asset('assets/new/img/jumbo-2.jpg')}}" class="img-responsive" alt="pic" />
+                        <img src="{{URL::asset('assets/new/img/jumbo-3.jpg')}}" class="img-responsive" alt="pic" />
+                        <img src="{{URL::asset('assets/new/img/jumbo-4.jpg')}}" class="img-responsive" alt="pic" />
+                        <img src="{{URL::asset('assets/new/img/jumbo-5.jpg')}}" class="img-responsive" alt="pic" />
+                        <img src="{{URL::asset('assets/new/img/jumbo-6.jpg')}}" class="img-responsive" alt="pic" />
+                        <img src="{{URL::asset('assets/new/img/jumbo-7.jpg')}}" class="img-responsive" alt="pic" />
+                    </div>
+                </div>
             </div>
         </div>
     </div>

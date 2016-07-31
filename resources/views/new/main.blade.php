@@ -270,9 +270,7 @@
     <!----- Modals for Clubs ------>
     <!-- Club: IT Forge -->
     <div id="clubone" class="modal fade" role="dialog">
-       <div class="container">
-       <div class="row">
-       <div class="col-xs-12">
+      
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -297,6 +295,7 @@
             </div>
         </div>
     </div>
+    
     <!-- Club: Anime -->
     <div id="clubtwo" class="modal fade" role="dialog">
         <div class="modal-dialog">

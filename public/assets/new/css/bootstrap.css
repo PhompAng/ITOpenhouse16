@@ -6697,7 +6697,7 @@ h6.light {
     background-position: center;
     background-size: cover;
     color: #ff7600;
-    padding: 50px 20px;
+    padding: 50px 0;
     font-weight: 300;
 }
 .learn h1 {
@@ -6722,7 +6722,7 @@ h6.light {
     background-repeat: no-repeat;
     background-attachment: fixed;
     color: #ffffff;
-    padding: 50px 20px;
+    padding: 50px 0;
     font-weight: 300;
 }
 .clubsec h2, .learn h2 {

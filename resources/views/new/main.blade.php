@@ -25,7 +25,7 @@
                     <img src="{{URL::asset('assets/new/img/highlight-4.jpg')}}" alt="highlight"/>
                 </div>
             </div>
-            <h2 class="text-center">เลือกเรียน เปลี่ยนชีวิต</h2>
+            <h1 class="text-center">เลือกเรียน เปลี่ยนชีวิต</h1>
             <div class="row highlight-textbox">
                 <div class="col-sm-12 col-md-8 col-md-offset-2">
                     <p class="text-center">สัมผัสเส้นทางการศึกษาทางด้านไอทีในทุกแง่มุม เปิดตัวหลักสูตรใหม่ ป.ตรี บรรยายพิเศษจากเน็ตไอดอลและกูรูไอทีจากเว็บไซต์เด็กดี ร่วมสนุกและลุ้นไปกับเกมการแข่งขันมากมาย สร้างแรงบันดาลใจไปกับนิทรรศการผลงานสุดเจ๋งของนักศึกษา ทดลองเรียนจริง และอีกมากมาย</p>
@@ -37,7 +37,7 @@
     <!-- Learn -->
     <div class="learn">
         <div class="container">
-            <h2 class="text-center">การศึกษาต่อ</h2>
+            <h1 class="text-center">การศึกษาต่อ</h1>
             <div class="row">
                 <div class="col-md-6 col-xs-12">
                     <div class="well well-lg">
@@ -152,7 +152,7 @@
     </div>
     <div class="workshopsec">
         <div class="container">
-            <h2 class="text-center">เวิร์กชอป</h2>
+            <h1 class="text-center">เวิร์กชอป</h1>
             <div class="row">
                 <div class="col-xs-12 col-sm-6 col-md-3">
                     <div class="imgcontainer">
@@ -188,7 +188,7 @@
     <!-- Clubs -->
     <div class="clubsec">
         <div class="container">
-            <h2 class="text-center">กิจกรรมชุมนุมของนักศึกษา</h2>
+            <h1 class="text-center">กิจกรรมชุมนุมของนักศึกษา</h1>
             <div id="clubsec" class="owl-carousel owl-theme">
                 <div class="clubbox">
                     <div class="clubbox-in">

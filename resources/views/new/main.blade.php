@@ -101,64 +101,6 @@
     <div class="itcamp text-center">
         <video src="{{URL::asset('assets/new/img/itcamp.mp4')}}" autoplay="on" loop="on"></video>
     </div>
-    <!-- Clubs -->
-    <div class="clubsec">
-        <div class="container">
-            <h2 class="text-center">กิจกรรมชุมนุมของนักศึกษา</h2>
-            <div id="clubsec" class="owl-carousel owl-theme">
-                <div class="clubbox">
-                    <div class="clubbox-in">
-                        <img src="{{URL::asset('assets/new/img/club-thumbs/club-1.png')}}" />
-                        <div class="clubbox-text">
-                            <h3>ชุมนุม IT Forge</h3>
-                            <p>IT นั้นย่อมาจาก Information Technology แปลว่า เทคโนโลยีสารสนเทศ ส่วน Forge...</p>
-                            <button type="button" class="btn btn-primary btn-block" data-toggle="modal" data-target="#clubone">อ่านต่อ</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="clubbox">
-                    <div class="clubbox-in">
-                        <img src="{{URL::asset('assets/new/img/club-thumbs/club-2.jpg')}}" />
-                        <div class="clubbox-text">
-                            <h3>ชุมนุมวิจัยอนิเมและหมากกระดาน</h3>
-                            <p>สมัยนี้ อนิเมชั่นหรือการ์ตูนต่างๆเป็นสื่อที่อยู่ใกล้ตัว และเป็นที่รู้จัก</p>
-                            <button type="button" class="btn btn-primary btn-block" data-toggle="modal" data-target="#clubtwo">อ่านต่อ</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="clubbox">
-                    <div class="clubbox-in">
-                        <img src="{{URL::asset('assets/new/img/club-thumbs/club-3.jpg')}}" />
-                        <div class="clubbox-text">
-                            <h3>ชุมนุม AGAPAE'</h3>
-                            <p>สันทนาการคืออะไร? น้องๆหลายคนอาจจะสงสัยว่า "สันทนาการ" คืออะไร...</p>
-                            <button type="button" class="btn btn-primary btn-block" data-toggle="modal" data-target="#clubthree">อ่านต่อ</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="clubbox">
-                    <div class="clubbox-in">
-                        <img src="{{URL::asset('assets/new/img/club-thumbs/club-4.jpg')}}" />
-                        <div class="clubbox-text">
-                            <h3>ชุมนุม FOTO+ MAG</h3>
-                            <p>ในโอกาสพิเศษต่างๆ ไม่ว่าจะเป็นงานนิทรรศการ งานวิชาการ งานกีฬา หรืองาน...</p>
-                            <button type="button" class="btn btn-primary btn-block" data-toggle="modal" data-target="#clubfour">อ่านต่อ</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="clubbox">
-                    <div class="clubbox-in">
-                        <img src="{{URL::asset('assets/new/img/club-thumbs/club-5.jpg')}}" />
-                        <div class="clubbox-text">
-                            <h3>ชุมนุม Inphonic</h3>
-                            <p>น้องๆหลายคนเมื่อได้ยินชื่อชุมนุม Inphonic อาจจะงงกันว่าคือชุมนุมอะไร ซึ่งจริงๆแล...</p>
-                            <button type="button" class="btn btn-primary btn-block" data-toggle="modal" data-target="#clubfive">อ่านต่อ</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
     <!-- Competitions -->
     <div id="competition" class="orangesec">
         <div class="container">
@@ -243,6 +185,65 @@
             </div>
         </div>
     </div>
+    <!-- Clubs -->
+    <div class="clubsec">
+        <div class="container">
+            <h2 class="text-center">กิจกรรมชุมนุมของนักศึกษา</h2>
+            <div id="clubsec" class="owl-carousel owl-theme">
+                <div class="clubbox">
+                    <div class="clubbox-in">
+                        <img src="{{URL::asset('assets/new/img/club-thumbs/club-1.png')}}" />
+                        <div class="clubbox-text">
+                            <h3>ชุมนุม IT Forge</h3>
+                            <p>IT นั้นย่อมาจาก Information Technology แปลว่า เทคโนโลยีสารสนเทศ ส่วน Forge...</p>
+                            <button type="button" class="btn btn-primary btn-block" data-toggle="modal" data-target="#clubone">อ่านต่อ</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="clubbox">
+                    <div class="clubbox-in">
+                        <img src="{{URL::asset('assets/new/img/club-thumbs/club-2.jpg')}}" />
+                        <div class="clubbox-text">
+                            <h3>ชุมนุมวิจัยอนิเมและหมากกระดาน</h3>
+                            <p>สมัยนี้ อนิเมชั่นหรือการ์ตูนต่างๆเป็นสื่อที่อยู่ใกล้ตัว และเป็นที่รู้จัก</p>
+                            <button type="button" class="btn btn-primary btn-block" data-toggle="modal" data-target="#clubtwo">อ่านต่อ</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="clubbox">
+                    <div class="clubbox-in">
+                        <img src="{{URL::asset('assets/new/img/club-thumbs/club-3.jpg')}}" />
+                        <div class="clubbox-text">
+                            <h3>ชุมนุม AGAPAE'</h3>
+                            <p>สันทนาการคืออะไร? น้องๆหลายคนอาจจะสงสัยว่า "สันทนาการ" คืออะไร...</p>
+                            <button type="button" class="btn btn-primary btn-block" data-toggle="modal" data-target="#clubthree">อ่านต่อ</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="clubbox">
+                    <div class="clubbox-in">
+                        <img src="{{URL::asset('assets/new/img/club-thumbs/club-4.jpg')}}" />
+                        <div class="clubbox-text">
+                            <h3>ชุมนุม FOTO+ MAG</h3>
+                            <p>ในโอกาสพิเศษต่างๆ ไม่ว่าจะเป็นงานนิทรรศการ งานวิชาการ งานกีฬา หรืองาน...</p>
+                            <button type="button" class="btn btn-primary btn-block" data-toggle="modal" data-target="#clubfour">อ่านต่อ</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="clubbox">
+                    <div class="clubbox-in">
+                        <img src="{{URL::asset('assets/new/img/club-thumbs/club-5.jpg')}}" />
+                        <div class="clubbox-text">
+                            <h3>ชุมนุม Inphonic</h3>
+                            <p>น้องๆหลายคนเมื่อได้ยินชื่อชุมนุม Inphonic อาจจะงงกันว่าคือชุมนุมอะไร ซึ่งจริงๆแล...</p>
+                            <button type="button" class="btn btn-primary btn-block" data-toggle="modal" data-target="#clubfive">อ่านต่อ</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Event Carousel -->
     <div class="eventcarousel">
         <h1 class="light visible-xs">บรรยากาศ<br/><b>ภายในงาน</b></h1>
         <h1 class="light hidden-xs"><b>บรรยากาศ</b>ภายในงาน</h1>

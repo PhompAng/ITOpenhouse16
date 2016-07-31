@@ -208,6 +208,25 @@
             </div>
         </div>
     </div>
+    <div class="workshopsec">
+        <div class="container">
+            <h2 class="text-center">เวิร์กชอป</h2>
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <img src="{{URL::asset('assets/new/img/ws-business.jpg')}}" class="img-responsive"/>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <img src="{{URL::asset('assets/new/img/ws-multimedia.jpg')}}" class="img-responsive"/>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <img src="{{URL::asset('assets/new/img/ws-network.jpg')}}" class="img-responsive"/>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <img src="{{URL::asset('assets/new/img/ws-software.jpg')}}" class="img-responsive"/>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="eventcarousel">
         <h1 class="light visible-xs">บรรยากาศ<br/><b>ภายในงาน</b></h1>
         <h1 class="light hidden-xs"><b>บรรยากาศ</b>ภายในงาน</h1>

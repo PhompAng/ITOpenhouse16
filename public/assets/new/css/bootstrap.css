@@ -6758,6 +6758,11 @@ h6.light {
     width: 100%;
     padding: 0 7px;
 }
+.workshopsec {
+    background: #fff;
+    color: #0bace1;
+    padding: 50px 0;
+}
 .itcamp{
     background: #000;
     background-image: repeating-linear-gradient(45deg, transparent, transparent 6px, rgba(47, 47, 47, 0.5) 6px, rgba(101, 101, 101, 0.5) 12px);

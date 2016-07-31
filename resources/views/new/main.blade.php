@@ -102,6 +102,9 @@
     </div>
     <div class="itcamp text-center">
         <video src="{{URL::asset('assets/new/img/itcamp.mp4')}}" autoplay="on" loop="on"></video>
+        <video poster="{{URL::asset('assets/new/img/itcamp.jpg')}}" autoplay="autoplay">
+            <source src="{{URL::asset('assets/new/img/itcamp.mp4')}}" type="video/mp4" />
+        </video>
     </div>
     <!-- Competitions -->
     <div id="competition" class="orangesec">

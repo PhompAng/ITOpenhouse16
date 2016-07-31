@@ -101,8 +101,7 @@
         </div>
     </div>
     <div class="itcamp text-center">
-        <video src="{{URL::asset('assets/new/img/itcamp.mp4')}}" autoplay="on" loop="on"></video>
-        <video poster="{{URL::asset('assets/new/img/itcamp.jpg')}}" autoplay="autoplay">
+        <video poster="{{URL::asset('assets/new/img/itcamp.jpg')}}" autoplay="autoplay" loop="loop">
             <source src="{{URL::asset('assets/new/img/itcamp.mp4')}}" type="video/mp4" />
         </video>
     </div>

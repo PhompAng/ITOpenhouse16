@@ -22,7 +22,7 @@
         .rownominus {margin-left: 0;margin-right: 0;}
         .aaa-logo > img {
             display: inline-block;
-            width: 140px;
+            width: 120px;
             margin: 20px 20px;
         }
         @media only screen and (max-width : 768px) {

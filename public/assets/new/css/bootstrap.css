@@ -4933,7 +4933,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   border-radius: .25em;
 }
 .logo-aaa {
-    padding: 10px 0px 0px 0px;
+    padding: 10px 0px;
 }
 a.label:hover,
 a.label:focus {

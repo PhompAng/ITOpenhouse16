@@ -214,22 +214,30 @@
             <div class="row">
                 <div class="col-xs-12 col-sm-6 col-md-3">
                     <div class="imgcontainer">
-                        <img src="{{URL::asset('assets/new/img/ws-business.jpg')}}" class="img-responsive"/>
+                        <a data-toggle="modal" data-target="#workshop1">
+                            <img src="{{URL::asset('assets/new/img/ws-business.jpg')}}" class="img-responsive"/>
+                        </a>
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-6 col-md-3">
                     <div class="imgcontainer">
-                        <img src="{{URL::asset('assets/new/img/ws-media.jpg')}}" class="img-responsive"/>
+                        <a data-toggle="modal" data-target="#workshop2">
+                            <img src="{{URL::asset('assets/new/img/ws-media.jpg')}}" class="img-responsive"/>
+                        </a>
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-6 col-md-3">
                     <div class="imgcontainer">
-                        <img src="{{URL::asset('assets/new/img/ws-network.jpg')}}" class="img-responsive"/>
+                        <a data-toggle="modal" data-target="#workshop3">
+                            <img src="{{URL::asset('assets/new/img/ws-network.jpg')}}" class="img-responsive"/>
+                        </a>
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-6 col-md-3">
                     <div class="imgcontainer">
-                        <img src="{{URL::asset('assets/new/img/ws-software.jpg')}}" class="img-responsive"/>
+                        <a data-toggle="modal" data-target="#workshop4">
+                            <img src="{{URL::asset('assets/new/img/ws-software.jpg')}}" class="img-responsive"/>
+                        </a>
                     </div>
                 </div>
             </div>

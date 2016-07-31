@@ -472,6 +472,85 @@
             </div>
         </div>
     </div>
+        <!-- workshop: BI -->
+    <div id="workshop1" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h1 class="light text-center">ชื่อกิจกรรม : ล้วงลึกเรื่องลับ ๆ กับ Facebook </h1>
+                </div>
+                <div class="modal-body">
+                    <h3>รายละเอียด:</h3>
+                    <ul>
+                        <li>แนะนำเกี่ยวกับ Graph API ของ Facebook และให้ผู้เข้าร่วมกิจกรรมได้ทดลอง (15 นาที)</li>
+                        <ul>
+                            <li>โพสต์ status update และ อัพโหลดรูปภาพ โดยผ่าน FB Graph API</li>
+                            <li>ดึงข้อมูลจำนวน like และ จำนวนโพสต์พร้อมทั้งวัน-เวลาที่ได้ทำการโพสต์ภายใน 1 เดือนที่ผ่านมา</li>
+                            <li>เลือก FB page ดังๆ ที่เป็น public แล้วลองเขียน query ผ่าน FB Graph API เข้าไปดูข้อมูลการโพสต์ 1 เดือนย้อนหลัง มาวิเคราะห์ว่าเพจนั้นๆ มีการโพสต์วันไหนบ่อยที่สุด (จันทร์ – ศุกร์) </li>
+                        </ul>
+                    </ul>
+                    <ul>
+                        <li>ทางทีมจะเตรียมทำ Facebook App ไว้ 20 Apps (10 นาที)</li>
+                        <ul>
+                            <li>อธิบายหลักการ วิธีการสร้าง App บน FB</li>
+                            <li>ให้ผู้เข้าร่วมได้ลองเขียน FB App ของตัวเอง โดยอาจจะเป็นการทำนายโชคชะตาจากวันเกิดที่ดึงจาก FB account ของผู้เข้าร่วมกิจกรรม</li>
+                            <li>ดึง เพื่อน ที่ดวงสมพงษ์กับเรา</li>
+                        </ul>
+                    </ul>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">ปิดหน้าต่าง</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- workshop: MMD -->
+    <div id="workshop2" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h1 class="light text-center">ชื่อกิจกรรม : ส่องขุมทรัพย์กับ Cardboard </h1>
+                </div>
+                <div class="modal-body">
+                    <h3>รายละเอียด:</h3>
+                    <p>ผู้เข้าร่วม Workshop นี้จะได้เรียนรู้และเข้าใจถึงแขนงวิชาสื่อประสมและเกมภายในเวลา 30 นาที ผ่านการปฏิบัติจริงเพื่อพัฒนาแอพพลิเคชันบนโทรศัพท์มือถือโดยใช้เทคโนโลยี Virtual Reality โดยผู้เข้าร่วม Workshop จะได้ทำลองสร้างแอพพลิเคชันในทุกขั้นตอนเพื่อเรียนรู้ว่าแขนงวิชานี้มีการเรียนการสอนทั้งส่วน Content Creation และ Multimedia Programing</p>
+                </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">ปิดหน้าต่าง</button>
+                    </div>
+            </div>
+        </div>
+    </div>
+        <!-- workshop: NW -->
+    <div id="workshop3" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h1 class="light text-center">ชื่อกิจกรรม : สืบเจาะเคาะจากเน็ต </h1>
+                </div>
+                <div class="modal-body">
+                    <h3>เป้าหมายในการทำ workshop</h3>
+                    <ul>
+                        <li>ให้นักเรียนได้เรียนรู้การตรวจสอบการทำงานของระบบเครือข่ายไร้สายโดยใช้โปรแกรม wireshark</li>
+                    </ul>
+                    <h3>รายละเอียดของตัว workshop</h3>
+                    <p>ใน workshop จะอิงกับโปรแกรม Fing (บนโทรศัพท์มือถือที่ใช้ OS เป็น Android หรือ IOS) ซึ่งเป็นโปรแกรมที่ใช้ตรวจสอบว่ามีอุปกรณ์ใดบ้างที่เชื่อมต่อกับ Access Point ที่ใช้งานอยู่</p>
+                    <ol>
+                        <li>ทำการ demo ว่าตัวโปรแกรม Fing ทำงานอย่างไร<li>
+                        <li>แนะนำหลักการทำงานของโปรแกรม wireshark<li>
+                        <li>ให้ทดลองใช้โปรแกรม wireshark  และแนะนำวิธีในการวิเคราะห์ผล  โดยผลที่ได้จะเทียบเท่ากับการใช้งานโปรแกรม Fin<li>
+                    </ol>
+                </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">ปิดหน้าต่าง</button>
+                    </div>
+            </div>
+        </div>
+    </div>
+        <!------ workshop : softend ---->
 @endsection
 @section('script')
     <script type="text/javascript">

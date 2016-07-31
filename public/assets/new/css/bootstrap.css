@@ -6767,10 +6767,11 @@ h6.light {
     padding: 7px;
 }
 .workshopsec img {
-    transition: box-shadow 0.5s;
+    transition: box-shadow 0.2s, transform 0.25s;
 }
 .workshopsec img:hover {
     box-shadow: 0 15px 25px rgba(0, 0, 0, 0.4);
+    transform: translateY(-8px);
 }
 .itcamp{
     background: #000;

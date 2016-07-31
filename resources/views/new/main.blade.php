@@ -270,6 +270,7 @@
     <!----- Modals for Clubs ------>
     <!-- Club: IT Forge -->
     <div id="clubone" class="modal fade" role="dialog">
+       <div class="container">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -294,8 +295,10 @@
             </div>
         </div>
     </div>
+    </div>
     <!-- Club: Anime -->
     <div id="clubtwo" class="modal fade" role="dialog">
+       <div class="container">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -325,8 +328,10 @@
             </div>
         </div>
     </div>
+</div>
     <!-- Club: AGAPE -->
     <div id="clubthree" class="modal fade" role="dialog">
+       <div class="container">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -362,8 +367,10 @@
             </div>
         </div>
     </div>
+</div>
     <!-- Club: FOTO -->
     <div id="clubfour" class="modal fade" role="dialog">
+       <div class="container">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -402,8 +409,10 @@
             </div>
         </div>
     </div>
+</div>
     <!-- Club: Inphonic -->
     <div id="clubfive" class="modal fade" role="dialog">
+       <div class="container">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -433,9 +442,11 @@
             </div>
         </div>
     </div>
+</div>
     <!-- Modals for Learn -->
     <!-- Learn: To be IT -->
     <div id="learn1" class="modal fade" role="dialog">
+       <div class="container">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -477,8 +488,10 @@
             </div>
         </div>
     </div>
+</div>
     <!-- Learn: Tour -->
     <div id="learn3" class="modal fade" role="dialog">
+       <div class="container">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -498,8 +511,10 @@
             </div>
         </div>
     </div>
+    </div>
     <!-- Learn: Study -->
     <div id="learn4" class="modal fade" role="dialog">
+       <div class="container">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -519,8 +534,10 @@
             </div>
         </div>
     </div>
+</div>
         <!-- workshop: BI -->
     <div id="workshop1" class="modal fade" role="dialog">
+       <div class="container">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -552,8 +569,10 @@
             </div>
         </div>
     </div>
+</div>
     <!-- workshop: MMD -->
     <div id="workshop2" class="modal fade" role="dialog">
+       <div class="container">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -570,8 +589,10 @@
             </div>
         </div>
     </div>
+</div>
     <!-- workshop: NW -->
     <div id="workshop3" class="modal fade" role="dialog">
+       <div class="container">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -597,8 +618,10 @@
             </div>
         </div>
     </div>
+</div>
     <!------ workshop : softend ---->
     <div id="workshop4" class="modal fade" role="dialog">
+       <div class="container">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -634,6 +657,7 @@
             </div>
         </div>
     </div>
+</div>
 @endsection
 @section('script')
     <script type="text/javascript">

@@ -6775,7 +6775,7 @@ h6.light {
 }
 .itcamp{
     background: #000;
-    background-image: repeating-linear-gradient(45deg, transparent, transparent 6px, rgba(47, 47, 47, 0.5) 6px, rgba(101, 101, 101, 0.5) 12px);
+    background-image: url('..//img/itcampbg.jpg');
     color: #fff;
     padding: 60px 0;
     font-weight: 300;

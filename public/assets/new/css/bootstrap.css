@@ -55,7 +55,6 @@ abbr[title] {
 b,
 strong {
   font-weight: 600;
-    color: black;
 }
 dfn {
   font-style: italic;
@@ -6862,6 +6861,9 @@ h6.light {
 }
 .paper b.red, .paper strong.red {
     color: red;
+}
+.paper strong.black {
+    color: black;
 }
 .paper b, .paper strong {
     color: #337ab7;

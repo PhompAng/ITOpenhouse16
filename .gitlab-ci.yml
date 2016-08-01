@@ -14,12 +14,7 @@ before_script:
 test:
     stage: test
     script:
-        - service mysql start
-        - echo "create database laravel" | mysql -u root
-        - php /composer.phar install -n -q
-        - cp .env.ci .env
-        - php artisan migrate --seed --force
-        - vendor/bin/phpunit tests
+        - echo "disable test!"
 
 deploy to dev:
     environment: dev

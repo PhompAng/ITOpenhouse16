@@ -25,19 +25,21 @@
                     <img src="{{URL::asset('assets/new/img/highlight-4.jpg')}}" alt="highlight"/>
                 </div>
             </div>
-            <h2 class="text-center">เลือกเรียน เปลี่ยนชีวิต</h2>
+            <h1 class="text-center">เลือกเรียน เปลี่ยนชีวิต</h1>
             <div class="row highlight-textbox">
                 <div class="col-sm-12 col-md-8 col-md-offset-2">
                     <p class="text-center">สัมผัสเส้นทางการศึกษาทางด้านไอทีในทุกแง่มุม เปิดตัวหลักสูตรใหม่ ป.ตรี บรรยายพิเศษจากเน็ตไอดอลและกูรูไอทีจากเว็บไซต์เด็กดี ร่วมสนุกและลุ้นไปกับเกมการแข่งขันมากมาย สร้างแรงบันดาลใจไปกับนิทรรศการผลงานสุดเจ๋งของนักศึกษา ทดลองเรียนจริง และอีกมากมาย</p>
                 </div>
             </div>
-            <div class="text-center"><a class="btn btn-highlight btn-lg" href="{{URL('/schedule')}}">กำหนดการ</a></div>
+            <div class="text-center">
+                <a class="btn btn-highlight btn-lg" href="{{URL('/schedule')}}">กำหนดการ</a>
+            </div>
         </div>
     </div>
     <!-- Learn -->
     <div class="learn">
         <div class="container">
-            <h2 class="text-center">การศึกษาต่อ</h2>
+            <h1 class="text-center">การศึกษาต่อ</h1>
             <div class="row">
                 <div class="col-md-6 col-xs-12">
                     <div class="well well-lg">
@@ -98,18 +100,105 @@
             </div>
         </div>
     </div>
-    <div class="itcamp">
-        <h1 class="text-center">IT Camp</h1>
-        <h3 class="text-center">Coming soon</h3>
+    <div class="itcamp text-center">
+        <a href="http://www.itcamp.in.th/13/" target="_blank">
+            <video poster="{{URL::asset('assets/new/img/itcamp.jpg')}}" autoplay="autoplay" loop="loop">
+                <source src="{{URL::asset('assets/new/img/itcamp.mp4')}}" type="video/mp4" />
+            </video>
+        </a>
+    </div>
+    <!-- Competitions -->
+    <div id="competition" class="orangesec">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="activity-box activity-box--white">
+                        <h1>การแข่งขัน</h1>
+                        <h4 class="light">IT Open House 2016</h4>
+                        <h4 class="light">26 สิงหาคม 2559</h4>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="activity-box activity-box--transparent activity-1">
+                        <h1>E-Sports</h1>
+                        <p>แข่งขันเกม DOTA2 ในโหมด CAPTAIN เวอร์ชันที่ใช้แข่งคือ Tournament, การแข่งขันเป็นแบบแพ้ตกรอบ</p>
+                        <a class="btn btn-activity" href="{{URL('/register/competition/esport')}}" role="button">รายละเอียด</a>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="activity-box activity-box--transparent  activity-2">
+                        <h1>พัฒนาเว็บไซต์</h1>
+                        <p>แข่งขันพัฒนาเว็บไซต์ด้วย PHP, JavaScript, AJAX, Bootstrap และฐานข้อมูล ภายในเวลาสามชั่วโมง</p>
+                        <a class="btn btn-activity" href="{{URL('/register/competition/php')}}" role="button">รายละเอียด</a>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="activity-box activity-box--transparent  activity-3">
+                        <h1>ตอบปัญหา</h1>
+                        <p>แข่งขันตอบปัญหาในแวดวงไอที ทั้งบุคคล หน่วยงาน พื้นฐานการพัฒนาโปรแกรม คณิตศาสตร์มัธยมปลาย สมาร์ทโฟนและ IoT</p>
+                        <a class="btn btn-activity" href="{{URL('/register/competition/itquiz')}}" role="button">รายละเอียด</a>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="activity-box activity-box--transparent  activity-4">
+                        <h1>ความปลอดภัยระบบ</h1>
+                        <p>แข่งขันหาช่องโหว่ของระบบ เช่น ความปลอดภัยเว็บไซต์ เครือข่าย การเข้ารหัสลับเบื้องต้น</p>
+                        <a class="btn btn-activity" href="{{URL('/register/competition/network')}}" role="button">รายละเอียด</a>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="activity-box activity-box--transparent  activity-5">
+                        <h1>นำเสนอแผนธุรกิจ</h1>
+                        <p>แข่งขันสร้างสรรค์และนำเสนอนวัตกรรมใหม่ๆ ที่มีการนำเทคโนโลยีสารสนเทศมาใช้</p>
+                        <a class="btn btn-activity" href="{{URL('/register/competition/pitching')}}" role="button">รายละเอียด</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="workshopsec">
+        <div class="container">
+            <h1 class="text-center">เวิร์กชอป</h1>
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                    <div class="imgcontainer">
+                        <a data-toggle="modal" data-target="#workshop1">
+                            <img src="{{URL::asset('assets/new/img/ws-business.jpg')}}" class="img-responsive"/>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                    <div class="imgcontainer">
+                        <a data-toggle="modal" data-target="#workshop2">
+                            <img src="{{URL::asset('assets/new/img/ws-media.jpg')}}" class="img-responsive"/>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                    <div class="imgcontainer">
+                        <a data-toggle="modal" data-target="#workshop3">
+                            <img src="{{URL::asset('assets/new/img/ws-network.jpg')}}" class="img-responsive"/>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                    <div class="imgcontainer">
+                        <a data-toggle="modal" data-target="#workshop4">
+                            <img src="{{URL::asset('assets/new/img/ws-software.jpg')}}" class="img-responsive"/>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <!-- Clubs -->
     <div class="clubsec">
         <div class="container">
-            <h2 class="text-center">กิจกรรมชุมนุมของนักศึกษา</h2>
+            <h1 class="text-center">กิจกรรมชุมนุมของนักศึกษา</h1>
             <div id="clubsec" class="owl-carousel owl-theme">
                 <div class="clubbox">
                     <div class="clubbox-in">
-                        <img src="{{URL::asset('assets/new/img/club-thumbs/club-1.jpg')}}" />
+                        <img src="{{URL::asset('assets/new/img/club-thumbs/club-1.png')}}" />
                         <div class="clubbox-text">
                             <h3>ชุมนุม IT Forge</h3>
                             <p>IT นั้นย่อมาจาก Information Technology แปลว่า เทคโนโลยีสารสนเทศ ส่วน Forge...</p>
@@ -160,73 +249,30 @@
             </div>
         </div>
     </div>
-    <!-- Competitions -->
-    <div id="competition" class="orangesec">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12 col-sm-6 col-md-4">
-                    <div class="activity-box activity-box--white">
-                        <h1>การแข่งขัน</h1>
-                        <h4 class="light">IT Open House 2016</h4>
-                        <h4 class="light">26 สิงหาคม 2559</h4>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-4">
-                    <div class="activity-box activity-box--transparent">
-                        <h1>E-Sports</h1>
-                        <p>แข่งขันเกม DOTA2 ในโหมด CAPTAIN เวอร์ชันที่ใช้แข่งคือ Tournament, การแข่งขันเป็นแบบแพ้ตกรอบ</p>
-                        <a class="btn btn-activity" href="{{URL('/register/competition/esport')}}" role="button">รายละเอียด</a>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-4">
-                    <div class="activity-box activity-box--transparent">
-                        <h1>พัฒนาเว็บไซต์</h1>
-                        <p>แข่งขันพัฒนาเว็บไซต์ด้วย PHP, JavaScript, AJAX, Bootstrap และฐานข้อมูล ภายในเวลาสามชั่วโมง</p>
-                        <a class="btn btn-activity" href="{{URL('/register/competition/php')}}" role="button">รายละเอียด</a>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-4">
-                    <div class="activity-box activity-box--transparent">
-                        <h1>ตอบปัญหา</h1>
-                        <p>แข่งขันตอบปัญหาในแวดวงไอที ทั้งบุคคล หน่วยงาน พื้นฐานการพัฒนาโปรแกรม คณิตศาสตร์มัธยมปลาย สมาร์ทโฟนและ IoT</p>
-                        <a class="btn btn-activity" href="{{URL('/register/competition/itquiz')}}" role="button">รายละเอียด</a>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-4">
-                    <div class="activity-box activity-box--transparent">
-                        <h1>ความปลอดภัยระบบ</h1>
-                        <p>แข่งขันหาช่องโหว่ของระบบ เช่น ความปลอดภัยเว็บไซต์ เครือข่าย การเข้ารหัสลับเบื้องต้น</p>
-                        <a class="btn btn-activity" href="{{URL('/register/competition/network')}}" role="button">รายละเอียด</a>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-4">
-                    <div class="activity-box activity-box--transparent">
-                        <h1>นำเสนอแผนธุรกิจ</h1>
-                        <p>แข่งขันสร้างสรรค์และนำเสนอนวัตกรรมใหม่ๆ ที่มีการนำเทคโนโลยีสารสนเทศมาใช้</p>
-                        <a class="btn btn-activity" href="{{URL('/register/competition/pitching')}}" role="button">รายละเอียด</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    <!-- Event Carousel -->
     <div class="eventcarousel">
         <h1 class="light visible-xs">บรรยากาศ<br/><b>ภายในงาน</b></h1>
         <h1 class="light hidden-xs"><b>บรรยากาศ</b>ภายในงาน</h1>
         <div class="container">
-            <div id="lastyear" class="owl-carousel owl-theme">
-                <img src="{{URL::asset('assets/new/img/jumbo-1.jpg')}}" class="img-responsive" alt="pic" />
-                <img src="{{URL::asset('assets/new/img/jumbo-2.jpg')}}" class="img-responsive" alt="pic" />
-                <img src="{{URL::asset('assets/new/img/jumbo-3.jpg')}}" class="img-responsive" alt="pic" />
-                <img src="{{URL::asset('assets/new/img/jumbo-4.jpg')}}" class="img-responsive" alt="pic" />
-                <img src="{{URL::asset('assets/new/img/jumbo-5.jpg')}}" class="img-responsive" alt="pic" />
-                <img src="{{URL::asset('assets/new/img/jumbo-6.jpg')}}" class="img-responsive" alt="pic" />
-                <img src="{{URL::asset('assets/new/img/jumbo-7.jpg')}}" class="img-responsive" alt="pic" />
+            <div class="row">
+                <div class="col-xs-12">
+                    <div id="lastyear" class="owl-carousel owl-theme">
+                        <img src="{{URL::asset('assets/new/img/jumbo-1.jpg')}}" class="img-responsive" alt="pic" />
+                        <img src="{{URL::asset('assets/new/img/jumbo-2.jpg')}}" class="img-responsive" alt="pic" />
+                        <img src="{{URL::asset('assets/new/img/jumbo-3.jpg')}}" class="img-responsive" alt="pic" />
+                        <img src="{{URL::asset('assets/new/img/jumbo-4.jpg')}}" class="img-responsive" alt="pic" />
+                        <img src="{{URL::asset('assets/new/img/jumbo-5.jpg')}}" class="img-responsive" alt="pic" />
+                        <img src="{{URL::asset('assets/new/img/jumbo-6.jpg')}}" class="img-responsive" alt="pic" />
+                        <img src="{{URL::asset('assets/new/img/jumbo-7.jpg')}}" class="img-responsive" alt="pic" />
+                    </div>
+                </div>
             </div>
         </div>
     </div>
     <!----- Modals for Clubs ------>
     <!-- Club: IT Forge -->
     <div id="clubone" class="modal fade" role="dialog">
+      
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -251,6 +297,7 @@
             </div>
         </div>
     </div>
+    
     <!-- Club: Anime -->
     <div id="clubtwo" class="modal fade" role="dialog">
         <div class="modal-dialog">
@@ -260,11 +307,21 @@
                     <h1 class="modal-title light text-center">ชุมนุมวิจัยอนิเมและหมากกระดาน</h1>
                 </div>
                 <div class="modal-body">
-                    <div class="imggroup">
-                        <img src="{{URL::asset('assets/new/img/club-large/club-2-1.jpg')}}" class="img-responsive"/>
+                    <div class="row">
+                        <div class="imggroup">
+                            <div class="row rownominus">
+                                <div class="col-xs-12 col-md-6">
+                                    <img src="{{URL::asset('assets/new/img/club-large/club-2-1.jpg')}}" class="img-responsive" />
+                                </div>
+                                <div class="col-xs-12 col-md-6">
+                                    <img src="{{URL::asset('assets/new/img/club-large/club-2-2.jpg')}}" class="img-responsive" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12">
+                            <p>สมัยนี้ อนิเมชั่นหรือการ์ตูนต่างๆเป็นสื่อที่อยู่ใกล้ตัว และเป็นที่รู้จักมากขึ้น ซึ่งบางเรื่องนั้นได้มีการสอดแทรกสาระเนื้อหาที่น่าสนใจ หรือมีการละเล่นต่างๆ ที่หลายๆ คนเคยเล่น แต่ห่างเหินไปเพราะเทคโนโลยีต่างๆ เริ่มมีเกมมาแทนที่ ชุมนุมเราจึงจัดตั้งขึ้นเพื่อวิเคราะห์สาระ แนวคิด และข้อคิด ที่มีอยู่ในอนิเมชันเหล่านั้น รวมไปถึงลักษณะต่างๆ ของอนิเมชั่น และยังนำเกมกระดาน และการละเล่นต่างๆ ที่อยู่ในอนิเมมาฝึกเล่น และเรียนรู้ความแตกต่าง และเพื่อสร้างความสนุกสนาน และความสามัคคีในหมู่คณะอีกด้วย มาสนุกสนานกับอนิเมชัน และเกมกระดานกันเถอะครับ</p>
+                        </div>
                     </div>
-                    <p>สมัยนี้ อนิเมชั่นหรือการ์ตูนต่างๆเป็นสื่อที่อยู่ใกล้ตัว และเป็นที่รู้จักมากขึ้น ซึ่งบางเรื่องนั้นได้มีการสอดแทรกสาระเนื้อหาที่น่าสนใจ หรือมีการละเล่นต่างๆ ที่หลายๆ คนเคยเล่น แต่ห่างเหินไปเพราะเทคโนโลยีต่างๆ เริ่มมีเกมมาแทนที่ ชุมนุมเราจึงจัดตั้งขึ้นเพื่อวิเคราะห์สาระ แนวคิด และข้อคิด ที่มีอยู่ในอนิเมชันเหล่านั้น รวมไปถึงลักษณะต่างๆ ของอนิเมชั่น และยังนำเกมกระดาน และการละเล่นต่างๆ ที่อยู่ในอนิเมมาฝึกเล่น และเรียนรู้ความแตกต่าง และเพื่อสร้างความสนุกสนาน และความสามัคคีในหมู่คณะอีกด้วย มาสนุกสนานกับอนิเมชัน และเกมกระดานกันเถอะครับ
-                    </p>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">ปิดหน้าต่าง</button>
@@ -459,6 +516,121 @@
                     <div class="alert alert-info text-center">
                         ผู้ที่สนใจสามารถเข้าชมได้ในวันศุกร์ที่ 26 สิงหาคม 2559 บริเวณด้านหน้าห้องประชุม Auditorium อาคารคณะเทคโนโลยีสารสนเทศ
                     </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">ปิดหน้าต่าง</button>
+                </div>
+            </div>
+        </div>
+    </div>
+        <!-- workshop: BI -->
+    <div id="workshop1" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h1 class="light text-center">ชื่อกิจกรรม: ล้วงลึกเรื่องลับ ๆ กับ Facebook </h1>
+                </div>
+                <div class="modal-body">
+                    <h3>รายละเอียด:</h3>
+                    <ul>
+                        <li>แนะนำเกี่ยวกับ Graph API ของ Facebook และให้ผู้เข้าร่วมกิจกรรมได้ทดลอง (15 นาที)</li>
+                        <ul>
+                            <li>โพสต์สถานะและอัพโหลดรูปภาพโดยผ่าน Facebook Graph API</li>
+                            <li>ดึงข้อมูลจำนวน Like และ จำนวนโพสต์พร้อมทั้งวัน-เวลาที่ได้ทำการโพสต์ภายใน 1 เดือนที่ผ่านมา</li>
+                            <li>เลือกเพจดังๆ ที่เป็นสาธารณะแล้วลองเขียน query ผ่าน Facebook Graph API เข้าไปดูข้อมูลการโพสต์ 1 เดือนย้อนหลัง มาวิเคราะห์ว่าเพจนั้นๆ มีการโพสต์วันไหนบ่อยที่สุด (จันทร์ – ศุกร์)</li>
+                        </ul>
+                    </ul>
+                    <ul>
+                        <li>ทางทีมจะเตรียมทำ Facebook App ไว้ 20 แอพ (10 นาที)</li>
+                        <ul>
+                            <li>อธิบายหลักการ วิธีการสร้างแอพบนเฟซบุ๊ก</li>
+                            <li>ให้ผู้เข้าร่วมได้ลองเขียนแอพเฟซบุ๊กของตัวเอง โดยอาจจะเป็นการทำนายโชคชะตาจากวันเกิดที่ดึงจากบัญชีเฟซบุ๊กของผู้เข้าร่วมกิจกรรม</li>
+                            <li>ดึง เพื่อน ที่ดวงสมพงษ์กับเรา</li>
+                        </ul>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">ปิดหน้าต่าง</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- workshop: MMD -->
+    <div id="workshop2" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h1 class="light text-center">ชื่อกิจกรรม: ส่องขุมทรัพย์กับ Cardboard </h1>
+                </div>
+                <div class="modal-body">
+                    <h3>รายละเอียด:</h3>
+                    <p>ผู้เข้าร่วมเวิร์กชอปนี้จะได้เรียนรู้และเข้าใจถึงแขนงวิชาสื่อประสมและเกมภายในเวลา 30 นาที ผ่านการปฏิบัติจริงเพื่อพัฒนาแอปพลิเคชันบนโทรศัพท์มือถือโดยใช้เทคโนโลยี Virtual Reality โดยผู้เข้าร่วมเวิร์กชอปจะได้ลองสร้างแอปพลิเคชันในทุกขั้นตอนเพื่อเรียนรู้ว่าแขนงวิชานี้มีการเรียนการสอนทั้งส่วน Content Creation และ Multimedia Programming</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">ปิดหน้าต่าง</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- workshop: NW -->
+    <div id="workshop3" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h1 class="light text-center">ชื่อกิจกรรม: สืบเจาะเคาะจากเน็ต </h1>
+                </div>
+                <div class="modal-body">
+                    <h3>เป้าหมาย:</h3>
+                    <ul>
+                        <li>ให้นักเรียนได้เรียนรู้การตรวจสอบการทำงานของระบบเครือข่ายไร้สายโดยใช้โปรแกรม Wireshark</li>
+                    </ul>
+                    <h3>รายละเอียด:</h3>
+                    <p>ในเวิร์กชอปจะอิงกับโปรแกรม Fing (บนโทรศัพท์มือถือที่ใช้ระบบปฏิบัติการณ์เป็นแอนดรอยด์หรือ iOS) ซึ่งเป็นโปรแกรมที่ใช้ตรวจสอบว่ามีอุปกรณ์ใดบ้างที่เชื่อมต่อกับ Access Point ที่ใช้งานอยู่</p>
+                    <ol>
+                        <li>ทำการสาธิตว่าตัวโปรแกรม Fing ทำงานอย่างไร</li>
+                        <li>แนะนำหลักการทำงานของโปรแกรม Wireshark</li>
+                        <li>ให้ทดลองใช้โปรแกรม Wireshark  และแนะนำวิธีในการวิเคราะห์ผล  โดยผลที่ได้จะเทียบเท่ากับการใช้งานโปรแกรม Fing</li>
+                    </ol>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">ปิดหน้าต่าง</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------ workshop : softend ---->
+    <div id="workshop4" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h1 class="light text-center">ชื่อกิจกรรม: ใส่กึ๋นให้เลโก้ </h1>
+                </div>
+                <div class="modal-body">
+                    <h3>รายละเอียด:</h3>
+                    <ul>
+                        <li>กิจกรรมนี้<strong class="red">มีดีอะไร</strong></li>
+                            <ul>
+                                <li>มีหุ่นยนต์อีทีให้เรียนรู้ สัมผัส และทดลองเล่น</li>
+                                <li>มีโปรแกรมภาษาจาวาให้ได้เรียนรู้และทดลองเขียนโปรแกรมได้จริง</li>
+                                <li>มีการทดลองเขียนโปรแกรมเพื่อสั่งการและควบคุมหุ่นยนต์อีทีให้ทำงานตามพันธกิจที่กำหนดได้ด้วยภาษาจาวา</li>
+                            </ul>
+                        <li><strong class="red">ทำอะไร</strong>บ้างในกิจกรรมนี้</li>
+                            <p>
+                            ในเวิร์คชอปนี้ น้อง ๆ จะได้เรียนรู้โครงสร้างโปรแกรมภาษาจาวาในเบื้องต้น รวมทั้งการเขียนโปรแกรมภาษาจาวาในการควบคุมการทำงานของอุปกรณ์เซ็นเซอร์ (Sensor) และแอคทูเอเตอร์ (Actuator) ต่าง ๆ เพื่อให้สามารถตรวจจับข้อมูล และแสดงผลการขับเคลื่อนในรูปแบบต่าง ๆ ได้
+น้อง ๆ จะได้รู้จักโครงสร้างของหุ่นยนต์อีที ที่สร้างจากชุดอุปกรณ์ Lego Mindstorms NXT ซึ่งประกอบด้วยเอ็มพียู (MPU) เซ็นเซอร์แสง (Light sensor) เซ็นเซอร์เสียง (Sound sensor) เซ็นเซอร์สัมผัส (Touch sensor) เซ็นเซอร์อัลตราโซนิค (Ultrasonic sensor) และมอร์เตอร์ (Motor) ที่สามารถนำมาสร้างเป็นหุ่นยนต์ในรูปแบบต่าง ๆ ได้ตามที่ต้องการ
+นอกจากนี้ น้อง ๆ ยังจะได้ทดลองเขียนโปรแกรมภาษาจาวา ในการควบคุมสั่งการหุ่นยนต์อีทีที่สร้างขึ้น เพื่อให้สามารถตรวจจับข้อมูลในรูปแบบต่าง ๆ จากสภาพแวดล้อม แล้วนำมาประมวลผลและดำเนินการตามพันธกิจ (Mission) ที่กำหนด            </p>
+                        <li>เข้ากิจกรรมนี้แล้ว<strong class="red">ได้อะไร</strong></li>
+                            <ul>
+                                <li>เรียนรู้และทดลองระบบฝังตัวสำเร็จรูปโดยใช้ ET Robot</li>
+                                <li>เรียนรู้องค์ประกอบทางฮาร์ดแวร์ ประกอบด้วย Controller (MPU ของระบบ) อุปกรณ์เซ็นเซอร์ (Sensor) และอุปกรณ์ต่อพ่วงชนิดต่างๆ</li>
+                                <li>สามารถเชื่อมต่ออุปกรณ์และควบคุมฮาร์ดแวร์เพื่อพัฒนาเป็นแอปพลิเคชั่นสำหรับระบบฝังตัวด้วย ET Robot ได้</li>
+                                <li>ความสนุกสนานเพลิดเพลินในการเรียนรู้ ได้ทดลองสัมผัส และสามารถทำได้จริงด้วยตัวเอง</li>
+                            </ul>
+                    </ul>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">ปิดหน้าต่าง</button>

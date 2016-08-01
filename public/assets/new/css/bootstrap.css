@@ -4933,7 +4933,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   border-radius: .25em;
 }
 .logo-aaa {
-    padding: 10px 0px 0px 0px;
+    padding: 10px 0px;
 }
 a.label:hover,
 a.label:focus {
@@ -6079,7 +6079,7 @@ button.close {
 }
 @media (min-width: 768px) {
   .modal-dialog {
-    width: 1000px;
+    width: 700px;
     margin: 30px auto;
   }
     .modal-body {
@@ -6697,10 +6697,10 @@ h6.light {
     background-position: center;
     background-size: cover;
     color: #ff7600;
-    padding: 50px 20px;
+    padding: 50px 0;
     font-weight: 300;
 }
-.learn h2 {
+.learn h1 {
     color: #fff;
 }
 .learn h3 {
@@ -6722,7 +6722,7 @@ h6.light {
     background-repeat: no-repeat;
     background-attachment: fixed;
     color: #ffffff;
-    padding: 50px 20px;
+    padding: 50px 0;
     font-weight: 300;
 }
 .clubsec h2, .learn h2 {
@@ -6758,13 +6758,34 @@ h6.light {
     width: 100%;
     padding: 0 7px;
 }
+.workshopsec {
+    background: #fff;
+    color: #3257e6;
+    padding: 50px 0;
+}
+.workshopsec .imgcontainer {
+    padding: 7px;
+}
+.workshopsec img {
+    transition: box-shadow 0.2s, transform 0.25s;
+}
+.workshopsec img:hover {
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.4);
+    transform: translateY(-8px);
+}
 .itcamp{
-    background: #0bace1;
+    background: #000;
+    background-image: url('..//img/itcampbg.jpg');
+    background-size: cover;
+    background-position: center;
     color: #fff;
-    padding: 100px 0;
+    padding: 60px 0;
     font-weight: 300;
 }
-
+.itcamp video {
+    width: 95%;
+    max-width: 500px;
+}
 .highlight-reel {
     margin: -50px 0 40px 0;
 }
@@ -6780,6 +6801,8 @@ h6.light {
     padding: 25px;
     margin: 20px;
     min-height: 255px;
+    background-size: cover;
+    background-position: right bottom;
 }
 .activity-box h1, .activity-box p {
     margin: 0 0 15px 0;
@@ -6796,6 +6819,21 @@ h6.light {
 }
 .activity-box--transparent {
     color: #ffffff;
+}
+.activity-1 {
+    background-image: url('../img/compet-1.png')
+}
+.activity-2 {
+    background-image: url('../img/compet-2.png')
+}
+.activity-3 {
+    background-image: url('../img/compet-3.png')
+}
+.activity-4 {
+    background-image: url('../img/compet-4.png')
+}
+.activity-5 {
+    background-image: url('../img/compet-5.png')
 }
 .eventcarousel {
     padding: 60px 30px;

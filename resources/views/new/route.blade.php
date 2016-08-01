@@ -6,7 +6,7 @@
             <!--ของฉันและเธอคือการเรียนรู้-->
             <hr>
             <div class="embed-responsive embed-responsive-16by9">
-                <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4275.741283591075!2d100.77834390286307!3d13.728304908030038!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x311d66308ce98ffd%3A0xcb43a76f038c38ca!2z4LiE4LiT4Liw4LmA4LiX4LiE4LmC4LiZ4LmC4Lil4Lii4Li14Liq4Liy4Lij4Liq4LiZ4LmA4LiX4Lio!5e0!3m2!1sen!2sth!4v1468911926304"></iframe>
+                <iframe class="embed-responsive-item" src="https://www.google.com/maps/d/embed?mid=1V2TjMw-MDgO-MSnPbqMIXQM8Lng"></iframe>
             </div>
             <br/>
             <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">

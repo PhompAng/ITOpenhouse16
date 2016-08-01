@@ -70,7 +70,8 @@
             </ul>
             <h3>หมายเหตุ</h3>
             <p><strong class="red">***การตัดสินของกรรมการถือเป็นที่สิ้นสุดและทางกรรมการสามารถเปลี่ยนกติกาการแข่งขันได้ตามความเหมาะสมโดยไม่ต้องแจ้งล่วงหน้า</strong></p>
-            <div class="text-center"><a href="{{URL::to('/register/competition/esport/create')}}" class="btn btn-primary btn-lg">สมัครแข่งขัน</a></div>
+            {{--<div class="text-center"><a href="{{URL::to('/register/competition/esport/create')}}" class="btn btn-primary btn-lg">สมัครแข่งขัน</a></div>--}}
+            <div class="text-center"><button href="#" disabled class="btn btn-primary btn-lg">สมัครแข่งขัน</button></div>
         </div>
     </div>
 @endsection

@@ -12,6 +12,12 @@
                 <input disabled type="text" class="form-control" value="{{$data['team_fb']}}">
             </div>
         @endif
+        @if($typeName == 'network')
+            <div class="col-md-6 col-xs-12">
+                <label for="rank">อันดับทีม</label>
+                <input disabled type="text" class="form-control" value="{{$data['rank']}}">
+            </div>
+        @endif
     </div>
 
     <ul class="nav nav-pills" style="margin-top: 10px;">

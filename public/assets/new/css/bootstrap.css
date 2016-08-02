@@ -3081,6 +3081,7 @@ fieldset[disabled] .btn {
   -webkit-box-shadow: none;
           box-shadow: none;
   opacity: .65;
+    background: red;
 }
 a.btn.disabled,
 fieldset[disabled] a.btn {
@@ -6860,6 +6861,9 @@ h6.light {
 }
 .paper b.red, .paper strong.red {
     color: red;
+}
+.paper strong.black {
+    color: black;
 }
 .paper b, .paper strong {
     color: #337ab7;

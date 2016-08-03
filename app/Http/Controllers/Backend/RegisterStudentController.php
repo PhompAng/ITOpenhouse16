@@ -84,7 +84,8 @@ class RegisterStudentController extends Controller
      */
     public function destroy($id)
     {
-        //
+        GuestStudent::find($id)->delete();
+        return redirect('/backend/register/student');
     }
 
     public function excel() {

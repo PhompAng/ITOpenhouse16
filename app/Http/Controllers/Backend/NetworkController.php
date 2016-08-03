@@ -152,7 +152,8 @@ class NetworkController extends Controller
      */
     public function destroy($id)
     {
-        //
+        Network::find($id)->delete();
+        return redirect('/backend/competition/network');
     }
 
     public function excel() {

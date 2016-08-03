@@ -28,4 +28,9 @@ class RegisterCommonController extends Controller
             });
         })->download('xls');
     }
+
+    public function destroy($id) {
+        Guest::find($id)->delete();
+        return redirect('/backend/register/common');
+    }
 }

@@ -137,7 +137,8 @@ class ITPitchingController extends Controller
      */
     public function destroy($id)
     {
-        //
+        Pitching::find($id)->delete();
+        return redirect('/backend/competition/pitching');
     }
 
     public function excel() {

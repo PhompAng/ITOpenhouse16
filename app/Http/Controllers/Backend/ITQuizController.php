@@ -143,7 +143,8 @@ class ITQuizController extends Controller
      */
     public function destroy($id)
     {
-        //
+        ITQuiz::find($id)->delete();
+        return redirect('/backend/competition/quiz');
     }
 
     public function excel() {

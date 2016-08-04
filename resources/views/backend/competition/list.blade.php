@@ -66,10 +66,16 @@
                     </td>
                     <td class="created_at">{{$data->created_at}}</td>
                     <td>
+                        <form action="{{URL::route('backend.competition.'.$typeText.'.destroy', $data->id)}}" method="post">
+                            {!! csrf_field() !!}
+                            {!! method_field('DELETE') !!}
                         <a href="{{URL::route('registerCheck', [$type, $data->remember])}}" class="btn btn-default btn-xs" data-toggle="tooltip"  title="Status"><i class="fa fa-circle-o" aria-hidden="true"></i></a>
                         <a href="{{ URL::asset("pdf/" . $data->remember.".pdf") }}" class="btn btn-default btn-xs" data-toggle="tooltip"  title="Download"><i class="fa fa-download" aria-hidden="true"></i></a>
                         <a href="{{URL::route('backend.competition.'.$typeText.'.show', $data->id)}}" class="btn btn-default btn-xs" data-toggle="tooltip"  title="View"><i class="fa fa-eye" aria-hidden="true"></i></a>
                         <a href="{{URL::route('backend.competition.'.$typeText.'.edit', $data->id)}}" class="btn btn-default btn-xs" data-toggle="tooltip"  title="Edit"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+                            <button type="submit" class="btn btn-danger btn-xs" data-toggle="tooltip" title="Delete"><i class="fa fa-times"></i></button>
+                        </form>
+
                     </td>
                 </tr>
             @endforeach

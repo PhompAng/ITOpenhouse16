@@ -238,4 +238,7 @@
     <h2>created_at</h2>
     {{$data->created_at}}
 
+    <br><br>
+    <a href="{{URL::route('backend.competition.'.$typeName.'.edit', $data->id)}}" class="btn btn-primary" data-toggle="tooltip"  title="Edit"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</a>
+
 @endsection

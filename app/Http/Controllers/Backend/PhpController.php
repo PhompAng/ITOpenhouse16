@@ -141,7 +141,8 @@ class PhpController extends Controller
      */
     public function destroy($id)
     {
-        //
+        Php::find($id)->delete();
+        return redirect('/backend/competition/php');
     }
 
     public function excel() {

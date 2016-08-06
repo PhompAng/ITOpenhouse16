@@ -116,4 +116,5 @@
             </div>
         </div>
     </div>
+    <a href="{{URL::route('backend.register.school.edit', $data->id)}}" class="btn btn-primary"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</a>
 @endsection

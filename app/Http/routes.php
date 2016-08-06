@@ -129,6 +129,7 @@ Route::group(['middleware' => 'uac'], function () {
     Route::resource('/backend/register/common', 'Backend\RegisterCommonController');
     Route::resource('/backend/register/school', 'Backend\RegisterSchoolController');
     Route::resource('/backend/register/student', 'Backend\RegisterStudentController');
+    Route::controller('/backend/register', 'Backend\RegisterController');
     Route::resource('/backend/user', 'Backend\UserController');
     Route::get('/backend/competition/esport/excel', [
         'as' => 'esportExcel',

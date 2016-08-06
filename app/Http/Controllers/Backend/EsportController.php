@@ -174,7 +174,8 @@ class EsportController extends Controller
      */
     public function destroy($id)
     {
-        //
+        ESport::find($id)->delete();
+        return redirect('/backend/competition/esport');
     }
 
     public function excel() {

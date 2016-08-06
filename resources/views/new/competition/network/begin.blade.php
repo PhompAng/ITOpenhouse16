@@ -1,4 +1,4 @@
-blacktends('new.index')
+@extends('new.index')
 @section('content')
     <div class="paper">
         <div class="container">

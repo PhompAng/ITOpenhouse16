@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Http\Requests;
 use Maatwebsite\Excel\Facades\Excel;
+use Illuminate\Support\Facades\Validator;
 
 class RegisterSchoolController extends Controller
 {
@@ -61,7 +62,7 @@ class RegisterSchoolController extends Controller
      */
     public function edit($id)
     {
-        //
+        return view('backend.register.school.edit', ['data' => GuestSchool::find($id)]);
     }
 
     /**
@@ -73,7 +74,59 @@ class RegisterSchoolController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $guestSchool = GuestSchool::find($id);
+
+        $inputs = $request->all();
+
+        $rules = [
+
+            'prefix'				=> 'required',
+            'name'					=> 'required',
+            'surname'				=> 'required',
+            'gender'				=> 'required|in:M,F,U',
+            'age'					=> 'required|integer|between:1,100',
+
+            'school'				=> 'required',
+            'follower'				=> 'required|integer',
+
+            'province'				=> 'required',
+            'email'					=> 'required|email',
+            'phone'					=> 'required|regex:/^0[0-9]{1,2}[0-9]{7}$/',
+        ];
+
+        $messages = [
+
+            'prefix.required'		=> 'กรุณากรอก คำนำหน้าชื่อ',
+            'name.required'			=> 'กรุณากรอก ชื่อ',
+            'surname.required'		=> 'กรุณากรอก นามสกุล',
+            'gender.required'		=> 'กรุณาเลือก เพศ',
+            'gender.in'				=> 'เพศ ที่เลือกไม่ถูกต้อง',
+            'age.required'			=> 'กรุณากรอก อายุ',
+            'age.integer'			=> 'รูปแบบอายุไม่ถูกต้อง',
+            'age.between'			=> 'อายุ ต้องอยู่ระหว่าง 1 ถึง 100',
+
+            'school.required'		=> 'กรุณากรอก ชื่อโรงเรียน>',
+            'follower.required'		=> 'กรุณากรอก จำนวนนักเรียนที่มาชมงาน',
+            'follower.integer'		=> 'รูปแบบจำนวนนักเรียนที่มาชมงานไม่ถูกต้อง',
+
+            'province.required'		=> 'กรุณากรอก จังหวัด',
+            'email.required'		=> 'กรุณากรอก อีเมลล์',
+            'email.email'			=> 'รูปแบบอีเมลไม่ถูกต้อง',
+            'phone.required'		=> 'กรุณากรอก เบอร์โทรศัพท์',
+            'phone.regex'			=> 'รูปแบบเบอร์โทรศัพท์ไม่ถูกต้อง',
+        ];
+
+        $validator = Validator::make($inputs, $rules, $messages);
+        if($validator->fails()){
+            return redirect('/backend/register/school/'.$id.'/edit')->with(['data' => $inputs])->withErrors($validator);
+        }
+
+        $guestSchool->fill($request->all());
+        $guestSchool->facebook = empty($request->facebook)? null:$request->facebook;
+        $guestSchool->twitter = empty($request->twitter)? null:$request->twitter;
+        $guestSchool->save();
+
+        return redirect('/backend/register/school/'.$id);
     }
 
     /**
@@ -84,7 +137,8 @@ class RegisterSchoolController extends Controller
      */
     public function destroy($id)
     {
-        //
+        GuestSchool::find($id)->delete();
+        return redirect('/backend/register/school');
     }
 
     public function excel() {

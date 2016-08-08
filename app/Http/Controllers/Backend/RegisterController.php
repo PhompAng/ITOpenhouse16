@@ -46,6 +46,30 @@ class RegisterController extends Controller
     }
 
     public function postGift(Request $request, $code) {
-        dd("gift");
+        $type = substr($code, 0, 1);
+        $id = (int) substr($code, 1);
+
+        switch ($type) {
+            case 1:
+                $guest = Guest::find($id);
+                break;
+            case 2:
+                $guest = GuestStudent::find($id);
+                break;
+            case 3:
+                $guest = GuestSchool::find($id);
+                break;
+            default:
+                dd("fuck you");
+        }
+        if (isset($guest)) {
+            if ($guest->gift == null) {
+                $guest->gift = Carbon\Carbon::now();
+                $guest->save();
+            } else {
+                dd("fuck");
+            }
+        }
+        return redirect('/backend/register');
     }
 }

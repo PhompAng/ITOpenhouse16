@@ -16,6 +16,7 @@
             <th class="sort" data-sort="code">type <i class="fa fa-sort" aria-hidden="true"></i></th>
             <th class="sort" data-sort="code">code <i class="fa fa-sort" aria-hidden="true"></i></th>
             <th class="sort" data-sort="confirm">confirm <i class="fa fa-sort" aria-hidden="true"></i></th>
+            <th class="sort" data-sort="gift">gift <i class="fa fa-sort" aria-hidden="true"></i></th>
             <th class="sort" data-sort="created_at">created_at <i class="fa fa-sort" aria-hidden="true"></i></th>
             <th>Checkin</th>
             <th>Gift</th>
@@ -30,6 +31,15 @@
                     <td class="confirm">
                         @if($data['confirm'] != null)
                             <i class="fa fa-circle text-success"></i> {{$data['confirm']}}
+                        @else
+                            <i class="fa fa-circle text-muted"></i> ไม่ได้เข้าชมงาน
+                        @endif
+                    </td>
+                    <td class="gift">
+                        @if($data['gift'] != null)
+                            <i class="fa fa-circle text-success"></i> {{$data['gift']}}
+                        @else
+                            <i class="fa fa-circle text-muted"></i> ไม่ได้รับของที่ระลึก
                         @endif
                     </td>
                     <td class="created_at">{{$data['created_at']}}</td>
@@ -42,7 +52,7 @@
                     <td>
                         <form action="{{url('/backend/register/gift', $data['code'])}}" method="post">
                             {!! csrf_field() !!}
-                            <button type="submit" class="btn btn-info btn-sm" data-toggle="tooltip" title="Gift"><i class="fa fa-gift"></i> Gift</button>
+                            <button type="submit" class="btn btn-info btn-sm" data-toggle="tooltip" title="Gift" {{$data['gift'] != null || $data['confirm'] == null ? 'disabled':''}}><i class="fa fa-gift"></i> Gift</button>
                         </form>
                     </td>
                 </tr>
@@ -56,7 +66,7 @@
 @section('script')
     <script>
         var options = {
-            valueNames: [ 'id', 'name', 'type', 'code', 'confirm', 'created_at' ]
+            valueNames: [ 'id', 'name', 'type', 'code', 'confirm', 'gift', 'created_at' ]
         };
 
         var guestList = new List('guest', options);

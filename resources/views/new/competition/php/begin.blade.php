@@ -71,7 +71,8 @@
                 <li><strong class="black">ในวันแข่งขัน ผู้เข้าแข่งขันจะต้องแต่งกายชุดนักเรียนตามรูปแบบของโรงเรียนให้ถูกระเบียบ พร้อมทั้งนำบัตรประจำตัวนักเรียนมาด้วย</strong></li>
                 <li>ประกาศผลการแข่งขันและมอบรางวัลเวลาประมาณ 16.00 น. ของวันที่ทำการแข่งขัน</li>
             </ul>
-            <div class="text-center"><a href="{{URL::to('/register/competition/php/create')}}" class="btn btn-primary btn-lg">สมัครแข่งขัน</a></div>
+            {{--<div class="text-center"><a href="{{URL::to('/register/competition/php/create')}}" class="btn btn-primary btn-lg">สมัครแข่งขัน</a></div>--}}
+            <div class="text-center"><button href="#" disabled class="btn btn-danger btn-lg">สมัครแข่งขัน</button></div>
         </div>
     </div>
 @endsection

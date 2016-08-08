@@ -27,18 +27,22 @@
                     <td class="name">{{$data['prefix'] . $data['name'] . ' ' . $data['surname']}}</td>
                     <td class="type">{{$data['type']}}</td>
                     <td class="code">{{$data['code']}}</td>
-                    <td class="confirm">{{$data['confirm']}}</td>
+                    <td class="confirm">
+                        @if($data['confirm'] != null)
+                            <i class="fa fa-circle text-success"></i> {{$data['confirm']}}
+                        @endif
+                    </td>
                     <td class="created_at">{{$data['created_at']}}</td>
                     <td>
-                        <form action="{{url('/backend/register/checkin', $data['id'])}}" method="post">
+                        <form action="{{url('/backend/register/checkin', $data['code'])}}" method="post">
                             {!! csrf_field() !!}
-                            <button type="submit" class="btn btn-primary btn-sm" data-toggle="tooltip" title="Delete"><i class="fa fa-map-marker"></i> Checkin</button>
+                            <button type="submit" class="btn btn-primary btn-sm" data-toggle="tooltip" title="Checkin" {{$data['confirm'] != null ? 'disabled':''}}><i class="fa fa-map-marker"></i> Checkin</button>
                         </form>
                     </td>
                     <td>
-                        <form action="{{url('/backend/register/gift', $data['id'])}}" method="post">
+                        <form action="{{url('/backend/register/gift', $data['code'])}}" method="post">
                             {!! csrf_field() !!}
-                            <button type="submit" class="btn btn-info btn-sm" data-toggle="tooltip" title="Delete"><i class="fa fa-gift"></i> Gift</button>
+                            <button type="submit" class="btn btn-info btn-sm" data-toggle="tooltip" title="Gift"><i class="fa fa-gift"></i> Gift</button>
                         </form>
                     </td>
                 </tr>

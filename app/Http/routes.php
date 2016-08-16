@@ -74,6 +74,11 @@ Route::get('/register/check/{type}/{remember?}', [
     'as' => 'registerCheck',
     'uses' => 'Competition\CheckController@getCheck']);
 
+Route::get('/approved/{type}', [
+    'as' => 'approvedTeam',
+    'uses' => 'Competition\CheckController@approved'
+]);
+
 Route::get('/schedule', function () {
     return view('new.schedule', ["title" => "กำหนดการและกิจกรรม | "]);
 });

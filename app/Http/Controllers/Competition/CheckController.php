@@ -41,6 +41,40 @@ class CheckController extends Controller
         return view('register.competition.check', ["title" => "สถานะลงทะเบียนการแข่งขัน | ","team" => $team]);
     }
 
+    public function approved(Request $request, $type) {
+        switch ($type) {
+            case 'esport':
+                $team = ESport::where('confirm', 1)->get();
+                $typeName = "การแข่งกีฬาอิเล็กทรอนิกส์";
+                break;
+            case 'pitching':
+                $team = Pitching::where('confirm', 1)->get();
+                $typeName = "การแข่งขันการนำเสนอแนวคิดโครงงานไอที";
+                break;
+            case 'network':
+                $team = Network::where('confirm', 1)->get();
+                $typeName = "การแข่งความปลอดภัยของระบบคอมพิวเตอร์";
+                break;
+            case 'php':
+                $team = Php::where('confirm', 1)->get();
+                $typeName = "การแข่งพัฒนาเว็บไซต์";
+                break;
+            case 'quiz':
+                $team = ITQuiz::where('confirm', 1)->get();
+                $typeName = "การแข่งตอบปัญหา";
+                break;
+            default:
+                dd("fuck you");
+                break;
+        }
+        if (!isset($team)) {
+            dd("fuck");
+        }
+
+        return view('new.approved', ['title' => 'ประกาศรายชื่อผู้มีสิทธิ์เข้าร่วมการแข่งขันทางวิชาการ
+', 'datas' => $team, 'type' => $typeName]);
+    }
+
     public function change(Request $request, $type, $id) {
         switch ($type) {
             case 'esport':

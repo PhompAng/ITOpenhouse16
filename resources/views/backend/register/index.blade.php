@@ -67,14 +67,21 @@
             @endforeach
             </tbody>
         </table>
+        <ul class="pagination"></ul>
         <p class="total"><strong>Total:</strong> {{sizeof($datas)}}</p>
         <a href="{{URL::route('commonExcel')}}" class="btn btn-primary" disabled>Export</a>
     </div>
 @endsection
 @section('script')
+    <script type="text/javascript" src="{{URL::asset('assets/js/list.pagination.min.js')}}"></script>
     <script>
         var options = {
-            valueNames: [ 'id', 'name', 'type', 'code', 'confirm', 'gift', 'created_at' ]
+            valueNames: [ 'id', 'name', 'type', 'code', 'confirm', 'gift', 'created_at' ],
+            page: 13,
+            plugins: [ ListPagination({
+                innerWindow: 5,
+                outerWindow: 2
+            }) ]
         };
 
         var guestList = new List('guest', options);

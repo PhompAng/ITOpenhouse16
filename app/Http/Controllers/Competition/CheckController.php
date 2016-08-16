@@ -67,5 +67,7 @@ class CheckController extends Controller
         }
         $team->confirm = $request->confirm;
         $team->save();
+
+        return response()->json($request->confirm);
     }
 }

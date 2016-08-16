@@ -26,7 +26,15 @@
                 <tr>
                     <td class="id">{{$data['id']}}</td>
                     <td class="name">{{$data['prefix'] . $data['name'] . ' ' . $data['surname']}}</td>
-                    <td class="type">{{$data['type']}}</td>
+                    <td class="type">
+                        @if($data['type'] == 1)
+                            บุคคลทั่วไป
+                        @elseif($data['type']==2)
+                            นักเรียน/นักศึกษา
+                        @else
+                            โรงเรียน
+                        @endif
+                    </td>
                     <td class="code">{{$data['code']}}</td>
                     <td class="confirm">
                         @if($data['confirm'] != null)

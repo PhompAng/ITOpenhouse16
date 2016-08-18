@@ -72,8 +72,8 @@
                 <li>ประกาศผลการแข่งขันและมอบรางวัลเวลาประมาณ 16.00 น. ของวันที่ทำการแข่งขัน</li>
             </ul>
             {{--<div class="text-center"><a href="{{URL::to('/register/competition/php/create')}}" class="btn btn-primary btn-lg">สมัครแข่งขัน</a></div>--}}
-            <div class="text-center"><a href="{{url('/approved/php')}}" class="btn btn-success btn-lg">ประกาศรายชื่อผู้มีสิทธิ์เข้าร่วมการแข่งขันทางวิชาการ</a></div>
-            {{--<div class="text-center"><button href="#" disabled class="btn btn-danger btn-lg">สมัครแข่งขัน</button></div>--}}
+            {{--<div class="text-center"><a href="{{url('/approved/php')}}" class="btn btn-success btn-lg">ประกาศรายชื่อผู้มีสิทธิ์เข้าร่วมการแข่งขันทางวิชาการ</a></div>--}}
+            <div class="text-center"><button href="#" disabled class="btn btn-danger btn-lg">สมัครแข่งขัน</button></div>
         </div>
     </div>
 @endsection

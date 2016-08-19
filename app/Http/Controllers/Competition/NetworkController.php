@@ -28,7 +28,8 @@ class NetworkController extends Controller
      */
     public function create()
     {
-        return view('new.competition.network.create', ["title" => "การแข่งขันความปลอดภัยของระบบคอมพิวเตอร์ | IT Ladkrabang Open House 2016"]);
+        return redirect('/');
+//        return view('new.competition.network.create', ["title" => "การแข่งขันความปลอดภัยของระบบคอมพิวเตอร์ | IT Ladkrabang Open House 2016"]);
     }
 
     /**
@@ -37,98 +38,98 @@ class NetworkController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
-    {
-        $inputs = $request->all();
-
-        $rules = [
-            'team_name'             => 'required',
-            'rank'             => 'required|integer|between:1,100',
-            'name.*'				=> 'required',
-            'surname.*'             => 'required',
-            'email.*'               => 'required|email',
-            'phone.*'               => 'required|regex:/^0[0-9]{1,2}[0-9]{7}$/',
-            'school'				=> 'required',
-            'school_addr'			=> 'required',
-            'school_province'		=> 'required',
-            'teacher_prefix'        => 'required',
-            'teacher_name'		    => 'required',
-            'teacher_surname'		=> 'required',
-            'teacher_email'         => 'required|email',
-            'teacher_phone'			=> 'required|regex:/^0[0-9]{1,2}[0-9]{7}$/'
-        ];
-
-        $messages = [
-            'team_name.required'             =>  'กรุณากรอก  ชื่อทีม',
-            'rank.required'                  =>  'กรุณากรอก  อันดับของทีม',
-            'name.*.required'                =>  'กรุณากรอก  ชื่อสมาชิก',
-            'surname.*.required'             =>  'กรุณากรอก  นามสกุลของสมาชิก',
-            'email.*.required'               =>  'กรุณากรอก  อีเมลของสมาชิก',
-            'phone.*.required'               =>  'กรุณากรอก  เบอร์โทรศัพท์ของสมาชิก',
-            'school.required'                =>  'กรุณากรอก  ชื่อโรงเรียน',
-            'school_addr.required'           =>  'กรุณากรอก  ที่อยู่โรงเรียน',
-            'school_province.required'       =>  'กรุณากรอก  จังหวัด',
-            'teacher_prefix.required'        =>  'กรุณากรอก  คำนำหน้าชื่ออาจารย์ผู้ควบคุมทีม',
-            'teacher_name.required'          =>  'กรุณากรอก  ชื่ออาจารย์ผู้ควบคุมทีม',
-            'teacher_surname.required'       =>  'กรุณากรอก  นามสกุลอาจารย์ผู้ควบคุมทีม',
-            'teacher_phone.required'         =>  'กรุณากรอก  เบอร์โทรศัพท์อาจารย์ผู้ควบคุมทีม',
-            'teacher_email.required'         =>  'กรุณากรอก  อีเมลอาจารย์ผู้ควบคุมทีม',
-            'rank.integer'                   =>  'รูปแบบ  อันดับทีม ไม่ถูกต้อง',
-            'rank.between'                   =>  'อันดับทีมต้องอยู่ระหว่าง 1 ถึง 100',
-            'email.*.email'                  =>  'รูปแบบ  อีเมลสมาชิก ไม่ถูกต้อง',
-            'phone.*.regex'                  =>  'รูปแบบ  เบอร์โทรศัพท์สมาชิก ไม่ถูกต้อง',
-            'teacher_email.email'            =>  'รูปแบบ  อีเมลอาจารย์ผู้ควบคุมทีม ไม่ถูกต้อง',
-            'teacher_phone.regex'            =>  'รูปแบบ  เบอร์โทรศัพท์อาจารย์ผู้ควบคุมทีม ไม่ถูกต้อง'
-        ];
-
-        $validator = Validator::make($inputs, $rules, $messages);
-        if($validator->fails()){
-            return redirect('/register/competition/network/create')->with(["title" => "การแข่งขันความปลอดภัยของระบบคอมพิวเตอร์ | IT Ladkrabang Open House 2016"])->withInput()->withErrors($validator);
-        }
-
-        $network = new Network();
-        $network->fill($request->all());
-
-        $members = [];
-        for ($i = 0; $i < 2; $i++){
-            $member['prefix'] = $inputs['prefix'][$i];
-            $member['name'] = $inputs['name'][$i];
-            $member['surname'] = $inputs['surname'][$i];
-            $member['class'] = $inputs['class'][$i];
-            $member['email'] = $inputs['email'][$i];
-            $member['phone'] = $inputs['phone'][$i];
-            $members[] = $member;
-        }
-
-        $network->member = json_encode($members, JSON_UNESCAPED_UNICODE);
-
-        $remember = md5(time() . str_random(100));
-        $network->remember = $remember;
-        $network->save();
-
-
-        //for convert to PDF
-        $data = $request->all();
-        //return view('register.competition.network.pdf', ['data' => $data]);
-
-        $storePath = public_path() . "/pdf/" . $remember .".pdf";
-        $pdf = \PDF::loadView('register.competition.network.pdf', ["data" => $data]);
-        $pdf->save($storePath);
-
-        $competition = 'ความปลอดภัยของระบบคอมพิวเตอร์';
-        $team = $request->input('team_name');
-
-        $accounts = $members;
-        //add teacher to accounts for send mail
-        $account['name'] = $request->input('teacher_name');
-        $account['email'] = $request->input('teacher_email');
-        $accounts[] = $account;
-
-        MailController::sendCompetitionMail($competition, $team, $accounts, $remember, 3);
-
-        return view('register.competition.network.pdf2', ['data' => $data]);
-//        return view('register.competition.network.create', ['success' => 1, "title" => "การแข่งขันความปลอดภัยของระบบคอมพิวเตอร์ | IT Ladkrabang Open House 2016"]);
-    }
+//    public function store(Request $request)
+//    {
+//        $inputs = $request->all();
+//
+//        $rules = [
+//            'team_name'             => 'required',
+//            'rank'             => 'required|integer|between:1,100',
+//            'name.*'				=> 'required',
+//            'surname.*'             => 'required',
+//            'email.*'               => 'required|email',
+//            'phone.*'               => 'required|regex:/^0[0-9]{1,2}[0-9]{7}$/',
+//            'school'				=> 'required',
+//            'school_addr'			=> 'required',
+//            'school_province'		=> 'required',
+//            'teacher_prefix'        => 'required',
+//            'teacher_name'		    => 'required',
+//            'teacher_surname'		=> 'required',
+//            'teacher_email'         => 'required|email',
+//            'teacher_phone'			=> 'required|regex:/^0[0-9]{1,2}[0-9]{7}$/'
+//        ];
+//
+//        $messages = [
+//            'team_name.required'             =>  'กรุณากรอก  ชื่อทีม',
+//            'rank.required'                  =>  'กรุณากรอก  อันดับของทีม',
+//            'name.*.required'                =>  'กรุณากรอก  ชื่อสมาชิก',
+//            'surname.*.required'             =>  'กรุณากรอก  นามสกุลของสมาชิก',
+//            'email.*.required'               =>  'กรุณากรอก  อีเมลของสมาชิก',
+//            'phone.*.required'               =>  'กรุณากรอก  เบอร์โทรศัพท์ของสมาชิก',
+//            'school.required'                =>  'กรุณากรอก  ชื่อโรงเรียน',
+//            'school_addr.required'           =>  'กรุณากรอก  ที่อยู่โรงเรียน',
+//            'school_province.required'       =>  'กรุณากรอก  จังหวัด',
+//            'teacher_prefix.required'        =>  'กรุณากรอก  คำนำหน้าชื่ออาจารย์ผู้ควบคุมทีม',
+//            'teacher_name.required'          =>  'กรุณากรอก  ชื่ออาจารย์ผู้ควบคุมทีม',
+//            'teacher_surname.required'       =>  'กรุณากรอก  นามสกุลอาจารย์ผู้ควบคุมทีม',
+//            'teacher_phone.required'         =>  'กรุณากรอก  เบอร์โทรศัพท์อาจารย์ผู้ควบคุมทีม',
+//            'teacher_email.required'         =>  'กรุณากรอก  อีเมลอาจารย์ผู้ควบคุมทีม',
+//            'rank.integer'                   =>  'รูปแบบ  อันดับทีม ไม่ถูกต้อง',
+//            'rank.between'                   =>  'อันดับทีมต้องอยู่ระหว่าง 1 ถึง 100',
+//            'email.*.email'                  =>  'รูปแบบ  อีเมลสมาชิก ไม่ถูกต้อง',
+//            'phone.*.regex'                  =>  'รูปแบบ  เบอร์โทรศัพท์สมาชิก ไม่ถูกต้อง',
+//            'teacher_email.email'            =>  'รูปแบบ  อีเมลอาจารย์ผู้ควบคุมทีม ไม่ถูกต้อง',
+//            'teacher_phone.regex'            =>  'รูปแบบ  เบอร์โทรศัพท์อาจารย์ผู้ควบคุมทีม ไม่ถูกต้อง'
+//        ];
+//
+//        $validator = Validator::make($inputs, $rules, $messages);
+//        if($validator->fails()){
+//            return redirect('/register/competition/network/create')->with(["title" => "การแข่งขันความปลอดภัยของระบบคอมพิวเตอร์ | IT Ladkrabang Open House 2016"])->withInput()->withErrors($validator);
+//        }
+//
+//        $network = new Network();
+//        $network->fill($request->all());
+//
+//        $members = [];
+//        for ($i = 0; $i < 2; $i++){
+//            $member['prefix'] = $inputs['prefix'][$i];
+//            $member['name'] = $inputs['name'][$i];
+//            $member['surname'] = $inputs['surname'][$i];
+//            $member['class'] = $inputs['class'][$i];
+//            $member['email'] = $inputs['email'][$i];
+//            $member['phone'] = $inputs['phone'][$i];
+//            $members[] = $member;
+//        }
+//
+//        $network->member = json_encode($members, JSON_UNESCAPED_UNICODE);
+//
+//        $remember = md5(time() . str_random(100));
+//        $network->remember = $remember;
+//        $network->save();
+//
+//
+//        //for convert to PDF
+//        $data = $request->all();
+//        //return view('register.competition.network.pdf', ['data' => $data]);
+//
+//        $storePath = public_path() . "/pdf/" . $remember .".pdf";
+//        $pdf = \PDF::loadView('register.competition.network.pdf', ["data" => $data]);
+//        $pdf->save($storePath);
+//
+//        $competition = 'ความปลอดภัยของระบบคอมพิวเตอร์';
+//        $team = $request->input('team_name');
+//
+//        $accounts = $members;
+//        //add teacher to accounts for send mail
+//        $account['name'] = $request->input('teacher_name');
+//        $account['email'] = $request->input('teacher_email');
+//        $accounts[] = $account;
+//
+//        MailController::sendCompetitionMail($competition, $team, $accounts, $remember, 3);
+//
+//        return view('register.competition.network.pdf2', ['data' => $data]);
+////        return view('register.competition.network.create', ['success' => 1, "title" => "การแข่งขันความปลอดภัยของระบบคอมพิวเตอร์ | IT Ladkrabang Open House 2016"]);
+//    }
 
     /**
      * Display the specified resource.

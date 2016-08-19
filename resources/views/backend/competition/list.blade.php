@@ -117,13 +117,18 @@
                 type: "POST",
                 url: url,
                 data: $(this).serialize(),
-                dataType: 'json',
-                done: function (data) {
-                    alert(data);
-                },
-                fail: function (jqXHR, textStatus) {
-                    alert(textStatus);
+                dataType: 'json'})
+            .done(function (data) {
+                if (data == 0) {
+                    $(e.target).parent().find("span").removeClass().addClass("text-danger")
+                } else if (data == 1) {
+                    $(e.target).parent().find("span").removeClass().addClass("text-success")
+                } else if (data == -1) {
+                    $(e.target).parent().find("span").removeClass().addClass("text-primary")
                 }
+            })
+            .fail(function (jqXHR, textStatus) {
+                alert(textStatus);
             });
         });
     </script>

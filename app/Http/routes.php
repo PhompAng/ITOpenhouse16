@@ -11,15 +11,14 @@
 |
 */
 
+use App\Http\Controllers\FormController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('new.main', ["title" => ""]);
 });
 
-Route::get('/form', function () {
-    return view('new.form', ["title" => "แบบสอบถาม | "]);
-});
+Route::resource('/form', 'FormController');
 
 /*---Test---*/
 //Route::get('/test', function (){

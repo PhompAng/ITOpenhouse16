@@ -5,7 +5,7 @@
             <h1 class="light text-center">แบบสอบถาม</h1>
             <h2 class="light text-center">เพื่อสำรวจความคิดเห็นของผู้เข้าร่วมงาน “IT Ladkrabang Open House 2016”</h2>
             <hr>
-            <form action="" method="post">
+            <form action="{{URL('/form')}}" method="post">
                 {!! csrf_field() !!}
 
                 <h3>คำชี้แจง</h3>
@@ -77,36 +77,36 @@
                 <div class="row">
                     <div class="col-xs-12">
                         <div class="form-group">
-                            <label for="reason">เหตุผลที่ท่านเข้าร่วมงาน “IT Ladkrabang Open House 2016” (สามารถตอบได้มากกว่า 1 ข้อ)</label>
+                            <label for="reason[]">เหตุผลที่ท่านเข้าร่วมงาน “IT Ladkrabang Open House 2016” (สามารถตอบได้มากกว่า 1 ข้อ)</label>
                             <br>
-                            <input type="checkbox" name="reason" value=1>
+                            <input type="checkbox" name="reason[]" value=1>
                             เพื่อต้องการรู้เกี่ยวกับข้อมูลของหลักสูตรของคณะเทคโนโลยีสารสนเทศ
                             <br>
-                            <input type="checkbox" name="reason" value=2>
+                            <input type="checkbox" name="reason[]" value=2>
                             เพื่อเข้าร่วมแข่งขันกิจกรรมทางวิชาการ
                             <br>
-                            <input type="checkbox" name="reason" value=3>
+                            <input type="checkbox" name="reason[]" value=3>
                             เพื่อต้องการรู้เกี่ยวกับแนวทางการศึกษาต่อและการประกอบอาชีพด้านเทคโนโลยีสารสนเทศ
-                            <br><input type="checkbox" name="reason" value=4>
+                            <br><input type="checkbox" name="reason[]" value=4>
                             เพื่อชมนิทรรศการผลงานทางวิชาการของของนักศึกษาและอาจารย์คณะเทคโนโลยีสารสนเทศ
-                            <br><input type="checkbox" name="reason" value=5>
+                            <br><input type="checkbox" name="reason[]" value=5>
                             เพื่อเยี่ยมชมห้องบรรยาย  ห้องปฏิบัติการคอมพิวเตอร์  สภาพแวดล้อม  และสิ่งอำนวยความสะดวกต่างๆ ภายในคณะ
-                            <br><input type="checkbox" name="reason" value=6>
+                            <br><input type="checkbox" name="reason[]" value=6>
                             เพื่อเข้าร่วมฟังการเสวนาหัวข้อ “เรียน IT สายไหน ก้าวไกลในยุคหน้า”
-                            <br><input type="checkbox" name="reason" value=7>
+                            <br><input type="checkbox" name="reason[]" value=7>
                             เพื่อเข้าร่วมฟังการเสวนาหัวข้อ  “How to be net-Idol สุขภาพดีไอทีช่วยได้”
-                            <br><input type="checkbox" name="reason" value=8>
+                            <br><input type="checkbox" name="reason[]" value=8>
                             เพื่อเข้าร่วมกิจกรรม IT Career Workshop
-                            <br><input type="checkbox" name="reason" value=9>
+                            <br><input type="checkbox" name="reason[]" value=9>
                             เพื่อเข้าร่วมกิจกรรม Workshop จากบริษัท Microsoft ประเทศไทย
-                            <br><input type="checkbox" name="reason" value=10>
+                            <br><input type="checkbox" name="reason[]" value=10>
                             เพื่อเข้าร่วมกิจกรรม  สัมมนาเตรียมความพร้อมสู่ไอทีลาดกระบัง “ToBeIT@KMITL”
                             <br>
                             <div class="row form-inline">
                                 <div class="col-md-6 col-xs-12">
-                                    <input type="checkbox" name="reason" value=11>
+                                    <input type="checkbox" name="reason[]" value=11>
                                     อื่น ๆ (ระบุ)
-                                    <input class="form-control" id="reason_des" type="text" name="reason_desc" disabled>
+                                    <input class="form-control" id="reason_des" type="text" name="reason_des" disabled>
                                 </div>
                             </div>
                         </div>
@@ -190,7 +190,7 @@
                             <div class="row">
                                 <div class="col-xs-1">
                                     <div class="form-group">
-                                        <input class="form-control" id="activity" type="text" name="activity" required>
+                                        <input class="form-control" id="activity" type="text" name="activity[]" required>
                                     </div>
                                 </div>
                                 <div class="col-xs-11">
@@ -202,7 +202,7 @@
                             <div class="row">
                                 <div class="col-xs-1">
                                     <div class="form-group">
-                                        <input class="form-control" type="text" id="activity" name="activity" required>
+                                        <input class="form-control" type="text" id="activity" name="activity[]" required>
                                     </div>
                                 </div>
                                 <div class="col-xs-11">
@@ -214,7 +214,7 @@
                             <div class="row">
                                 <div class="col-xs-1">
                                     <div class="form-group">
-                                        <input class="form-control" type="text" id="activity" name="activity" required>
+                                        <input class="form-control" type="text" id="activity" name="activity[]" required>
                                     </div>
                                 </div>
                                 <div class="col-xs-11">
@@ -226,7 +226,7 @@
                             <div class="row">
                                 <div class="col-xs-1">
                                     <div class="form-group">
-                                        <input class="form-control" type="text" id="activity" name="activity" required>
+                                        <input class="form-control" type="text" id="activity" name="activity[]" required>
                                     </div>
                                 </div>
                                 <div class="col-xs-11">
@@ -238,7 +238,7 @@
                             <div class="row">
                                 <div class="col-xs-1">
                                     <div class="form-group">
-                                        <input class="form-control" type="text" id="activity" name="activity" required>
+                                        <input class="form-control" type="text" id="activity" name="activity[]" required>
                                     </div>
                                 </div>
                                 <div class="col-xs-11">
@@ -250,7 +250,7 @@
                             <div class="row">
                                 <div class="col-xs-1">
                                     <div class="form-group">
-                                        <input class="form-control" type="text" id="activity" name="activity" required>
+                                        <input class="form-control" type="text" id="activity" name="activity[]" required>
                                     </div>
                                 </div>
                                 <div class="col-xs-11">
@@ -262,7 +262,7 @@
                             <div class="row">
                                 <div class="col-xs-1">
                                     <div class="form-group">
-                                        <input class="form-control" type="text" id="activity" name="activity" required>
+                                        <input class="form-control" type="text" id="activity" name="activity[]" required>
                                     </div>
                                 </div>
                                 <div class="col-xs-11">
@@ -274,7 +274,7 @@
                             <div class="row">
                                 <div class="col-xs-1">
                                     <div class="form-group">
-                                        <input class="form-control" type="text" id="activity" name="activity" required>
+                                        <input class="form-control" type="text" id="activity" name="activity[]" required>
                                     </div>
                                 </div>
                                 <div class="col-xs-11">
@@ -286,7 +286,7 @@
                             <div class="row">
                                 <div class="col-xs-1">
                                     <div class="form-group">
-                                        <input class="form-control" type="text" id="activity" name="activity" required>
+                                        <input class="form-control" type="text" id="activity" name="activity[]" required>
                                     </div>
                                 </div>
                                 <div class="col-xs-11">
@@ -298,7 +298,7 @@
                             <div class="row">
                                 <div class="col-xs-1">
                                     <div class="form-group">
-                                        <input class="form-control" type="text" id="activity" name="activity" required>
+                                        <input class="form-control" type="text" id="activity" name="activity[]" required>
                                     </div>
                                 </div>
                                 <div class="col-xs-11">
@@ -310,7 +310,7 @@
                             <div class="row">
                                 <div class="col-xs-1">
                                     <div class="form-group">
-                                        <input class="form-control" type="text" id="activity" name="activity" required>
+                                        <input class="form-control" type="text" id="activity" name="activity[]" required>
                                     </div>
                                 </div>
                                 <div class="col-xs-11">
@@ -868,13 +868,11 @@
                 $("#know_des").attr("disabled", true);
             }
         });
-        $('input[name="reason"]').change(function() {
+        $('input[name^="reason"]').change(function() {
             var checkboxValues = [];
-            $('input[name="reason"]:checked').map(function() {
+            $('input[name^="reason"]:checked').map(function() {
                 checkboxValues.push($(this).val());
             });
-            console.log(checkboxValues);
-            console.log($.inArray("11", checkboxValues) != -1);
             if ($.inArray("11", checkboxValues) != -1) {
                 $("#reason_des").attr("disabled", false);
             } else {

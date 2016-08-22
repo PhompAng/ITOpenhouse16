@@ -175,4 +175,5 @@ Route::group(['middleware' => 'uac'], function () {
         'as' => 'getStoryboard',
         'uses' => 'Competition\ITPitchingController@getStoryboard'
     ]);
+    Route::resource('/backend/form', 'Backend\FormController');
 });

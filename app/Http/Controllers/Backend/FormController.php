@@ -1,10 +1,11 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Backend;
 
 use App\Models\Form;
 use Illuminate\Http\Request;
 
+use App\Http\Controllers\Controller;
 use App\Http\Requests;
 
 class FormController extends Controller
@@ -16,7 +17,8 @@ class FormController extends Controller
      */
     public function index()
     {
-        return view('new.form', ["title" => "แบบสอบถาม | "]);
+        $datas = Form::all();
+        return view('backend.form', ["datas" => $datas]);
     }
 
     /**
@@ -37,30 +39,7 @@ class FormController extends Controller
      */
     public function store(Request $request)
     {
-        $input = $request->all();
 
-        $form = new Form();
-        $form->fill($request->all());
-
-        $reason = [];
-        foreach ($input['reason'] as $i) {
-            $reason[] = $i;
-        }
-
-        $activity = [];
-        foreach ($input['activity'] as $i) {
-            $activity[] = $i;
-        }
-
-        $form->reason = json_encode($reason, JSON_UNESCAPED_UNICODE);
-        $form->activity = json_encode($activity, JSON_UNESCAPED_UNICODE);
-
-        $code = substr(sha1(time()), 0, 6);
-        $form->code = $code;
-
-        $form->save();
-
-        return view('new.form_result', ["title" => "แบบสอบถาม | ", "code" => $code]);
     }
 
     /**
@@ -71,7 +50,8 @@ class FormController extends Controller
      */
     public function show($id)
     {
-        //
+        $form = Form::find($id);
+        return view('backend.form_show', ["data" => $form]);
     }
 
     /**
@@ -105,6 +85,7 @@ class FormController extends Controller
      */
     public function destroy($id)
     {
-        //
+        Form::find($id)->delete();
+        return redirect('/backend/form');
     }
 }

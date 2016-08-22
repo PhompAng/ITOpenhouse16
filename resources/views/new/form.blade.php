@@ -328,505 +328,505 @@
                     <div class="col-xs-12">
                         <table class="table table-bordered">
                             <thead>
-                                <tr>
-                                    <th rowspan="2" class="text-center">รายการ</th>
-                                    <th colspan="6" class="text-center">ระดับความพึงพอใจ</th>
-                                </tr>
-                                <tr>
-                                    <th class="text-center">มากที่สุด <br>(5)</th>
-                                    <th class="text-center">มาก (4)</th>
-                                    <th class="text-center">ปานกลาง <br>(3)</th>
-                                    <th class="text-center">น้อย (2)</th>
-                                    <th class="text-center">น้อยที่สุด <br>(1)</th>
-                                    <th class="text-center">ไม่มีความคิดเห็น</th>
-                                </tr>
+                            <tr>
+                                <th rowspan="2" class="text-center">รายการ</th>
+                                <th colspan="6" class="text-center">ระดับความพึงพอใจ</th>
+                            </tr>
+                            <tr>
+                                <th class="text-center">มากที่สุด <br>(5)</th>
+                                <th class="text-center">มาก (4)</th>
+                                <th class="text-center">ปานกลาง <br>(3)</th>
+                                <th class="text-center">น้อย (2)</th>
+                                <th class="text-center">น้อยที่สุด <br>(1)</th>
+                                <th class="text-center">ไม่มีความคิดเห็น</th>
+                            </tr>
                             </thead>
                             <tbody>
-                                <tr>
-                                    <td>
-                                        <ul><li>ด้านการประชาสัมพันธ์</li></ul>
-                                        1. ความชัดเจนของเอกสารประชาสัมพันธ์
-                                    </td>
-                                    <td>
-                                        <br>
-                                        <input type="radio" name="t1" value="1" required>
-                                    </td>
-                                    <td>
-                                        <br>
-                                        <input type="radio" name="t1" value="2" required>
-                                    </td>
-                                    <td>
-                                        <br>
-                                        <input type="radio" name="t1" value="3" required>
-                                    </td>
-                                    <td>
-                                        <br>
-                                        <input type="radio" name="t1" value="4" required>
-                                    </td>
-                                    <td>
-                                        <br>
-                                        <input type="radio" name="t1" value="5" required>
-                                    </td>
-                                    <td>
-                                        <br>
-                                        <input type="radio" name="t1" value="6" required>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>2. ความชัดเจนของข้อมูลประชาสัมพันธ์ในเว็บไซต์คณะฯ</td>
-                                    <td>
-                                        <input type="radio" name="t2" value="1" required>
-                                    </td>
-                                    <td>
-                                        <input type="radio" name="t2" value="2" required>
-                                    </td>
-                                    <td>
-                                        <input type="radio" name="t2" value="3" required>
-                                    </td>
-                                    <td>
-                                        <input type="radio" name="t2" value="4" required>
-                                    </td>
-                                    <td>
-                                        <input type="radio" name="t2" value="5" required>
-                                    </td>
-                                    <td>
-                                        <input type="radio" name="t2" value="6" required>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>3. สื่อประชาสัมพันธ์ที่ได้รับมีความหลากหลาย เหมาะสม </td>
-                                    <td>
-                                        <input type="radio" name="t3" value="1" required>
-                                    </td>
-                                    <td>
-                                        <input type="radio" name="t3" value="2" required>
-                                    </td>
-                                    <td>
-                                        <input type="radio" name="t3" value="3" required>
-                                    </td>
-                                    <td>
-                                        <input type="radio" name="t3" value="4" required>
-                                    </td>
-                                    <td>
-                                        <input type="radio" name="t3" value="5" required>
-                                    </td>
-                                    <td>
-                                        <input type="radio" name="t3" value="6" required>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>4. สื่อประชาสัมพันธ์ที่ได้รับมีความน่าสนใจ สามารถดึงดูดให้เข้าร่วมงาน</td>
-                                    <td>
-                                        <input type="radio" name="t4" value="1" required>
-                                    </td>
-                                    <td>
-                                        <input type="radio" name="t4" value="2" required>
-                                    </td>
-                                    <td>
-                                        <input type="radio" name="t4" value="3" required>
-                                    </td>
-                                    <td>
-                                        <input type="radio" name="t4" value="4" required>
-                                    </td>
-                                    <td>
-                                        <input type="radio" name="t4" value="5" required>
-                                    </td>
-                                    <td>
-                                        <input type="radio" name="t4" value="6" required>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>5. การตอบข้อซักถามเกี่ยวกับงานมีความชัดเจนและตรงประเด็น</td>
-                                    <td>
-                                        <input type="radio" name="t5" value="1" required>
-                                    </td>
-                                    <td>
-                                        <input type="radio" name="t5" value="2" required>
-                                    </td>
-                                    <td>
-                                        <input type="radio" name="t5" value="3" required>
-                                    </td>
-                                    <td>
-                                        <input type="radio" name="t5" value="4" required>
-                                    </td>
-                                    <td>
-                                        <input type="radio" name="t5" value="5" required>
-                                    </td>
-                                    <td>
-                                        <input type="radio" name="t5" value="6" required>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>6.  ความเหมาะสมของช่วงเวลาการประชาสัมพันธ์</td>
-                                    <td>
-                                        <input type="radio" name="t6" value="1" required>
-                                    </td>
-                                    <td>
-                                        <input type="radio" name="t6" value="2" required>
-                                    </td>
-                                    <td>
-                                        <input type="radio" name="t6" value="3" required>
-                                    </td>
-                                    <td>
-                                        <input type="radio" name="t6" value="4" required>
-                                    </td>
-                                    <td>
-                                        <input type="radio" name="t6" value="5" required>
-                                    </td>
-                                    <td>
-                                        <input type="radio" name="t6" value="6" required>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <ul>
-                                            <li>ด้านการประสานงานของเจ้าหน้าที่</li>
-                                        </ul>
-                                        1. ติดต่อประสานงานได้ง่ายและสะดวก
-                                    </td>
-                                    <td>
-                                        <br><input type="radio" name="t7" value="1" required>
-                                    </td>
-                                    <td>
-                                        <br><input type="radio" name="t7" value="2" required>
-                                    </td>
-                                    <td>
-                                        <br><input type="radio" name="t7" value="3" required>
-                                    </td>
-                                    <td>
-                                        <br><input type="radio" name="t7" value="4" required>
-                                    </td>
-                                    <td>
-                                        <br><input type="radio" name="t7" value="5" required>
-                                    </td>
-                                    <td>
-                                        <br><input type="radio" name="t7" value="6" required>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>2. การตรงต่อเวลาของเจ้าหน้าที่</td>
-                                    <td>
-                                        <input type="radio" name="t8" value="1" required>
-                                    </td>
-                                    <td>
-                                        <input type="radio" name="t8" value="2" required>
-                                    </td>
-                                    <td>
-                                        <input type="radio" name="t8" value="3" required>
-                                    </td>
-                                    <td>
-                                        <input type="radio" name="t8" value="4" required>
-                                    </td>
-                                    <td>
-                                        <input type="radio" name="t8" value="5" required>
-                                    </td>
-                                    <td>
-                                        <input type="radio" name="t8" value="6" required>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>3. ปฏิบัติงานด้วยความกระตือรือร้นและเต็มใจให้บริการ</td>
-                                    <td>
-                                        <input type="radio" name="t9" value="1" required>
-                                    </td>
-                                    <td>
-                                        <input type="radio" name="t9" value="2" required>
-                                    </td>
-                                    <td>
-                                        <input type="radio" name="t9" value="3" required>
-                                    </td>
-                                    <td>
-                                        <input type="radio" name="t9" value="4" required>
-                                    </td>
-                                    <td>
-                                        <input type="radio" name="t9" value="5" required>
-                                    </td>
-                                    <td>
-                                        <input type="radio" name="t9" value="6" required>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>4. การใช้กิริยา วาจา สุภาพ เหมาะสม </td>
-                                    <td>
-                                        <input type="radio" name="t10" value="1" required>
-                                    </td>
-                                    <td>
-                                        <input type="radio" name="t10" value="2" required>
-                                    </td>
-                                    <td>
-                                        <input type="radio" name="t10" value="3" required>
-                                    </td>
-                                    <td>
-                                        <input type="radio" name="t10" value="4" required>
-                                    </td>
-                                    <td>
-                                        <input type="radio" name="t10" value="5" required>
-                                    </td>
-                                    <td>
-                                        <input type="radio" name="t10" value="6" required>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>5. มีมนุษยสัมพันธ์ที่ดี มีความเป็นมิตรภาพ</td>
-                                    <td>
-                                        <input type="radio" name="t11" value="1" required>
-                                    </td>
-                                    <td>
-                                        <input type="radio" name="t11" value="2" required>
-                                    </td>
-                                    <td>
-                                        <input type="radio" name="t11" value="3" required>
-                                    </td>
-                                    <td>
-                                        <input type="radio" name="t11" value="4" required>
-                                    </td>
-                                    <td>
-                                        <input type="radio" name="t11" value="5" required>
-                                    </td>
-                                    <td>
-                                        <input type="radio" name="t11" value="6" required>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>6. ความสามารถในการตอบข้อซักถามในระหว่างงาน</td>
-                                    <td>
-                                        <input type="radio" name="t12" value="1" required>
-                                    </td>
-                                    <td>
-                                        <input type="radio" name="t12" value="2" required>
-                                    </td>
-                                    <td>
-                                        <input type="radio" name="t12" value="3" required>
-                                    </td>
-                                    <td>
-                                        <input type="radio" name="t12" value="4" required>
-                                    </td>
-                                    <td>
-                                        <input type="radio" name="t12" value="5" required>
-                                    </td>
-                                    <td>
-                                        <input type="radio" name="t12" value="6" required>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <ul><li>ด้านสิ่งอำนวยความสะดวก</li></ul>
-                                        1. ทำเลที่ตั้งของสถานที่จัดงานมีความเหมาะสม
-                                    </td>
-                                    <td>
-                                        <br>
-                                        <input type="radio" name="t13" value="1" required>
-                                    </td>
-                                    <td>
-                                        <br>
-                                        <input type="radio" name="t13" value="2" required>
-                                    </td>
-                                    <td>
-                                        <br>
-                                        <input type="radio" name="t13" value="3" required>
-                                    </td>
-                                    <td>
-                                        <br>
-                                        <input type="radio" name="t13" value="4" required>
-                                    </td>
-                                    <td>
-                                        <br>
-                                        <input type="radio" name="t13" value="5" required>
-                                    </td>
-                                    <td>
-                                        <br>
-                                        <input type="radio" name="t13" value="6" required>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>2. ห้องบรรยายมีความเหมาะสมและทันสมัย</td>
-                                    <td>
-                                        <input type="radio" name="t14" value="1" required>
-                                    </td>
-                                    <td>
-                                        <input type="radio" name="t14" value="2" required>
-                                    </td>
-                                    <td>
-                                        <input type="radio" name="t14" value="3" required>
-                                    </td>
-                                    <td>
-                                        <input type="radio" name="t14" value="4" required>
-                                    </td>
-                                    <td>
-                                        <input type="radio" name="t14" value="5" required>
-                                    </td>
-                                    <td>
-                                        <input type="radio" name="t14" value="6" required>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>3. ห้องปฏิบัติการคอมพิวเตอร์มีความเหมาะสมและทันสมัย</td>
-                                    <td>
-                                        <input type="radio" name="t15" value="1" required>
-                                    </td>
-                                    <td>
-                                        <input type="radio" name="t15" value="2" required>
-                                    </td>
-                                    <td>
-                                        <input type="radio" name="t15" value="3" required>
-                                    </td>
-                                    <td>
-                                        <input type="radio" name="t15" value="4" required>
-                                    </td>
-                                    <td>
-                                        <input type="radio" name="t15" value="5" required>
-                                    </td>
-                                    <td>
-                                        <input type="radio" name="t15" value="6" required>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>4. ห้องประชุมมีความเหมาะสม</td>
-                                    <td>
-                                        <input type="radio" name="t16" value="1" required>
-                                    </td>
-                                    <td>
-                                        <input type="radio" name="t16" value="2" required>
-                                    </td>
-                                    <td>
-                                        <input type="radio" name="t16" value="3" required>
-                                    </td>
-                                    <td>
-                                        <input type="radio" name="t16" value="4" required>
-                                    </td>
-                                    <td>
-                                        <input type="radio" name="t16" value="5" required>
-                                    </td>
-                                    <td>
-                                        <input type="radio" name="t16" value="6" required>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>5. สนับสนุนให้มีการจัดงาน IT Ladkrabang Open House ในครั้งต่อไป</td>
-                                    <td>
-                                        <input type="radio" name="t17" value="1" required>
-                                    </td>
-                                    <td>
-                                        <input type="radio" name="t17" value="2" required>
-                                    </td>
-                                    <td>
-                                        <input type="radio" name="t17" value="3" required>
-                                    </td>
-                                    <td>
-                                        <input type="radio" name="t17" value="4" required>
-                                    </td>
-                                    <td>
-                                        <input type="radio" name="t17" value="5" required>
-                                    </td>
-                                    <td>
-                                        <input type="radio" name="t17" value="6" required>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td><strong>ความเหมาะสมของนิทรรศการแสดงผลงานทางวิชาการของนักศึกษา</strong></td>
-                                    <td>
-                                        <input type="radio" name="t18" value="1" required>
-                                    </td>
-                                    <td>
-                                        <input type="radio" name="t18" value="2" required>
-                                    </td>
-                                    <td>
-                                        <input type="radio" name="t18" value="3" required>
-                                    </td>
-                                    <td>
-                                        <input type="radio" name="t18" value="4" required>
-                                    </td>
-                                    <td>
-                                        <input type="radio" name="t18" value="5" required>
-                                    </td>
-                                    <td>
-                                        <input type="radio" name="t18" value="6" required>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td><strong>ความเหมาะสมของกิจกรรมการแข่งขันทางวิชาการ</strong></td>
-                                    <td>
-                                        <input type="radio" name="t19" value="1" required>
-                                    </td>
-                                    <td>
-                                        <input type="radio" name="t19" value="2" required>
-                                    </td>
-                                    <td>
-                                        <input type="radio" name="t19" value="3" required>
-                                    </td>
-                                    <td>
-                                        <input type="radio" name="t19" value="4" required>
-                                    </td>
-                                    <td>
-                                        <input type="radio" name="t19" value="5" required>
-                                    </td>
-                                    <td>
-                                        <input type="radio" name="t19" value="6" required>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td><strong>วิทยากรโดยรวมมีคุณภาพในการส่งเสริมสร้างความรู้ (กิจกรรม workshop)</strong></td>
-                                    <td>
-                                        <input type="radio" name="t20" value="1" required>
-                                    </td>
-                                    <td>
-                                        <input type="radio" name="t20" value="2" required>
-                                    </td>
-                                    <td>
-                                        <input type="radio" name="t20" value="3" required>
-                                    </td>
-                                    <td>
-                                        <input type="radio" name="t20" value="4" required>
-                                    </td>
-                                    <td>
-                                        <input type="radio" name="t20" value="5" required>
-                                    </td>
-                                    <td>
-                                        <input type="radio" name="t20" value="6" required>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td><strong>เวลาในการจัดงานมีความเหมาะสม</strong></td>
-                                    <td>
-                                        <input type="radio" name="t21" value="1" required>
-                                    </td>
-                                    <td>
-                                        <input type="radio" name="t21" value="2" required>
-                                    </td>
-                                    <td>
-                                        <input type="radio" name="t21" value="3" required>
-                                    </td>
-                                    <td>
-                                        <input type="radio" name="t21" value="4" required>
-                                    </td>
-                                    <td>
-                                        <input type="radio" name="t21" value="5" required>
-                                    </td>
-                                    <td>
-                                        <input type="radio" name="t21" value="6" required>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td><strong>ความพึงพอใจโดยรวมของการจัดงานครั้งนี้</strong></td>
-                                    <td>
-                                        <input type="radio" name="t22" value="1" required>
-                                    </td>
-                                    <td>
-                                        <input type="radio" name="t22" value="2" required>
-                                    </td>
-                                    <td>
-                                        <input type="radio" name="t22" value="3" required>
-                                    </td>
-                                    <td>
-                                        <input type="radio" name="t22" value="4" required>
-                                    </td>
-                                    <td>
-                                        <input type="radio" name="t22" value="5" required>
-                                    </td>
-                                    <td>
-                                        <input type="radio" name="t22" value="6" required>
-                                    </td>
-                                </tr>
+                            <tr>
+                                <td>
+                                    <ul><li>ด้านการประชาสัมพันธ์</li></ul>
+                                    1. ความชัดเจนของเอกสารประชาสัมพันธ์
+                                </td>
+                                <td>
+                                    <br>
+                                    <input type="radio" name="t1" value="5" required>
+                                </td>
+                                <td>
+                                    <br>
+                                    <input type="radio" name="t1" value="4" required>
+                                </td>
+                                <td>
+                                    <br>
+                                    <input type="radio" name="t1" value="3" required>
+                                </td>
+                                <td>
+                                    <br>
+                                    <input type="radio" name="t1" value="2" required>
+                                </td>
+                                <td>
+                                    <br>
+                                    <input type="radio" name="t1" value="1" required>
+                                </td>
+                                <td>
+                                    <br>
+                                    <input type="radio" name="t1" value="0" required>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2. ความชัดเจนของข้อมูลประชาสัมพันธ์ในเว็บไซต์คณะฯ</td>
+                                <td>
+                                    <input type="radio" name="t2" value="5" required>
+                                </td>
+                                <td>
+                                    <input type="radio" name="t2" value="4" required>
+                                </td>
+                                <td>
+                                    <input type="radio" name="t2" value="3" required>
+                                </td>
+                                <td>
+                                    <input type="radio" name="t2" value="2" required>
+                                </td>
+                                <td>
+                                    <input type="radio" name="t2" value="1" required>
+                                </td>
+                                <td>
+                                    <input type="radio" name="t2" value="0" required>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>3. สื่อประชาสัมพันธ์ที่ได้รับมีความหลากหลาย เหมาะสม </td>
+                                <td>
+                                    <input type="radio" name="t3" value="5" required>
+                                </td>
+                                <td>
+                                    <input type="radio" name="t3" value="4" required>
+                                </td>
+                                <td>
+                                    <input type="radio" name="t3" value="3" required>
+                                </td>
+                                <td>
+                                    <input type="radio" name="t3" value="2" required>
+                                </td>
+                                <td>
+                                    <input type="radio" name="t3" value="1" required>
+                                </td>
+                                <td>
+                                    <input type="radio" name="t3" value="0" required>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>4. สื่อประชาสัมพันธ์ที่ได้รับมีความน่าสนใจ สามารถดึงดูดให้เข้าร่วมงาน</td>
+                                <td>
+                                    <input type="radio" name="t4" value="5" required>
+                                </td>
+                                <td>
+                                    <input type="radio" name="t4" value="4" required>
+                                </td>
+                                <td>
+                                    <input type="radio" name="t4" value="3" required>
+                                </td>
+                                <td>
+                                    <input type="radio" name="t4" value="2" required>
+                                </td>
+                                <td>
+                                    <input type="radio" name="t4" value="1" required>
+                                </td>
+                                <td>
+                                    <input type="radio" name="t4" value="0" required>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>5. การตอบข้อซักถามเกี่ยวกับงานมีความชัดเจนและตรงประเด็น</td>
+                                <td>
+                                    <input type="radio" name="t5" value="5" required>
+                                </td>
+                                <td>
+                                    <input type="radio" name="t5" value="4" required>
+                                </td>
+                                <td>
+                                    <input type="radio" name="t5" value="3" required>
+                                </td>
+                                <td>
+                                    <input type="radio" name="t5" value="2" required>
+                                </td>
+                                <td>
+                                    <input type="radio" name="t5" value="1" required>
+                                </td>
+                                <td>
+                                    <input type="radio" name="t5" value="0" required>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>6.  ความเหมาะสมของช่วงเวลาการประชาสัมพันธ์</td>
+                                <td>
+                                    <input type="radio" name="t6" value="5" required>
+                                </td>
+                                <td>
+                                    <input type="radio" name="t6" value="4" required>
+                                </td>
+                                <td>
+                                    <input type="radio" name="t6" value="3" required>
+                                </td>
+                                <td>
+                                    <input type="radio" name="t6" value="2" required>
+                                </td>
+                                <td>
+                                    <input type="radio" name="t6" value="1" required>
+                                </td>
+                                <td>
+                                    <input type="radio" name="t6" value="0" required>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <ul>
+                                        <li>ด้านการประสานงานของเจ้าหน้าที่</li>
+                                    </ul>
+                                    1. ติดต่อประสานงานได้ง่ายและสะดวก
+                                </td>
+                                <td>
+                                    <br><input type="radio" name="t7" value="5" required>
+                                </td>
+                                <td>
+                                    <br><input type="radio" name="t7" value="4" required>
+                                </td>
+                                <td>
+                                    <br><input type="radio" name="t7" value="3" required>
+                                </td>
+                                <td>
+                                    <br><input type="radio" name="t7" value="2" required>
+                                </td>
+                                <td>
+                                    <br><input type="radio" name="t7" value="1" required>
+                                </td>
+                                <td>
+                                    <br><input type="radio" name="t7" value="0" required>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2. การตรงต่อเวลาของเจ้าหน้าที่</td>
+                                <td>
+                                    <input type="radio" name="t8" value="5" required>
+                                </td>
+                                <td>
+                                    <input type="radio" name="t8" value="4" required>
+                                </td>
+                                <td>
+                                    <input type="radio" name="t8" value="3" required>
+                                </td>
+                                <td>
+                                    <input type="radio" name="t8" value="2" required>
+                                </td>
+                                <td>
+                                    <input type="radio" name="t8" value="1" required>
+                                </td>
+                                <td>
+                                    <input type="radio" name="t8" value="0" required>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>3. ปฏิบัติงานด้วยความกระตือรือร้นและเต็มใจให้บริการ</td>
+                                <td>
+                                    <input type="radio" name="t9" value="5" required>
+                                </td>
+                                <td>
+                                    <input type="radio" name="t9" value="4" required>
+                                </td>
+                                <td>
+                                    <input type="radio" name="t9" value="3" required>
+                                </td>
+                                <td>
+                                    <input type="radio" name="t9" value="2" required>
+                                </td>
+                                <td>
+                                    <input type="radio" name="t9" value="1" required>
+                                </td>
+                                <td>
+                                    <input type="radio" name="t9" value="0" required>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>4. การใช้กิริยา วาจา สุภาพ เหมาะสม </td>
+                                <td>
+                                    <input type="radio" name="t10" value="5" required>
+                                </td>
+                                <td>
+                                    <input type="radio" name="t10" value="4" required>
+                                </td>
+                                <td>
+                                    <input type="radio" name="t10" value="3" required>
+                                </td>
+                                <td>
+                                    <input type="radio" name="t10" value="2" required>
+                                </td>
+                                <td>
+                                    <input type="radio" name="t10" value="1" required>
+                                </td>
+                                <td>
+                                    <input type="radio" name="t10" value="0" required>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>5. มีมนุษยสัมพันธ์ที่ดี มีความเป็นมิตรภาพ</td>
+                                <td>
+                                    <input type="radio" name="t11" value="5" required>
+                                </td>
+                                <td>
+                                    <input type="radio" name="t11" value="4" required>
+                                </td>
+                                <td>
+                                    <input type="radio" name="t11" value="3" required>
+                                </td>
+                                <td>
+                                    <input type="radio" name="t11" value="2" required>
+                                </td>
+                                <td>
+                                    <input type="radio" name="t11" value="1" required>
+                                </td>
+                                <td>
+                                    <input type="radio" name="t11" value="0" required>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>6. ความสามารถในการตอบข้อซักถามในระหว่างงาน</td>
+                                <td>
+                                    <input type="radio" name="t12" value="5" required>
+                                </td>
+                                <td>
+                                    <input type="radio" name="t12" value="4" required>
+                                </td>
+                                <td>
+                                    <input type="radio" name="t12" value="3" required>
+                                </td>
+                                <td>
+                                    <input type="radio" name="t12" value="2" required>
+                                </td>
+                                <td>
+                                    <input type="radio" name="t12" value="1" required>
+                                </td>
+                                <td>
+                                    <input type="radio" name="t12" value="0" required>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <ul><li>ด้านสิ่งอำนวยความสะดวก</li></ul>
+                                    1. ทำเลที่ตั้งของสถานที่จัดงานมีความเหมาะสม
+                                </td>
+                                <td>
+                                    <br>
+                                    <input type="radio" name="t13" value="5" required>
+                                </td>
+                                <td>
+                                    <br>
+                                    <input type="radio" name="t13" value="4" required>
+                                </td>
+                                <td>
+                                    <br>
+                                    <input type="radio" name="t13" value="3" required>
+                                </td>
+                                <td>
+                                    <br>
+                                    <input type="radio" name="t13" value="2" required>
+                                </td>
+                                <td>
+                                    <br>
+                                    <input type="radio" name="t13" value="1" required>
+                                </td>
+                                <td>
+                                    <br>
+                                    <input type="radio" name="t13" value="0" required>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2. ห้องบรรยายมีความเหมาะสมและทันสมัย</td>
+                                <td>
+                                    <input type="radio" name="t14" value="5" required>
+                                </td>
+                                <td>
+                                    <input type="radio" name="t14" value="4" required>
+                                </td>
+                                <td>
+                                    <input type="radio" name="t14" value="3" required>
+                                </td>
+                                <td>
+                                    <input type="radio" name="t14" value="2" required>
+                                </td>
+                                <td>
+                                    <input type="radio" name="t14" value="1" required>
+                                </td>
+                                <td>
+                                    <input type="radio" name="t14" value="0" required>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>3. ห้องปฏิบัติการคอมพิวเตอร์มีความเหมาะสมและทันสมัย</td>
+                                <td>
+                                    <input type="radio" name="t15" value="5" required>
+                                </td>
+                                <td>
+                                    <input type="radio" name="t15" value="4" required>
+                                </td>
+                                <td>
+                                    <input type="radio" name="t15" value="3" required>
+                                </td>
+                                <td>
+                                    <input type="radio" name="t15" value="2" required>
+                                </td>
+                                <td>
+                                    <input type="radio" name="t15" value="1" required>
+                                </td>
+                                <td>
+                                    <input type="radio" name="t15" value="0" required>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>4. ห้องประชุมมีความเหมาะสม</td>
+                                <td>
+                                    <input type="radio" name="t16" value="5" required>
+                                </td>
+                                <td>
+                                    <input type="radio" name="t16" value="4" required>
+                                </td>
+                                <td>
+                                    <input type="radio" name="t16" value="3" required>
+                                </td>
+                                <td>
+                                    <input type="radio" name="t16" value="2" required>
+                                </td>
+                                <td>
+                                    <input type="radio" name="t16" value="1" required>
+                                </td>
+                                <td>
+                                    <input type="radio" name="t16" value="0" required>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>5. สนับสนุนให้มีการจัดงาน IT Ladkrabang Open House ในครั้งต่อไป</td>
+                                <td>
+                                    <input type="radio" name="t17" value="5" required>
+                                </td>
+                                <td>
+                                    <input type="radio" name="t17" value="4" required>
+                                </td>
+                                <td>
+                                    <input type="radio" name="t17" value="3" required>
+                                </td>
+                                <td>
+                                    <input type="radio" name="t17" value="2" required>
+                                </td>
+                                <td>
+                                    <input type="radio" name="t17" value="1" required>
+                                </td>
+                                <td>
+                                    <input type="radio" name="t17" value="0" required>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><strong>ความเหมาะสมของนิทรรศการแสดงผลงานทางวิชาการของนักศึกษา</strong></td>
+                                <td>
+                                    <input type="radio" name="t18" value="5" required>
+                                </td>
+                                <td>
+                                    <input type="radio" name="t18" value="4" required>
+                                </td>
+                                <td>
+                                    <input type="radio" name="t18" value="3" required>
+                                </td>
+                                <td>
+                                    <input type="radio" name="t18" value="2" required>
+                                </td>
+                                <td>
+                                    <input type="radio" name="t18" value="1" required>
+                                </td>
+                                <td>
+                                    <input type="radio" name="t18" value="0" required>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><strong>ความเหมาะสมของกิจกรรมการแข่งขันทางวิชาการ</strong></td>
+                                <td>
+                                    <input type="radio" name="t19" value="5" required>
+                                </td>
+                                <td>
+                                    <input type="radio" name="t19" value="4" required>
+                                </td>
+                                <td>
+                                    <input type="radio" name="t19" value="3" required>
+                                </td>
+                                <td>
+                                    <input type="radio" name="t19" value="2" required>
+                                </td>
+                                <td>
+                                    <input type="radio" name="t19" value="1" required>
+                                </td>
+                                <td>
+                                    <input type="radio" name="t19" value="0" required>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><strong>วิทยากรโดยรวมมีคุณภาพในการส่งเสริมสร้างความรู้ (กิจกรรม workshop)</strong></td>
+                                <td>
+                                    <input type="radio" name="t20" value="5" required>
+                                </td>
+                                <td>
+                                    <input type="radio" name="t20" value="4" required>
+                                </td>
+                                <td>
+                                    <input type="radio" name="t20" value="3" required>
+                                </td>
+                                <td>
+                                    <input type="radio" name="t20" value="2" required>
+                                </td>
+                                <td>
+                                    <input type="radio" name="t20" value="1" required>
+                                </td>
+                                <td>
+                                    <input type="radio" name="t20" value="0" required>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><strong>เวลาในการจัดงานมีความเหมาะสม</strong></td>
+                                <td>
+                                    <input type="radio" name="t21" value="5" required>
+                                </td>
+                                <td>
+                                    <input type="radio" name="t21" value="4" required>
+                                </td>
+                                <td>
+                                    <input type="radio" name="t21" value="3" required>
+                                </td>
+                                <td>
+                                    <input type="radio" name="t21" value="2" required>
+                                </td>
+                                <td>
+                                    <input type="radio" name="t21" value="1" required>
+                                </td>
+                                <td>
+                                    <input type="radio" name="t21" value="0" required>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><strong>ความพึงพอใจโดยรวมของการจัดงานครั้งนี้</strong></td>
+                                <td>
+                                    <input type="radio" name="t22" value="5" required>
+                                </td>
+                                <td>
+                                    <input type="radio" name="t22" value="4" required>
+                                </td>
+                                <td>
+                                    <input type="radio" name="t22" value="3" required>
+                                </td>
+                                <td>
+                                    <input type="radio" name="t22" value="2" required>
+                                </td>
+                                <td>
+                                    <input type="radio" name="t22" value="1" required>
+                                </td>
+                                <td>
+                                    <input type="radio" name="t22" value="0" required>
+                                </td>
+                            </tr>
 
                             </tbody>
                         </table>

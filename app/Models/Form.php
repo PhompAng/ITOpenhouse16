@@ -46,4 +46,12 @@ class Form extends Model
         't22',
         'comment',
         'code'];
+
+    public function getReasonAttribute($value) {
+        return json_decode($value, true);
+    }
+
+    public function getActivityAttribute($value) {
+        return json_decode($value, true);
+    }
 }

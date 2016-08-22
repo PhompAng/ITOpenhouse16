@@ -49,6 +49,9 @@
                 </ul>
             </li>
             <li>
+                <a href="{{URL('/backend/form')}}">Form</a>
+            </li>
+            <li>
                 <a href="{{URL('/backend/user')}}">Users</a>
             </li>
         </ul>

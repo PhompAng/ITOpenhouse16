@@ -17,6 +17,10 @@ Route::get('/', function () {
     return view('new.main', ["title" => ""]);
 });
 
+Route::get('/form', function () {
+    return view('new.form', ["title" => "แบบสอบถาม | "]);
+});
+
 /*---Test---*/
 //Route::get('/test', function (){
 //    return view('soon', ["title" => ""]);

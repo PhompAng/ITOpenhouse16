@@ -121,7 +121,8 @@
                 <p>Storyboard คือ การสร้างภาพให้เห็นลำดับขั้นตอนตามเนื้อเรื่องที่ต้องการ โดยสำหรับการแข่งขัน IT Project Contest นี้เราจะเน้นไปที่ว่าแนวคิดของซอฟต์แวร์ หรือสิ่งประดิษฐ์ ที่ผู้สมัครนำเสนอมานั้นมีความน่าสนใจในเชิงการตลาดอย่างไร กล่าวคือสามารถเข้ามาแก้ไขปัญหาอะไรของกลุ่มลูกค้าเป้าหมาย ดังนั้นการวาด Storyboard จึงควรเริ่มจากการเล่าเรื่องว่า ผู้ใช้เป้าหมายของคุณนั้นกำลังประสบปัญหาอะไร สาเหตุของปัญหาคืออะไร และสิ่งประดิษฐ์ หรือ ซอฟต์แวร์ของคุณนั้นจะสามารถเข้ามาช่วยแก้ไขปัญหาดังกล่าวได้อย่างไรร</p>
             </ol>
             {{--<div class="text-center"><a href="{{URL::to('/register/competition/pitching/create')}}" class="btn btn-primary btn-lg">สมัครแข่งขัน</a></div>--}}
-            <div class="text-center"><button href="#" disabled class="btn btn-danger btn-lg">สมัครแข่งขัน</button></div>
+            <div class="text-center"><a href="{{url('/approved/pitching')}}" class="btn btn-success btn-lg">ประกาศรายชื่อผู้มีสิทธิ์เข้าร่วมการแข่งขันทางวิชาการ</a></div>
+            {{--<div class="text-center"><button href="#" disabled class="btn btn-danger btn-lg">สมัครแข่งขัน</button></div>--}}
         </div>
     </div>
 @endsection

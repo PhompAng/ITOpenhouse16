@@ -11,6 +11,7 @@
             <th>network</th>
             <th>php</th>
             <th>user</th>
+            <th>form</th>
             <th>created_at</th>
         </thead>
         <tbody>
@@ -18,8 +19,8 @@
                 <tr>
                     <td>{{$user->id}}</td>
                     <td>{{$user->name}}</td>
-                    {{--*/ $uac = str_pad(strrev((string)decbin($user->uac)),7,"0")/*--}}
-                    @for($i=0;$i<7;$i++)
+                    {{--*/ $uac = str_pad(strrev((string)decbin($user->uac)),8,"0")/*--}}
+                    @for($i=0;$i<8;$i++)
                         @if($uac[$i])
                             <td>
                                 <span class="text-success">

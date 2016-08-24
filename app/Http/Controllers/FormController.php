@@ -47,10 +47,7 @@ class FormController extends Controller
             $reason[] = $i;
         }
 
-        $activity = [];
-        foreach ($input['activity'] as $i) {
-            $activity[] = $i;
-        }
+        $activity = [$input['a1'], $input['a2'], $input['a3']];
 
         $form->reason = json_encode($reason, JSON_UNESCAPED_UNICODE);
         $form->activity = json_encode($activity, JSON_UNESCAPED_UNICODE);

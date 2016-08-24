@@ -80,13 +80,13 @@
                             <label for="reason[]">เหตุผลที่ท่านเข้าร่วมงาน “IT Ladkrabang Open House 2016” (สามารถตอบได้มากกว่า 1 ข้อ)</label>
                             <br>
                             <input type="checkbox" name="reason[]" value=1>
-                            เพื่อต้องการรู้เกี่ยวกับข้อมูลของหลักสูตรของคณะเทคโนโลยีสารสนเทศ
+                            เพื่อต้องการทราบเกี่ยวกับข้อมูลของหลักสูตรของคณะเทคโนโลยีสารสนเทศ
                             <br>
                             <input type="checkbox" name="reason[]" value=2>
                             เพื่อเข้าร่วมแข่งขันกิจกรรมทางวิชาการ
                             <br>
                             <input type="checkbox" name="reason[]" value=3>
-                            เพื่อต้องการรู้เกี่ยวกับแนวทางการศึกษาต่อและการประกอบอาชีพด้านเทคโนโลยีสารสนเทศ
+                            เพื่อต้องการทราบเกี่ยวกับแนวทางการศึกษาต่อและการประกอบอาชีพด้านเทคโนโลยีสารสนเทศ
                             <br><input type="checkbox" name="reason[]" value=4>
                             เพื่อชมนิทรรศการผลงานทางวิชาการของของนักศึกษาและอาจารย์คณะเทคโนโลยีสารสนเทศ
                             <br><input type="checkbox" name="reason[]" value=5>
@@ -186,137 +186,213 @@
                 <div class="row">
                     <div class="col-xs-12">
                         <div class="form-group">
-                            <label for=activity">ท่านชอบกิจกรรมใดมากที่สุด (เรียงลำดับ โดยชอบมากที่สุด เป็น 1 ชอบน้อยที่สุด เป็น 11)</label>
+                            <label for=activity">ท่านชอบกิจกรรมใดมากที่สุด 3 ลำดับแรก (เรียงลำดับ โดยชอบมากที่สุด เป็น 1 และ 2, 3 ตามลำดับ) </label>
                             <div class="row">
-                                <div class="col-xs-1">
-                                    <div class="form-group">
-                                        <input class="form-control" id="activity" type="text" name="activity[]" required>
-                                    </div>
-                                </div>
-                                <div class="col-xs-11">
+                                <div class="col-xs-9">
                                     <div class="form-group">
                                         แนะแนวการศึกษาและอาชีพ
                                     </div>
                                 </div>
+                                <div class="col-xs-1">
+                                    <div class="form-group"><input type="radio" name="a1" value="0">1</div>
+                                </div>
+                                <div class="col-xs-1">
+                                    <div class="form-group"><input type="radio" name="a2" value="0">2</div>
+                                </div>
+                                <div class="col-xs-1">
+                                    <div class="form-group"><input type="radio" name="a3" value="0">3</div>
+                                </div>
                             </div>
                             <div class="row">
-                                <div class="col-xs-1">
-                                    <div class="form-group">
-                                        <input class="form-control" type="text" id="activity" name="activity[]" required>
-                                    </div>
-                                </div>
-                                <div class="col-xs-11">
+                                <div class="col-xs-9">
                                     <div class="form-group">
                                         การแสดงนิทรรศการทางวิชาการ
                                     </div>
                                 </div>
+                                <div class="col-xs-1">
+                                    <div class="form-group"><input type="radio" name="a1" value="1">1</div>
+                                </div>
+                                <div class="col-xs-1">
+                                    <div class="form-group"><input type="radio" name="a2" value="1">2</div>
+                                </div>
+                                <div class="col-xs-1">
+                                    <div class="form-group"><input type="radio" name="a3" value="1">3</div>
+                                </div>
                             </div>
                             <div class="row">
-                                <div class="col-xs-1">
-                                    <div class="form-group">
-                                        <input class="form-control" type="text" id="activity" name="activity[]" required>
-                                    </div>
-                                </div>
-                                <div class="col-xs-11">
+                                <div class="col-xs-9">
                                     <div class="form-group">
                                         การแข่งขันทางวิชาการ
                                     </div>
                                 </div>
+                                <div class="col-xs-1">
+                                    <div class="form-group"><input type="radio" name="a1" value="2">1</div>
+                                </div>
+                                <div class="col-xs-1">
+                                    <div class="form-group"><input type="radio" name="a2" value="2">2</div>
+                                </div>
+                                <div class="col-xs-1">
+                                    <div class="form-group"><input type="radio" name="a3" value="2">3</div>
+                                </div>
                             </div>
                             <div class="row">
-                                <div class="col-xs-1">
-                                    <div class="form-group">
-                                        <input class="form-control" type="text" id="activity" name="activity[]" required>
-                                    </div>
-                                </div>
-                                <div class="col-xs-11">
+                                <div class="col-xs-9">
                                     <div class="form-group">
                                         กิจกรรม IT Career Workshop
                                     </div>
                                 </div>
+                                <div class="col-xs-1">
+                                    <div class="form-group"><input type="radio" name="a1" value="3">1</div>
+                                </div>
+                                <div class="col-xs-1">
+                                    <div class="form-group"><input type="radio" name="a2" value="3">2</div>
+                                </div>
+                                <div class="col-xs-1">
+                                    <div class="form-group"><input type="radio" name="a3" value="3">3</div>
+                                </div>
                             </div>
                             <div class="row">
-                                <div class="col-xs-1">
-                                    <div class="form-group">
-                                        <input class="form-control" type="text" id="activity" name="activity[]" required>
-                                    </div>
-                                </div>
-                                <div class="col-xs-11">
+                                <div class="col-xs-9">
                                     <div class="form-group">
                                         การเสวนาหัวข้อ “เรียน IT สายไหน ก้าวไกลในยุคหน้า”
                                     </div>
                                 </div>
+                                <div class="col-xs-1">
+                                    <div class="form-group"><input type="radio" name="a1" value="4">1</div>
+                                </div>
+                                <div class="col-xs-1">
+                                    <div class="form-group"><input type="radio" name="a2" value="4">2</div>
+                                </div>
+                                <div class="col-xs-1">
+                                    <div class="form-group"><input type="radio" name="a3" value="4">3</div>
+                                </div>
                             </div>
                             <div class="row">
-                                <div class="col-xs-1">
-                                    <div class="form-group">
-                                        <input class="form-control" type="text" id="activity" name="activity[]" required>
-                                    </div>
-                                </div>
-                                <div class="col-xs-11">
+                                <div class="col-xs-9">
                                     <div class="form-group">
                                         การเสวนาหัวข้อ  “How to be net-Idol สุขภาพดีไอทีช่วยได้”
                                     </div>
                                 </div>
+                                <div class="col-xs-1">
+                                    <div class="form-group"><input type="radio" name="a1" value="5">1</div>
+                                </div>
+                                <div class="col-xs-1">
+                                    <div class="form-group"><input type="radio" name="a2" value="5">2</div>
+                                </div>
+                                <div class="col-xs-1">
+                                    <div class="form-group"><input type="radio" name="a3" value="5">3</div>
+                                </div>
                             </div>
                             <div class="row">
-                                <div class="col-xs-1">
-                                    <div class="form-group">
-                                        <input class="form-control" type="text" id="activity" name="activity[]" required>
-                                    </div>
-                                </div>
-                                <div class="col-xs-11">
+                                <div class="col-xs-9">
                                     <div class="form-group">
                                         กิจกรรม Workshop จาก บริษัท Microsoft ประเทศไทย
                                     </div>
                                 </div>
+                                <div class="col-xs-1">
+                                    <div class="form-group"><input type="radio" name="a1" value="6">1</div>
+                                </div>
+                                <div class="col-xs-1">
+                                    <div class="form-group"><input type="radio" name="a2" value="6">2</div>
+                                </div>
+                                <div class="col-xs-1">
+                                    <div class="form-group"><input type="radio" name="a3" value="6">3</div>
+                                </div>
                             </div>
                             <div class="row">
-                                <div class="col-xs-1">
-                                    <div class="form-group">
-                                        <input class="form-control" type="text" id="activity" name="activity[]" required>
-                                    </div>
-                                </div>
-                                <div class="col-xs-11">
+                                <div class="col-xs-9">
                                     <div class="form-group">
                                         สัมมนาเตรียมความพร้อมสู่ไอทีลาดกระบัง “ToBeIT@KMITL”
                                     </div>
                                 </div>
+                                <div class="col-xs-1">
+                                    <div class="form-group"><input type="radio" name="a1" value="7">1</div>
+                                </div>
+                                <div class="col-xs-1">
+                                    <div class="form-group"><input type="radio" name="a2" value="7">2</div>
+                                </div>
+                                <div class="col-xs-1">
+                                    <div class="form-group"><input type="radio" name="a3" value="7">3</div>
+                                </div>
                             </div>
                             <div class="row">
-                                <div class="col-xs-1">
+                                <div class="col-xs-9">
                                     <div class="form-group">
-                                        <input class="form-control" type="text" id="activity" name="activity[]" required>
+                                        การเสวนาเรื่อง “ความสำคัญของ IT ในวงการธุรกิจ”
                                     </div>
                                 </div>
-                                <div class="col-xs-11">
+                                <div class="col-xs-1">
+                                    <div class="form-group"><input type="radio" name="a1" value="8">1</div>
+                                </div>
+                                <div class="col-xs-1">
+                                    <div class="form-group"><input type="radio" name="a2" value="8">2</div>
+                                </div>
+                                <div class="col-xs-1">
+                                    <div class="form-group"><input type="radio" name="a3" value="8">3</div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-9">
+                                    <div class="form-group">
+                                        การเสวนาเรื่อง “ลักษณะงาน IT ในวงการธุรกิจ”
+                                    </div>
+                                </div>
+                                <div class="col-xs-1">
+                                    <div class="form-group"><input type="radio" name="a1" value="9">1</div>
+                                </div>
+                                <div class="col-xs-1">
+                                    <div class="form-group"><input type="radio" name="a2" value="9">2</div>
+                                </div>
+                                <div class="col-xs-1">
+                                    <div class="form-group"><input type="radio" name="a3" value="9">3</div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-9">
                                     <div class="form-group">
                                         กิจกรรมชุมนุมของนักศึกษา
                                     </div>
                                 </div>
+                                <div class="col-xs-1">
+                                    <div class="form-group"><input type="radio" name="a1" value="10">1</div>
+                                </div>
+                                <div class="col-xs-1">
+                                    <div class="form-group"><input type="radio" name="a2" value="10">2</div>
+                                </div>
+                                <div class="col-xs-1">
+                                    <div class="form-group"><input type="radio" name="a3" value="10">3</div>
+                                </div>
                             </div>
                             <div class="row">
-                                <div class="col-xs-1">
-                                    <div class="form-group">
-                                        <input class="form-control" type="text" id="activity" name="activity[]" required>
-                                    </div>
-                                </div>
-                                <div class="col-xs-11">
+                                <div class="col-xs-9">
                                     <div class="form-group">
                                         กิจกรรมนำทัวร์คณะ
                                     </div>
                                 </div>
+                                <div class="col-xs-1">
+                                    <div class="form-group"><input type="radio" name="a1" value="11">1</div>
+                                </div>
+                                <div class="col-xs-1">
+                                    <div class="form-group"><input type="radio" name="a2" value="11">2</div>
+                                </div>
+                                <div class="col-xs-1">
+                                    <div class="form-group"><input type="radio" name="a3" value="11">3</div>
+                                </div>
                             </div>
                             <div class="row">
-                                <div class="col-xs-1">
-                                    <div class="form-group">
-                                        <input class="form-control" type="text" id="activity" name="activity[]" required>
-                                    </div>
-                                </div>
-                                <div class="col-xs-11">
+                                <div class="col-xs-9">
                                     <div class="form-group">
                                         การโชว์บูธของบริษัทต่างๆ
                                     </div>
+                                </div>
+                                <div class="col-xs-1">
+                                    <div class="form-group"><input type="radio" name="a1" value="12">1</div>
+                                </div>
+                                <div class="col-xs-1">
+                                    <div class="form-group"><input type="radio" name="a2" value="12">2</div>
+                                </div>
+                                <div class="col-xs-1">
+                                    <div class="form-group"><input type="radio" name="a3" value="12">3</div>
                                 </div>
                             </div>
                         </div>
@@ -343,37 +419,7 @@
                             </thead>
                             <tbody>
                             <tr>
-                                <td>
-                                    <ul><li>ด้านการประชาสัมพันธ์</li></ul>
-                                    1. ความชัดเจนของเอกสารประชาสัมพันธ์
-                                </td>
-                                <td>
-                                    <br>
-                                    <input type="radio" name="t1" value="5" required>
-                                </td>
-                                <td>
-                                    <br>
-                                    <input type="radio" name="t1" value="4" required>
-                                </td>
-                                <td>
-                                    <br>
-                                    <input type="radio" name="t1" value="3" required>
-                                </td>
-                                <td>
-                                    <br>
-                                    <input type="radio" name="t1" value="2" required>
-                                </td>
-                                <td>
-                                    <br>
-                                    <input type="radio" name="t1" value="1" required>
-                                </td>
-                                <td>
-                                    <br>
-                                    <input type="radio" name="t1" value="0" required>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>2. ความชัดเจนของข้อมูลประชาสัมพันธ์ในเว็บไซต์คณะฯ</td>
+                                <td>1. ความชัดเจนของข้อมูลประชาสัมพันธ์</td>
                                 <td>
                                     <input type="radio" name="t2" value="5" required>
                                 </td>
@@ -394,28 +440,7 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td>3. สื่อประชาสัมพันธ์ที่ได้รับมีความหลากหลาย เหมาะสม </td>
-                                <td>
-                                    <input type="radio" name="t3" value="5" required>
-                                </td>
-                                <td>
-                                    <input type="radio" name="t3" value="4" required>
-                                </td>
-                                <td>
-                                    <input type="radio" name="t3" value="3" required>
-                                </td>
-                                <td>
-                                    <input type="radio" name="t3" value="2" required>
-                                </td>
-                                <td>
-                                    <input type="radio" name="t3" value="1" required>
-                                </td>
-                                <td>
-                                    <input type="radio" name="t3" value="0" required>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>4. สื่อประชาสัมพันธ์ที่ได้รับมีความน่าสนใจ สามารถดึงดูดให้เข้าร่วมงาน</td>
+                                <td>2. สื่อประชาสัมพันธ์ที่ได้รับมีความน่าสนใจ สามารถดึงดูดให้เข้าร่วมงาน</td>
                                 <td>
                                     <input type="radio" name="t4" value="5" required>
                                 </td>
@@ -436,7 +461,7 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td>5. การตอบข้อซักถามเกี่ยวกับงานมีความชัดเจนและตรงประเด็น</td>
+                                <td>3. การตอบข้อซักถามเกี่ยวกับงานมีความชัดเจนและตรงประเด็น</td>
                                 <td>
                                     <input type="radio" name="t5" value="5" required>
                                 </td>
@@ -457,7 +482,7 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td>6.  ความเหมาะสมของช่วงเวลาการประชาสัมพันธ์</td>
+                                <td>4.  ความเหมาะสมของช่วงเวลาการประชาสัมพันธ์</td>
                                 <td>
                                     <input type="radio" name="t6" value="5" required>
                                 </td>

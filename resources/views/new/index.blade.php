@@ -25,7 +25,6 @@
             width: 120px;
             margin: 20px 20px;
         }
-        .highlight {background: #ffff5e;}
         @media only screen and (max-width : 768px) {
             .aaa-logo > img {
                 display: inline-block;

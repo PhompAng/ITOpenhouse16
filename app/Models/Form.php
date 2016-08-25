@@ -45,13 +45,18 @@ class Form extends Model
         't21',
         't22',
         'comment',
-        'code'];
+        'code',
+        'know_web'];
 
     public function getReasonAttribute($value) {
         return json_decode($value, true);
     }
 
     public function getActivityAttribute($value) {
+        return json_decode($value, true);
+    }
+
+    public function getKnowAttribute($value) {
         return json_decode($value, true);
     }
 }

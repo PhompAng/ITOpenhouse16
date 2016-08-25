@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class AddCodeToForm extends Migration
+class AddKnowWebToForm extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class AddCodeToForm extends Migration
     public function up()
     {
         Schema::table('form', function (Blueprint $table) {
-            $table->string('code');
+            $table->string('know_web');
         });
     }
 
@@ -25,7 +25,7 @@ class AddCodeToForm extends Migration
     public function down()
     {
         Schema::table('form', function (Blueprint $table) {
-            $table->dropColumn('code');
+            $table->dropColumn('know_web');
         });
     }
 }

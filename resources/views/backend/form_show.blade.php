@@ -414,7 +414,12 @@
                 </thead>
                 <tbody>
                 <tr>
-                    <td>1. ความชัดเจนของข้อมูลประชาสัมพันธ์</td>
+                    <td>
+                        <ul>
+                            <li>ด้านการประชาสัมพันธ์</li>
+                        </ul>
+                        1. ความชัดเจนของข้อมูลประชาสัมพันธ์
+                    </td>
                     <td>
                         <input type="radio" name="t2" {{$data['t2'] == 5 ? "checked":""}} value="5" disabled>
                     </td>

@@ -16,6 +16,7 @@
                 <th class="sort" data-sort="status">stauts <i class="fa fa-sort" aria-hidden="true"></i></th>
                 <th class="sort" data-sort="code">code <i class="fa fa-sort" aria-hidden="true"></i></th>
                 <th class="sort" data-sort="created_at">created_at <i class="fa fa-sort" aria-hidden="true"></i></th>
+                <th class="sort" data-sort="gift">gift <i class="fa fa-sort" aria-hidden="true"></i></th>
                 <th>action</th>
             </tr>
             </thead>
@@ -38,6 +39,16 @@
                         </td>
                         <td class="code">{{$data['code']}}</td>
                         <td class="created_at">{{$data['created_at']}}</td>
+                        <td>
+                            <form action="{{URL::route('postFormGift', $data['id'])}}" method="post">
+                                {!! csrf_field() !!}
+                                @if($data['gift'] == null)
+                                    <button type="submit" class="btn btn-info btn-sm" data-toggle="tooltip" title="Gift"><i class="fa fa-gift"></i> Gift</button>
+                                @else
+                                    <button type="submit" class="btn btn-danger btn-sm" data-toggle="tooltip" title="Undo"><i class="fa fa-times"></i> Undo</button>
+                                @endif
+                            </form>
+                        </td>
                         <td>
                             <form action="{{URL::route('backend.form.destroy', $data->id)}}" method="post">
                                 {!! csrf_field() !!}

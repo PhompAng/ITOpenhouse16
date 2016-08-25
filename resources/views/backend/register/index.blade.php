@@ -16,10 +16,8 @@
             <th class="sort" data-sort="code">type <i class="fa fa-sort" aria-hidden="true"></i></th>
             <th class="sort" data-sort="code">code <i class="fa fa-sort" aria-hidden="true"></i></th>
             <th class="sort" data-sort="confirm">confirm <i class="fa fa-sort" aria-hidden="true"></i></th>
-            <th class="sort" data-sort="gift">gift <i class="fa fa-sort" aria-hidden="true"></i></th>
             <th class="sort" data-sort="created_at">created_at <i class="fa fa-sort" aria-hidden="true"></i></th>
             <th>Checkin</th>
-            <th>Gift</th>
             </thead>
             <tbody class="list">
             @foreach($datas as $data)
@@ -43,24 +41,15 @@
                             <i class="fa fa-circle text-muted"></i> ไม่ได้เข้าชมงาน
                         @endif
                     </td>
-                    <td class="gift">
-                        @if($data['gift'] != null)
-                            <i class="fa fa-circle text-success"></i> {{$data['gift']}}
-                        @else
-                            <i class="fa fa-circle text-muted"></i> ไม่ได้รับของที่ระลึก
-                        @endif
-                    </td>
                     <td class="created_at">{{$data['created_at']}}</td>
                     <td>
                         <form action="{{url('/backend/register/checkin', $data['code'])}}" method="post">
                             {!! csrf_field() !!}
-                            <button type="submit" class="btn btn-primary btn-sm" data-toggle="tooltip" title="Checkin" {{$data['confirm'] != null ? 'disabled':''}}><i class="fa fa-map-marker"></i> Checkin</button>
-                        </form>
-                    </td>
-                    <td>
-                        <form action="{{url('/backend/register/gift', $data['code'])}}" method="post">
-                            {!! csrf_field() !!}
-                            <button type="submit" class="btn btn-info btn-sm" data-toggle="tooltip" title="Gift" {{$data['gift'] != null || $data['confirm'] == null ? 'disabled':''}}><i class="fa fa-gift"></i> Gift</button>
+                            @if($data['confirm'] == null)
+                                <button type="submit" class="btn btn-info btn-sm" data-toggle="tooltip" title="Gift"><i class="fa fa-gift"></i> Gift</button>
+                            @else
+                                <button type="submit" class="btn btn-danger btn-sm" data-toggle="tooltip" title="Undo"><i class="fa fa-times"></i> Undo</button>
+                            @endif
                         </form>
                     </td>
                 </tr>

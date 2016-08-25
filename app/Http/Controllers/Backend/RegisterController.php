@@ -38,8 +38,13 @@ class RegisterController extends Controller
                 dd("fuck you");
         }
         if (isset($guest)) {
-            $guest->confirm = Carbon\Carbon::now();
-            $guest->save();
+            if ($guest->confirm == null) {
+                $guest->confirm = Carbon\Carbon::now();
+                $guest->save();
+            } else {
+                $guest->confirm = null;
+                $guest->save();
+            }
         }
         return redirect('/backend/register');
 

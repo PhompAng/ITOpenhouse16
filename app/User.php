@@ -50,6 +50,8 @@ class User extends Authenticatable
                 return 6;
             case stripos($path, 'backend/user') !== false:
                 return 7;
+            case stripos($path, 'backend/form') !== false:
+                return 8;
             default:
                 return -1;
         }

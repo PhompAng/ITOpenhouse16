@@ -100,13 +100,6 @@
             </div>
         </div>
     </div>
-    <div class="itcamp text-center">
-        <a href="http://www.itcamp.in.th/13/" target="_blank">
-            <video poster="{{URL::asset('assets/new/img/itcamp.jpg')}}" autoplay="autoplay" loop="loop">
-                <source src="{{URL::asset('assets/new/img/itcamp.mp4')}}" type="video/mp4" />
-            </video>
-        </a>
-    </div>
     <!-- Competitions -->
     <div id="competition" class="orangesec">
         <div class="container">

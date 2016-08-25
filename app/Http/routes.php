@@ -11,15 +11,14 @@
 |
 */
 
+use App\Http\Controllers\FormController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('new.main', ["title" => ""]);
 });
 
-Route::get('/form', function () {
-    return view('new.form', ["title" => "แบบสอบถาม | "]);
-});
+Route::resource('/form', 'FormController');
 
 /*---Test---*/
 //Route::get('/test', function (){
@@ -176,4 +175,5 @@ Route::group(['middleware' => 'uac'], function () {
         'as' => 'getStoryboard',
         'uses' => 'Competition\ITPitchingController@getStoryboard'
     ]);
+    Route::resource('/backend/form', 'Backend\FormController');
 });

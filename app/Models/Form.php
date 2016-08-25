@@ -46,7 +46,8 @@ class Form extends Model
         't22',
         'comment',
         'code',
-        'know_web'];
+        'know_web',
+        'gift'];
 
     public function getReasonAttribute($value) {
         return json_decode($value, true);

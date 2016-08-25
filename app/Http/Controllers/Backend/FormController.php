@@ -4,7 +4,7 @@ namespace App\Http\Controllers\Backend;
 
 use App\Models\Form;
 use Illuminate\Http\Request;
-
+use Carbon;
 use App\Http\Controllers\Controller;
 use App\Http\Requests;
 
@@ -86,6 +86,20 @@ class FormController extends Controller
     public function destroy($id)
     {
         Form::find($id)->delete();
+        return redirect('/backend/form');
+    }
+
+    public function gift(Request $request, $id) {
+        $form = Form::find($id);
+        if (isset($form)) {
+            if ($form->gift == null) {
+                $form->gift = Carbon\Carbon::now();
+                $form->save();
+            } else {
+                $form->gift = null;
+                $form->save();
+            }
+        }
         return redirect('/backend/form');
     }
 }

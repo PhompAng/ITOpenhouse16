@@ -47,26 +47,36 @@
 
                 <div class="row">
                     <div class="col-xs-12">
-                        <label for="know">ท่านทราบข่าวสารการจัดงาน “IT Ladkrabang Open House  2016” จาก</label>
-                        <div class="row">
-                            <div class="col-md-6 col-xs-12">
-                                <div class="form-group">
-                                    <select name="know" id="know" class="form-control" required>
-                                        <option value="1">เว็บไซต์คณะฯ</option>
-                                        <option value="2">Facebook</option>
-                                        <option value="3">Twitter</option>
-                                        <option value="4">อีเมล</option>
-                                        <option value="5">โปสเตอร์</option>
-                                        <option value="6">แผ่นพับ</option>
-                                        <option value="7">หนังสือเชิญเข้าร่วมงาน</option>
-                                        <option value="8">หนังสือประชาสัมพันธ์ของโรงเรียน</option>
-                                        <option value="9">เว็บไซต์อื่น (ระบุ)</option>
-                                        <option value="0">อื่น ๆ (ระบุ)</option>
-                                    </select>
+                        <div class="form-group">
+                            <label for="know">ท่านทราบข่าวสารการจัดงาน “IT Ladkrabang Open House  2016” จาก</label>
+                            <br>
+                            <input type="checkbox" name="know[]" value="1">
+                            เว็บไซต์คณะฯ<br>
+                            <input type="checkbox" name="know[]" value="2">
+                            Facebook<br>
+                            <input type="checkbox" name="know[]" value="3">
+                            Twitter<br>
+                            <input type="checkbox" name="know[]" value="4">
+                            อีเมล<br>
+                            <input type="checkbox" name="know[]" value="5">
+                            โปสเตอร์<br>
+                            <input type="checkbox" name="know[]" value="6">
+                            แผ่นพับ<br>
+                            <input type="checkbox" name="know[]" value="7">
+                            หนังสือเชิญเข้าร่วมงาน<br>
+                            <input type="checkbox" name="know[]" value="8">
+                            หนังสือประชาสัมพันธ์ของโรงเรียน<br>
+                            <div class="row form-inline">
+                                <div class="col-md-6 col-xs-12">
+                                    <input type="checkbox" name="know[]" value="9">
+                                    เว็บไซต์อื่น (ระบุ)
+                                    <input class="form-control" id="know_web" type="text" name="know_web" disabled>
                                 </div>
                             </div>
-                            <div class="col-md-6 col-xs-12">
-                                <div class="form-group">
+                            <div class="row form-inline">
+                                <div class="col-md-6 col-xs-12">
+                                    <input type="checkbox" name="know[]" value="0">
+                                    อื่น ๆ (ระบุ)
                                     <input class="form-control" id="know_des" type="text" name="know_des" disabled>
                                 </div>
                             </div>
@@ -135,7 +145,7 @@
                                         <div class="col-xs-12 col-md-6">
                                             <div class="form-group">
                                                 <label for="interest_fac">คณะ/หลักสูตร</label>
-                                                <input class="form-control" id="interest_fac" name="interest_fac" type="text" disabled>
+                                                <input class="form-control" id="interest_fac" name="interest_fac" type="text">
                                             </div>
                                         </div>
                                         <div class="col-xs-12 col-md-6">
@@ -168,13 +178,13 @@
                                     <div class="col-xs-12 col-md-6">
                                         <div class="form-group">
                                             <label for="news_addr">ที่อยู่</label>
-                                            <input class="form-control" id="news_addr" name="news_addr" type="text">
+                                            <input class="form-control" id="news_addr" name="news_addr" type="text" required>
                                         </div>
                                     </div>
                                     <div class="col-xs-12 col-md-6">
                                         <div class="form-group">
                                             <label for="news_email">อีเมล</label>
-                                            <input class="form-control" id="news_email" name="news_email" type="text">
+                                            <input class="form-control" id="news_email" name="news_email" type="email" required>
                                         </div>
                                     </div>
                                 </div>
@@ -885,8 +895,18 @@
                 $("#status_des").attr("disabled", true);
             }
         });
-        $("#know").change(function() {
-            if ($("#know").val() == 0 || $("#know").val() == 9) {
+        $('input[name^="know"]').change(function() {
+            var checkboxValues = [];
+            $('input[name^="know"]:checked').map(function() {
+                checkboxValues.push($(this).val());
+            });
+            if ($.inArray("9", checkboxValues) != -1) {
+                $("#know_web").attr("disabled", false);
+            } else {
+                $("#know_web").val("");
+                $("#know_web").attr("disabled", true);
+            }
+            if ($.inArray("0", checkboxValues) != -1) {
                 $("#know_des").attr("disabled", false);
             } else {
                 $("#know_des").val("");
@@ -908,9 +928,8 @@
         $("#interest").change(function() {
             if ($("#interest").val() == 1) {
                 $("#interest_des").attr("disabled", false);
-                $("#interest_fac").val("");
+                $("#interest_fac").attr("disabled", false);
                 $("#interest_uni").val("");
-                $("#interest_fac").attr("disabled", true);
                 $("#interest_uni").attr("disabled", true);
             } else if ($("#interest").val() == 0) {
                 $("#interest_des").val("");
@@ -922,6 +941,8 @@
                 $("#interest_fac").val("");
                 $("#interest_uni").val("");
                 $("#interest_des").attr("disabled", true);
+                $("#interest_fac").attr("disabled", true);
+                $("#interest_uni").attr("disabled", true);
             }
         });
         $("#news").change(function () {

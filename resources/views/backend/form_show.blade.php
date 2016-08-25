@@ -32,26 +32,36 @@
 
     <div class="row">
         <div class="col-xs-12">
-            <label for="know">ท่านทราบข่าวสารการจัดงาน “IT Ladkrabang Open House  2016” จาก</label>
-            <div class="row">
-                <div class="col-md-6 col-xs-12">
-                    <div class="form-group">
-                        <select name="know" id="know" class="form-control" disabled>
-                            <option value="1" {{$data['know'] == 1 ? "selected":""}}>เว็บไซต์คณะฯ</option>
-                            <option value="2" {{$data['know'] == 2 ? "selected":""}}>Facebook</option>
-                            <option value="3" {{$data['know'] == 3 ? "selected":""}}>Twitter</option>
-                            <option value="4" {{$data['know'] == 4 ? "selected":""}}>อีเมล</option>
-                            <option value="5" {{$data['know'] == 5 ? "selected":""}}>โปสเตอร์</option>
-                            <option value="6" {{$data['know'] == 6 ? "selected":""}}>แผ่นพับ</option>
-                            <option value="7" {{$data['know'] == 7 ? "selected":""}}>หนังสือเชิญเข้าร่วมงาน</option>
-                            <option value="8" {{$data['know'] == 8 ? "selected":""}}>หนังสือประชาสัมพันธ์ของโรงเรียน</option>
-                            <option value="9" {{$data['know'] == 9 ? "selected":""}}>เว็บไซต์อื่น (ระบุ)</option>
-                            <option value="0" {{$data['know'] == 0 ? "selected":""}}>อื่น ๆ (ระบุ)</option>
-                        </select>
+            <div class="form-group">
+                <label for="know">ท่านทราบข่าวสารการจัดงาน “IT Ladkrabang Open House  2016” จาก</label>
+                <br>
+                <input type="checkbox" disabled name="know[]" {{in_array(1, $data['know']) ? "checked":""}} value="1">
+                เว็บไซต์คณะฯ<br>
+                <input type="checkbox" disabled name="know[]" {{in_array(2, $data['know']) ? "checked":""}} value="2">
+                Facebook<br>
+                <input type="checkbox" disabled name="know[]" {{in_array(3, $data['know']) ? "checked":""}} value="3">
+                Twitter<br>
+                <input type="checkbox" disabled name="know[]" {{in_array(4, $data['know']) ? "checked":""}} value="4">
+                อีเมล<br>
+                <input type="checkbox" disabled name="know[]" {{in_array(5, $data['know']) ? "checked":""}} value="5">
+                โปสเตอร์<br>
+                <input type="checkbox" disabled name="know[]" {{in_array(6, $data['know']) ? "checked":""}} value="6">
+                แผ่นพับ<br>
+                <input type="checkbox" disabled name="know[]" {{in_array(7, $data['know']) ? "checked":""}} value="7">
+                หนังสือเชิญเข้าร่วมงาน<br>
+                <input type="checkbox" disabled name="know[]" {{in_array(8, $data['know']) ? "checked":""}} value="8">
+                หนังสือประชาสัมพันธ์ของโรงเรียน<br>
+                <div class="row form-inline">
+                    <div class="col-md-6 col-xs-12">
+                        <input type="checkbox" disabled name="know[]" {{in_array(9, $data['know']) ? "checked":""}} value="9">
+                        เว็บไซต์อื่น (ระบุ)
+                        <input class="form-control" id="know_web" type="text" name="know_web" value="{{$data['know_web']}}" disabled>
                     </div>
                 </div>
-                <div class="col-md-6 col-xs-12">
-                    <div class="form-group">
+                <div class="row form-inline">
+                    <div class="col-md-6 col-xs-12">
+                        <input type="checkbox" disabled name="know[]" {{in_array(0, $data['know']) ? "checked":""}} value="0">
+                        อื่น ๆ (ระบุ)
                         <input class="form-control" id="know_des" type="text" name="know_des" value="{{$data['know_des']}}" disabled>
                     </div>
                 </div>

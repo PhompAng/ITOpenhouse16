@@ -46,7 +46,7 @@
                         <form action="{{url('/backend/register/checkin', $data['code'])}}" method="post">
                             {!! csrf_field() !!}
                             @if($data['confirm'] == null)
-                                <button type="submit" class="btn btn-info btn-sm" data-toggle="tooltip" title="Gift"><i class="fa fa-gift"></i> Gift</button>
+                                <button type="submit" class="btn btn-info btn-sm" data-toggle="tooltip" title="Check in"><i class="fa fa-map-marker"></i> Check in</button>
                             @else
                                 <button type="submit" class="btn btn-danger btn-sm" data-toggle="tooltip" title="Undo"><i class="fa fa-times"></i> Undo</button>
                             @endif

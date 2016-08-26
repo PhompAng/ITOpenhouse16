@@ -13,10 +13,10 @@
             <thead>
             <tr>
                 <th class="sort" data-sort="id">id <i class="fa fa-sort" aria-hidden="true"></i></th>
-                <th class="sort" data-sort="status">stauts <i class="fa fa-sort" aria-hidden="true"></i></th>
+                <th class="sort" data-sort="status">status <i class="fa fa-sort" aria-hidden="true"></i></th>
                 <th class="sort" data-sort="code">code <i class="fa fa-sort" aria-hidden="true"></i></th>
                 <th class="sort" data-sort="created_at">created_at <i class="fa fa-sort" aria-hidden="true"></i></th>
-                <th class="sort" data-sort="gift">gift <i class="fa fa-sort" aria-hidden="true"></i></th>
+                <th>gift</th>
                 <th>action</th>
             </tr>
             </thead>
@@ -61,6 +61,7 @@
                 @endforeach
             </tbody>
         </table>
+        <ul class="pagination"></ul>
     </div>
 @endsection
 @section('script')

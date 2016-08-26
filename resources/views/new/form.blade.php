@@ -204,13 +204,13 @@
                                     </div>
                                 </div>
                                 <div class="col-xs-1">
-                                    <div class="form-group"><input type="radio" name="a1" value="0">1</div>
+                                    <div class="form-group"><input required type="radio" name="a1" value="0">1</div>
                                 </div>
                                 <div class="col-xs-1">
-                                    <div class="form-group"><input type="radio" name="a2" value="0">2</div>
+                                    <div class="form-group"><input required type="radio" name="a2" value="0">2</div>
                                 </div>
                                 <div class="col-xs-1">
-                                    <div class="form-group"><input type="radio" name="a3" value="0">3</div>
+                                    <div class="form-group"><input required type="radio" name="a3" value="0">3</div>
                                 </div>
                             </div>
                             <div class="row">
@@ -220,13 +220,13 @@
                                     </div>
                                 </div>
                                 <div class="col-xs-1">
-                                    <div class="form-group"><input type="radio" name="a1" value="1">1</div>
+                                    <div class="form-group"><input required type="radio" name="a1" value="1">1</div>
                                 </div>
                                 <div class="col-xs-1">
-                                    <div class="form-group"><input type="radio" name="a2" value="1">2</div>
+                                    <div class="form-group"><input required type="radio" name="a2" value="1">2</div>
                                 </div>
                                 <div class="col-xs-1">
-                                    <div class="form-group"><input type="radio" name="a3" value="1">3</div>
+                                    <div class="form-group"><input required type="radio" name="a3" value="1">3</div>
                                 </div>
                             </div>
                             <div class="row">
@@ -236,13 +236,13 @@
                                     </div>
                                 </div>
                                 <div class="col-xs-1">
-                                    <div class="form-group"><input type="radio" name="a1" value="2">1</div>
+                                    <div class="form-group"><input required type="radio" name="a1" value="2">1</div>
                                 </div>
                                 <div class="col-xs-1">
-                                    <div class="form-group"><input type="radio" name="a2" value="2">2</div>
+                                    <div class="form-group"><input required type="radio" name="a2" value="2">2</div>
                                 </div>
                                 <div class="col-xs-1">
-                                    <div class="form-group"><input type="radio" name="a3" value="2">3</div>
+                                    <div class="form-group"><input required type="radio" name="a3" value="2">3</div>
                                 </div>
                             </div>
                             <div class="row">
@@ -252,13 +252,13 @@
                                     </div>
                                 </div>
                                 <div class="col-xs-1">
-                                    <div class="form-group"><input type="radio" name="a1" value="3">1</div>
+                                    <div class="form-group"><input required type="radio" name="a1" value="3">1</div>
                                 </div>
                                 <div class="col-xs-1">
-                                    <div class="form-group"><input type="radio" name="a2" value="3">2</div>
+                                    <div class="form-group"><input required type="radio" name="a2" value="3">2</div>
                                 </div>
                                 <div class="col-xs-1">
-                                    <div class="form-group"><input type="radio" name="a3" value="3">3</div>
+                                    <div class="form-group"><input required type="radio" name="a3" value="3">3</div>
                                 </div>
                             </div>
                             <div class="row">
@@ -268,13 +268,13 @@
                                     </div>
                                 </div>
                                 <div class="col-xs-1">
-                                    <div class="form-group"><input type="radio" name="a1" value="4">1</div>
+                                    <div class="form-group"><input required type="radio" name="a1" value="4">1</div>
                                 </div>
                                 <div class="col-xs-1">
-                                    <div class="form-group"><input type="radio" name="a2" value="4">2</div>
+                                    <div class="form-group"><input required type="radio" name="a2" value="4">2</div>
                                 </div>
                                 <div class="col-xs-1">
-                                    <div class="form-group"><input type="radio" name="a3" value="4">3</div>
+                                    <div class="form-group"><input required type="radio" name="a3" value="4">3</div>
                                 </div>
                             </div>
                             <div class="row">
@@ -284,13 +284,13 @@
                                     </div>
                                 </div>
                                 <div class="col-xs-1">
-                                    <div class="form-group"><input type="radio" name="a1" value="5">1</div>
+                                    <div class="form-group"><input required type="radio" name="a1" value="5">1</div>
                                 </div>
                                 <div class="col-xs-1">
-                                    <div class="form-group"><input type="radio" name="a2" value="5">2</div>
+                                    <div class="form-group"><input required type="radio" name="a2" value="5">2</div>
                                 </div>
                                 <div class="col-xs-1">
-                                    <div class="form-group"><input type="radio" name="a3" value="5">3</div>
+                                    <div class="form-group"><input required type="radio" name="a3" value="5">3</div>
                                 </div>
                             </div>
                             <div class="row">
@@ -300,13 +300,13 @@
                                     </div>
                                 </div>
                                 <div class="col-xs-1">
-                                    <div class="form-group"><input type="radio" name="a1" value="6">1</div>
+                                    <div class="form-group"><input required type="radio" name="a1" value="6">1</div>
                                 </div>
                                 <div class="col-xs-1">
-                                    <div class="form-group"><input type="radio" name="a2" value="6">2</div>
+                                    <div class="form-group"><input required type="radio" name="a2" value="6">2</div>
                                 </div>
                                 <div class="col-xs-1">
-                                    <div class="form-group"><input type="radio" name="a3" value="6">3</div>
+                                    <div class="form-group"><input required type="radio" name="a3" value="6">3</div>
                                 </div>
                             </div>
                             <div class="row">
@@ -316,13 +316,13 @@
                                     </div>
                                 </div>
                                 <div class="col-xs-1">
-                                    <div class="form-group"><input type="radio" name="a1" value="7">1</div>
+                                    <div class="form-group"><input required type="radio" name="a1" value="7">1</div>
                                 </div>
                                 <div class="col-xs-1">
-                                    <div class="form-group"><input type="radio" name="a2" value="7">2</div>
+                                    <div class="form-group"><input required type="radio" name="a2" value="7">2</div>
                                 </div>
                                 <div class="col-xs-1">
-                                    <div class="form-group"><input type="radio" name="a3" value="7">3</div>
+                                    <div class="form-group"><input required type="radio" name="a3" value="7">3</div>
                                 </div>
                             </div>
                             <div class="row">
@@ -332,13 +332,13 @@
                                     </div>
                                 </div>
                                 <div class="col-xs-1">
-                                    <div class="form-group"><input type="radio" name="a1" value="8">1</div>
+                                    <div class="form-group"><input required type="radio" name="a1" value="8">1</div>
                                 </div>
                                 <div class="col-xs-1">
-                                    <div class="form-group"><input type="radio" name="a2" value="8">2</div>
+                                    <div class="form-group"><input required type="radio" name="a2" value="8">2</div>
                                 </div>
                                 <div class="col-xs-1">
-                                    <div class="form-group"><input type="radio" name="a3" value="8">3</div>
+                                    <div class="form-group"><input required type="radio" name="a3" value="8">3</div>
                                 </div>
                             </div>
                             <div class="row">
@@ -348,13 +348,13 @@
                                     </div>
                                 </div>
                                 <div class="col-xs-1">
-                                    <div class="form-group"><input type="radio" name="a1" value="9">1</div>
+                                    <div class="form-group"><input required type="radio" name="a1" value="9">1</div>
                                 </div>
                                 <div class="col-xs-1">
-                                    <div class="form-group"><input type="radio" name="a2" value="9">2</div>
+                                    <div class="form-group"><input required type="radio" name="a2" value="9">2</div>
                                 </div>
                                 <div class="col-xs-1">
-                                    <div class="form-group"><input type="radio" name="a3" value="9">3</div>
+                                    <div class="form-group"><input required type="radio" name="a3" value="9">3</div>
                                 </div>
                             </div>
                             <div class="row">
@@ -364,13 +364,13 @@
                                     </div>
                                 </div>
                                 <div class="col-xs-1">
-                                    <div class="form-group"><input type="radio" name="a1" value="10">1</div>
+                                    <div class="form-group"><input required type="radio" name="a1" value="10">1</div>
                                 </div>
                                 <div class="col-xs-1">
-                                    <div class="form-group"><input type="radio" name="a2" value="10">2</div>
+                                    <div class="form-group"><input required type="radio" name="a2" value="10">2</div>
                                 </div>
                                 <div class="col-xs-1">
-                                    <div class="form-group"><input type="radio" name="a3" value="10">3</div>
+                                    <div class="form-group"><input required type="radio" name="a3" value="10">3</div>
                                 </div>
                             </div>
                             <div class="row">
@@ -380,13 +380,13 @@
                                     </div>
                                 </div>
                                 <div class="col-xs-1">
-                                    <div class="form-group"><input type="radio" name="a1" value="11">1</div>
+                                    <div class="form-group"><input required type="radio" name="a1" value="11">1</div>
                                 </div>
                                 <div class="col-xs-1">
-                                    <div class="form-group"><input type="radio" name="a2" value="11">2</div>
+                                    <div class="form-group"><input required type="radio" name="a2" value="11">2</div>
                                 </div>
                                 <div class="col-xs-1">
-                                    <div class="form-group"><input type="radio" name="a3" value="11">3</div>
+                                    <div class="form-group"><input required type="radio" name="a3" value="11">3</div>
                                 </div>
                             </div>
                             <div class="row">
@@ -396,13 +396,13 @@
                                     </div>
                                 </div>
                                 <div class="col-xs-1">
-                                    <div class="form-group"><input type="radio" name="a1" value="12">1</div>
+                                    <div class="form-group"><input required type="radio" name="a1" value="12">1</div>
                                 </div>
                                 <div class="col-xs-1">
-                                    <div class="form-group"><input type="radio" name="a2" value="12">2</div>
+                                    <div class="form-group"><input required type="radio" name="a2" value="12">2</div>
                                 </div>
                                 <div class="col-xs-1">
-                                    <div class="form-group"><input type="radio" name="a3" value="12">3</div>
+                                    <div class="form-group"><input required type="radio" name="a3" value="12">3</div>
                                 </div>
                             </div>
                         </div>

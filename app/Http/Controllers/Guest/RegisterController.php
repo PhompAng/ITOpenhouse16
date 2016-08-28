@@ -67,11 +67,11 @@ class RegisterController extends  Controller{
         $guest->twitter = empty($request->twitter)? null:$request->twitter;
         $guest->save();
 
-        $sms = new SMSController();
-        $result = $sms->sendSMS("ITOpenhouse", $guest->phone, $guest->id, 1);
-        if ($result[0] == FALSE) {
-            dd($result);
-        }
+//        $sms = new SMSController();
+//        $result = $sms->sendSMS("ITOpenhouse", $guest->phone, $guest->id, 1);
+//        if ($result[0] == FALSE) {
+//            dd($result);
+//        }
 
         return view('register.guest.success', ['success' => 1, "title" => "ลงทะเบียนเข้าชมงาน | IT Ladkrabang Open House 2016", 'data' => $request->all()]);
     }
@@ -128,11 +128,11 @@ class RegisterController extends  Controller{
         $guestStudent->twitter = empty($request->twitter)? null:$request->twitter;
         $guestStudent->save();
 
-        $sms = new SMSController();
-        $result = $sms->sendSMS("ITOpenhouse", $guestStudent->phone, $guestStudent->id, 2);
-        if ($result[0] == FALSE) {
-            dd($result);
-        }
+//        $sms = new SMSController();
+//        $result = $sms->sendSMS("ITOpenhouse", $guestStudent->phone, $guestStudent->id, 2);
+//        if ($result[0] == FALSE) {
+//            dd($result);
+//        }
 
         return view('register.guest_student.success', ['success' => 1, "title" => "ลงทะเบียนเข้าชมงาน | IT Ladkrabang Open House 2016", 'data' => $request->all()]);
     }
@@ -191,11 +191,11 @@ class RegisterController extends  Controller{
         $guestSchool->twitter = empty($request->twitter)? null:$request->twitter;
         $guestSchool->save();
 
-        $sms = new SMSController();
-        $result = $sms->sendSMS("ITOpenhouse", $guestSchool->phone, $guestSchool->id, 3);
-        if ($result[0] == FALSE) {
-            dd($result);
-        }
+//        $sms = new SMSController();
+//        $result = $sms->sendSMS("ITOpenhouse", $guestSchool->phone, $guestSchool->id, 3);
+//        if ($result[0] == FALSE) {
+//            dd($result);
+//        }
 
         return view('register.guest_school.success', ['success' => 1, "title" => "ลงทะเบียนเข้าชมงาน | IT Ladkrabang Open House 2016", 'data' => $request->all()]);
 
